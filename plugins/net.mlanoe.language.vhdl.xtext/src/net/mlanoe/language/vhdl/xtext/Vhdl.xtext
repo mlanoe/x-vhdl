@@ -1,0 +1,1551 @@
+/**
+ * VHDL AMS grammar
+ * 
+ * @author mickael.lanoe@laposte.net
+ */
+grammar net.mlanoe.language.vhdl.xtext.Vhdl
+hidden(WS, SL_COMMENT) 
+
+import "platform:/resource/net.mlanoe.language.vhdl/model/vhdl.ecore"
+
+import "platform:/resource/net.mlanoe.language.vhdl/model/vhdl.ecore#//nature" as nature
+import "platform:/resource/net.mlanoe.language.vhdl/model/vhdl.ecore#//expression" as expression
+import "platform:/resource/net.mlanoe.language.vhdl/model/vhdl.ecore#//type" as type
+import "platform:/resource/net.mlanoe.language.vhdl/model/vhdl.ecore#//declaration" as declaration
+import "platform:/resource/net.mlanoe.language.vhdl/model/vhdl.ecore#//statement" as statement
+import "platform:/resource/net.mlanoe.language.vhdl/model/vhdl.ecore#//ams" as ams
+import "platform:/resource/net.mlanoe.language.vhdl/model/vhdl.ecore#//configuration" as configuration
+
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+
+Model returns Model:
+  ( design += DesignUnit )*
+;
+ 
+DesignUnit returns DesignUnit:
+  ( 'library' library += Identifier ( ',' library += Identifier )* ';'
+    | 'use' use += Name ( ',' use += Name )* ';' )*
+  
+  module = Module
+;
+ 
+Module returns Module:
+    Architecture 
+  | PackageBody
+  | Entity
+  | Configuration 
+  | Package
+;
+
+/*
+ * architecture identifier of entity_name is
+ *    [ declarations]
+ * begin -- optional
+ *    [ statements]
+ * end architecture identifier ;  
+ */
+Architecture returns Architecture:
+  'architecture' name = IdentifierName 'of' of = Name 'is'
+    ( declaration += BlockDeclarativeItem )*
+  'begin'
+    ( statement += ArchitectureStatement )*
+  'end' ( 'architecture' )? ( Identifier )? ';'
+;
+
+/*
+ * package body identifier is
+ *     [ declarations, see allowed list below ]
+ *  end package body identifier ;
+ */
+PackageBody returns PackageBody:
+  'package' 'body' name = IdentifierName 'is'
+    ( declaration += PackageBodyDeclarativeItem )*
+  'end' ( 'package' 'body' )? ( Identifier )? ';'
+;
+
+/*
+ * package identifier is
+ *     [ declarations, see allowed list below ]
+ * end package identifier ;
+ */
+Package returns Package:
+  'package' name = IdentifierName 'is'
+    ( declaration += PackageDeclarativeItem )*
+  'end' ( 'package' )? ( Identifier )? ';'
+;
+
+Entity returns Entity: 
+  'entity' name = IdentifierName 'is' 
+      ( generic = Generics )?
+      ( port = Ports )?
+      ( declaration += EntityDeclarativeItem )*
+    ( 'begin' 
+      ( statement += EntityStatement )*
+    )?
+    'end' ( 'entity' )? ( Identifier )? ';'
+;
+
+Configuration returns configuration::Configuration:
+  'configuration' name = IdentifierName 'of' of = Name 'is'
+	( declaration += ConfigurationDeclarativeItem )*
+	block = BlockConfiguration
+  'end' ( 'configuration' )? ( Identifier )? ';'
+;
+
+UseClauseDeclaration returns declaration::UseClauseDeclaration:
+  'use' use = MultiName ';'
+;
+
+BlockDeclarativeItem returns declaration::Declaration:
+    SubprogramDeclaration
+  | TypeDeclaration
+  | SubtypeDeclaration
+  | ConstantDeclaration
+  | SignalDeclaration
+  | VariableDeclaration
+  | FileDeclaration
+  | AliasDeclaration
+  | Component
+  | AttributeDeclaration
+  | AttributeSpecification
+  | ConfigurationSpecification
+  | DisconnectionSpecification
+  | LimitDeclaration
+  | UseClauseDeclaration
+  | GroupTemplateDeclaration
+  | GroupDeclaration
+  | NatureDeclaration
+  | SubnatureDeclaration
+  | QuantityDeclaration
+  | TerminalDeclaration
+;
+
+ConfigurationDeclarativeItem returns declaration::Declaration:
+    UseClauseDeclaration
+  | AttributeSpecification
+  | GroupDeclaration
+;
+
+EntityDeclarativeItem returns declaration::Declaration:
+    SubprogramDeclaration
+  | TypeDeclaration
+  | SubtypeDeclaration
+  | ConstantDeclaration
+  | SignalDeclaration
+  | VariableDeclaration
+  | FileDeclaration
+  | AliasDeclaration
+  | AttributeDeclaration
+  | AttributeSpecification
+  | DisconnectionSpecification
+  | LimitDeclaration
+  | UseClauseDeclaration
+  | GroupTemplateDeclaration
+  | GroupDeclaration
+  | NatureDeclaration
+  | SubnatureDeclaration
+  | QuantityDeclaration
+  | TerminalDeclaration
+;
+
+PackageBodyDeclarativeItem returns declaration::Declaration: 
+    SubprogramDeclaration
+  | TypeDeclaration
+  | SubtypeDeclaration
+  | ConstantDeclaration
+  | VariableDeclaration
+  | FileDeclaration
+  | AliasDeclaration
+  | UseClauseDeclaration
+  | GroupTemplateDeclaration
+  | GroupDeclaration
+;
+
+PackageDeclarativeItem returns declaration::Declaration:
+    SubprogramDeclaration
+  | TypeDeclaration
+  | SubtypeDeclaration
+  | ConstantDeclaration
+  | SignalDeclaration
+  | VariableDeclaration
+  | FileDeclaration
+  | AliasDeclaration
+  | Component
+  | AttributeDeclaration
+  | AttributeSpecification
+  | DisconnectionSpecification
+  | UseClauseDeclaration
+  | GroupTemplateDeclaration
+  | GroupDeclaration
+  | NatureDeclaration
+  | SubnatureDeclaration
+  | TerminalDeclaration
+;
+
+ProceduralDeclarativeItem returns declaration::Declaration:
+    SubprogramDeclaration
+  | TypeDeclaration
+  | SubtypeDeclaration
+  | ConstantDeclaration
+  | VariableDeclaration
+  | AliasDeclaration
+  | AttributeDeclaration
+  | AttributeSpecification
+  | UseClauseDeclaration
+  | GroupTemplateDeclaration
+  | GroupDeclaration
+;
+
+ProcessDeclarativeItem returns declaration::Declaration:
+    SubprogramDeclaration
+  | TypeDeclaration
+  | SubtypeDeclaration
+  | ConstantDeclaration
+  | VariableDeclaration
+  | FileDeclaration
+  | AliasDeclaration
+  | AttributeDeclaration
+  | AttributeSpecification
+  | UseClauseDeclaration
+  | GroupTemplateDeclaration
+  | GroupDeclaration
+;
+
+SubprogramDeclarativeItem returns declaration::Declaration:
+    SubprogramDeclaration
+  | TypeDeclaration
+  | SubtypeDeclaration
+  | ConstantDeclaration
+  | VariableDeclaration
+  | FileDeclaration
+  | AliasDeclaration
+  | AttributeDeclaration
+  | AttributeSpecification
+  | UseClauseDeclaration
+  | GroupTemplateDeclaration
+  | GroupDeclaration
+;
+
+ArchitectureStatement returns statement::Statement: 
+    ConfigurationInstantiationStatement
+  | BlockStatement
+  | ProcessStatement
+  | ConcurrentAssertionStatement
+  | SimultaneousProceduralStatement
+  | SimultaneousCaseStatement
+  | SimultaneousIfStatement
+  | ConcurrentBreakStatement
+  | EntityInstantiationStatement
+  | ConcurrentProcedureCallStatement
+  | SequentialSignalAssignmentStatement
+  | ConditionalSignalAssignmentStatement
+  | SelectedSignalAssignmentStatement
+  | ComponentInstantiationStatement
+  | GenerateStatement
+  | SimpleSimultaneousStatement
+;
+  
+/*
+ * ACCESS subtype_indication;
+ */
+AccessTypeDefinition returns type::AccessTypeDefinition:
+  'access' type = SubtypeIndication
+;
+
+ArrayNatureDefinition returns nature::ArrayNatureDefinition:
+    UnconstrainedArrayNatureDefinition
+  | ConstrainedArrayNatureDefinition
+;
+
+ArrayTypeDefinition returns type::ArrayTypeDefinition:
+    UnconstrainedArrayTypeDefinition
+  | ConstrainedArrayTypeDefinition
+;
+
+Label:
+	Identifier
+;
+
+/*
+ * [ label: ] assert boolean_condition [ report string ] [ severity name ] ;
+ */
+AssertionStatement returns statement::AssertionStatement:
+  ( label = Label ':' )? 'assert' condition = Expression 
+  ( 'report' report = Expression )? ( 'severity' severity = Expression )? ';'
+;
+
+/*
+ * [ label: ] [postponed] assert boolean_condition [ report string ] [ severity name ] ;
+ */
+ConcurrentAssertionStatement returns statement::AssertionStatement: 
+  ( label = Label ':' )? ( postponed ?= 'postponed' )? 'assert' condition = Expression 
+  ( 'report' report = Expression )? ( 'severity' severity = Expression )? ';'
+;
+
+/*
+ * aggregate = "(" element_association { "," element_association } ")".
+ *
+ * Associations with elements' simple names are allowed in record aggregates only.
+ * Associations with simple expressions or discrete ranges as choices are allowed only in array aggregates.
+ * Each element of the value defined by an aggregate must be represented once and only once in the aggregate.
+ * Aggregates containing the single element association must always be specified 
+ * using named association in order to distinguish them from parenthesized expressions.
+ * The others choice can be only the last in an aggregate.
+ */
+Aggregate returns expression::AggregateExpression:
+  {expression::AggregateExpression} '(' (expression += Parameter ( ',' expression += Parameter )*) ? ')'
+;
+
+Parameter returns expression::Expression:
+    {expression::AssociationExpression} choice = Choices '=>' ( expression = Expression | 'open')
+  | Expression 
+  | Open
+;
+
+Choices returns expression::Expression:
+    Choice ({expression::MultiExpression.expression += current} ('|' expression += Choice)+)?
+;
+
+Choice returns expression::Expression: 
+    RangeSpecification
+  | SubtypeIndicationExpression
+  | SimpleExpression
+  | Others
+;
+
+Open returns expression::OpenExpression:
+  {expression::OpenExpression} 'open'
+;
+
+/*
+ * attribute identifier : type_mark ;
+ */
+AttributeDeclaration returns declaration::AttributeDeclaration:
+  'attribute' name = IdentifierName ':' type = IdentifierName ';'
+;
+
+/*
+ * attribute_specification = "attribute" attribute_designator "of" entity_specification "is" expression ";"
+ *  entity_specification = entity_name_list ":" entity_class
+ */
+AttributeSpecification returns declaration::AttributeSpecification:
+  'attribute' name = AttributeDesignator 'of' 
+  entity = AttributeEntity ':' class = EntityClass 'is' is = Expression ';'
+;
+
+AttributeDesignator returns Name:
+    IdentifierName
+  | {expression::IdentifierExpression} value = 'range'
+  | {expression::IdentifierExpression} value = 'across'
+  | {expression::IdentifierExpression} value = 'through'
+  | {expression::IdentifierExpression} value = 'reference'
+  | {expression::IdentifierExpression} value = 'tolerance'
+;
+
+/*
+ * entity_name_list = entity_designator { "," entity_designator }
+ *                  | "others"
+ *                  | "all"
+ */
+AttributeEntity returns MultiName:
+    AttributeEntityDesignator ({NameList.name += current} (',' name += AttributeEntityDesignator )+ )?
+;
+
+AttributeEntityDesignator returns Name:
+    IdentifierName ({expression::SignatureExpression.name=current} signature = Signature)?
+  | CharacterName ({expression::SignatureExpression.name=current} signature = Signature)?
+  | StringName ({expression::SignatureExpression.name=current} signature = Signature)?
+  | Others
+  | All
+;
+
+NameSignature returns Name:
+  Name ({expression::SignatureExpression.name=current} signature = Signature)?
+;
+
+BlockConfiguration returns configuration::BlockConfiguration:
+  'for' name = Name
+    ( 'use' use += Name ( ',' use += Name )* ';' )*
+    ( item += ConfigurationItem )*
+  'end' 'for' ';'
+;
+
+/*
+ * label : block [ ( guard expression ) ] [ is ]
+ *            [ generic clause [ generic map aspect ; ] ]
+ *            [ port clause [ port map aspect ; ] ]
+ *            [ block declarative items ]
+ *         begin
+ *            concurrent statements
+ *         end block [ label ] ;
+ */
+BlockStatement returns statement::BlockStatement:
+  label = Label ':' 
+  'block' ( '(' guard = Expression ')' )? ( 'is' )?
+    ( generic = Generics ( genericMap = GenericMaps ';' )? )?
+    ( port = Ports ( portMap = PortMaps ';' )? )?
+    ( declaration += BlockDeclarativeItem )* 'begin'
+    ( statement += ArchitectureStatement )* 
+  'end' 'block' ( Identifier )? ';'
+;
+
+BreakStatement returns statement::BreakStatement:
+  {statement::BreakStatement}
+    ( label = Label ':' )? 
+      'break' ( break += BreakStatementItem ( ',' break += BreakStatementItem )* )? 
+      ( 'when' when = Expression )? ';'
+;
+
+ConcurrentBreakStatement returns statement::BreakStatement:
+  {statement::BreakStatement}
+    ( label = Label ':' )? 
+      'break' ( break += BreakStatementItem ( ',' break += BreakStatementItem )* )? ( 'on' sensitivity = MultiName )?
+      ( 'when' when = Expression )? ';'
+;
+
+BreakStatementItem returns statement::BreakStatementItem:
+  ( 'for' name = Name 'use' )? use = Name '=>' arrow = Expression
+;
+
+/*
+ * [ label: ] case  expression  is
+ *              when choice1 =>
+ *                 sequence-of-statements
+ *              when choice2 =>            \_ optional
+ *                 sequence-of-statements  /
+ *              ...
+ *
+ *              when others =>             \_ optional if all choices covered
+ *                 sequence-of-statements  /
+ *            end case [ label ] ;
+ */
+CaseStatement returns statement::CaseStatement:
+  ( label = Label ':' )? 'case' case = Expression 'is'
+      ( when += CaseAlternative )+
+    'end' 'case' ( Identifier )? ';'
+;
+
+CaseAlternative returns statement::CaseAlternative:
+  'when' choice = Choices '=>' ( statement += SequentialStatement )*
+;
+
+All returns expression::AllExpression:
+  {expression::AllExpression} 'all'
+;
+
+Others returns expression::OthersExpression:
+  {expression::OthersExpression} 'others'
+;
+
+ComponentConfiguration returns configuration::ComponentConfiguration:
+  'for' list = InstantiationList ':' component = Name
+    ( 
+      ('use' (
+      	'entity' entity = Name |
+      	'configuration' configuration = Name |
+      	'open' )
+      )? ( genericMap = GenericMaps )? ( portMap = PortMaps )? ';'
+    )?
+    ( block = BlockConfiguration )?
+  'end' 'for' ';'
+;
+/*
+ * component component_name is
+ *    generic ( generic_variable_declarations ) ; -- optional
+ *    port ( input_and_output_variable_declarations ) ;
+ * end component component_name ;
+ */
+Component returns Component:
+  'component' name = IdentifierName ( 'is' )?
+    ( generic = Generics )?
+    ( port = Ports )?
+  'end' 'component' ( Identifier )? ';'
+;
+
+/*
+ * part_name: entity  library_name.entity_name(architecture_name)
+ *            port map ( actual arguments ) ; 
+ *
+ *            optional (architecture_name)
+ * part_name: component_name
+ *            port map ( actual arguments ) ;
+ */
+ComponentInstantiationStatement returns statement::ComponentInstantiationStatement:
+  label = Label ':' ( 'component' )? name = Name 
+  ( genericMap = GenericMaps )? ( portMap = PortMaps )? ';'
+;
+
+EntityInstantiationStatement returns statement::EntityInstantiationStatement:
+  label = Label ':' 'entity' name = Name 
+  ( genericMap = GenericMaps )? ( portMap = PortMaps )? ';'
+;
+
+ConfigurationInstantiationStatement returns statement::ConfigurationInstantiationStatement:
+  label = Label ':' 'configuration' name = Name 
+  ( genericMap = GenericMaps )? ( portMap = PortMaps )? ';'
+;
+
+CompositeNatureDefinition returns nature::CompositeNatureDefinition:
+    ArrayNatureDefinition
+  | RecordNatureDefinition
+;
+
+CompositeTypeDefinition returns type::CompositeTypeDefinition:
+    ArrayTypeDefinition
+  | RecordTypeDefinition
+;
+
+/*
+ * sequential signal assignment statement
+ *
+ * [ label : ] target "<=" [ "guarded" ] [ delay_mechanism ] waveform ";".
+ */
+SequentialSignalAssignmentStatement returns statement::SequentialSignalAssignmentStatement:
+  ( label = Label ':' )? ( postponed ?= 'postponed' )?
+  target = Target '<=' ( guarded ?= 'guarded' )? ( delay = DelayMechanism )? 
+   ('unaffected' | waveform += Waveform ( ',' waveform += Waveform )*) 
+   ';'
+;
+
+/*
+ * [ label : ] [ postponed ] conditional_signal_assignment_statement ;
+ *
+ * target <= waveform when choice; -- choice is a boolean expression
+ * target <= waveform when choice else waveform;
+ */
+ConditionalSignalAssignmentStatement returns statement::ConditionalSignalAssignmentStatement:
+  ( label = Label ':' )? ( postponed ?= 'postponed' )?
+   target = Target '<=' ( guarded ?= 'guarded' )? ( delay = DelayMechanism )? 
+   waveform += ConditionalWaveform ('else' waveform += ConditionalWaveform)* ';'
+;
+
+/*
+ * [ label : ] [ postponed ] selected_signal_assignment_statement ;
+ *
+ * with expression select target <=
+ *            waveform when choice [, waveform when choice ] ;
+ */
+SelectedSignalAssignmentStatement returns statement::SelectedSignalAssignmentStatement:
+  ( label = Label ':' )? ( postponed ?= 'postponed' )?
+    'with' selected = Expression 'select' target = Target '<=' 
+  ( guarded ?= 'guarded' )? ( delay = DelayMechanism )? waveform += ConditionalWaveform 
+  ( ',' waveform += ConditionalWaveform )* ';'
+;
+
+SimpleSimultaneousStatement returns statement::SimpleSimultaneousStatement:
+  ( label = Label ':' )?
+    left = SimpleExpression '==' right = SimpleExpression ( 'tolerance' tolerance = Expression )? ';'
+;
+
+ConditionalWaveform returns statement::ConditionalWaveform:
+  ('unaffected' | waveform += Waveform ( ',' waveform += Waveform )*) 'when' choice = Choices
+;
+
+ConfigurationItem returns configuration::ConfigurationItem:
+    BlockConfiguration
+  | ComponentConfiguration
+;
+
+ConfigurationSpecification returns declaration::ConfigurationSpecification:
+    'for' list = InstantiationList ':' 
+    component = Name 
+    ( 'use' ( 
+      'entity' entity = Name |
+      'configuration' configuration = Name |
+      'open' ) 	
+    )? ( genericMap = GenericMaps )? ( portMap = PortMaps )? ';'
+;
+
+DelayMechanism returns statement::DelayMechanism:
+    TransportMechanism
+  | RejectMechanism
+;
+
+RejectMechanism returns statement::RejectMechanism:
+  {statement::RejectMechanism} ('reject' reject = Expression)? 'inertial'
+;
+
+TransportMechanism returns statement::TransportMechanism:
+  {statement::TransportMechanism} 'transport'
+;
+
+/*
+ * disconnection_specification = "disconnect" guarded_signal_specification "after" time_expression ";".
+ *
+ * guarded_signal_specification = guarded_signal_list ":" type_mark.
+ */
+DisconnectionSpecification returns declaration::DisconnectionSpecification:
+    'disconnect' disconnect = MultiName ':' type = Name 'after' after = Expression ';'
+;
+
+MultiName returns MultiName:
+    Name ({NameList.name += current} (',' name += Name )+ )?
+;
+
+MultiIdentifierName returns MultiName:
+	IdentifierName ({NameList.name += current} (',' name += IdentifierName )+ )?
+;
+
+InstantiationList returns MultiName:
+	MultiIdentifierName
+  | Others
+  | All
+;
+
+EntityStatement returns statement::Statement:
+    ConcurrentAssertionStatement
+  | ProcessStatement
+  | ConcurrentProcedureCallStatement
+;
+
+EnumerationTypeDefinition returns type::EnumerationTypeDefinition:
+    '(' literal += EnumerationLiteral 
+    ( ',' literal += EnumerationLiteral )* ')'
+;
+
+EnumerationLiteral returns type::EnumerationLiteral:
+    IdentifierName
+  | CharacterName
+;
+
+
+
+/*
+ * [ label: ] exit [ label2 ] [ when condition ] ;
+ */
+ExitStatement returns statement::ExitStatement:
+  {statement::ExitStatement}
+    ( label = Label ':' )? 'exit' ( exit = Identifier )? ( 'when' when = Expression )? ';'
+;
+
+/*
+ * Addition returns Expression:
+ * Multiplication ({Addition.left=current} '+' right=Multiplication)*;
+ */
+Expression returns expression::Expression:
+  Relation ({expression::LogicalExpression.left=current} operator=LogicalOperator right=Relation)*
+;
+
+Relation returns expression::Expression:
+  ShiftExpression ({expression::RelationalExpression.left=current} operator = RelationalOperator right = ShiftExpression)?
+;
+
+ShiftExpression returns expression::Expression: 
+  SimpleExpression ({expression::ShiftExpression.left=current} operator=ShiftOperator right=SimpleExpression)?
+;
+SimpleExpression returns expression::Expression: 
+    TermExpression ({expression::AddingExpression.left=current} operator = AddingOperator right = TermExpression)*
+  | SignTermExpression ({expression::AddingExpression.left=current} operator = AddingOperator right = TermExpression)*
+;
+
+SignTermExpression returns expression::Expression:
+  SignFactor ({expression::MultiplyingExpression.left=current} operator = MultiplyingOperator right = Factor)*
+;
+
+TermExpression returns expression::Expression:
+  Factor ({expression::MultiplyingExpression.left=current} operator = MultiplyingOperator right = Factor)*
+;
+
+Factor returns expression::Expression: 
+    Primary ({expression::PowerExpression.left=current} '**' right = Primary) ?
+  | UnaryExpression
+;
+
+UnaryExpression returns expression::Expression:
+  {expression::UnaryExpression}operator = UnaryOperator expression = Primary
+;
+
+SignFactor returns expression::Expression: 
+    SignPrimary ({expression::PowerExpression.left=current} '**' right = Primary) ?
+  | SignUnaryExpression
+;
+
+SignUnaryExpression returns expression::Expression:
+  {expression::SignExpression}sign = Sign expression = UnaryExpression
+;
+
+SignPrimary returns expression::Expression:
+  {expression::SignExpression}sign = Sign expression = Primary	
+;
+
+Primary returns expression::Expression: 
+    AllocatorExpression
+  | NameExpression
+  | NullExpression
+  | BitStringName
+  | CharacterName
+  | ValueExpression
+  | Aggregate
+;
+
+FileDeclaration returns declaration::FileDeclaration:
+    'file' name = MultiIdentifierName ':' 
+      type = SubtypeIndication ( ( 'open' open = Expression )? 'is' is = Expression )? ';'
+;
+
+InterfaceFileDeclaration returns declaration::FileDeclaration:
+    'file' name = MultiIdentifierName ':' type = SubtypeIndication
+;
+
+FileTypeDefinition returns type::FileTypeDefinition:
+    'file' 'of' type = Name
+;
+
+/*
+ * label: for variable in range generate    -- label required
+ *            block declarative items  \__ optional   
+ *         begin                       /
+ *            concurrent statements          -- using variable
+ *         end generate label ;
+ *
+ *  label: if condition generate            -- label required
+ *            block declarative items  \__ optional   
+ *         begin                       /
+ *            concurrent statements
+ *         end generate label ;
+ */
+GenerateStatement returns statement::GenerateStatement:
+  label = Label ':' scheme = GenerationScheme 
+    'generate'
+      ( ( declaration += BlockDeclarativeItem )* 'begin' )?
+      ( statement += ArchitectureStatement )*
+    'end' 'generate' ( Identifier )? ';'
+;
+    
+GenerationScheme returns statement::GenerationScheme:
+   ForGenerationScheme
+ | IfGenerationScheme
+;
+
+ForGenerationScheme returns statement::ForGenerationScheme:
+  'for' variable = Identifier 'in' in = DiscreteRange
+;
+
+IfGenerationScheme returns statement::IfGenerationScheme:
+  'if' condition = Expression
+;
+
+Generics returns Generics: 
+    'generic' 
+      '(' declaration += GenericDeclaration ( ';' declaration += GenericDeclaration )* ')' ';'
+;
+
+GenericMaps returns GenericMaps:
+    'generic' 'map' '(' generic += Parameter ( ',' generic += Parameter )* ')'
+;
+
+/*
+ * group identifier : group_template_name ( group_member [, group member] ) ;
+ */
+GroupDeclaration returns declaration::GroupDeclaration: 
+    'group' name = IdentifierName ':' is = Name '(' member = GroupConstituents ')' ';'
+;
+
+GroupConstituent returns Name:
+   Name
+ | CharacterName
+;
+
+GroupConstituents returns MultiName:
+	GroupConstituent ({NameList.name += current} ( ',' name += GroupConstituent)+)?
+;
+
+GroupTemplateDeclaration returns declaration::GroupTemplateDeclaration:
+    'group' name = IdentifierName 'is' '(' 
+      entry += EntityClass ( '<>' )? ( ',' entry += EntityClass ( '<>' )? )* 
+    ')' ';'
+;
+
+/*
+ * [ label: ] if  condition1  then
+ *                 sequence-of-statements
+ *             elsif  condition2  then      \_ optional
+ *                  sequence-of-statements  /
+ *             elsif  condition3  then      \_ optional
+ *                  sequence-of-statements  /
+ *             ...
+ * 
+ *             else                         \_ optional
+ *                  sequence-of-statements  /
+ *             end if [ label ] ;
+ */
+IfStatement returns statement::IfStatement:
+    ( label = Label ':' )? 'if' test += IfStatementTest
+    ( 'elsif' test += IfStatementTest )* 
+    ( 'else' ( statement += SequentialStatement )* )?
+    'end' 'if' ( Identifier )? ';'
+;
+
+IfStatementTest returns statement::IfStatementTest: 
+  condition = Expression 'then' ( statement += SequentialStatement )*
+;
+
+Constraint returns expression::Expression:
+    RangeConstraint
+  | IndexConstraint
+;
+
+RangeConstraint returns expression::Expression:
+  'range' Range
+;
+
+IndexConstraint returns expression::Expression:
+   '(' DiscreteRange ({expression::MultiExpression.expression+=current} (',' expression += DiscreteRange )+ )? ')'
+;
+
+/*
+ * discrete_range = discrete_subtype_indication
+ *	              | range
+ */
+DiscreteRange returns expression::Expression:
+    RangeSpecification
+  | SubtypeIndicationExpression
+;
+
+Range returns expression::Expression:
+   RangeSpecification
+ | SimpleExpression
+;
+
+RangeSpecification returns expression::RangeExpression:
+  {expression::RangeExpression} left = SimpleExpression direction = RangeDirection right = SimpleExpression
+;
+
+GenericDeclaration returns declaration::Declaration: 
+    InterfaceConstantDeclaration
+;
+
+PortDeclaration returns declaration::Declaration: 
+    InterfaceSignalDeclaration
+;
+
+FunctionParameterDeclaration returns declaration::Declaration: 
+    InterfaceConstantDeclaration
+  | InterfaceSignalDeclaration
+  | InterfaceVariableDeclaration
+  | InterfaceFileDeclaration
+;
+
+ProcedureParameterDeclaration returns declaration::Declaration: 
+    InterfaceVariableDeclaration
+  | InterfaceSignalDeclaration
+  | InterfaceConstantDeclaration
+  | InterfaceFileDeclaration
+;
+
+/*
+ * [ label: ] loop
+ *                  sequence-of-statements -- use exit statement to get out
+ *             end loop [ label ] ;
+ * 
+ *  [ label: ] for variable in range loop
+ *                  sequence-of-statements
+ *             end loop [ label ] ;
+ * 
+ *  [ label: ] while  condition  loop
+ *                  sequence-of-statements
+ *             end loop [ label ] ;
+ */
+LoopStatement returns statement::LoopStatement:
+  {statement::LoopStatement}
+    ( label = Label ':' )? ( iteration = IterationScheme )?
+    'loop'
+    ( statement += SequentialStatement )* 
+    'end' 'loop' ( Identifier )? ';'
+  ;
+
+IterationScheme returns statement::IterationScheme:
+    WhileIterationScheme
+  | ForIterationScheme
+;
+
+WhileIterationScheme returns statement::WhileIterationScheme:
+  'while' condition = Expression
+;
+
+ForIterationScheme returns statement::ForIterationScheme:
+  'for' variable = Identifier 'in' in = DiscreteRange
+;
+
+Name returns Name:
+  NamePrefix ( {expression::NameExpression.element+=current} (element += NameSuffix)+ ) ?
+;
+
+NameExpression returns expression::Expression:
+    {expression::NameExpression} element += NamePrefix (element += NameSuffix)+
+  | NamePrefixExpression
+;
+
+NamePrefix returns Name:
+    IdentifierName
+  | StringName
+  | All
+  | Others
+;
+
+NamePrefixExpression returns expression::Expression:
+    IdentifierName
+  | StringName
+  | All
+  | Others
+;
+
+/* 
+ * prefixed operator:
+ *   SelectedName: prefix = Prefix '.' suffix = Suffix
+ *   AttributeName: prefix = Prefix (signature = Signature )? '\'' AttributeDesignator ( '(' expression = Expression ')' )?	
+ *   IndexedName: prefix = Prefix '(' index += Expression ( ',' index += Expression )* ')'
+ *   SliceName: prefix = Prefix '(' range = DiscreteRange ')'
+ */
+NameSuffix returns Name:
+    SelectedName
+  | AttributeName
+  | Aggregate
+  | SliceName
+;
+
+StringName returns expression::StringExpression:
+  {expression::StringExpression} value = STRING
+;
+
+CharacterName returns expression::CharacterExpression:
+  {expression::CharacterExpression} value = CHAR
+;
+
+IdentifierName returns expression::IdentifierExpression:
+  {expression::IdentifierExpression} value = Identifier
+;
+
+SelectedName returns Name:
+  '.' (
+      IdentifierName
+    | CharacterName
+    | StringName
+    | All
+  )
+;
+
+SliceName returns Name:
+	'(' RangeSpecification ')'
+;
+
+AttributeName returns expression::AttributeExpression:
+  {expression::AttributeExpression} (signature = Signature )? value = ATTRIBUTE
+;
+ 
+NatureDeclaration returns declaration::NatureDeclaration:
+    'nature' name = IdentifierName 'is' is = NatureDefinition ';'
+;
+
+NatureDefinition returns nature::NatureDefinition:
+    ScalarNatureDefinition
+  | CompositeNatureDefinition
+;
+
+ScalarNatureDefinition returns nature::ScalarNatureDefinition:
+    name = Name 'across' across = Name 'through' through = Name 'reference'
+;
+
+
+/*
+ * [ label: ] next [ label2 ] [ when condition ] ;
+ */
+NextStatement returns statement::NextStatement:
+  {statement::NextStatement}
+    ( label = Label ':' )? 'next' ( next = Identifier )? ( 'when' when = Expression )? ';'
+;
+
+/*
+ *  range left_bound to right_bound
+ *  units
+ *    primary_unit_name
+ *    (secondary_unit_name = number primary_unit_name)*
+ * end units type_name
+ */
+PhysicalTypeDefinition returns type::PhysicalTypeDefinition:
+    range = RangeConstraint 'units' 
+      primary = Identifier ';'
+      ( secondary += PhysicalTypeDefinitionSecondary )* 
+    'end' 'units' ( Identifier )?
+;
+
+PhysicalTypeDefinitionSecondary returns type::PhysicalTypeDefinitionSecondary:
+  name = Identifier '=' ( number = ABSTRACT_LITERAL )? of = Name ';'
+;
+  
+Ports returns Ports: 
+  'port' '(' declaration += PortDeclaration ( ';' declaration += PortDeclaration )* ')' ';'
+;
+
+PortMaps returns PortMaps:
+  'port' 'map' '(' port += Parameter ( ',' port += Parameter )* ')'
+;
+
+ProcedureCallStatement returns statement::ProcedureCallStatement:
+  ( label = Label ':' )? procedure = Name  ';'
+;
+
+ConcurrentProcedureCallStatement returns statement::ProcedureCallStatement: 
+  ( label = Label ':' )? postponed ?= 'postponed' procedure = Name ';'
+;
+
+/*
+ * label : process [ ( sensitivity_list ) ] [ is ]
+ *            [ process_declarative_items ]
+ *         begin
+ *            sequential statements
+ *         end process [ label ] ;
+ */
+ProcessStatement returns statement::ProcessStatement:
+  {statement::ProcessStatement}
+    ( label = Label ':' )? ( postponed ?= 'postponed' )? 
+    'process' 
+      ( '(' sensitivity = MultiIdentifierName ')' )? 
+      ( 'is' )?
+      ( declaration += ProcessDeclarativeItem )*
+    'begin'
+      ( statement += SequentialStatement )* 
+    'end' ( 'postponed' )? 'process' ( Identifier )? ';'
+;
+
+/*
+ * allocator = "new" subtype_indication
+ *	         | "new" qualified_expression
+ */
+AllocatorExpression returns expression::AllocatorExpression:
+    'new' type = SubtypeIndication
+;
+
+RecordNatureDefinition returns nature::RecordNatureDefinition:
+    'record' 
+      ( record += RecordNatureElement )+
+    'end' 'record' ( Identifier )?
+;
+
+RecordNatureElement returns nature::RecordNatureElement:
+    name = MultiIdentifierName ':' nature = SubnatureIndication ';'
+;
+
+RecordTypeDefinition returns type::RecordTypeDefinition:
+    'record' 
+       ( declaration += RecordTypeElement )+
+    'end' 'record' ( Identifier )?
+;
+
+RecordTypeElement returns type::RecordTypeElement:
+    name = MultiIdentifierName ':' type = SubtypeIndication ';'
+;
+
+/*
+ * [ label: ] report string [ severity name ] ;
+ */
+ReportStatement returns statement::ReportStatement:
+  ( label = Label ':' )? 'report' report = Expression ( 'severity' severity = Expression )? ';'
+;
+
+/*
+ * [ label: ] return [ expression ] ;
+ */
+ReturnStatement returns statement::ReturnStatement:
+  {statement::ReturnStatement}
+    ( label = Label ':' )? 'return' ( expression = Expression )? ';'
+;
+
+SequentialStatement returns statement::Statement:
+    WaitStatement
+  | AssertionStatement
+  | ReportStatement
+  | IfStatement
+  | CaseStatement
+  | LoopStatement
+  | NextStatement
+  | ExitStatement
+  | ReturnStatement
+  | NullStatement
+  | BreakStatement
+  | VariableAssignmentStatement
+  | ProcedureCallStatement
+  | SequentialSignalAssignmentStatement
+;
+
+NullStatement returns statement::ExpressionStatement:
+  {statement::ExpressionStatement}
+    ( label = Label ':' )? expression = NullExpression ';'
+;
+
+/*
+ * [ label: ] target := expression ;
+ */
+VariableAssignmentStatement returns statement::VariableAssignmentStatement:
+  ( label = Label ':' )? target = Target ':=' initial = Expression ';'
+;
+
+SignalDeclaration returns declaration::SignalDeclaration:
+  'signal' name = MultiIdentifierName ':'
+  type = SubtypeIndication ( kind = SignalKind )?  ( ':=' initial = Expression )? ';'
+;
+
+VariableDeclaration returns declaration::VariableDeclaration:
+  ( ( shared ?= 'shared' ) )? 'variable' name = MultiIdentifierName 
+    ':' type = SubtypeIndication ( ':=' initial = Expression )? ';'
+;
+
+ConstantDeclaration returns declaration::ConstantDeclaration:
+  'constant' name = MultiIdentifierName ':' type = SubtypeIndication
+    ( ':=' initial = Expression )? ';'
+;
+  
+InterfaceSignalDeclaration returns declaration::SignalDeclaration:
+  ('signal')? name = MultiIdentifierName ':' ( mode = Mode )?
+  type = SubtypeIndication ( kind = SignalKind )?  ( ':=' initial = Expression )?
+;
+
+InterfaceVariableDeclaration returns declaration::VariableDeclaration:
+  ( 'variable' )? name = MultiIdentifierName ':' ( mode = Mode )?
+   type = SubtypeIndication  ( ':=' initial = Expression )?
+;
+
+InterfaceConstantDeclaration returns declaration::ConstantDeclaration:
+  ( 'constant' )?  name = MultiIdentifierName ':' ( 'in' )?
+   type = SubtypeIndication  ( ':=' initial = Expression )?
+;
+  
+/*
+ * signature = [ [ type_mark { "," type_mark } ] [ "return" type_mark ] ].
+ */
+Signature returns Signature:
+  {Signature}
+    '[' ( parameter += Name ( ',' parameter += Name )* )? ( 'return' return = Name )? ']'
+;
+
+SimultaneousAlternative returns statement::CaseAlternative:
+  'when' choice = Choices '=>' ( statement += SimultaneousStatement )*
+;
+
+SimultaneousCaseStatement returns statement::SimultaneousCaseStatement:
+    ( label = Label ':' )? 'case' case = Expression 'use'
+    ( when += SimultaneousAlternative )+ 
+    'end' 'case' ( Identifier )? ';'
+;
+
+SimultaneousIfStatement returns statement::SimultaneousIfStatement:
+  ( label = Label ':' )? 'if' test += SimultaneousIfStatementTest 'use'
+    ( 'elsif' test += SimultaneousIfStatementTest )*
+    ( 'else' ( statement += SimultaneousStatement )* )?
+    'end' 'use' ( Identifier )? ';'
+;
+  
+SimultaneousIfStatementTest returns statement::IfStatementTest:
+    condition = Expression 'use' ( statement += SimultaneousStatement )*
+;
+
+SimultaneousProceduralStatement returns statement::SimultaneousProceduralStatement:
+  {statement::SimultaneousProceduralStatement}
+    ( label = Label ':' )? 'procedural' ( 'is' )?
+    ( declaration += ProceduralDeclarativeItem )* 'begin'
+    ( statement += SequentialStatement )* 
+    'end' 'procedural' ( Identifier )? ';'
+;
+
+SimultaneousStatement returns statement::Statement:
+    SimpleSimultaneousStatement
+  | SimultaneousIfStatement
+  | SimultaneousCaseStatement
+  | SimultaneousProceduralStatement
+  | NullStatement
+;
+
+SourceAspect returns ams::SourceAspect:
+   Spectrum
+ | Noise
+;
+
+Spectrum returns ams::Spectrum:
+  'spectrum' left = SimpleExpression ',' right = SimpleExpression
+;
+
+Noise returns ams::Noise:
+  'noise' noise = SimpleExpression
+;
+
+QuantityDeclaration returns declaration::QuantityDeclaration:
+    FreeQuantityDeclaration
+  | BranchQuantityDeclaration
+  | SourceQuantityDeclaration
+;
+
+FreeQuantityDeclaration returns declaration::FreeQuantityDeclaration:
+    'quantity' 
+      name = MultiIdentifierName 
+    ':' type = SubtypeIndication ( ':=' quantity = Expression )? ';'
+;
+
+BranchQuantityDeclaration returns declaration::BranchQuantityDeclaration:
+  'quantity' ( across = QuantityAspect 'across')?
+    ( through = QuantityAspect 'through')? left = Name ( 'to' right = Name )? ';'
+;
+
+/* 
+ * across_aspect: identifier_list ( tolerance_aspect )? ( VARASGN expression )? ACROSS;
+ */
+QuantityAspect returns ams::QuantityAspect:
+  name = MultiIdentifierName ( 'tolerance' tolerance = Expression )? 
+  ( ':=' expression = Expression )?
+;
+
+SourceQuantityDeclaration returns declaration::SourceQuantityDeclaration:
+    'quantity' 
+      name = MultiIdentifierName 
+    ':' type = SubtypeIndication source = SourceAspect ';'
+;
+
+LimitDeclaration returns declaration::LimitDeclaration:
+  'limit' name = MultiName ':' type = Name 'with' value = Expression ';'
+;
+
+SubnatureDeclaration returns declaration::SubnatureDeclaration: 
+  'subnature' name = IdentifierName 'is' nature = SubnatureIndication ';'
+;
+
+SubprogramDeclaration returns declaration::SubprogramDeclaration:
+    ProcedureDeclaration
+  | FunctionDeclaration
+;
+
+ProcedureDeclaration returns declaration::ProcedureDeclaration:
+   {declaration::ProcedureDeclaration} 'procedure' name = DesignatorName ( '(' parameter += ProcedureParameterDeclaration ( ';' parameter += ProcedureParameterDeclaration )* ')' )? 
+   ( body = SubprogramBody) ? ';'
+;
+
+FunctionDeclaration returns declaration::FunctionDeclaration:
+  {declaration::FunctionDeclaration} ( purity = Purity )? 
+    'function' name = DesignatorName ( '(' parameter += FunctionParameterDeclaration ( ';' parameter += FunctionParameterDeclaration )* ')' )? 'return' type = Name 
+    ( body = SubprogramBody) ? ';'
+;
+
+SubprogramBody returns declaration::SubprogramBody:
+    {declaration::SubprogramBody} 'is'
+      ( declaration += SubprogramDeclarativeItem )*
+    'begin'
+    ( statement += SequentialStatement )*
+    'end' ( 'procedure' | 'function' )? ( Designator )?
+;
+
+SubtypeDeclaration returns declaration::SubtypeDeclaration:
+  'subtype' name = IdentifierName 'is' type = SubtypeIndication ';'
+;
+
+AliasDeclaration returns declaration::AliasDeclaration:
+  'alias' name = DesignatorName ( ':' alias = SubtypeIndication )? 'is'
+    is = NameSignature ';'
+;
+
+/*
+ * NAME_PATTERN (NAME_PATTERN)? = [ resolution_indication ] type_mark [ constraint ].
+ */
+SubtypeIndication returns type::TypeReference:
+    {expression::SubtypeIndicationExpression} name = Name mark = Name (constraint = Constraint)? ('tolerance' tolerance = Expression ('across' across = Expression 'through')? )?
+  | {expression::SubtypeIndicationExpression} mark = Name constraint = Constraint ('tolerance' tolerance = Expression ('across' across = Expression 'through')? )?
+  | {expression::SubtypeIndicationExpression} mark = Name 'tolerance' tolerance = Expression ('across' across = Expression 'through')?
+  | Name
+;
+
+SubtypeIndicationExpression returns expression::Expression:
+    {expression::SubtypeIndicationExpression} name = Name mark = Name (constraint = Constraint)? ('tolerance' tolerance = Expression ('across' across = Expression 'through')? )?
+  | {expression::SubtypeIndicationExpression} mark = Name constraint = Constraint ('tolerance' tolerance = Expression ('across' across = Expression 'through')? )?
+  | {expression::SubtypeIndicationExpression} mark = Name 'tolerance' tolerance = Expression ('across' across = Expression 'through')?
+  | NameExpression
+;
+
+SubnatureIndication returns nature::NatureReference:
+    {expression::SubnatureIndicationExpression} mark= Name constraint = IndexConstraint ('tolerance' tolerance = Expression ('across' across = Expression 'through')? )?
+  | {expression::SubnatureIndicationExpression} mark= Name 'tolerance' tolerance = Expression ('across' across = Expression 'through')?
+  | Name 
+;
+
+Target returns expression::Expression:
+    NameExpression
+  | Aggregate
+;
+
+TerminalDeclaration returns declaration::TerminalDeclaration:
+    'terminal' name = MultiIdentifierName ':' nature = SubnatureIndication ';'
+;
+
+TypeDeclaration returns declaration::TypeDeclaration:
+    'type' name = IdentifierName ( 'is' is = TypeDefinition )? ';'
+;
+ 
+TypeDefinition returns type::TypeDefinition:
+    PhysicalTypeDefinition
+  | EnumerationTypeDefinition
+  | CompositeTypeDefinition
+  | AccessTypeDefinition
+  | FileTypeDefinition
+  | RangeTypeDefinition
+;
+
+RangeTypeDefinition returns type::RangeTypeDefinition:
+   {type::RangeTypeDefinition} 'range' left = SimpleExpression direction = RangeDirection right = SimpleExpression
+ | {type::RangeTypeDefinition} 'range' '<>'
+;
+
+UnconstrainedArrayTypeDefinition returns type::UnconstrainedArrayTypeDefinition:
+    'array' '(' 
+        index += Name 'range' '<>' ( ',' index += Name 'range' '<>' )* 
+    ')' 'of' type = SubtypeIndication
+;
+
+UnconstrainedArrayNatureDefinition returns nature::UnconstrainedArrayNatureDefinition:
+    'array' '(' 
+        index += Name 'range' '<>' ( ',' index += Name 'range' '<>' )* 
+    ')' 'of' nature = SubnatureIndication
+;
+
+ConstrainedArrayTypeDefinition returns type::ConstrainedArrayTypeDefinition:
+    'array' constraint = IndexConstraint 'of' type = SubtypeIndication
+;
+
+ConstrainedArrayNatureDefinition returns nature::ConstrainedArrayNatureDefinition:
+    'array' constraint = IndexConstraint 'of' nature = SubnatureIndication
+;
+
+/*
+ * wait until condition;
+ * wait on signal_list;
+ * wait for time;
+ * wait;
+ */
+WaitStatement returns statement::WaitStatement:
+  {statement::WaitStatement}
+    ( label = Label ':' )? 'wait' ( 'on' sensitivity = MultiName )? 
+    ( 'until' until = Expression )? ( 'for' time = Expression )? ';'
+;
+
+/*
+ * value_expression [ after time_expression ]
+ */
+Waveform returns expression::Expression: 
+  Expression ( {expression::WaveformExpression.expression=current} 'after' after = Expression )?
+;
+
+NullExpression returns expression::NullExpression:
+  {expression::NullExpression} 'null'
+;
+
+BitStringName returns expression::BitStringExpression:
+  {expression::BitStringExpression} value = BIT_STRING_LITERAL
+;
+
+ValueExpression returns expression::ValueExpression: 
+    {expression::UnitValueExpression} value = ABSTRACT_LITERAL unit = Name
+  | {expression::ValueExpression} value = ABSTRACT_LITERAL
+;
+
+enum SignalKind returns declaration::SignalKind:
+    REGISTER = 'register' 
+  | BUS      = 'bus'
+;
+
+enum RangeDirection returns expression::RangeDirection:
+    TO     = 'to'
+  | DOWNTO = 'downto'
+;
+
+enum Mode returns declaration::Mode:
+    IN      = 'in'
+  | OUT     = 'out'
+  | INOUT   = 'inout'
+  | BUFFER  = 'buffer'
+  | LINKAGE = 'linkage'
+;
+
+enum UnaryOperator returns expression::UnaryOperator:
+    ABS = 'abs'
+  | NOT = 'not'
+;
+
+enum MultiplyingOperator returns expression::MultiplyingOperator:
+    MUL = '*'
+  | DIV = '/'
+  | MOD = 'mod'
+  | REM = 'rem'
+;
+
+enum ShiftOperator returns expression::ShiftOperator:
+    SLL = 'sll'
+  | SRL = 'srl'
+  | SLA = 'sla'
+  | SRA = 'sra'
+  | ROL = 'rol'
+  | ROR = 'ror'
+;
+
+enum RelationalOperator returns expression::RelationalOperator:
+    EQ          = '='
+  | NEQ         = '/='
+  | LOWERTHAN   = '<'
+  | LE          = '<='
+  | GREATERTHAN = '>'
+  | GE          = '>='
+;
+
+enum LogicalOperator returns expression::LogicalOperator:
+    AND  = 'and'
+  | OR   = 'or'
+  | NAND = 'nand'
+  | NOR  = 'nor'
+  | XOR  = 'xor'
+  | XNOR = 'xnor'
+;
+
+enum AddingOperator returns expression::AddingOperator:
+    PLUS      = '+'
+  | MINUS     = '-'
+  | AMPERSAND = '&'
+;
+
+enum Sign returns expression::Sign:
+    PLUS  = '+'
+  | MINUS = '-'
+;
+
+enum Purity returns declaration::Purity:
+    PURE   = 'pure'
+  | IMPURE = 'impure'
+;
+
+enum EntityClass returns declaration::EntityClass:
+    ENTITY        = 'entity'
+  | ARCHITECTURE  = 'architecture'
+  | CONFIGURATION = 'configuration'
+  | PROCEDURE     = 'procedure'
+  | FUNCTION      = 'function'
+  | PACKAGE       = 'package'
+  | TYPE          = 'type'
+  | SUBTYPE       = 'subtype'
+  | CONSTANT      = 'constant'
+  | SIGNAL        = 'signal'
+  | VARIABLE      = 'variable'
+  | COMPONENT     = 'component'
+  | LABEL         = 'label'
+  | LITERAL       = 'literal'
+  | UNITS         = 'units'
+  | GROUP         = 'group'
+  | FILE          = 'file'
+  | NATURE        = 'nature'
+  | SUBNATURE     = 'subnature'
+  | QUANTITY      = 'quantity'
+  | TERMINAL      = 'terminal'
+;
+
+DesignatorName returns Name:
+    IdentifierName
+  | StringName
+;
+
+Designator:
+    Identifier
+  | STRING
+;
+
+Identifier:
+    ID
+  | EXTENDED_IDENTIFIER
+;
+
+terminal ABSTRACT_LITERAL: 
+  INTEGER_FRAGMENT (
+    ( "." INTEGER_FRAGMENT )? 
+      | "#" BASED_INTEGER_FRAGMENT ( "." BASED_INTEGER_FRAGMENT )? "#"
+    ) ( EXPONENT_FRAGMENT )?
+;
+
+terminal BIT_STRING_LITERAL: ( INTEGER_FRAGMENT )? BASE_SPECIFIER_FRAGMENT STRING;
+
+terminal ID:
+  '^'?LETTER_FRAGMENT ( '_' | LETTER_OR_DIGIT_FRAGMENT )*
+;
+
+terminal EXTENDED_IDENTIFIER: 
+  '\\' ( '\\' ('b'|'t'|'n'|'f'|'r'|'"'|"'"|'\\') | !('\\' | '\r' | '\n') )+ '\\'
+;
+
+terminal STRING : 
+  '"' ( '\\' ('b'|'t'|'n'|'f'|'r'|'"'|"'"|'\\') | !('\\' | '"' | '\r' | '\n') )* '"';
+
+terminal CHAR:
+    "'a'" | "'b'" | "'c'"  | "'d'" | "'e'" | "'f'" | "'g'" | "'h'" | "'i'" 
+  | "'j'" | "'k'" | "'l'"  | "'m'" | "'n'" | "'o'" | "'p'" | "'q'" | "'r'" 
+  | "'s'" | "'t'" | "'u'"  | "'v'" | "'w'" | "'x'" | "'y'" | "'z'" | "'A'" 
+  | "'B'" | "'C'" | "'D'"  | "'E'" | "'F'" | "'G'" | "'H'" | "'I'" | "'J'" 
+  | "'K'" | "'L'" | "'M'"  | "'N'" | "'O'" | "'P'" | "'Q'" | "'R'" | "'S'" 
+  | "'T'" | "'U'" | "'V'"  | "'W'" | "'X'" | "'Y'" | "'Z'" | "'0'" | "'1'"
+  | "'2'" | "'3'" | "'4'"  | "'5'" | "'6'" | "'7'" | "'8'" | "'9'" | "'&'" 
+  | "'''" | "'('" | "')'"  | "'+'" | "','" | "'-'" | "'.'" | "'/'" | "':'" 
+  | "';'" | "'<'" | "'='"  | "'>'" | "'|'" | "' '" | "'#'" | "'['" | "']'" 
+  | "'_'" | "'*'" | "'\"'" | "'!'" | "'$'" | "'%'" | "'@'" | "'?'" | "'^'" 
+  | "'`'" | "'{'" | "'}'"  | "'~'" | "' '" | "'¡'" | "'¢'" | "'£'" | "'€'"
+  | "'¥'" | "'Š'" | "'§'"  | "'š'" | "'©'" | "'ª'" | "'«'" | "'¬'" | "''" 
+  | "'®'" | "'¯'" | "'°'"  | "'±'" | "'²'" | "'³'" | "'Ž'" | "'µ'" | "'¶'"
+  | "'·'" | "'ž'" | "'¹'"  | "'º'" | "'»'" | "'Œ'" | "'œ'" | "'Ÿ'" | "'¿'"
+  | "'À'" | "'Á'" | "'Â'"  | "'Ã'" | "'Ä'" | "'Å'" | "'Æ'" | "'Ç'" | "'È'" 
+  | "'É'" | "'Ê'" | "'Ë'"  | "'Ì'" | "'Í'" | "'Î'" | "'Ï'" | "'Ð'" | "'Ñ'"
+  | "'Ò'" | "'Ó'" | "'Ô'"  | "'Õ'" | "'Ö'" | "'×'" | "'Ø'" | "'Ù'" | "'Ú'" 
+  | "'Û'" | "'Ü'" | "'Ý'"  | "'Þ'" | "'ß'" | "'à'" | "'á'" | "'â'" | "'ã'" 
+  | "'ä'" | "'å'" | "'æ'"  | "'ç'" | "'è'" | "'é'" | "'ê'" | "'ë'" | "'ì'"
+  | "'í'" | "'î'" | "'ï'"  | "'ð'" | "'ñ'" | "'ò'" | "'ó'" | "'ô'" | "'õ'"
+  | "'ö'" | "'÷'" | "'ø'"  | "'ù'" | "'ú'" | "'û'" | "'ü'" | "'ý'" | "'þ'" 
+  | "'ÿ'"
+;
+
+terminal ATTRIBUTE:
+  "'"LETTER_FRAGMENT ( '_' | LETTER_OR_DIGIT_FRAGMENT )*
+;
+
+terminal SL_COMMENT: '--' !('\n'|'\r')* ('\r'? '\n')? ;
+terminal WS: (' ' | '\t' | '\r' | '\n')+;
+
+terminal fragment BASED_INTEGER_FRAGMENT: 
+  LETTER_OR_DIGIT_FRAGMENT ( '_' | LETTER_OR_DIGIT_FRAGMENT )*
+;
+
+terminal fragment LETTER_OR_DIGIT_FRAGMENT: LETTER_FRAGMENT | DIGIT_FRAGMENT;
+
+terminal fragment LETTER_FRAGMENT:
+    ('a'..'z' )| ('A'..'Z')
+;
+
+terminal fragment BASE_SPECIFIER_FRAGMENT: 
+    "B"
+  | "O"
+  | "X"
+  | "UB"
+  | "UO"
+  | "UX"
+  | "SB"
+  | "SO"
+  | "SX"
+  | "D"
+  | "b"
+  | "o"
+  | "x"
+  | "ub"
+  | "uo"
+  | "ux"
+  | "sb"
+  | "so"
+  | "sx"
+  | "d"
+;
+
+terminal fragment EXPONENT_FRAGMENT:
+  ("E" | "e") ( "+" | "-" )? INTEGER_FRAGMENT
+;
+
+terminal fragment INTEGER_FRAGMENT: 
+  DIGIT_FRAGMENT ( '_' | DIGIT_FRAGMENT )*
+;
+
+terminal fragment DIGIT_FRAGMENT: '0'..'9';
+

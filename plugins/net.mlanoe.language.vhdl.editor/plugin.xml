@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ Copyright (c) 2014 mlanoe
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ which accompanies this distribution, and is available at
+ http://www.eclipse.org/legal/epl-v10.html
+   
+ Contributors:
+     mlanoe - initial API and implementation
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated vhdl -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.mlanoe.language.vhdl.presentation.VhdlModelWizardID"
+            name="%_UI_VhdlModelWizard_label"
+            class="net.mlanoe.language.vhdl.presentation.VhdlModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/VhdlModelFile.gif">
+         <description>%_UI_VhdlModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated vhdl -->
+      <editor
+            id="net.mlanoe.language.vhdl.presentation.VhdlEditorID"
+            name="%_UI_VhdlEditor_label"
+            icon="icons/full/obj16/VhdlModelFile.gif"
+            extensions="xvhdl"
+            class="net.mlanoe.language.vhdl.presentation.VhdlEditor"
+            contributorClass="net.mlanoe.language.vhdl.presentation.VhdlActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated vhdl -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.mlanoe.language.vhdl.statement.presentation.StatementModelWizardID"
+            name="%_UI_StatementModelWizard_label"
+            class="net.mlanoe.language.vhdl.statement.presentation.StatementModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/StatementModelFile.gif">
+         <description>%_UI_StatementModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated vhdl -->
+      <editor
+            id="net.mlanoe.language.vhdl.statement.presentation.StatementEditorID"
+            name="%_UI_StatementEditor_label"
+            icon="icons/full/obj16/StatementModelFile.gif"
+            extensions="statement"
+            class="net.mlanoe.language.vhdl.statement.presentation.StatementEditor"
+            contributorClass="net.mlanoe.language.vhdl.statement.presentation.StatementActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated vhdl -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.mlanoe.language.vhdl.expression.presentation.ExpressionModelWizardID"
+            name="%_UI_ExpressionModelWizard_label"
+            class="net.mlanoe.language.vhdl.expression.presentation.ExpressionModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ExpressionModelFile.gif">
+         <description>%_UI_ExpressionModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated vhdl -->
+      <editor
+            id="net.mlanoe.language.vhdl.expression.presentation.ExpressionEditorID"
+            name="%_UI_ExpressionEditor_label"
+            icon="icons/full/obj16/ExpressionModelFile.gif"
+            extensions="expression"
+            class="net.mlanoe.language.vhdl.expression.presentation.ExpressionEditor"
+            contributorClass="net.mlanoe.language.vhdl.expression.presentation.ExpressionActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated vhdl -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.mlanoe.language.vhdl.declaration.presentation.DeclarationModelWizardID"
+            name="%_UI_DeclarationModelWizard_label"
+            class="net.mlanoe.language.vhdl.declaration.presentation.DeclarationModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/DeclarationModelFile.gif">
+         <description>%_UI_DeclarationModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated vhdl -->
+      <editor
+            id="net.mlanoe.language.vhdl.declaration.presentation.DeclarationEditorID"
+            name="%_UI_DeclarationEditor_label"
+            icon="icons/full/obj16/DeclarationModelFile.gif"
+            extensions="declaration"
+            class="net.mlanoe.language.vhdl.declaration.presentation.DeclarationEditor"
+            contributorClass="net.mlanoe.language.vhdl.declaration.presentation.DeclarationActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated vhdl -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.mlanoe.language.vhdl.type.presentation.TypeModelWizardID"
+            name="%_UI_TypeModelWizard_label"
+            class="net.mlanoe.language.vhdl.type.presentation.TypeModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/TypeModelFile.gif">
+         <description>%_UI_TypeModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated vhdl -->
+      <editor
+            id="net.mlanoe.language.vhdl.type.presentation.TypeEditorID"
+            name="%_UI_TypeEditor_label"
+            icon="icons/full/obj16/TypeModelFile.gif"
+            extensions="type"
+            class="net.mlanoe.language.vhdl.type.presentation.TypeEditor"
+            contributorClass="net.mlanoe.language.vhdl.type.presentation.TypeActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated vhdl -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.mlanoe.language.vhdl.nature.presentation.NatureModelWizardID"
+            name="%_UI_NatureModelWizard_label"
+            class="net.mlanoe.language.vhdl.nature.presentation.NatureModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/NatureModelFile.gif">
+         <description>%_UI_NatureModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated vhdl -->
+      <editor
+            id="net.mlanoe.language.vhdl.nature.presentation.NatureEditorID"
+            name="%_UI_NatureEditor_label"
+            icon="icons/full/obj16/NatureModelFile.gif"
+            extensions="nature"
+            class="net.mlanoe.language.vhdl.nature.presentation.NatureEditor"
+            contributorClass="net.mlanoe.language.vhdl.nature.presentation.NatureActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated vhdl -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.mlanoe.language.vhdl.ams.presentation.AmsModelWizardID"
+            name="%_UI_AmsModelWizard_label"
+            class="net.mlanoe.language.vhdl.ams.presentation.AmsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/AmsModelFile.gif">
+         <description>%_UI_AmsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated vhdl -->
+      <editor
+            id="net.mlanoe.language.vhdl.ams.presentation.AmsEditorID"
+            name="%_UI_AmsEditor_label"
+            icon="icons/full/obj16/AmsModelFile.gif"
+            extensions="ams"
+            class="net.mlanoe.language.vhdl.ams.presentation.AmsEditor"
+            contributorClass="net.mlanoe.language.vhdl.ams.presentation.AmsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated vhdl -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.mlanoe.language.vhdl.configuration.presentation.ConfigurationModelWizardID"
+            name="%_UI_ConfigurationModelWizard_label"
+            class="net.mlanoe.language.vhdl.configuration.presentation.ConfigurationModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ConfigurationModelFile.gif">
+         <description>%_UI_ConfigurationModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated vhdl -->
+      <editor
+            id="net.mlanoe.language.vhdl.configuration.presentation.ConfigurationEditorID"
+            name="%_UI_ConfigurationEditor_label"
+            icon="icons/full/obj16/ConfigurationModelFile.gif"
+            extensions="configuration"
+            class="net.mlanoe.language.vhdl.configuration.presentation.ConfigurationEditor"
+            contributorClass="net.mlanoe.language.vhdl.configuration.presentation.ConfigurationActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

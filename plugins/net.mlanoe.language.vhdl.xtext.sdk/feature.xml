@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="net.mlanoe.language.vhdl.xtext.sdk"
+      label="Vhdl SDK Feature "
+      version="0.1.0.qualifier"
+      provider-name="mlanoe">
+
+   <plugin
+         id="net.mlanoe.language.vhdl.xtext"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.mlanoe.language.vhdl.xtext.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.mlanoe.language.vhdl"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="net.mlanoe.language.vhdl.edit"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.mlanoe.language.vhdl.editor"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.mlanoe.language.vhdl.xtext.tests"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>

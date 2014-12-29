@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2014 mlanoe&#xA;All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html&#xA;  &#xA;Contributors:&#xA;    mlanoe - initial API and implementation"
+    modelDirectory="/net.mlanoe.language.vhdl/src-gen" editDirectory="/net.mlanoe.language.vhdl.edit/src-gen"
+    editorDirectory="/net.mlanoe.language.vhdl.editor/src-gen" modelPluginID="net.mlanoe.language.vhdl"
+    modelName="Vhdl" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    testsDirectory="" importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0"
+    copyrightFields="false" importOrganizing="true">
+  <foreignModel>vhdl.ecore</foreignModel>
+  <genPackages prefix="Vhdl" basePackage="net.mlanoe.language" disposableProviderFactory="true"
+      fileExtensions="xvhdl" ecorePackage="vhdl.ecore#/">
+    <genClasses ecoreClass="vhdl.ecore#//Architecture">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//Architecture/of"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//Architecture/statement"/>
+    </genClasses>
+    <genClasses ecoreClass="vhdl.ecore#//Component">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//Component/generic"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//Component/port"/>
+    </genClasses>
+    <genClasses ecoreClass="vhdl.ecore#//DesignUnit">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//DesignUnit/library"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//DesignUnit/use"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//DesignUnit/module"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="vhdl.ecore#//Module">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//Module/declaration"/>
+    </genClasses>
+    <genClasses ecoreClass="vhdl.ecore#//Entity">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//Entity/generic"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//Entity/port"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//Entity/statement"/>
+    </genClasses>
+    <genClasses ecoreClass="vhdl.ecore#//GenericMaps">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//GenericMaps/generic"/>
+    </genClasses>
+    <genClasses ecoreClass="vhdl.ecore#//Generics">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//Generics/declaration"/>
+    </genClasses>
+    <genClasses ecoreClass="vhdl.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//Model/design"/>
+    </genClasses>
+    <genClasses ecoreClass="vhdl.ecore#//Package"/>
+    <genClasses ecoreClass="vhdl.ecore#//PackageBody">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//PackageBody/name"/>
+    </genClasses>
+    <genClasses ecoreClass="vhdl.ecore#//Ports">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//Ports/declaration"/>
+    </genClasses>
+    <genClasses ecoreClass="vhdl.ecore#//PortMaps">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//PortMaps/port"/>
+    </genClasses>
+    <genClasses ecoreClass="vhdl.ecore#//Signature">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//Signature/parameter"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//Signature/return"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="vhdl.ecore#//Named">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//Named/name"/>
+    </genClasses>
+    <genClasses ecoreClass="vhdl.ecore#//MultiNamed">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//MultiNamed/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="vhdl.ecore#//VhdlObject">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//VhdlObject/id"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="vhdl.ecore#//MultiName"/>
+    <genClasses image="false" ecoreClass="vhdl.ecore#//Name"/>
+    <genClasses ecoreClass="vhdl.ecore#//NameList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//NameList/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="vhdl.ecore#//EntityReference"/>
+    <genClasses ecoreClass="vhdl.ecore#//EntityResolvedReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference vhdl.ecore#//EntityResolvedReference/entity"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="vhdl.ecore#//PackageReference"/>
+    <genClasses ecoreClass="vhdl.ecore#//PackageResolvedReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference vhdl.ecore#//PackageResolvedReference/package"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="vhdl.ecore#//ComponentReference"/>
+    <genClasses ecoreClass="vhdl.ecore#//ComponentResolvedReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference vhdl.ecore#//ComponentResolvedReference/component"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="vhdl.ecore#//CallReference"/>
+    <genClasses ecoreClass="vhdl.ecore#//CallResolvedReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference vhdl.ecore#//CallResolvedReference/call"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="vhdl.ecore#//StringNamed">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//StringNamed/name"/>
+    </genClasses>
+    <nestedGenPackages prefix="Statement" basePackage="net.mlanoe.language.vhdl" disposableProviderFactory="true"
+        ecorePackage="vhdl.ecore#//statement">
+      <genClasses ecoreClass="vhdl.ecore#//statement/ReportStatement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/ReportStatement/report"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/ReportStatement/severity"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/ReturnStatement"/>
+      <genClasses ecoreClass="vhdl.ecore#//statement/ConditionalSignalAssignmentStatement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/ConditionalSignalAssignmentStatement/waveform"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/SelectedSignalAssignmentStatement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/SelectedSignalAssignmentStatement/selected"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/SequentialSignalAssignmentStatement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/SequentialSignalAssignmentStatement/waveform"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/SignalAssignmentStatement">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//statement/SignalAssignmentStatement/postponed"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//statement/SignalAssignmentStatement/guarded"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/SignalAssignmentStatement/target"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/SignalAssignmentStatement/delay"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/WaitStatement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/WaitStatement/sensitivity"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/WaitStatement/until"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/WaitStatement/time"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/VariableAssignmentStatement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/VariableAssignmentStatement/target"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/VariableAssignmentStatement/initial"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/SimultaneousCaseStatement"/>
+      <genClasses ecoreClass="vhdl.ecore#//statement/CaseStatement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/CaseStatement/case"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/CaseStatement/when"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/CaseAlternative">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/CaseAlternative/choice"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/CaseAlternative/statement"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/SimultaneousIfStatement"/>
+      <genClasses ecoreClass="vhdl.ecore#//statement/IfStatement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/IfStatement/test"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/IfStatement/statement"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/IfStatementTest">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/IfStatementTest/condition"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/IfStatementTest/statement"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/ProcedureCallStatement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/ProcedureCallStatement/procedure"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//statement/ProcedureCallStatement/postponed"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/SimultaneousProceduralStatement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/SimultaneousProceduralStatement/declaration"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/SimultaneousProceduralStatement/statement"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/ProcessStatement">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//statement/ProcessStatement/postponed"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/ProcessStatement/declaration"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/ProcessStatement/statement"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EReference vhdl.ecore#//statement/ProcessStatement/sensitivity"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/AssertionStatement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/AssertionStatement/condition"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/AssertionStatement/report"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/AssertionStatement/severity"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//statement/AssertionStatement/postponed"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/BlockStatement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/BlockStatement/guard"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/BlockStatement/generic"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/BlockStatement/genericMap"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/BlockStatement/port"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/BlockStatement/portMap"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/BlockStatement/declaration"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/BlockStatement/statement"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/BreakStatement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/BreakStatement/break"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/BreakStatement/when"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/BreakStatement/sensitivity"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/BreakStatementItem">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/BreakStatementItem/name"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/BreakStatementItem/use"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/BreakStatementItem/arrow"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/ComponentInstantiationStatement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/ComponentInstantiationStatement/name"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/InstantiationStatement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/InstantiationStatement/genericMap"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/InstantiationStatement/portMap"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/EntityInstantiationStatement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/EntityInstantiationStatement/name"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/ConfigurationInstantiationStatement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/ConfigurationInstantiationStatement/name"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/SimpleSimultaneousStatement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/SimpleSimultaneousStatement/left"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/SimpleSimultaneousStatement/right"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/SimpleSimultaneousStatement/tolerance"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/ExitStatement">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//statement/ExitStatement/exit"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/ExitStatement/when"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/GenerateStatement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/GenerateStatement/scheme"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/GenerateStatement/declaration"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/GenerateStatement/statement"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/LoopStatement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/LoopStatement/iteration"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/LoopStatement/statement"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/NextStatement">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//statement/NextStatement/next"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/NextStatement/when"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/Statement">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//statement/Statement/label"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/ConditionalWaveform">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/ConditionalWaveform/waveform"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/ConditionalWaveform/choice"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/IterationScheme"/>
+      <genClasses ecoreClass="vhdl.ecore#//statement/WhileIterationScheme">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/WhileIterationScheme/condition"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="vhdl.ecore#//statement/DelayMechanism"/>
+      <genClasses ecoreClass="vhdl.ecore#//statement/ExpressionStatement">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/ExpressionStatement/expression"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/ForGenerationScheme">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//statement/ForGenerationScheme/variable"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/ForGenerationScheme/in"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/ForIterationScheme">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//statement/ForIterationScheme/variable"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/ForIterationScheme/in"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="vhdl.ecore#//statement/GenerationScheme"/>
+      <genClasses ecoreClass="vhdl.ecore#//statement/IfGenerationScheme">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/IfGenerationScheme/condition"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/RejectMechanism">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//statement/RejectMechanism/reject"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//statement/TransportMechanism"/>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Expression" basePackage="net.mlanoe.language.vhdl"
+        disposableProviderFactory="true" ecorePackage="vhdl.ecore#//expression">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="vhdl.ecore#//expression/UnaryOperator">
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/UnaryOperator/ABS"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/UnaryOperator/NOT"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="vhdl.ecore#//expression/MultiplyingOperator">
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/MultiplyingOperator/MUL"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/MultiplyingOperator/DIV"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/MultiplyingOperator/MOD"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/MultiplyingOperator/REM"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="vhdl.ecore#//expression/ShiftOperator">
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/ShiftOperator/SLL"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/ShiftOperator/SRL"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/ShiftOperator/SLA"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/ShiftOperator/SRA"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/ShiftOperator/ROL"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/ShiftOperator/ROR"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="vhdl.ecore#//expression/RelationalOperator">
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/RelationalOperator/EQ"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/RelationalOperator/NEQ"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/RelationalOperator/LOWERTHAN"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/RelationalOperator/LE"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/RelationalOperator/GREATERTHAN"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/RelationalOperator/GE"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="vhdl.ecore#//expression/LogicalOperator">
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/LogicalOperator/AND"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/LogicalOperator/OR"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/LogicalOperator/NAND"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/LogicalOperator/NOR"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/LogicalOperator/XOR"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/LogicalOperator/XNOR"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="vhdl.ecore#//expression/AddingOperator">
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/AddingOperator/PLUS"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/AddingOperator/MINUS"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/AddingOperator/AMPERSAND"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="vhdl.ecore#//expression/Sign">
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/Sign/PLUS"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/Sign/MINUS"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="vhdl.ecore#//expression/RangeDirection">
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/RangeDirection/TO"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//expression/RangeDirection/DOWNTO"/>
+      </genEnums>
+      <genClasses ecoreClass="vhdl.ecore#//expression/AddingExpression">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//expression/AddingExpression/operator"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//expression/AggregateExpression"/>
+      <genClasses ecoreClass="vhdl.ecore#//expression/AllExpression"/>
+      <genClasses ecoreClass="vhdl.ecore#//expression/AllocatorExpression"/>
+      <genClasses ecoreClass="vhdl.ecore#//expression/AssociationExpression">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//expression/AssociationExpression/choice"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//expression/AssociationExpression/expression"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//expression/AttributeExpression">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//expression/AttributeExpression/signature"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="vhdl.ecore#//expression/BinaryExpression">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//expression/BinaryExpression/left"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//expression/BinaryExpression/right"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//expression/BitStringExpression"/>
+      <genClasses ecoreClass="vhdl.ecore#//expression/Expression"/>
+      <genClasses ecoreClass="vhdl.ecore#//expression/IndicationExpression">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//expression/IndicationExpression/constraint"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//expression/IndicationExpression/tolerance"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//expression/IndicationExpression/across"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//expression/SubtypeIndicationExpression">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//expression/SubtypeIndicationExpression/mark"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//expression/SubnatureIndicationExpression">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//expression/SubnatureIndicationExpression/mark"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//expression/LogicalExpression">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//expression/LogicalExpression/operator"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//expression/NameExpression">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//expression/NameExpression/element"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//expression/NullExpression"/>
+      <genClasses ecoreClass="vhdl.ecore#//expression/MultiplyingExpression">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//expression/MultiplyingExpression/operator"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//expression/PowerExpression"/>
+      <genClasses ecoreClass="vhdl.ecore#//expression/RelationalExpression">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//expression/RelationalExpression/operator"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//expression/ShiftExpression">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//expression/ShiftExpression/operator"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="vhdl.ecore#//expression/SignatureExpression">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//expression/SignatureExpression/signature"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//expression/SignatureExpression/name"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//expression/SignExpression">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//expression/SignExpression/sign"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//expression/SignExpression/expression"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//expression/UnaryExpression">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//expression/UnaryExpression/operator"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//expression/UnaryExpression/expression"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//expression/OpenExpression"/>
+      <genClasses ecoreClass="vhdl.ecore#//expression/OthersExpression"/>
+      <genClasses ecoreClass="vhdl.ecore#//expression/RangeExpression">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//expression/RangeExpression/direction"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//expression/StringExpression"/>
+      <genClasses ecoreClass="vhdl.ecore#//expression/CharacterExpression"/>
+      <genClasses ecoreClass="vhdl.ecore#//expression/IdentifierExpression"/>
+      <genClasses ecoreClass="vhdl.ecore#//expression/UnitValueExpression">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//expression/UnitValueExpression/unit"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//expression/ValueExpression">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//expression/ValueExpression/value"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//expression/WaveformExpression">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//expression/WaveformExpression/expression"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//expression/WaveformExpression/after"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//expression/MultiExpression">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//expression/MultiExpression/expression"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Declaration" basePackage="net.mlanoe.language.vhdl"
+        disposableProviderFactory="true" ecorePackage="vhdl.ecore#//declaration">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="vhdl.ecore#//declaration/SignalKind">
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/SignalKind/REGISTER"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/SignalKind/BUS"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="vhdl.ecore#//declaration/Mode">
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/Mode/IN"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/Mode/OUT"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/Mode/INOUT"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/Mode/BUFFER"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/Mode/LINKAGE"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="vhdl.ecore#//declaration/EntityClass">
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/EntityClass/ENTITY"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/EntityClass/ARCHITECTURE"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/EntityClass/CONFIGURATION"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/EntityClass/PROCEDURE"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/EntityClass/FUNCTION"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/EntityClass/PACKAGE"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/EntityClass/TYPE"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/EntityClass/SUBTYPE"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/EntityClass/CONSTANT"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/EntityClass/SIGNAL"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/EntityClass/VARIABLE"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/EntityClass/COMPONENT"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/EntityClass/LABEL"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/EntityClass/LITERAL"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/EntityClass/UNITS"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/EntityClass/GROUP"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/EntityClass/FILE"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/EntityClass/NATURE"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/EntityClass/SUBNATURE"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/EntityClass/QUANTITY"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/EntityClass/TERMINAL"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="vhdl.ecore#//declaration/Purity">
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/Purity/IMPURE"/>
+        <genEnumLiterals ecoreEnumLiteral="vhdl.ecore#//declaration/Purity/PURE"/>
+      </genEnums>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/AliasDeclaration">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/AliasDeclaration/alias"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/AliasDeclaration/is"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/AttributeDeclaration"/>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/AttributeSpecification">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/AttributeSpecification/entity"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//declaration/AttributeSpecification/class"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/AttributeSpecification/is"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/BranchQuantityDeclaration">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/BranchQuantityDeclaration/across"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/BranchQuantityDeclaration/through"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/BranchQuantityDeclaration/left"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/BranchQuantityDeclaration/right"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/FreeQuantityDeclaration">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/FreeQuantityDeclaration/quantity"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/LimitDeclaration">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/LimitDeclaration/value"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/QuantityDeclaration"/>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/SourceQuantityDeclaration">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/SourceQuantityDeclaration/source"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/SubnatureDeclaration"/>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/SubprogramDeclaration">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/SubprogramDeclaration/parameter"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/SubprogramDeclaration/body"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/ProcedureDeclaration"/>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/FunctionDeclaration">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//declaration/FunctionDeclaration/purity"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/SubprogramBody">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/SubprogramBody/declaration"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/SubprogramBody/statement"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/SubtypeDeclaration"/>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/ConfigurationSpecification">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/ConfigurationSpecification/list"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/ConfigurationSpecification/component"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/ConfigurationSpecification/entity"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/ConfigurationSpecification/configuration"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/ConfigurationSpecification/genericMap"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/ConfigurationSpecification/portMap"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/Declaration"/>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/DisconnectionSpecification">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/DisconnectionSpecification/disconnect"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/DisconnectionSpecification/after"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/FileDeclaration">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/FileDeclaration/open"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/FileDeclaration/is"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/TerminalDeclaration"/>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/TypeDeclaration">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/TypeDeclaration/is"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/ConstantDeclaration"/>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/GroupDeclaration">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/GroupDeclaration/is"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/GroupDeclaration/member"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/GroupTemplateDeclaration">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//declaration/GroupTemplateDeclaration/entry"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/NatureDeclaration">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/NatureDeclaration/is"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/SignalDeclaration">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//declaration/SignalDeclaration/kind"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//declaration/SignalDeclaration/mode"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/UseClauseDeclaration">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/UseClauseDeclaration/use"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//declaration/VariableDeclaration">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//declaration/VariableDeclaration/shared"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//declaration/VariableDeclaration/mode"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="vhdl.ecore#//declaration/ValueDeclaration">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//declaration/ValueDeclaration/initial"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Type" basePackage="net.mlanoe.language.vhdl" disposableProviderFactory="true"
+        ecorePackage="vhdl.ecore#//type">
+      <genClasses ecoreClass="vhdl.ecore#//type/AccessTypeDefinition"/>
+      <genClasses ecoreClass="vhdl.ecore#//type/CompositeTypeDefinition"/>
+      <genClasses ecoreClass="vhdl.ecore#//type/RecordTypeDefinition">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//type/RecordTypeDefinition/declaration"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//type/ArrayTypeDefinition"/>
+      <genClasses ecoreClass="vhdl.ecore#//type/ConstrainedArrayTypeDefinition">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//type/ConstrainedArrayTypeDefinition/constraint"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//type/UnconstrainedArrayTypeDefinition">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//type/UnconstrainedArrayTypeDefinition/index"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="vhdl.ecore#//type/EnumerationLiteral"/>
+      <genClasses ecoreClass="vhdl.ecore#//type/EnumerationTypeDefinition">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//type/EnumerationTypeDefinition/literal"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//type/FileTypeDefinition"/>
+      <genClasses ecoreClass="vhdl.ecore#//type/PhysicalTypeDefinition">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//type/PhysicalTypeDefinition/range"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//type/PhysicalTypeDefinition/primary"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//type/PhysicalTypeDefinition/secondary"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//type/PhysicalTypeDefinitionSecondary">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//type/PhysicalTypeDefinitionSecondary/name"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//type/PhysicalTypeDefinitionSecondary/number"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//type/PhysicalTypeDefinitionSecondary/of"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//type/RangeTypeDefinition">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//type/RangeTypeDefinition/left"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vhdl.ecore#//type/RangeTypeDefinition/direction"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//type/RangeTypeDefinition/right"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//type/RecordTypeElement"/>
+      <genClasses image="false" ecoreClass="vhdl.ecore#//type/Typed">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//type/Typed/type"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//type/TypeDefinition"/>
+      <genClasses image="false" ecoreClass="vhdl.ecore#//type/TypeReference"/>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Nature" basePackage="net.mlanoe.language.vhdl" disposableProviderFactory="true"
+        ecorePackage="vhdl.ecore#//nature">
+      <genClasses ecoreClass="vhdl.ecore#//nature/ArrayNatureDefinition"/>
+      <genClasses ecoreClass="vhdl.ecore#//nature/CompositeNatureDefinition"/>
+      <genClasses ecoreClass="vhdl.ecore#//nature/ConstrainedArrayNatureDefinition">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//nature/ConstrainedArrayNatureDefinition/constraint"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//nature/NatureDefinition"/>
+      <genClasses ecoreClass="vhdl.ecore#//nature/RecordNatureDefinition">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//nature/RecordNatureDefinition/record"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//nature/RecordNatureElement"/>
+      <genClasses ecoreClass="vhdl.ecore#//nature/ScalarNatureDefinition">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//nature/ScalarNatureDefinition/name"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//nature/ScalarNatureDefinition/across"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//nature/ScalarNatureDefinition/through"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//nature/UnconstrainedArrayNatureDefinition">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//nature/UnconstrainedArrayNatureDefinition/index"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="vhdl.ecore#//nature/NatureReference"/>
+      <genClasses image="false" ecoreClass="vhdl.ecore#//nature/Natured">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//nature/Natured/nature"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Ams" basePackage="net.mlanoe.language.vhdl" disposableProviderFactory="true"
+        ecorePackage="vhdl.ecore#//ams">
+      <genClasses ecoreClass="vhdl.ecore#//ams/QuantityAspect">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//ams/QuantityAspect/tolerance"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//ams/QuantityAspect/expression"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//ams/SourceAspect"/>
+      <genClasses ecoreClass="vhdl.ecore#//ams/Spectrum">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//ams/Spectrum/left"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//ams/Spectrum/right"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//ams/Noise">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//ams/Noise/noise"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Configuration" basePackage="net.mlanoe.language.vhdl"
+        disposableProviderFactory="true" ecorePackage="vhdl.ecore#//configuration">
+      <genClasses ecoreClass="vhdl.ecore#//configuration/BlockConfiguration">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//configuration/BlockConfiguration/use"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//configuration/BlockConfiguration/item"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//configuration/ComponentConfiguration">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//configuration/ComponentConfiguration/list"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//configuration/ComponentConfiguration/component"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//configuration/ComponentConfiguration/entity"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//configuration/ComponentConfiguration/configuration"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//configuration/ComponentConfiguration/genericMap"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//configuration/ComponentConfiguration/portMap"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//configuration/ComponentConfiguration/block"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//configuration/Configuration">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//configuration/Configuration/of"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vhdl.ecore#//configuration/Configuration/block"/>
+      </genClasses>
+      <genClasses ecoreClass="vhdl.ecore#//configuration/ConfigurationItem"/>
+      <genClasses image="false" ecoreClass="vhdl.ecore#//configuration/ConfigurationReference"/>
+      <genClasses ecoreClass="vhdl.ecore#//configuration/ConfigurationResolvedReference">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference vhdl.ecore#//configuration/ConfigurationResolvedReference/configuration"/>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>
