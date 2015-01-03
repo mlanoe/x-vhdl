@@ -5,7 +5,6 @@
 package net.mlanoe.language.vhdl.nature.validation;
 
 import net.mlanoe.language.vhdl.Name;
-import net.mlanoe.language.vhdl.expression.Expression;
 
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.nature.ScalarNatureDefinition}.
@@ -17,12 +16,6 @@ public interface ScalarNatureDefinitionValidator {
 	boolean validate();
 
 	boolean validateName(Name value);
-
 	boolean validateAcross(Name value);
-
 	boolean validateThrough(Name value);
-
-	boolean validateName(Expression value);
-	boolean validateAcross(Expression value);
-	boolean validateThrough(Expression value);
 }

@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -30,13 +27,31 @@ public interface DeclarationFactory extends EFactory {
 	DeclarationFactory eINSTANCE = net.mlanoe.language.vhdl.declaration.impl.DeclarationFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Free Quantity Declaration</em>'.
+	 * Returns a new object of class '<em>Alias Declaration</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Free Quantity Declaration</em>'.
+	 * @return a new object of class '<em>Alias Declaration</em>'.
 	 * @generated
 	 */
-	FreeQuantityDeclaration createFreeQuantityDeclaration();
+	AliasDeclaration createAliasDeclaration();
+
+	/**
+	 * Returns a new object of class '<em>Attribute Declaration</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Attribute Declaration</em>'.
+	 * @generated
+	 */
+	AttributeDeclaration createAttributeDeclaration();
+
+	/**
+	 * Returns a new object of class '<em>Attribute Specification</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Attribute Specification</em>'.
+	 * @generated
+	 */
+	AttributeSpecification createAttributeSpecification();
 
 	/**
 	 * Returns a new object of class '<em>Branch Quantity Declaration</em>'.
@@ -48,13 +63,13 @@ public interface DeclarationFactory extends EFactory {
 	BranchQuantityDeclaration createBranchQuantityDeclaration();
 
 	/**
-	 * Returns a new object of class '<em>Source Quantity Declaration</em>'.
+	 * Returns a new object of class '<em>Free Quantity Declaration</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Source Quantity Declaration</em>'.
+	 * @return a new object of class '<em>Free Quantity Declaration</em>'.
 	 * @generated
 	 */
-	SourceQuantityDeclaration createSourceQuantityDeclaration();
+	FreeQuantityDeclaration createFreeQuantityDeclaration();
 
 	/**
 	 * Returns a new object of class '<em>Limit Declaration</em>'.
@@ -64,6 +79,15 @@ public interface DeclarationFactory extends EFactory {
 	 * @generated
 	 */
 	LimitDeclaration createLimitDeclaration();
+
+	/**
+	 * Returns a new object of class '<em>Source Quantity Declaration</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Source Quantity Declaration</em>'.
+	 * @generated
+	 */
+	SourceQuantityDeclaration createSourceQuantityDeclaration();
 
 	/**
 	 * Returns a new object of class '<em>Subnature Declaration</em>'.
@@ -109,33 +133,6 @@ public interface DeclarationFactory extends EFactory {
 	 * @generated
 	 */
 	SubtypeDeclaration createSubtypeDeclaration();
-
-	/**
-	 * Returns a new object of class '<em>Alias Declaration</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Alias Declaration</em>'.
-	 * @generated
-	 */
-	AliasDeclaration createAliasDeclaration();
-
-	/**
-	 * Returns a new object of class '<em>Attribute Declaration</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Attribute Declaration</em>'.
-	 * @generated
-	 */
-	AttributeDeclaration createAttributeDeclaration();
-
-	/**
-	 * Returns a new object of class '<em>Attribute Specification</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Attribute Specification</em>'.
-	 * @generated
-	 */
-	AttributeSpecification createAttributeSpecification();
 
 	/**
 	 * Returns a new object of class '<em>Configuration Specification</em>'.

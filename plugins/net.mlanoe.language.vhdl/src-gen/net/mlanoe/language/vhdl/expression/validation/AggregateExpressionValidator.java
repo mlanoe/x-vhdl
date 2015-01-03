@@ -4,9 +4,6 @@
  */
 package net.mlanoe.language.vhdl.expression.validation;
 
-import net.mlanoe.language.vhdl.expression.Expression;
-
-import org.eclipse.emf.common.util.EList;
 
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.expression.AggregateExpression}.
@@ -17,5 +14,4 @@ import org.eclipse.emf.common.util.EList;
 public interface AggregateExpressionValidator {
 	boolean validate();
 
-	boolean validateElement(EList<Expression> value);
 }

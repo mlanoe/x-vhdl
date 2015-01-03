@@ -7,8 +7,6 @@ package net.mlanoe.language.vhdl.expression.validation;
 import net.mlanoe.language.vhdl.Name;
 import net.mlanoe.language.vhdl.Signature;
 
-import net.mlanoe.language.vhdl.expression.Expression;
-
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.expression.SignatureExpression}.
  * This doesn't really do anything, and it's not a real EMF artifact.
@@ -20,6 +18,4 @@ public interface SignatureExpressionValidator {
 
 	boolean validateSignature(Signature value);
 	boolean validateName(Name value);
-
-	boolean validateExpression(Expression value);
 }

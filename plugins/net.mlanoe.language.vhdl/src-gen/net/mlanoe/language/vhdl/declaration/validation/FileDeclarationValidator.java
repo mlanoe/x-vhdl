@@ -5,7 +5,6 @@
 package net.mlanoe.language.vhdl.declaration.validation;
 
 import net.mlanoe.language.vhdl.expression.Expression;
-import net.mlanoe.language.vhdl.type.TypeReference;
 
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.declaration.FileDeclaration}.
@@ -16,9 +15,6 @@ import net.mlanoe.language.vhdl.type.TypeReference;
 public interface FileDeclarationValidator {
 	boolean validate();
 
-	boolean validateType(TypeReference value);
-
-	boolean validateType(Expression value);
 	boolean validateOpen(Expression value);
 	boolean validateIs(Expression value);
 }

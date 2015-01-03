@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -11,6 +8,7 @@
 package net.mlanoe.language.vhdl.statement;
 
 import net.mlanoe.language.vhdl.MultiName;
+
 import net.mlanoe.language.vhdl.declaration.Declaration;
 
 import org.eclipse.emf.common.util.EList;
@@ -62,32 +60,6 @@ public interface ProcessStatement extends Statement {
 	void setPostponed(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Sensitivity</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sensitivity</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Sensitivity</em>' containment reference.
-	 * @see #setSensitivity(MultiName)
-	 * @see net.mlanoe.language.vhdl.statement.StatementPackage#getProcessStatement_Sensitivity()
-	 * @model containment="true"
-	 * @generated
-	 */
-	MultiName getSensitivity();
-
-	/**
-	 * Sets the value of the '{@link net.mlanoe.language.vhdl.statement.ProcessStatement#getSensitivity <em>Sensitivity</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Sensitivity</em>' containment reference.
-	 * @see #getSensitivity()
-	 * @generated
-	 */
-	void setSensitivity(MultiName value);
-
-	/**
 	 * Returns the value of the '<em><b>Declaration</b></em>' containment reference list.
 	 * The list contents are of type {@link net.mlanoe.language.vhdl.declaration.Declaration}.
 	 * <!-- begin-user-doc -->
@@ -118,5 +90,31 @@ public interface ProcessStatement extends Statement {
 	 * @generated
 	 */
 	EList<Statement> getStatement();
+
+	/**
+	 * Returns the value of the '<em><b>Sensitivity</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Sensitivity</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Sensitivity</em>' containment reference.
+	 * @see #setSensitivity(MultiName)
+	 * @see net.mlanoe.language.vhdl.statement.StatementPackage#getProcessStatement_Sensitivity()
+	 * @model containment="true"
+	 * @generated
+	 */
+	MultiName getSensitivity();
+
+	/**
+	 * Sets the value of the '{@link net.mlanoe.language.vhdl.statement.ProcessStatement#getSensitivity <em>Sensitivity</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Sensitivity</em>' containment reference.
+	 * @see #getSensitivity()
+	 * @generated
+	 */
+	void setSensitivity(MultiName value);
 
 } // ProcessStatement

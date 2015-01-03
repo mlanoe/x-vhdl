@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -30,15 +27,6 @@ public interface StatementFactory extends EFactory {
 	StatementFactory eINSTANCE = net.mlanoe.language.vhdl.statement.impl.StatementFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Wait Statement</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Wait Statement</em>'.
-	 * @generated
-	 */
-	WaitStatement createWaitStatement();
-
-	/**
 	 * Returns a new object of class '<em>Report Statement</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -57,15 +45,6 @@ public interface StatementFactory extends EFactory {
 	ReturnStatement createReturnStatement();
 
 	/**
-	 * Returns a new object of class '<em>Sequential Signal Assignment Statement</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Sequential Signal Assignment Statement</em>'.
-	 * @generated
-	 */
-	SequentialSignalAssignmentStatement createSequentialSignalAssignmentStatement();
-
-	/**
 	 * Returns a new object of class '<em>Conditional Signal Assignment Statement</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -82,6 +61,24 @@ public interface StatementFactory extends EFactory {
 	 * @generated
 	 */
 	SelectedSignalAssignmentStatement createSelectedSignalAssignmentStatement();
+
+	/**
+	 * Returns a new object of class '<em>Sequential Signal Assignment Statement</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Sequential Signal Assignment Statement</em>'.
+	 * @generated
+	 */
+	SequentialSignalAssignmentStatement createSequentialSignalAssignmentStatement();
+
+	/**
+	 * Returns a new object of class '<em>Wait Statement</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Wait Statement</em>'.
+	 * @generated
+	 */
+	WaitStatement createWaitStatement();
 
 	/**
 	 * Returns a new object of class '<em>Variable Assignment Statement</em>'.
@@ -219,6 +216,15 @@ public interface StatementFactory extends EFactory {
 	ComponentInstantiationStatement createComponentInstantiationStatement();
 
 	/**
+	 * Returns a new object of class '<em>Instantiation Statement</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Instantiation Statement</em>'.
+	 * @generated
+	 */
+	InstantiationStatement createInstantiationStatement();
+
+	/**
 	 * Returns a new object of class '<em>Entity Instantiation Statement</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -309,13 +315,13 @@ public interface StatementFactory extends EFactory {
 	WhileIterationScheme createWhileIterationScheme();
 
 	/**
-	 * Returns a new object of class '<em>For Iteration Scheme</em>'.
+	 * Returns a new object of class '<em>Expression Statement</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>For Iteration Scheme</em>'.
+	 * @return a new object of class '<em>Expression Statement</em>'.
 	 * @generated
 	 */
-	ForIterationScheme createForIterationScheme();
+	ExpressionStatement createExpressionStatement();
 
 	/**
 	 * Returns a new object of class '<em>For Generation Scheme</em>'.
@@ -325,6 +331,15 @@ public interface StatementFactory extends EFactory {
 	 * @generated
 	 */
 	ForGenerationScheme createForGenerationScheme();
+
+	/**
+	 * Returns a new object of class '<em>For Iteration Scheme</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>For Iteration Scheme</em>'.
+	 * @generated
+	 */
+	ForIterationScheme createForIterationScheme();
 
 	/**
 	 * Returns a new object of class '<em>If Generation Scheme</em>'.
@@ -352,24 +367,6 @@ public interface StatementFactory extends EFactory {
 	 * @generated
 	 */
 	TransportMechanism createTransportMechanism();
-
-	/**
-	 * Returns a new object of class '<em>Expression Statement</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Expression Statement</em>'.
-	 * @generated
-	 */
-	ExpressionStatement createExpressionStatement();
-
-	/**
-	 * Returns a new object of class '<em>Instantiation Statement</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Instantiation Statement</em>'.
-	 * @generated
-	 */
-	InstantiationStatement createInstantiationStatement();
 
 	/**
 	 * Returns the package supported by this factory.

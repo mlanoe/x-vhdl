@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -270,20 +267,6 @@ public class StatementAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.statement.WaitStatement <em>Wait Statement</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.statement.WaitStatement
-	 * @generated
-	 */
-	public Adapter createWaitStatementAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.statement.ReportStatement <em>Report Statement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -312,34 +295,6 @@ public class StatementAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.statement.SignalAssignmentStatement <em>Signal Assignment Statement</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.statement.SignalAssignmentStatement
-	 * @generated
-	 */
-	public Adapter createSignalAssignmentStatementAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.statement.SequentialSignalAssignmentStatement <em>Sequential Signal Assignment Statement</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.statement.SequentialSignalAssignmentStatement
-	 * @generated
-	 */
-	public Adapter createSequentialSignalAssignmentStatementAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.statement.ConditionalSignalAssignmentStatement <em>Conditional Signal Assignment Statement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -364,6 +319,48 @@ public class StatementAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSelectedSignalAssignmentStatementAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.statement.SequentialSignalAssignmentStatement <em>Sequential Signal Assignment Statement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see net.mlanoe.language.vhdl.statement.SequentialSignalAssignmentStatement
+	 * @generated
+	 */
+	public Adapter createSequentialSignalAssignmentStatementAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.statement.SignalAssignmentStatement <em>Signal Assignment Statement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see net.mlanoe.language.vhdl.statement.SignalAssignmentStatement
+	 * @generated
+	 */
+	public Adapter createSignalAssignmentStatementAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.statement.WaitStatement <em>Wait Statement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see net.mlanoe.language.vhdl.statement.WaitStatement
+	 * @generated
+	 */
+	public Adapter createWaitStatementAdapter() {
 		return null;
 	}
 
@@ -578,6 +575,20 @@ public class StatementAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.statement.InstantiationStatement <em>Instantiation Statement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see net.mlanoe.language.vhdl.statement.InstantiationStatement
+	 * @generated
+	 */
+	public Adapter createInstantiationStatementAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.statement.EntityInstantiationStatement <em>Entity Instantiation Statement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -732,16 +743,30 @@ public class StatementAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.statement.ForIterationScheme <em>For Iteration Scheme</em>}'.
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.statement.DelayMechanism <em>Delay Mechanism</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.statement.ForIterationScheme
+	 * @see net.mlanoe.language.vhdl.statement.DelayMechanism
 	 * @generated
 	 */
-	public Adapter createForIterationSchemeAdapter() {
+	public Adapter createDelayMechanismAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.statement.ExpressionStatement <em>Expression Statement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see net.mlanoe.language.vhdl.statement.ExpressionStatement
+	 * @generated
+	 */
+	public Adapter createExpressionStatementAdapter() {
 		return null;
 	}
 
@@ -756,6 +781,20 @@ public class StatementAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createForGenerationSchemeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.statement.ForIterationScheme <em>For Iteration Scheme</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see net.mlanoe.language.vhdl.statement.ForIterationScheme
+	 * @generated
+	 */
+	public Adapter createForIterationSchemeAdapter() {
 		return null;
 	}
 
@@ -788,20 +827,6 @@ public class StatementAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.statement.DelayMechanism <em>Delay Mechanism</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.statement.DelayMechanism
-	 * @generated
-	 */
-	public Adapter createDelayMechanismAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.statement.RejectMechanism <em>Reject Mechanism</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -826,34 +851,6 @@ public class StatementAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createTransportMechanismAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.statement.ExpressionStatement <em>Expression Statement</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.statement.ExpressionStatement
-	 * @generated
-	 */
-	public Adapter createExpressionStatementAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.statement.InstantiationStatement <em>Instantiation Statement</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.statement.InstantiationStatement
-	 * @generated
-	 */
-	public Adapter createInstantiationStatementAdapter() {
 		return null;
 	}
 

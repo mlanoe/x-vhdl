@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -38,13 +35,20 @@ import net.mlanoe.language.vhdl.Signature;
 import net.mlanoe.language.vhdl.StringNamed;
 import net.mlanoe.language.vhdl.VhdlObject;
 import net.mlanoe.language.vhdl.VhdlPackage;
+
 import net.mlanoe.language.vhdl.configuration.ConfigurationReference;
+
 import net.mlanoe.language.vhdl.declaration.Declaration;
+
 import net.mlanoe.language.vhdl.nature.NatureReference;
+
 import net.mlanoe.language.vhdl.type.TypeReference;
+
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
+
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
+
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -308,20 +312,6 @@ public class VhdlAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.Model <em>Model</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.Model
-	 * @generated
-	 */
-	public Adapter createModelAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.Entity <em>Entity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -332,20 +322,6 @@ public class VhdlAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createEntityAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.Generics <em>Generics</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.Generics
-	 * @generated
-	 */
-	public Adapter createGenericsAdapter() {
 		return null;
 	}
 
@@ -364,16 +340,30 @@ public class VhdlAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.PackageBody <em>Package Body</em>}'.
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.Generics <em>Generics</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.PackageBody
+	 * @see net.mlanoe.language.vhdl.Generics
 	 * @generated
 	 */
-	public Adapter createPackageBodyAdapter() {
+	public Adapter createGenericsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.Model <em>Model</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see net.mlanoe.language.vhdl.Model
+	 * @generated
+	 */
+	public Adapter createModelAdapter() {
 		return null;
 	}
 
@@ -388,6 +378,20 @@ public class VhdlAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createPackageAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.PackageBody <em>Package Body</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see net.mlanoe.language.vhdl.PackageBody
+	 * @generated
+	 */
+	public Adapter createPackageBodyAdapter() {
 		return null;
 	}
 
@@ -430,6 +434,34 @@ public class VhdlAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSignatureAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.Named <em>Named</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see net.mlanoe.language.vhdl.Named
+	 * @generated
+	 */
+	public Adapter createNamedAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.MultiNamed <em>Multi Named</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see net.mlanoe.language.vhdl.MultiNamed
+	 * @generated
+	 */
+	public Adapter createMultiNamedAdapter() {
 		return null;
 	}
 
@@ -668,34 +700,6 @@ public class VhdlAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createConfigurationReferenceAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.Named <em>Named</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.Named
-	 * @generated
-	 */
-	public Adapter createNamedAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.MultiNamed <em>Multi Named</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.MultiNamed
-	 * @generated
-	 */
-	public Adapter createMultiNamedAdapter() {
 		return null;
 	}
 

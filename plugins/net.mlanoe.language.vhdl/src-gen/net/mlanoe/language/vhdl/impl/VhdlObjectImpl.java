@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -14,10 +11,11 @@ import net.mlanoe.language.vhdl.VhdlObject;
 import net.mlanoe.language.vhdl.VhdlPackage;
 
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-import org.eclipse.emf.ecore.util.EcoreUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -75,13 +73,9 @@ public abstract class VhdlObjectImpl extends MinimalEObjectImpl.Container implem
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated NOT
+	 * @generated
 	 */
 	public String getId() {
-		if(id == ID_EDEFAULT) {
-			setId(EcoreUtil.generateUUID());
-			//setId(computeId());
-		}
 		return id;
 	}
 
@@ -96,7 +90,7 @@ public abstract class VhdlObjectImpl extends MinimalEObjectImpl.Container implem
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, VhdlPackage.VHDL_OBJECT__ID, oldId, id));
 	}
-	
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -8,8 +8,6 @@ import net.mlanoe.language.vhdl.MultiName;
 
 import net.mlanoe.language.vhdl.expression.Expression;
 
-import net.mlanoe.language.vhdl.type.TypeReference;
-
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.declaration.DisconnectionSpecification}.
  * This doesn't really do anything, and it's not a real EMF artifact.
@@ -20,6 +18,5 @@ public interface DisconnectionSpecificationValidator {
 	boolean validate();
 
 	boolean validateDisconnect(MultiName value);
-	boolean validateType(TypeReference value);
 	boolean validateAfter(Expression value);
 }

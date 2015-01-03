@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -11,16 +8,22 @@
 package net.mlanoe.language.vhdl.declaration.impl;
 
 import net.mlanoe.language.vhdl.MultiName;
+
 import net.mlanoe.language.vhdl.declaration.DeclarationPackage;
 import net.mlanoe.language.vhdl.declaration.DisconnectionSpecification;
+
 import net.mlanoe.language.vhdl.expression.Expression;
+
 import net.mlanoe.language.vhdl.type.TypePackage;
 import net.mlanoe.language.vhdl.type.TypeReference;
 import net.mlanoe.language.vhdl.type.Typed;
+
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
+
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
@@ -93,49 +96,6 @@ public class DisconnectionSpecificationImpl extends DeclarationImpl implements D
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MultiName getDisconnect() {
-		return disconnect;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetDisconnect(MultiName newDisconnect, NotificationChain msgs) {
-		MultiName oldDisconnect = disconnect;
-		disconnect = newDisconnect;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, DeclarationPackage.DISCONNECTION_SPECIFICATION__DISCONNECT, oldDisconnect, newDisconnect);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setDisconnect(MultiName newDisconnect) {
-		if (newDisconnect != disconnect) {
-			NotificationChain msgs = null;
-			if (disconnect != null)
-				msgs = ((InternalEObject)disconnect).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - DeclarationPackage.DISCONNECTION_SPECIFICATION__DISCONNECT, null, msgs);
-			if (newDisconnect != null)
-				msgs = ((InternalEObject)newDisconnect).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - DeclarationPackage.DISCONNECTION_SPECIFICATION__DISCONNECT, null, msgs);
-			msgs = basicSetDisconnect(newDisconnect, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DeclarationPackage.DISCONNECTION_SPECIFICATION__DISCONNECT, newDisconnect, newDisconnect));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public TypeReference getType() {
 		return type;
 	}
@@ -172,6 +132,49 @@ public class DisconnectionSpecificationImpl extends DeclarationImpl implements D
 		}
 		else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, DeclarationPackage.DISCONNECTION_SPECIFICATION__TYPE, newType, newType));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MultiName getDisconnect() {
+		return disconnect;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetDisconnect(MultiName newDisconnect, NotificationChain msgs) {
+		MultiName oldDisconnect = disconnect;
+		disconnect = newDisconnect;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, DeclarationPackage.DISCONNECTION_SPECIFICATION__DISCONNECT, oldDisconnect, newDisconnect);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDisconnect(MultiName newDisconnect) {
+		if (newDisconnect != disconnect) {
+			NotificationChain msgs = null;
+			if (disconnect != null)
+				msgs = ((InternalEObject)disconnect).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - DeclarationPackage.DISCONNECTION_SPECIFICATION__DISCONNECT, null, msgs);
+			if (newDisconnect != null)
+				msgs = ((InternalEObject)newDisconnect).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - DeclarationPackage.DISCONNECTION_SPECIFICATION__DISCONNECT, null, msgs);
+			msgs = basicSetDisconnect(newDisconnect, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, DeclarationPackage.DISCONNECTION_SPECIFICATION__DISCONNECT, newDisconnect, newDisconnect));
 	}
 
 	/**

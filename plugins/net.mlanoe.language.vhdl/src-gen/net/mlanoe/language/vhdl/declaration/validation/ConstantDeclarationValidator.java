@@ -4,7 +4,6 @@
  */
 package net.mlanoe.language.vhdl.declaration.validation;
 
-import net.mlanoe.language.vhdl.expression.Expression;
 
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.declaration.ConstantDeclaration}.
@@ -15,6 +14,4 @@ import net.mlanoe.language.vhdl.expression.Expression;
 public interface ConstantDeclarationValidator {
 	boolean validate();
 
-	boolean validateType(Expression value);
-	boolean validateInitial(Expression value);
 }

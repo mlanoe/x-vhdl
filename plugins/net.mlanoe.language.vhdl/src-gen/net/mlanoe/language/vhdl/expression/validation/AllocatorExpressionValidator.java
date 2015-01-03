@@ -4,7 +4,6 @@
  */
 package net.mlanoe.language.vhdl.expression.validation;
 
-import net.mlanoe.language.vhdl.expression.Expression;
 
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.expression.AllocatorExpression}.
@@ -15,5 +14,4 @@ import net.mlanoe.language.vhdl.expression.Expression;
 public interface AllocatorExpressionValidator {
 	boolean validate();
 
-	boolean validateAllocate(Expression value);
 }

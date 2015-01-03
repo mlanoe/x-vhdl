@@ -6,9 +6,6 @@ package net.mlanoe.language.vhdl.declaration.validation;
 
 import net.mlanoe.language.vhdl.declaration.Purity;
 
-import net.mlanoe.language.vhdl.expression.Expression;
-import net.mlanoe.language.vhdl.type.TypeReference;
-
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.declaration.FunctionDeclaration}.
  * This doesn't really do anything, and it's not a real EMF artifact.
@@ -19,7 +16,4 @@ public interface FunctionDeclarationValidator {
 	boolean validate();
 
 	boolean validatePurity(Purity value);
-	boolean validateReturn(TypeReference value);
-
-	boolean validateReturn(Expression value);
 }

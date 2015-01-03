@@ -6,8 +6,6 @@ package net.mlanoe.language.vhdl.validation;
 
 import net.mlanoe.language.vhdl.MultiName;
 
-import org.eclipse.emf.common.util.EList;
-
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.MultiNamed}.
  * This doesn't really do anything, and it's not a real EMF artifact.
@@ -18,6 +16,4 @@ public interface MultiNamedValidator {
 	boolean validate();
 
 	boolean validateName(MultiName value);
-
-	boolean validateNames(EList<MultiName> value);
 }

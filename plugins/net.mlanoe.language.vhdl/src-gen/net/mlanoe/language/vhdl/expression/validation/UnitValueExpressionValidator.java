@@ -5,7 +5,6 @@
 package net.mlanoe.language.vhdl.expression.validation;
 
 import net.mlanoe.language.vhdl.Name;
-import net.mlanoe.language.vhdl.expression.Expression;
 
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.expression.UnitValueExpression}.
@@ -17,6 +16,4 @@ public interface UnitValueExpressionValidator {
 	boolean validate();
 
 	boolean validateUnit(Name value);
-
-	boolean validateUnit(Expression value);
 }

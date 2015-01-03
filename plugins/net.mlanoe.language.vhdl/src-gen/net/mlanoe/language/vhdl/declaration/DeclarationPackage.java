@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -93,116 +90,6 @@ public interface DeclarationPackage extends EPackage {
 	 * @ordered
 	 */
 	int DECLARATION_FEATURE_COUNT = VhdlPackage.VHDL_OBJECT_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.QuantityDeclarationImpl <em>Quantity Declaration</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.declaration.impl.QuantityDeclarationImpl
-	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getQuantityDeclaration()
-	 * @generated
-	 */
-	int QUANTITY_DECLARATION = 6;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.FreeQuantityDeclarationImpl <em>Free Quantity Declaration</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.declaration.impl.FreeQuantityDeclarationImpl
-	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getFreeQuantityDeclaration()
-	 * @generated
-	 */
-	int FREE_QUANTITY_DECLARATION = 4;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.BranchQuantityDeclarationImpl <em>Branch Quantity Declaration</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.declaration.impl.BranchQuantityDeclarationImpl
-	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getBranchQuantityDeclaration()
-	 * @generated
-	 */
-	int BRANCH_QUANTITY_DECLARATION = 3;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.SourceQuantityDeclarationImpl <em>Source Quantity Declaration</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.declaration.impl.SourceQuantityDeclarationImpl
-	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getSourceQuantityDeclaration()
-	 * @generated
-	 */
-	int SOURCE_QUANTITY_DECLARATION = 7;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.LimitDeclarationImpl <em>Limit Declaration</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.declaration.impl.LimitDeclarationImpl
-	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getLimitDeclaration()
-	 * @generated
-	 */
-	int LIMIT_DECLARATION = 5;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.SubnatureDeclarationImpl <em>Subnature Declaration</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.declaration.impl.SubnatureDeclarationImpl
-	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getSubnatureDeclaration()
-	 * @generated
-	 */
-	int SUBNATURE_DECLARATION = 8;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.SubprogramDeclarationImpl <em>Subprogram Declaration</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.declaration.impl.SubprogramDeclarationImpl
-	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getSubprogramDeclaration()
-	 * @generated
-	 */
-	int SUBPROGRAM_DECLARATION = 9;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.ProcedureDeclarationImpl <em>Procedure Declaration</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.declaration.impl.ProcedureDeclarationImpl
-	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getProcedureDeclaration()
-	 * @generated
-	 */
-	int PROCEDURE_DECLARATION = 10;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.FunctionDeclarationImpl <em>Function Declaration</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.declaration.impl.FunctionDeclarationImpl
-	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getFunctionDeclaration()
-	 * @generated
-	 */
-	int FUNCTION_DECLARATION = 11;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.SubprogramBodyImpl <em>Subprogram Body</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.declaration.impl.SubprogramBodyImpl
-	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getSubprogramBody()
-	 * @generated
-	 */
-	int SUBPROGRAM_BODY = 12;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.SubtypeDeclarationImpl <em>Subtype Declaration</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.declaration.impl.SubtypeDeclarationImpl
-	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getSubtypeDeclaration()
-	 * @generated
-	 */
-	int SUBTYPE_DECLARATION = 13;
 
 	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.AliasDeclarationImpl <em>Alias Declaration</em>}' class.
@@ -370,6 +257,16 @@ public interface DeclarationPackage extends EPackage {
 	int ATTRIBUTE_SPECIFICATION_FEATURE_COUNT = DECLARATION_FEATURE_COUNT + 4;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.QuantityDeclarationImpl <em>Quantity Declaration</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.declaration.impl.QuantityDeclarationImpl
+	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getQuantityDeclaration()
+	 * @generated
+	 */
+	int QUANTITY_DECLARATION = 6;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -386,6 +283,16 @@ public interface DeclarationPackage extends EPackage {
 	 * @ordered
 	 */
 	int QUANTITY_DECLARATION_FEATURE_COUNT = DECLARATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.BranchQuantityDeclarationImpl <em>Branch Quantity Declaration</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.declaration.impl.BranchQuantityDeclarationImpl
+	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getBranchQuantityDeclaration()
+	 * @generated
+	 */
+	int BRANCH_QUANTITY_DECLARATION = 3;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -442,6 +349,16 @@ public interface DeclarationPackage extends EPackage {
 	int BRANCH_QUANTITY_DECLARATION_FEATURE_COUNT = QUANTITY_DECLARATION_FEATURE_COUNT + 4;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.FreeQuantityDeclarationImpl <em>Free Quantity Declaration</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.declaration.impl.FreeQuantityDeclarationImpl
+	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getFreeQuantityDeclaration()
+	 * @generated
+	 */
+	int FREE_QUANTITY_DECLARATION = 4;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -485,6 +402,16 @@ public interface DeclarationPackage extends EPackage {
 	 * @ordered
 	 */
 	int FREE_QUANTITY_DECLARATION_FEATURE_COUNT = QUANTITY_DECLARATION_FEATURE_COUNT + 3;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.LimitDeclarationImpl <em>Limit Declaration</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.declaration.impl.LimitDeclarationImpl
+	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getLimitDeclaration()
+	 * @generated
+	 */
+	int LIMIT_DECLARATION = 5;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -532,6 +459,16 @@ public interface DeclarationPackage extends EPackage {
 	int LIMIT_DECLARATION_FEATURE_COUNT = DECLARATION_FEATURE_COUNT + 3;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.SourceQuantityDeclarationImpl <em>Source Quantity Declaration</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.declaration.impl.SourceQuantityDeclarationImpl
+	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getSourceQuantityDeclaration()
+	 * @generated
+	 */
+	int SOURCE_QUANTITY_DECLARATION = 7;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -577,6 +514,16 @@ public interface DeclarationPackage extends EPackage {
 	int SOURCE_QUANTITY_DECLARATION_FEATURE_COUNT = QUANTITY_DECLARATION_FEATURE_COUNT + 3;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.SubnatureDeclarationImpl <em>Subnature Declaration</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.declaration.impl.SubnatureDeclarationImpl
+	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getSubnatureDeclaration()
+	 * @generated
+	 */
+	int SUBNATURE_DECLARATION = 8;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -611,6 +558,16 @@ public interface DeclarationPackage extends EPackage {
 	 * @ordered
 	 */
 	int SUBNATURE_DECLARATION_FEATURE_COUNT = DECLARATION_FEATURE_COUNT + 2;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.SubprogramDeclarationImpl <em>Subprogram Declaration</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.declaration.impl.SubprogramDeclarationImpl
+	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getSubprogramDeclaration()
+	 * @generated
+	 */
+	int SUBPROGRAM_DECLARATION = 9;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -658,6 +615,16 @@ public interface DeclarationPackage extends EPackage {
 	int SUBPROGRAM_DECLARATION_FEATURE_COUNT = DECLARATION_FEATURE_COUNT + 3;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.ProcedureDeclarationImpl <em>Procedure Declaration</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.declaration.impl.ProcedureDeclarationImpl
+	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getProcedureDeclaration()
+	 * @generated
+	 */
+	int PROCEDURE_DECLARATION = 10;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -701,6 +668,16 @@ public interface DeclarationPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROCEDURE_DECLARATION_FEATURE_COUNT = SUBPROGRAM_DECLARATION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.FunctionDeclarationImpl <em>Function Declaration</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.declaration.impl.FunctionDeclarationImpl
+	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getFunctionDeclaration()
+	 * @generated
+	 */
+	int FUNCTION_DECLARATION = 11;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -766,6 +743,16 @@ public interface DeclarationPackage extends EPackage {
 	int FUNCTION_DECLARATION_FEATURE_COUNT = SUBPROGRAM_DECLARATION_FEATURE_COUNT + 2;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.SubprogramBodyImpl <em>Subprogram Body</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.declaration.impl.SubprogramBodyImpl
+	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getSubprogramBody()
+	 * @generated
+	 */
+	int SUBPROGRAM_BODY = 12;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -800,6 +787,16 @@ public interface DeclarationPackage extends EPackage {
 	 * @ordered
 	 */
 	int SUBPROGRAM_BODY_FEATURE_COUNT = VhdlPackage.VHDL_OBJECT_FEATURE_COUNT + 2;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.declaration.impl.SubtypeDeclarationImpl <em>Subtype Declaration</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.declaration.impl.SubtypeDeclarationImpl
+	 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getSubtypeDeclaration()
+	 * @generated
+	 */
+	int SUBTYPE_DECLARATION = 13;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1612,35 +1609,89 @@ public interface DeclarationPackage extends EPackage {
 
 
 	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.declaration.QuantityDeclaration <em>Quantity Declaration</em>}'.
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.declaration.AliasDeclaration <em>Alias Declaration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Quantity Declaration</em>'.
-	 * @see net.mlanoe.language.vhdl.declaration.QuantityDeclaration
+	 * @return the meta object for class '<em>Alias Declaration</em>'.
+	 * @see net.mlanoe.language.vhdl.declaration.AliasDeclaration
 	 * @generated
 	 */
-	EClass getQuantityDeclaration();
+	EClass getAliasDeclaration();
 
 	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.declaration.FreeQuantityDeclaration <em>Free Quantity Declaration</em>}'.
+	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.declaration.AliasDeclaration#getAlias <em>Alias</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Free Quantity Declaration</em>'.
-	 * @see net.mlanoe.language.vhdl.declaration.FreeQuantityDeclaration
+	 * @return the meta object for the containment reference '<em>Alias</em>'.
+	 * @see net.mlanoe.language.vhdl.declaration.AliasDeclaration#getAlias()
+	 * @see #getAliasDeclaration()
 	 * @generated
 	 */
-	EClass getFreeQuantityDeclaration();
+	EReference getAliasDeclaration_Alias();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.declaration.FreeQuantityDeclaration#getQuantity <em>Quantity</em>}'.
+	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.declaration.AliasDeclaration#getIs <em>Is</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Quantity</em>'.
-	 * @see net.mlanoe.language.vhdl.declaration.FreeQuantityDeclaration#getQuantity()
-	 * @see #getFreeQuantityDeclaration()
+	 * @return the meta object for the containment reference '<em>Is</em>'.
+	 * @see net.mlanoe.language.vhdl.declaration.AliasDeclaration#getIs()
+	 * @see #getAliasDeclaration()
 	 * @generated
 	 */
-	EReference getFreeQuantityDeclaration_Quantity();
+	EReference getAliasDeclaration_Is();
+
+	/**
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.declaration.AttributeDeclaration <em>Attribute Declaration</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Attribute Declaration</em>'.
+	 * @see net.mlanoe.language.vhdl.declaration.AttributeDeclaration
+	 * @generated
+	 */
+	EClass getAttributeDeclaration();
+
+	/**
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.declaration.AttributeSpecification <em>Attribute Specification</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Attribute Specification</em>'.
+	 * @see net.mlanoe.language.vhdl.declaration.AttributeSpecification
+	 * @generated
+	 */
+	EClass getAttributeSpecification();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.declaration.AttributeSpecification#getEntity <em>Entity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Entity</em>'.
+	 * @see net.mlanoe.language.vhdl.declaration.AttributeSpecification#getEntity()
+	 * @see #getAttributeSpecification()
+	 * @generated
+	 */
+	EReference getAttributeSpecification_Entity();
+
+	/**
+	 * Returns the meta object for the attribute '{@link net.mlanoe.language.vhdl.declaration.AttributeSpecification#getClass_ <em>Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Class</em>'.
+	 * @see net.mlanoe.language.vhdl.declaration.AttributeSpecification#getClass_()
+	 * @see #getAttributeSpecification()
+	 * @generated
+	 */
+	EAttribute getAttributeSpecification_Class();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.declaration.AttributeSpecification#getIs <em>Is</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Is</em>'.
+	 * @see net.mlanoe.language.vhdl.declaration.AttributeSpecification#getIs()
+	 * @see #getAttributeSpecification()
+	 * @generated
+	 */
+	EReference getAttributeSpecification_Is();
 
 	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.declaration.BranchQuantityDeclaration <em>Branch Quantity Declaration</em>}'.
@@ -1697,25 +1748,25 @@ public interface DeclarationPackage extends EPackage {
 	EReference getBranchQuantityDeclaration_Right();
 
 	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.declaration.SourceQuantityDeclaration <em>Source Quantity Declaration</em>}'.
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.declaration.FreeQuantityDeclaration <em>Free Quantity Declaration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Source Quantity Declaration</em>'.
-	 * @see net.mlanoe.language.vhdl.declaration.SourceQuantityDeclaration
+	 * @return the meta object for class '<em>Free Quantity Declaration</em>'.
+	 * @see net.mlanoe.language.vhdl.declaration.FreeQuantityDeclaration
 	 * @generated
 	 */
-	EClass getSourceQuantityDeclaration();
+	EClass getFreeQuantityDeclaration();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.declaration.SourceQuantityDeclaration#getSource <em>Source</em>}'.
+	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.declaration.FreeQuantityDeclaration#getQuantity <em>Quantity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Source</em>'.
-	 * @see net.mlanoe.language.vhdl.declaration.SourceQuantityDeclaration#getSource()
-	 * @see #getSourceQuantityDeclaration()
+	 * @return the meta object for the containment reference '<em>Quantity</em>'.
+	 * @see net.mlanoe.language.vhdl.declaration.FreeQuantityDeclaration#getQuantity()
+	 * @see #getFreeQuantityDeclaration()
 	 * @generated
 	 */
-	EReference getSourceQuantityDeclaration_Source();
+	EReference getFreeQuantityDeclaration_Quantity();
 
 	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.declaration.LimitDeclaration <em>Limit Declaration</em>}'.
@@ -1737,6 +1788,37 @@ public interface DeclarationPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getLimitDeclaration_Value();
+
+	/**
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.declaration.QuantityDeclaration <em>Quantity Declaration</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Quantity Declaration</em>'.
+	 * @see net.mlanoe.language.vhdl.declaration.QuantityDeclaration
+	 * @generated
+	 */
+	EClass getQuantityDeclaration();
+
+	/**
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.declaration.SourceQuantityDeclaration <em>Source Quantity Declaration</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Source Quantity Declaration</em>'.
+	 * @see net.mlanoe.language.vhdl.declaration.SourceQuantityDeclaration
+	 * @generated
+	 */
+	EClass getSourceQuantityDeclaration();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.declaration.SourceQuantityDeclaration#getSource <em>Source</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Source</em>'.
+	 * @see net.mlanoe.language.vhdl.declaration.SourceQuantityDeclaration#getSource()
+	 * @see #getSourceQuantityDeclaration()
+	 * @generated
+	 */
+	EReference getSourceQuantityDeclaration_Source();
 
 	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.declaration.SubnatureDeclaration <em>Subnature Declaration</em>}'.
@@ -1852,91 +1934,6 @@ public interface DeclarationPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getSubtypeDeclaration();
-
-	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.declaration.AliasDeclaration <em>Alias Declaration</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Alias Declaration</em>'.
-	 * @see net.mlanoe.language.vhdl.declaration.AliasDeclaration
-	 * @generated
-	 */
-	EClass getAliasDeclaration();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.declaration.AliasDeclaration#getAlias <em>Alias</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Alias</em>'.
-	 * @see net.mlanoe.language.vhdl.declaration.AliasDeclaration#getAlias()
-	 * @see #getAliasDeclaration()
-	 * @generated
-	 */
-	EReference getAliasDeclaration_Alias();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.declaration.AliasDeclaration#getIs <em>Is</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Is</em>'.
-	 * @see net.mlanoe.language.vhdl.declaration.AliasDeclaration#getIs()
-	 * @see #getAliasDeclaration()
-	 * @generated
-	 */
-	EReference getAliasDeclaration_Is();
-
-	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.declaration.AttributeDeclaration <em>Attribute Declaration</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Attribute Declaration</em>'.
-	 * @see net.mlanoe.language.vhdl.declaration.AttributeDeclaration
-	 * @generated
-	 */
-	EClass getAttributeDeclaration();
-
-	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.declaration.AttributeSpecification <em>Attribute Specification</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Attribute Specification</em>'.
-	 * @see net.mlanoe.language.vhdl.declaration.AttributeSpecification
-	 * @generated
-	 */
-	EClass getAttributeSpecification();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.declaration.AttributeSpecification#getEntity <em>Entity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Entity</em>'.
-	 * @see net.mlanoe.language.vhdl.declaration.AttributeSpecification#getEntity()
-	 * @see #getAttributeSpecification()
-	 * @generated
-	 */
-	EReference getAttributeSpecification_Entity();
-
-	/**
-	 * Returns the meta object for the attribute '{@link net.mlanoe.language.vhdl.declaration.AttributeSpecification#getClass_ <em>Class</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Class</em>'.
-	 * @see net.mlanoe.language.vhdl.declaration.AttributeSpecification#getClass_()
-	 * @see #getAttributeSpecification()
-	 * @generated
-	 */
-	EAttribute getAttributeSpecification_Class();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.declaration.AttributeSpecification#getIs <em>Is</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Is</em>'.
-	 * @see net.mlanoe.language.vhdl.declaration.AttributeSpecification#getIs()
-	 * @see #getAttributeSpecification()
-	 * @generated
-	 */
-	EReference getAttributeSpecification_Is();
 
 	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.declaration.ConfigurationSpecification <em>Configuration Specification</em>}'.
@@ -2372,32 +2369,74 @@ public interface DeclarationPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.declaration.impl.QuantityDeclarationImpl <em>Quantity Declaration</em>}' class.
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.declaration.impl.AliasDeclarationImpl <em>Alias Declaration</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.declaration.impl.QuantityDeclarationImpl
-		 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getQuantityDeclaration()
+		 * @see net.mlanoe.language.vhdl.declaration.impl.AliasDeclarationImpl
+		 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getAliasDeclaration()
 		 * @generated
 		 */
-		EClass QUANTITY_DECLARATION = eINSTANCE.getQuantityDeclaration();
+		EClass ALIAS_DECLARATION = eINSTANCE.getAliasDeclaration();
 
 		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.declaration.impl.FreeQuantityDeclarationImpl <em>Free Quantity Declaration</em>}' class.
+		 * The meta object literal for the '<em><b>Alias</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.declaration.impl.FreeQuantityDeclarationImpl
-		 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getFreeQuantityDeclaration()
 		 * @generated
 		 */
-		EClass FREE_QUANTITY_DECLARATION = eINSTANCE.getFreeQuantityDeclaration();
+		EReference ALIAS_DECLARATION__ALIAS = eINSTANCE.getAliasDeclaration_Alias();
 
 		/**
-		 * The meta object literal for the '<em><b>Quantity</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Is</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FREE_QUANTITY_DECLARATION__QUANTITY = eINSTANCE.getFreeQuantityDeclaration_Quantity();
+		EReference ALIAS_DECLARATION__IS = eINSTANCE.getAliasDeclaration_Is();
+
+		/**
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.declaration.impl.AttributeDeclarationImpl <em>Attribute Declaration</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.declaration.impl.AttributeDeclarationImpl
+		 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getAttributeDeclaration()
+		 * @generated
+		 */
+		EClass ATTRIBUTE_DECLARATION = eINSTANCE.getAttributeDeclaration();
+
+		/**
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.declaration.impl.AttributeSpecificationImpl <em>Attribute Specification</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.declaration.impl.AttributeSpecificationImpl
+		 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getAttributeSpecification()
+		 * @generated
+		 */
+		EClass ATTRIBUTE_SPECIFICATION = eINSTANCE.getAttributeSpecification();
+
+		/**
+		 * The meta object literal for the '<em><b>Entity</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ATTRIBUTE_SPECIFICATION__ENTITY = eINSTANCE.getAttributeSpecification_Entity();
+
+		/**
+		 * The meta object literal for the '<em><b>Class</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ATTRIBUTE_SPECIFICATION__CLASS = eINSTANCE.getAttributeSpecification_Class();
+
+		/**
+		 * The meta object literal for the '<em><b>Is</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ATTRIBUTE_SPECIFICATION__IS = eINSTANCE.getAttributeSpecification_Is();
 
 		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.declaration.impl.BranchQuantityDeclarationImpl <em>Branch Quantity Declaration</em>}' class.
@@ -2442,22 +2481,22 @@ public interface DeclarationPackage extends EPackage {
 		EReference BRANCH_QUANTITY_DECLARATION__RIGHT = eINSTANCE.getBranchQuantityDeclaration_Right();
 
 		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.declaration.impl.SourceQuantityDeclarationImpl <em>Source Quantity Declaration</em>}' class.
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.declaration.impl.FreeQuantityDeclarationImpl <em>Free Quantity Declaration</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.declaration.impl.SourceQuantityDeclarationImpl
-		 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getSourceQuantityDeclaration()
+		 * @see net.mlanoe.language.vhdl.declaration.impl.FreeQuantityDeclarationImpl
+		 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getFreeQuantityDeclaration()
 		 * @generated
 		 */
-		EClass SOURCE_QUANTITY_DECLARATION = eINSTANCE.getSourceQuantityDeclaration();
+		EClass FREE_QUANTITY_DECLARATION = eINSTANCE.getFreeQuantityDeclaration();
 
 		/**
-		 * The meta object literal for the '<em><b>Source</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Quantity</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SOURCE_QUANTITY_DECLARATION__SOURCE = eINSTANCE.getSourceQuantityDeclaration_Source();
+		EReference FREE_QUANTITY_DECLARATION__QUANTITY = eINSTANCE.getFreeQuantityDeclaration_Quantity();
 
 		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.declaration.impl.LimitDeclarationImpl <em>Limit Declaration</em>}' class.
@@ -2476,6 +2515,34 @@ public interface DeclarationPackage extends EPackage {
 		 * @generated
 		 */
 		EReference LIMIT_DECLARATION__VALUE = eINSTANCE.getLimitDeclaration_Value();
+
+		/**
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.declaration.impl.QuantityDeclarationImpl <em>Quantity Declaration</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.declaration.impl.QuantityDeclarationImpl
+		 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getQuantityDeclaration()
+		 * @generated
+		 */
+		EClass QUANTITY_DECLARATION = eINSTANCE.getQuantityDeclaration();
+
+		/**
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.declaration.impl.SourceQuantityDeclarationImpl <em>Source Quantity Declaration</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.declaration.impl.SourceQuantityDeclarationImpl
+		 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getSourceQuantityDeclaration()
+		 * @generated
+		 */
+		EClass SOURCE_QUANTITY_DECLARATION = eINSTANCE.getSourceQuantityDeclaration();
+
+		/**
+		 * The meta object literal for the '<em><b>Source</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SOURCE_QUANTITY_DECLARATION__SOURCE = eINSTANCE.getSourceQuantityDeclaration_Source();
 
 		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.declaration.impl.SubnatureDeclarationImpl <em>Subnature Declaration</em>}' class.
@@ -2576,76 +2643,6 @@ public interface DeclarationPackage extends EPackage {
 		 * @generated
 		 */
 		EClass SUBTYPE_DECLARATION = eINSTANCE.getSubtypeDeclaration();
-
-		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.declaration.impl.AliasDeclarationImpl <em>Alias Declaration</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.declaration.impl.AliasDeclarationImpl
-		 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getAliasDeclaration()
-		 * @generated
-		 */
-		EClass ALIAS_DECLARATION = eINSTANCE.getAliasDeclaration();
-
-		/**
-		 * The meta object literal for the '<em><b>Alias</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ALIAS_DECLARATION__ALIAS = eINSTANCE.getAliasDeclaration_Alias();
-
-		/**
-		 * The meta object literal for the '<em><b>Is</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ALIAS_DECLARATION__IS = eINSTANCE.getAliasDeclaration_Is();
-
-		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.declaration.impl.AttributeDeclarationImpl <em>Attribute Declaration</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.declaration.impl.AttributeDeclarationImpl
-		 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getAttributeDeclaration()
-		 * @generated
-		 */
-		EClass ATTRIBUTE_DECLARATION = eINSTANCE.getAttributeDeclaration();
-
-		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.declaration.impl.AttributeSpecificationImpl <em>Attribute Specification</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.declaration.impl.AttributeSpecificationImpl
-		 * @see net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl#getAttributeSpecification()
-		 * @generated
-		 */
-		EClass ATTRIBUTE_SPECIFICATION = eINSTANCE.getAttributeSpecification();
-
-		/**
-		 * The meta object literal for the '<em><b>Entity</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ATTRIBUTE_SPECIFICATION__ENTITY = eINSTANCE.getAttributeSpecification_Entity();
-
-		/**
-		 * The meta object literal for the '<em><b>Class</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ATTRIBUTE_SPECIFICATION__CLASS = eINSTANCE.getAttributeSpecification_Class();
-
-		/**
-		 * The meta object literal for the '<em><b>Is</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ATTRIBUTE_SPECIFICATION__IS = eINSTANCE.getAttributeSpecification_Is();
 
 		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.declaration.impl.ConfigurationSpecificationImpl <em>Configuration Specification</em>}' class.

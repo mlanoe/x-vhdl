@@ -6,9 +6,6 @@ package net.mlanoe.language.vhdl.declaration.validation;
 
 import net.mlanoe.language.vhdl.MultiName;
 import net.mlanoe.language.vhdl.Name;
-import net.mlanoe.language.vhdl.expression.Expression;
-
-import org.eclipse.emf.common.util.EList;
 
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.declaration.GroupDeclaration}.
@@ -20,9 +17,5 @@ public interface GroupDeclarationValidator {
 	boolean validate();
 
 	boolean validateIs(Name value);
-
 	boolean validateMember(MultiName value);
-
-	boolean validateIs(Expression value);
-	boolean validateMember(EList<Expression> value);
 }

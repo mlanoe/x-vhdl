@@ -19,7 +19,6 @@ import org.eclipse.emf.common.util.EList;
 public interface BlockConfigurationValidator {
 	boolean validate();
 
-	boolean validateName(Name value);
 	boolean validateUse(EList<Name> value);
 	boolean validateItem(EList<ConfigurationItem> value);
 }

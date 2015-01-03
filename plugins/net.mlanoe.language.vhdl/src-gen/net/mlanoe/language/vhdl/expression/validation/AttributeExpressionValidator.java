@@ -15,6 +15,5 @@ import net.mlanoe.language.vhdl.Signature;
 public interface AttributeExpressionValidator {
 	boolean validate();
 
-	boolean validateName(String value);
 	boolean validateSignature(Signature value);
 }

@@ -5,9 +5,6 @@
 package net.mlanoe.language.vhdl.declaration.validation;
 
 import net.mlanoe.language.vhdl.MultiName;
-import net.mlanoe.language.vhdl.Name;
-
-import org.eclipse.emf.common.util.EList;
 
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.declaration.UseClauseDeclaration}.
@@ -19,6 +16,4 @@ public interface UseClauseDeclarationValidator {
 	boolean validate();
 
 	boolean validateUse(MultiName value);
-
-	boolean validateUse(EList<Name> value);
 }

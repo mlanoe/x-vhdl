@@ -4,7 +4,6 @@
  */
 package net.mlanoe.language.vhdl.type.validation;
 
-import net.mlanoe.language.vhdl.Name;
 
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.type.FileTypeDefinition}.
@@ -15,5 +14,4 @@ import net.mlanoe.language.vhdl.Name;
 public interface FileTypeDefinitionValidator {
 	boolean validate();
 
-	boolean validateFile(Name value);
 }

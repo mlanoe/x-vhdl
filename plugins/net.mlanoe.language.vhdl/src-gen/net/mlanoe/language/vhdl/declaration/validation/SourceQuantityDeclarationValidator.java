@@ -6,9 +6,6 @@ package net.mlanoe.language.vhdl.declaration.validation;
 
 import net.mlanoe.language.vhdl.ams.SourceAspect;
 
-import net.mlanoe.language.vhdl.expression.Expression;
-import net.mlanoe.language.vhdl.type.TypeReference;
-
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.declaration.SourceQuantityDeclaration}.
  * This doesn't really do anything, and it's not a real EMF artifact.
@@ -18,8 +15,5 @@ import net.mlanoe.language.vhdl.type.TypeReference;
 public interface SourceQuantityDeclarationValidator {
 	boolean validate();
 
-	boolean validateType(TypeReference value);
-
-	boolean validateType(Expression value);
 	boolean validateSource(SourceAspect value);
 }

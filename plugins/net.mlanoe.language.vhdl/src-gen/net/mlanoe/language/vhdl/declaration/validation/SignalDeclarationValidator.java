@@ -7,8 +7,6 @@ package net.mlanoe.language.vhdl.declaration.validation;
 import net.mlanoe.language.vhdl.declaration.Mode;
 import net.mlanoe.language.vhdl.declaration.SignalKind;
 
-import net.mlanoe.language.vhdl.expression.Expression;
-
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.declaration.SignalDeclaration}.
  * This doesn't really do anything, and it's not a real EMF artifact.
@@ -18,8 +16,6 @@ import net.mlanoe.language.vhdl.expression.Expression;
 public interface SignalDeclarationValidator {
 	boolean validate();
 
-	boolean validateType(Expression value);
 	boolean validateKind(SignalKind value);
-	boolean validateInitial(Expression value);
 	boolean validateMode(Mode value);
 }

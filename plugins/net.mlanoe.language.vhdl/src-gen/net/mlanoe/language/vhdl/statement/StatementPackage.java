@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -101,16 +98,6 @@ public interface StatementPackage extends EPackage {
 	 * @ordered
 	 */
 	int STATEMENT_FEATURE_COUNT = VhdlPackage.VHDL_OBJECT_FEATURE_COUNT + 1;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.statement.impl.WaitStatementImpl <em>Wait Statement</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.statement.impl.WaitStatementImpl
-	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getWaitStatement()
-	 * @generated
-	 */
-	int WAIT_STATEMENT = 6;
 
 	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.statement.impl.ReportStatementImpl <em>Report Statement</em>}' class.
@@ -333,16 +320,6 @@ public interface StatementPackage extends EPackage {
 	int SIGNAL_ASSIGNMENT_STATEMENT_FEATURE_COUNT = STATEMENT_FEATURE_COUNT + 4;
 
 	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.statement.impl.SequentialSignalAssignmentStatementImpl <em>Sequential Signal Assignment Statement</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.statement.impl.SequentialSignalAssignmentStatementImpl
-	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getSequentialSignalAssignmentStatement()
-	 * @generated
-	 */
-	int SEQUENTIAL_SIGNAL_ASSIGNMENT_STATEMENT = 4;
-
-	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.statement.impl.ConditionalSignalAssignmentStatementImpl <em>Conditional Signal Assignment Statement</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -516,6 +493,16 @@ public interface StatementPackage extends EPackage {
 	int SELECTED_SIGNAL_ASSIGNMENT_STATEMENT_FEATURE_COUNT = CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT_FEATURE_COUNT + 1;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.statement.impl.SequentialSignalAssignmentStatementImpl <em>Sequential Signal Assignment Statement</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.statement.impl.SequentialSignalAssignmentStatementImpl
+	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getSequentialSignalAssignmentStatement()
+	 * @generated
+	 */
+	int SEQUENTIAL_SIGNAL_ASSIGNMENT_STATEMENT = 4;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -586,6 +573,16 @@ public interface StatementPackage extends EPackage {
 	 * @ordered
 	 */
 	int SEQUENTIAL_SIGNAL_ASSIGNMENT_STATEMENT_FEATURE_COUNT = SIGNAL_ASSIGNMENT_STATEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.statement.impl.WaitStatementImpl <em>Wait Statement</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.statement.impl.WaitStatementImpl
+	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getWaitStatement()
+	 * @generated
+	 */
+	int WAIT_STATEMENT = 6;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2135,46 +2132,6 @@ public interface StatementPackage extends EPackage {
 	int WHILE_ITERATION_SCHEME_FEATURE_COUNT = ITERATION_SCHEME_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.statement.impl.ForIterationSchemeImpl <em>For Iteration Scheme</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.statement.impl.ForIterationSchemeImpl
-	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getForIterationScheme()
-	 * @generated
-	 */
-	int FOR_ITERATION_SCHEME = 37;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.statement.impl.GenerationSchemeImpl <em>Generation Scheme</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.statement.impl.GenerationSchemeImpl
-	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getGenerationScheme()
-	 * @generated
-	 */
-	int GENERATION_SCHEME = 38;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.statement.impl.ForGenerationSchemeImpl <em>For Generation Scheme</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.statement.impl.ForGenerationSchemeImpl
-	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getForGenerationScheme()
-	 * @generated
-	 */
-	int FOR_GENERATION_SCHEME = 36;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.statement.impl.IfGenerationSchemeImpl <em>If Generation Scheme</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.statement.impl.IfGenerationSchemeImpl
-	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getIfGenerationScheme()
-	 * @generated
-	 */
-	int IF_GENERATION_SCHEME = 39;
-
-	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.statement.impl.DelayMechanismImpl <em>Delay Mechanism</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2203,6 +2160,16 @@ public interface StatementPackage extends EPackage {
 	int DELAY_MECHANISM_FEATURE_COUNT = VhdlPackage.VHDL_OBJECT_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.statement.impl.GenerationSchemeImpl <em>Generation Scheme</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.statement.impl.GenerationSchemeImpl
+	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getGenerationScheme()
+	 * @generated
+	 */
+	int GENERATION_SCHEME = 38;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2219,6 +2186,16 @@ public interface StatementPackage extends EPackage {
 	 * @ordered
 	 */
 	int GENERATION_SCHEME_FEATURE_COUNT = VhdlPackage.VHDL_OBJECT_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.statement.impl.ForGenerationSchemeImpl <em>For Generation Scheme</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.statement.impl.ForGenerationSchemeImpl
+	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getForGenerationScheme()
+	 * @generated
+	 */
+	int FOR_GENERATION_SCHEME = 36;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2257,6 +2234,16 @@ public interface StatementPackage extends EPackage {
 	int FOR_GENERATION_SCHEME_FEATURE_COUNT = GENERATION_SCHEME_FEATURE_COUNT + 2;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.statement.impl.ForIterationSchemeImpl <em>For Iteration Scheme</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.statement.impl.ForIterationSchemeImpl
+	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getForIterationScheme()
+	 * @generated
+	 */
+	int FOR_ITERATION_SCHEME = 37;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2291,6 +2278,16 @@ public interface StatementPackage extends EPackage {
 	 * @ordered
 	 */
 	int FOR_ITERATION_SCHEME_FEATURE_COUNT = ITERATION_SCHEME_FEATURE_COUNT + 2;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.statement.impl.IfGenerationSchemeImpl <em>If Generation Scheme</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.statement.impl.IfGenerationSchemeImpl
+	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getIfGenerationScheme()
+	 * @generated
+	 */
+	int IF_GENERATION_SCHEME = 39;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2386,49 +2383,6 @@ public interface StatementPackage extends EPackage {
 
 
 	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.WaitStatement <em>Wait Statement</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Wait Statement</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.WaitStatement
-	 * @generated
-	 */
-	EClass getWaitStatement();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.statement.WaitStatement#getSensitivity <em>Sensitivity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Sensitivity</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.WaitStatement#getSensitivity()
-	 * @see #getWaitStatement()
-	 * @generated
-	 */
-	EReference getWaitStatement_Sensitivity();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.statement.WaitStatement#getUntil <em>Until</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Until</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.WaitStatement#getUntil()
-	 * @see #getWaitStatement()
-	 * @generated
-	 */
-	EReference getWaitStatement_Until();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.statement.WaitStatement#getTime <em>Time</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Time</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.WaitStatement#getTime()
-	 * @see #getWaitStatement()
-	 * @generated
-	 */
-	EReference getWaitStatement_Time();
-
-	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.ReportStatement <em>Report Statement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2469,6 +2423,69 @@ public interface StatementPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getReturnStatement();
+
+	/**
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.ConditionalSignalAssignmentStatement <em>Conditional Signal Assignment Statement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Conditional Signal Assignment Statement</em>'.
+	 * @see net.mlanoe.language.vhdl.statement.ConditionalSignalAssignmentStatement
+	 * @generated
+	 */
+	EClass getConditionalSignalAssignmentStatement();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link net.mlanoe.language.vhdl.statement.ConditionalSignalAssignmentStatement#getWaveform <em>Waveform</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Waveform</em>'.
+	 * @see net.mlanoe.language.vhdl.statement.ConditionalSignalAssignmentStatement#getWaveform()
+	 * @see #getConditionalSignalAssignmentStatement()
+	 * @generated
+	 */
+	EReference getConditionalSignalAssignmentStatement_Waveform();
+
+	/**
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.SelectedSignalAssignmentStatement <em>Selected Signal Assignment Statement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Selected Signal Assignment Statement</em>'.
+	 * @see net.mlanoe.language.vhdl.statement.SelectedSignalAssignmentStatement
+	 * @generated
+	 */
+	EClass getSelectedSignalAssignmentStatement();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.statement.SelectedSignalAssignmentStatement#getSelected <em>Selected</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Selected</em>'.
+	 * @see net.mlanoe.language.vhdl.statement.SelectedSignalAssignmentStatement#getSelected()
+	 * @see #getSelectedSignalAssignmentStatement()
+	 * @generated
+	 */
+	EReference getSelectedSignalAssignmentStatement_Selected();
+
+	/**
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.SequentialSignalAssignmentStatement <em>Sequential Signal Assignment Statement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Sequential Signal Assignment Statement</em>'.
+	 * @see net.mlanoe.language.vhdl.statement.SequentialSignalAssignmentStatement
+	 * @generated
+	 */
+	EClass getSequentialSignalAssignmentStatement();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link net.mlanoe.language.vhdl.statement.SequentialSignalAssignmentStatement#getWaveform <em>Waveform</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Waveform</em>'.
+	 * @see net.mlanoe.language.vhdl.statement.SequentialSignalAssignmentStatement#getWaveform()
+	 * @see #getSequentialSignalAssignmentStatement()
+	 * @generated
+	 */
+	EReference getSequentialSignalAssignmentStatement_Waveform();
 
 	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.SignalAssignmentStatement <em>Signal Assignment Statement</em>}'.
@@ -2525,67 +2542,47 @@ public interface StatementPackage extends EPackage {
 	EReference getSignalAssignmentStatement_Delay();
 
 	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.SequentialSignalAssignmentStatement <em>Sequential Signal Assignment Statement</em>}'.
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.WaitStatement <em>Wait Statement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Sequential Signal Assignment Statement</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.SequentialSignalAssignmentStatement
+	 * @return the meta object for class '<em>Wait Statement</em>'.
+	 * @see net.mlanoe.language.vhdl.statement.WaitStatement
 	 * @generated
 	 */
-	EClass getSequentialSignalAssignmentStatement();
+	EClass getWaitStatement();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link net.mlanoe.language.vhdl.statement.SequentialSignalAssignmentStatement#getWaveform <em>Waveform</em>}'.
+	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.statement.WaitStatement#getSensitivity <em>Sensitivity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Waveform</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.SequentialSignalAssignmentStatement#getWaveform()
-	 * @see #getSequentialSignalAssignmentStatement()
+	 * @return the meta object for the containment reference '<em>Sensitivity</em>'.
+	 * @see net.mlanoe.language.vhdl.statement.WaitStatement#getSensitivity()
+	 * @see #getWaitStatement()
 	 * @generated
 	 */
-	EReference getSequentialSignalAssignmentStatement_Waveform();
+	EReference getWaitStatement_Sensitivity();
 
 	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.ConditionalSignalAssignmentStatement <em>Conditional Signal Assignment Statement</em>}'.
+	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.statement.WaitStatement#getUntil <em>Until</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Conditional Signal Assignment Statement</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.ConditionalSignalAssignmentStatement
+	 * @return the meta object for the containment reference '<em>Until</em>'.
+	 * @see net.mlanoe.language.vhdl.statement.WaitStatement#getUntil()
+	 * @see #getWaitStatement()
 	 * @generated
 	 */
-	EClass getConditionalSignalAssignmentStatement();
+	EReference getWaitStatement_Until();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link net.mlanoe.language.vhdl.statement.ConditionalSignalAssignmentStatement#getWaveform <em>Waveform</em>}'.
+	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.statement.WaitStatement#getTime <em>Time</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Waveform</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.ConditionalSignalAssignmentStatement#getWaveform()
-	 * @see #getConditionalSignalAssignmentStatement()
+	 * @return the meta object for the containment reference '<em>Time</em>'.
+	 * @see net.mlanoe.language.vhdl.statement.WaitStatement#getTime()
+	 * @see #getWaitStatement()
 	 * @generated
 	 */
-	EReference getConditionalSignalAssignmentStatement_Waveform();
-
-	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.SelectedSignalAssignmentStatement <em>Selected Signal Assignment Statement</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Selected Signal Assignment Statement</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.SelectedSignalAssignmentStatement
-	 * @generated
-	 */
-	EClass getSelectedSignalAssignmentStatement();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.statement.SelectedSignalAssignmentStatement#getSelected <em>Selected</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Selected</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.SelectedSignalAssignmentStatement#getSelected()
-	 * @see #getSelectedSignalAssignmentStatement()
-	 * @generated
-	 */
-	EReference getSelectedSignalAssignmentStatement_Selected();
+	EReference getWaitStatement_Time();
 
 	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.VariableAssignmentStatement <em>Variable Assignment Statement</em>}'.
@@ -2853,17 +2850,6 @@ public interface StatementPackage extends EPackage {
 	EAttribute getProcessStatement_Postponed();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.statement.ProcessStatement#getSensitivity <em>Sensitivity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Sensitivity</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.ProcessStatement#getSensitivity()
-	 * @see #getProcessStatement()
-	 * @generated
-	 */
-	EReference getProcessStatement_Sensitivity();
-
-	/**
 	 * Returns the meta object for the containment reference list '{@link net.mlanoe.language.vhdl.statement.ProcessStatement#getDeclaration <em>Declaration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2884,6 +2870,17 @@ public interface StatementPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getProcessStatement_Statement();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.statement.ProcessStatement#getSensitivity <em>Sensitivity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Sensitivity</em>'.
+	 * @see net.mlanoe.language.vhdl.statement.ProcessStatement#getSensitivity()
+	 * @see #getProcessStatement()
+	 * @generated
+	 */
+	EReference getProcessStatement_Sensitivity();
 
 	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.AssertionStatement <em>Assertion Statement</em>}'.
@@ -3132,6 +3129,38 @@ public interface StatementPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getComponentInstantiationStatement_Name();
+
+	/**
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.InstantiationStatement <em>Instantiation Statement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Instantiation Statement</em>'.
+	 * @see net.mlanoe.language.vhdl.statement.InstantiationStatement
+	 * @generated
+	 */
+	EClass getInstantiationStatement();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.statement.InstantiationStatement#getGenericMap <em>Generic Map</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Generic Map</em>'.
+	 * @see net.mlanoe.language.vhdl.statement.InstantiationStatement#getGenericMap()
+	 * @see #getInstantiationStatement()
+	 * @generated
+	 */
+	EReference getInstantiationStatement_GenericMap();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.statement.InstantiationStatement#getPortMap <em>Port Map</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Port Map</em>'.
+	 * @see net.mlanoe.language.vhdl.statement.InstantiationStatement#getPortMap()
+	 * @see #getInstantiationStatement()
+	 * @generated
+	 */
+	EReference getInstantiationStatement_PortMap();
 
 	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.EntityInstantiationStatement <em>Entity Instantiation Statement</em>}'.
@@ -3442,36 +3471,35 @@ public interface StatementPackage extends EPackage {
 	EReference getWhileIterationScheme_Condition();
 
 	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.ForIterationScheme <em>For Iteration Scheme</em>}'.
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.DelayMechanism <em>Delay Mechanism</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>For Iteration Scheme</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.ForIterationScheme
+	 * @return the meta object for class '<em>Delay Mechanism</em>'.
+	 * @see net.mlanoe.language.vhdl.statement.DelayMechanism
 	 * @generated
 	 */
-	EClass getForIterationScheme();
+	EClass getDelayMechanism();
 
 	/**
-	 * Returns the meta object for the attribute '{@link net.mlanoe.language.vhdl.statement.ForIterationScheme#getVariable <em>Variable</em>}'.
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.ExpressionStatement <em>Expression Statement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Variable</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.ForIterationScheme#getVariable()
-	 * @see #getForIterationScheme()
+	 * @return the meta object for class '<em>Expression Statement</em>'.
+	 * @see net.mlanoe.language.vhdl.statement.ExpressionStatement
 	 * @generated
 	 */
-	EAttribute getForIterationScheme_Variable();
+	EClass getExpressionStatement();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.statement.ForIterationScheme#getIn <em>In</em>}'.
+	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.statement.ExpressionStatement#getExpression <em>Expression</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>In</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.ForIterationScheme#getIn()
-	 * @see #getForIterationScheme()
+	 * @return the meta object for the containment reference '<em>Expression</em>'.
+	 * @see net.mlanoe.language.vhdl.statement.ExpressionStatement#getExpression()
+	 * @see #getExpressionStatement()
 	 * @generated
 	 */
-	EReference getForIterationScheme_In();
+	EReference getExpressionStatement_Expression();
 
 	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.ForGenerationScheme <em>For Generation Scheme</em>}'.
@@ -3506,6 +3534,38 @@ public interface StatementPackage extends EPackage {
 	EReference getForGenerationScheme_In();
 
 	/**
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.ForIterationScheme <em>For Iteration Scheme</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>For Iteration Scheme</em>'.
+	 * @see net.mlanoe.language.vhdl.statement.ForIterationScheme
+	 * @generated
+	 */
+	EClass getForIterationScheme();
+
+	/**
+	 * Returns the meta object for the attribute '{@link net.mlanoe.language.vhdl.statement.ForIterationScheme#getVariable <em>Variable</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Variable</em>'.
+	 * @see net.mlanoe.language.vhdl.statement.ForIterationScheme#getVariable()
+	 * @see #getForIterationScheme()
+	 * @generated
+	 */
+	EAttribute getForIterationScheme_Variable();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.statement.ForIterationScheme#getIn <em>In</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>In</em>'.
+	 * @see net.mlanoe.language.vhdl.statement.ForIterationScheme#getIn()
+	 * @see #getForIterationScheme()
+	 * @generated
+	 */
+	EReference getForIterationScheme_In();
+
+	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.GenerationScheme <em>Generation Scheme</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3535,16 +3595,6 @@ public interface StatementPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getIfGenerationScheme_Condition();
-
-	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.DelayMechanism <em>Delay Mechanism</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Delay Mechanism</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.DelayMechanism
-	 * @generated
-	 */
-	EClass getDelayMechanism();
 
 	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.RejectMechanism <em>Reject Mechanism</em>}'.
@@ -3578,59 +3628,6 @@ public interface StatementPackage extends EPackage {
 	EClass getTransportMechanism();
 
 	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.ExpressionStatement <em>Expression Statement</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Expression Statement</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.ExpressionStatement
-	 * @generated
-	 */
-	EClass getExpressionStatement();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.statement.ExpressionStatement#getExpression <em>Expression</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Expression</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.ExpressionStatement#getExpression()
-	 * @see #getExpressionStatement()
-	 * @generated
-	 */
-	EReference getExpressionStatement_Expression();
-
-	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.InstantiationStatement <em>Instantiation Statement</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Instantiation Statement</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.InstantiationStatement
-	 * @generated
-	 */
-	EClass getInstantiationStatement();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.statement.InstantiationStatement#getGenericMap <em>Generic Map</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Generic Map</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.InstantiationStatement#getGenericMap()
-	 * @see #getInstantiationStatement()
-	 * @generated
-	 */
-	EReference getInstantiationStatement_GenericMap();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.statement.InstantiationStatement#getPortMap <em>Port Map</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Port Map</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.InstantiationStatement#getPortMap()
-	 * @see #getInstantiationStatement()
-	 * @generated
-	 */
-	EReference getInstantiationStatement_PortMap();
-
-	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3652,40 +3649,6 @@ public interface StatementPackage extends EPackage {
 	 * @generated
 	 */
 	interface Literals {
-		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.WaitStatementImpl <em>Wait Statement</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.statement.impl.WaitStatementImpl
-		 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getWaitStatement()
-		 * @generated
-		 */
-		EClass WAIT_STATEMENT = eINSTANCE.getWaitStatement();
-
-		/**
-		 * The meta object literal for the '<em><b>Sensitivity</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference WAIT_STATEMENT__SENSITIVITY = eINSTANCE.getWaitStatement_Sensitivity();
-
-		/**
-		 * The meta object literal for the '<em><b>Until</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference WAIT_STATEMENT__UNTIL = eINSTANCE.getWaitStatement_Until();
-
-		/**
-		 * The meta object literal for the '<em><b>Time</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference WAIT_STATEMENT__TIME = eINSTANCE.getWaitStatement_Time();
-
 		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.ReportStatementImpl <em>Report Statement</em>}' class.
 		 * <!-- begin-user-doc -->
@@ -3721,6 +3684,60 @@ public interface StatementPackage extends EPackage {
 		 * @generated
 		 */
 		EClass RETURN_STATEMENT = eINSTANCE.getReturnStatement();
+
+		/**
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.ConditionalSignalAssignmentStatementImpl <em>Conditional Signal Assignment Statement</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.statement.impl.ConditionalSignalAssignmentStatementImpl
+		 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getConditionalSignalAssignmentStatement()
+		 * @generated
+		 */
+		EClass CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT = eINSTANCE.getConditionalSignalAssignmentStatement();
+
+		/**
+		 * The meta object literal for the '<em><b>Waveform</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM = eINSTANCE.getConditionalSignalAssignmentStatement_Waveform();
+
+		/**
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.SelectedSignalAssignmentStatementImpl <em>Selected Signal Assignment Statement</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.statement.impl.SelectedSignalAssignmentStatementImpl
+		 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getSelectedSignalAssignmentStatement()
+		 * @generated
+		 */
+		EClass SELECTED_SIGNAL_ASSIGNMENT_STATEMENT = eINSTANCE.getSelectedSignalAssignmentStatement();
+
+		/**
+		 * The meta object literal for the '<em><b>Selected</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SELECTED_SIGNAL_ASSIGNMENT_STATEMENT__SELECTED = eINSTANCE.getSelectedSignalAssignmentStatement_Selected();
+
+		/**
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.SequentialSignalAssignmentStatementImpl <em>Sequential Signal Assignment Statement</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.statement.impl.SequentialSignalAssignmentStatementImpl
+		 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getSequentialSignalAssignmentStatement()
+		 * @generated
+		 */
+		EClass SEQUENTIAL_SIGNAL_ASSIGNMENT_STATEMENT = eINSTANCE.getSequentialSignalAssignmentStatement();
+
+		/**
+		 * The meta object literal for the '<em><b>Waveform</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SEQUENTIAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM = eINSTANCE.getSequentialSignalAssignmentStatement_Waveform();
 
 		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.SignalAssignmentStatementImpl <em>Signal Assignment Statement</em>}' class.
@@ -3765,58 +3782,38 @@ public interface StatementPackage extends EPackage {
 		EReference SIGNAL_ASSIGNMENT_STATEMENT__DELAY = eINSTANCE.getSignalAssignmentStatement_Delay();
 
 		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.SequentialSignalAssignmentStatementImpl <em>Sequential Signal Assignment Statement</em>}' class.
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.WaitStatementImpl <em>Wait Statement</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.statement.impl.SequentialSignalAssignmentStatementImpl
-		 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getSequentialSignalAssignmentStatement()
+		 * @see net.mlanoe.language.vhdl.statement.impl.WaitStatementImpl
+		 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getWaitStatement()
 		 * @generated
 		 */
-		EClass SEQUENTIAL_SIGNAL_ASSIGNMENT_STATEMENT = eINSTANCE.getSequentialSignalAssignmentStatement();
+		EClass WAIT_STATEMENT = eINSTANCE.getWaitStatement();
 
 		/**
-		 * The meta object literal for the '<em><b>Waveform</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Sensitivity</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SEQUENTIAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM = eINSTANCE.getSequentialSignalAssignmentStatement_Waveform();
+		EReference WAIT_STATEMENT__SENSITIVITY = eINSTANCE.getWaitStatement_Sensitivity();
 
 		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.ConditionalSignalAssignmentStatementImpl <em>Conditional Signal Assignment Statement</em>}' class.
+		 * The meta object literal for the '<em><b>Until</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.statement.impl.ConditionalSignalAssignmentStatementImpl
-		 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getConditionalSignalAssignmentStatement()
 		 * @generated
 		 */
-		EClass CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT = eINSTANCE.getConditionalSignalAssignmentStatement();
+		EReference WAIT_STATEMENT__UNTIL = eINSTANCE.getWaitStatement_Until();
 
 		/**
-		 * The meta object literal for the '<em><b>Waveform</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Time</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM = eINSTANCE.getConditionalSignalAssignmentStatement_Waveform();
-
-		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.SelectedSignalAssignmentStatementImpl <em>Selected Signal Assignment Statement</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.statement.impl.SelectedSignalAssignmentStatementImpl
-		 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getSelectedSignalAssignmentStatement()
-		 * @generated
-		 */
-		EClass SELECTED_SIGNAL_ASSIGNMENT_STATEMENT = eINSTANCE.getSelectedSignalAssignmentStatement();
-
-		/**
-		 * The meta object literal for the '<em><b>Selected</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SELECTED_SIGNAL_ASSIGNMENT_STATEMENT__SELECTED = eINSTANCE.getSelectedSignalAssignmentStatement_Selected();
+		EReference WAIT_STATEMENT__TIME = eINSTANCE.getWaitStatement_Time();
 
 		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.VariableAssignmentStatementImpl <em>Variable Assignment Statement</em>}' class.
@@ -4039,14 +4036,6 @@ public interface StatementPackage extends EPackage {
 		EAttribute PROCESS_STATEMENT__POSTPONED = eINSTANCE.getProcessStatement_Postponed();
 
 		/**
-		 * The meta object literal for the '<em><b>Sensitivity</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PROCESS_STATEMENT__SENSITIVITY = eINSTANCE.getProcessStatement_Sensitivity();
-
-		/**
 		 * The meta object literal for the '<em><b>Declaration</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -4061,6 +4050,14 @@ public interface StatementPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PROCESS_STATEMENT__STATEMENT = eINSTANCE.getProcessStatement_Statement();
+
+		/**
+		 * The meta object literal for the '<em><b>Sensitivity</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PROCESS_STATEMENT__SENSITIVITY = eINSTANCE.getProcessStatement_Sensitivity();
 
 		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.AssertionStatementImpl <em>Assertion Statement</em>}' class.
@@ -4255,6 +4252,32 @@ public interface StatementPackage extends EPackage {
 		 * @generated
 		 */
 		EReference COMPONENT_INSTANTIATION_STATEMENT__NAME = eINSTANCE.getComponentInstantiationStatement_Name();
+
+		/**
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.InstantiationStatementImpl <em>Instantiation Statement</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.statement.impl.InstantiationStatementImpl
+		 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getInstantiationStatement()
+		 * @generated
+		 */
+		EClass INSTANTIATION_STATEMENT = eINSTANCE.getInstantiationStatement();
+
+		/**
+		 * The meta object literal for the '<em><b>Generic Map</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference INSTANTIATION_STATEMENT__GENERIC_MAP = eINSTANCE.getInstantiationStatement_GenericMap();
+
+		/**
+		 * The meta object literal for the '<em><b>Port Map</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference INSTANTIATION_STATEMENT__PORT_MAP = eINSTANCE.getInstantiationStatement_PortMap();
 
 		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.EntityInstantiationStatementImpl <em>Entity Instantiation Statement</em>}' class.
@@ -4511,30 +4534,32 @@ public interface StatementPackage extends EPackage {
 		EReference WHILE_ITERATION_SCHEME__CONDITION = eINSTANCE.getWhileIterationScheme_Condition();
 
 		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.ForIterationSchemeImpl <em>For Iteration Scheme</em>}' class.
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.DelayMechanismImpl <em>Delay Mechanism</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.statement.impl.ForIterationSchemeImpl
-		 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getForIterationScheme()
+		 * @see net.mlanoe.language.vhdl.statement.impl.DelayMechanismImpl
+		 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getDelayMechanism()
 		 * @generated
 		 */
-		EClass FOR_ITERATION_SCHEME = eINSTANCE.getForIterationScheme();
+		EClass DELAY_MECHANISM = eINSTANCE.getDelayMechanism();
 
 		/**
-		 * The meta object literal for the '<em><b>Variable</b></em>' attribute feature.
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.ExpressionStatementImpl <em>Expression Statement</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.statement.impl.ExpressionStatementImpl
+		 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getExpressionStatement()
 		 * @generated
 		 */
-		EAttribute FOR_ITERATION_SCHEME__VARIABLE = eINSTANCE.getForIterationScheme_Variable();
+		EClass EXPRESSION_STATEMENT = eINSTANCE.getExpressionStatement();
 
 		/**
-		 * The meta object literal for the '<em><b>In</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Expression</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FOR_ITERATION_SCHEME__IN = eINSTANCE.getForIterationScheme_In();
+		EReference EXPRESSION_STATEMENT__EXPRESSION = eINSTANCE.getExpressionStatement_Expression();
 
 		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.ForGenerationSchemeImpl <em>For Generation Scheme</em>}' class.
@@ -4561,6 +4586,32 @@ public interface StatementPackage extends EPackage {
 		 * @generated
 		 */
 		EReference FOR_GENERATION_SCHEME__IN = eINSTANCE.getForGenerationScheme_In();
+
+		/**
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.ForIterationSchemeImpl <em>For Iteration Scheme</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.statement.impl.ForIterationSchemeImpl
+		 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getForIterationScheme()
+		 * @generated
+		 */
+		EClass FOR_ITERATION_SCHEME = eINSTANCE.getForIterationScheme();
+
+		/**
+		 * The meta object literal for the '<em><b>Variable</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FOR_ITERATION_SCHEME__VARIABLE = eINSTANCE.getForIterationScheme_Variable();
+
+		/**
+		 * The meta object literal for the '<em><b>In</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FOR_ITERATION_SCHEME__IN = eINSTANCE.getForIterationScheme_In();
 
 		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.GenerationSchemeImpl <em>Generation Scheme</em>}' class.
@@ -4591,16 +4642,6 @@ public interface StatementPackage extends EPackage {
 		EReference IF_GENERATION_SCHEME__CONDITION = eINSTANCE.getIfGenerationScheme_Condition();
 
 		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.DelayMechanismImpl <em>Delay Mechanism</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.statement.impl.DelayMechanismImpl
-		 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getDelayMechanism()
-		 * @generated
-		 */
-		EClass DELAY_MECHANISM = eINSTANCE.getDelayMechanism();
-
-		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.RejectMechanismImpl <em>Reject Mechanism</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -4627,50 +4668,6 @@ public interface StatementPackage extends EPackage {
 		 * @generated
 		 */
 		EClass TRANSPORT_MECHANISM = eINSTANCE.getTransportMechanism();
-
-		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.ExpressionStatementImpl <em>Expression Statement</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.statement.impl.ExpressionStatementImpl
-		 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getExpressionStatement()
-		 * @generated
-		 */
-		EClass EXPRESSION_STATEMENT = eINSTANCE.getExpressionStatement();
-
-		/**
-		 * The meta object literal for the '<em><b>Expression</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference EXPRESSION_STATEMENT__EXPRESSION = eINSTANCE.getExpressionStatement_Expression();
-
-		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.InstantiationStatementImpl <em>Instantiation Statement</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.statement.impl.InstantiationStatementImpl
-		 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getInstantiationStatement()
-		 * @generated
-		 */
-		EClass INSTANTIATION_STATEMENT = eINSTANCE.getInstantiationStatement();
-
-		/**
-		 * The meta object literal for the '<em><b>Generic Map</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference INSTANTIATION_STATEMENT__GENERIC_MAP = eINSTANCE.getInstantiationStatement_GenericMap();
-
-		/**
-		 * The meta object literal for the '<em><b>Port Map</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference INSTANTIATION_STATEMENT__PORT_MAP = eINSTANCE.getInstantiationStatement_PortMap();
 
 	}
 

@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -39,24 +36,40 @@ import net.mlanoe.language.vhdl.StringNamed;
 import net.mlanoe.language.vhdl.VhdlFactory;
 import net.mlanoe.language.vhdl.VhdlObject;
 import net.mlanoe.language.vhdl.VhdlPackage;
+
 import net.mlanoe.language.vhdl.ams.AmsPackage;
+
 import net.mlanoe.language.vhdl.ams.impl.AmsPackageImpl;
+
 import net.mlanoe.language.vhdl.configuration.ConfigurationPackage;
+
 import net.mlanoe.language.vhdl.configuration.impl.ConfigurationPackageImpl;
+
 import net.mlanoe.language.vhdl.declaration.DeclarationPackage;
+
 import net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl;
+
 import net.mlanoe.language.vhdl.expression.ExpressionPackage;
+
 import net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl;
+
 import net.mlanoe.language.vhdl.nature.NaturePackage;
+
 import net.mlanoe.language.vhdl.nature.impl.NaturePackageImpl;
+
 import net.mlanoe.language.vhdl.statement.StatementPackage;
+
 import net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl;
+
 import net.mlanoe.language.vhdl.type.TypePackage;
+
 import net.mlanoe.language.vhdl.type.impl.TypePackageImpl;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
+
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
@@ -99,21 +112,7 @@ public class VhdlPackageImpl extends EPackageImpl implements VhdlPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass modelEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass entityEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass genericsEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -127,7 +126,14 @@ public class VhdlPackageImpl extends EPackageImpl implements VhdlPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass packageBodyEClass = null;
+	private EClass genericsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass modelEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -135,6 +141,13 @@ public class VhdlPackageImpl extends EPackageImpl implements VhdlPackage {
 	 * @generated
 	 */
 	private EClass packageEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass packageBodyEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -156,6 +169,20 @@ public class VhdlPackageImpl extends EPackageImpl implements VhdlPackage {
 	 * @generated
 	 */
 	private EClass signatureEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass namedEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass multiNamedEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -247,20 +274,6 @@ public class VhdlPackageImpl extends EPackageImpl implements VhdlPackage {
 	 * @generated
 	 */
 	private EClass stringNamedEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass namedEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass multiNamedEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -459,24 +472,6 @@ public class VhdlPackageImpl extends EPackageImpl implements VhdlPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getModel() {
-		return modelEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getModel_Design() {
-		return (EReference)modelEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getEntity() {
 		return entityEClass;
 	}
@@ -513,24 +508,6 @@ public class VhdlPackageImpl extends EPackageImpl implements VhdlPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getGenerics() {
-		return genericsEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getGenerics_Declaration() {
-		return (EReference)genericsEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getGenericMaps() {
 		return genericMapsEClass;
 	}
@@ -549,6 +526,51 @@ public class VhdlPackageImpl extends EPackageImpl implements VhdlPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getGenerics() {
+		return genericsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getGenerics_Declaration() {
+		return (EReference)genericsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getModel() {
+		return modelEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getModel_Design() {
+		return (EReference)modelEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPackage() {
+		return packageEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getPackageBody() {
 		return packageBodyEClass;
 	}
@@ -560,15 +582,6 @@ public class VhdlPackageImpl extends EPackageImpl implements VhdlPackage {
 	 */
 	public EReference getPackageBody_Name() {
 		return (EReference)packageBodyEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getPackage() {
-		return packageEClass;
 	}
 
 	/**
@@ -632,6 +645,42 @@ public class VhdlPackageImpl extends EPackageImpl implements VhdlPackage {
 	 */
 	public EReference getSignature_Return() {
 		return (EReference)signatureEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getNamed() {
+		return namedEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getNamed_Name() {
+		return (EReference)namedEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMultiNamed() {
+		return multiNamedEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getMultiNamed_Name() {
+		return (EReference)multiNamedEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -812,42 +861,6 @@ public class VhdlPackageImpl extends EPackageImpl implements VhdlPackage {
 	 */
 	public EAttribute getStringNamed_Name() {
 		return (EAttribute)stringNamedEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getNamed() {
-		return namedEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getNamed_Name() {
-		return (EReference)namedEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getMultiNamed() {
-		return multiNamedEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getMultiNamed_Name() {
-		return (EReference)multiNamedEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**

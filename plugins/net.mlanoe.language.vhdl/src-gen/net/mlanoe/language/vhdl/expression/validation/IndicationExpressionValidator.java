@@ -4,11 +4,7 @@
  */
 package net.mlanoe.language.vhdl.expression.validation;
 
-import net.mlanoe.language.vhdl.Name;
-
 import net.mlanoe.language.vhdl.expression.Expression;
-
-import org.eclipse.emf.common.util.EList;
 
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.expression.IndicationExpression}.
@@ -19,7 +15,6 @@ import org.eclipse.emf.common.util.EList;
 public interface IndicationExpressionValidator {
 	boolean validate();
 
-	boolean validateMark(EList<Name> value);
 	boolean validateConstraint(Expression value);
 	boolean validateTolerance(Expression value);
 	boolean validateAcross(Expression value);

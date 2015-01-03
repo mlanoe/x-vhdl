@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -11,7 +8,9 @@
 package net.mlanoe.language.vhdl.statement;
 
 import net.mlanoe.language.vhdl.MultiName;
+
 import net.mlanoe.language.vhdl.expression.Expression;
+
 import org.eclipse.emf.common.util.EList;
 
 /**
@@ -79,7 +78,7 @@ public interface BreakStatement extends Statement {
 	 * Returns the value of the '<em><b>Sensitivity</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Sensitivity</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Sensitivity</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

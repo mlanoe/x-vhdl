@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -57,15 +54,6 @@ public interface VhdlFactory extends EFactory {
 	DesignUnit createDesignUnit();
 
 	/**
-	 * Returns a new object of class '<em>Model</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Model</em>'.
-	 * @generated
-	 */
-	Model createModel();
-
-	/**
 	 * Returns a new object of class '<em>Entity</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -73,15 +61,6 @@ public interface VhdlFactory extends EFactory {
 	 * @generated
 	 */
 	Entity createEntity();
-
-	/**
-	 * Returns a new object of class '<em>Generics</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Generics</em>'.
-	 * @generated
-	 */
-	Generics createGenerics();
 
 	/**
 	 * Returns a new object of class '<em>Generic Maps</em>'.
@@ -93,13 +72,22 @@ public interface VhdlFactory extends EFactory {
 	GenericMaps createGenericMaps();
 
 	/**
-	 * Returns a new object of class '<em>Package Body</em>'.
+	 * Returns a new object of class '<em>Generics</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Package Body</em>'.
+	 * @return a new object of class '<em>Generics</em>'.
 	 * @generated
 	 */
-	PackageBody createPackageBody();
+	Generics createGenerics();
+
+	/**
+	 * Returns a new object of class '<em>Model</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Model</em>'.
+	 * @generated
+	 */
+	Model createModel();
 
 	/**
 	 * Returns a new object of class '<em>Package</em>'.
@@ -109,6 +97,15 @@ public interface VhdlFactory extends EFactory {
 	 * @generated
 	 */
 	Package createPackage();
+
+	/**
+	 * Returns a new object of class '<em>Package Body</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Package Body</em>'.
+	 * @generated
+	 */
+	PackageBody createPackageBody();
 
 	/**
 	 * Returns a new object of class '<em>Ports</em>'.

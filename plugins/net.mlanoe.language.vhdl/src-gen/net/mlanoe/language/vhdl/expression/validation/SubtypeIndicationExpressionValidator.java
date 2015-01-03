@@ -6,7 +6,6 @@ package net.mlanoe.language.vhdl.expression.validation;
 
 import net.mlanoe.language.vhdl.type.TypeReference;
 
-
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.expression.SubtypeIndicationExpression}.
  * This doesn't really do anything, and it's not a real EMF artifact.
@@ -17,5 +16,4 @@ public interface SubtypeIndicationExpressionValidator {
 	boolean validate();
 
 	boolean validateMark(TypeReference value);
-
 }

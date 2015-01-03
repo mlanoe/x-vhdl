@@ -5,7 +5,6 @@
 package net.mlanoe.language.vhdl.configuration.validation;
 
 import net.mlanoe.language.vhdl.EntityReference;
-import net.mlanoe.language.vhdl.Name;
 
 import net.mlanoe.language.vhdl.configuration.BlockConfiguration;
 
@@ -19,7 +18,5 @@ public interface ConfigurationValidator {
 	boolean validate();
 
 	boolean validateOf(EntityReference value);
-
-	boolean validateOf(Name value);
 	boolean validateBlock(BlockConfiguration value);
 }

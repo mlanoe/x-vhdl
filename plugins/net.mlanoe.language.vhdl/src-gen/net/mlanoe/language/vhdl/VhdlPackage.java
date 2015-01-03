@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -11,6 +8,7 @@
 package net.mlanoe.language.vhdl;
 
 import net.mlanoe.language.vhdl.declaration.DeclarationPackage;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -140,16 +138,6 @@ public interface VhdlPackage extends EPackage {
 	int ARCHITECTURE = 0;
 
 	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.impl.DesignUnitImpl <em>Design Unit</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.impl.DesignUnitImpl
-	 * @see net.mlanoe.language.vhdl.impl.VhdlPackageImpl#getDesignUnit()
-	 * @generated
-	 */
-	int DESIGN_UNIT = 2;
-
-	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -259,6 +247,16 @@ public interface VhdlPackage extends EPackage {
 	int COMPONENT_FEATURE_COUNT = DeclarationPackage.DECLARATION_FEATURE_COUNT + 3;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.impl.DesignUnitImpl <em>Design Unit</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.impl.DesignUnitImpl
+	 * @see net.mlanoe.language.vhdl.impl.VhdlPackageImpl#getDesignUnit()
+	 * @generated
+	 */
+	int DESIGN_UNIT = 2;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -302,16 +300,6 @@ public interface VhdlPackage extends EPackage {
 	 * @ordered
 	 */
 	int DESIGN_UNIT_FEATURE_COUNT = VHDL_OBJECT_FEATURE_COUNT + 3;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.impl.ModelImpl <em>Model</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.impl.ModelImpl
-	 * @see net.mlanoe.language.vhdl.impl.VhdlPackageImpl#getModel()
-	 * @generated
-	 */
-	int MODEL = 7;
 
 	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.impl.EntityImpl <em>Entity</em>}' class.
@@ -387,16 +375,6 @@ public interface VhdlPackage extends EPackage {
 	int ENTITY_FEATURE_COUNT = MODULE_FEATURE_COUNT + 4;
 
 	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.impl.GenericsImpl <em>Generics</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.impl.GenericsImpl
-	 * @see net.mlanoe.language.vhdl.impl.VhdlPackageImpl#getGenerics()
-	 * @generated
-	 */
-	int GENERICS = 6;
-
-	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.impl.GenericMapsImpl <em>Generic Maps</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -434,6 +412,16 @@ public interface VhdlPackage extends EPackage {
 	int GENERIC_MAPS_FEATURE_COUNT = VHDL_OBJECT_FEATURE_COUNT + 1;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.impl.GenericsImpl <em>Generics</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.impl.GenericsImpl
+	 * @see net.mlanoe.language.vhdl.impl.VhdlPackageImpl#getGenerics()
+	 * @generated
+	 */
+	int GENERICS = 6;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -461,6 +449,16 @@ public interface VhdlPackage extends EPackage {
 	int GENERICS_FEATURE_COUNT = VHDL_OBJECT_FEATURE_COUNT + 1;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.impl.ModelImpl <em>Model</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.impl.ModelImpl
+	 * @see net.mlanoe.language.vhdl.impl.VhdlPackageImpl#getModel()
+	 * @generated
+	 */
+	int MODEL = 7;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -486,16 +484,6 @@ public interface VhdlPackage extends EPackage {
 	 * @ordered
 	 */
 	int MODEL_FEATURE_COUNT = VHDL_OBJECT_FEATURE_COUNT + 1;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.impl.PackageBodyImpl <em>Package Body</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.impl.PackageBodyImpl
-	 * @see net.mlanoe.language.vhdl.impl.VhdlPackageImpl#getPackageBody()
-	 * @generated
-	 */
-	int PACKAGE_BODY = 9;
 
 	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.impl.PackageImpl <em>Package</em>}' class.
@@ -542,6 +530,16 @@ public interface VhdlPackage extends EPackage {
 	 * @ordered
 	 */
 	int PACKAGE_FEATURE_COUNT = MODULE_FEATURE_COUNT + 1;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.impl.PackageBodyImpl <em>Package Body</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.impl.PackageBodyImpl
+	 * @see net.mlanoe.language.vhdl.impl.VhdlPackageImpl#getPackageBody()
+	 * @generated
+	 */
+	int PACKAGE_BODY = 9;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -699,7 +697,6 @@ public interface VhdlPackage extends EPackage {
 	 */
 	int SIGNATURE_FEATURE_COUNT = VHDL_OBJECT_FEATURE_COUNT + 2;
 
-
 	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.Named <em>Named</em>}' class.
 	 * <!-- begin-user-doc -->
@@ -727,7 +724,6 @@ public interface VhdlPackage extends EPackage {
 	 * @ordered
 	 */
 	int NAMED_FEATURE_COUNT = 1;
-
 
 	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.impl.MultiNamedImpl <em>Multi Named</em>}' class.
@@ -1075,6 +1071,7 @@ public interface VhdlPackage extends EPackage {
 	 */
 	int STRING_NAMED_FEATURE_COUNT = 1;
 
+
 	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.Architecture <em>Architecture</em>}'.
 	 * <!-- begin-user-doc -->
@@ -1204,27 +1201,6 @@ public interface VhdlPackage extends EPackage {
 	EReference getModule_Declaration();
 
 	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.Model <em>Model</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Model</em>'.
-	 * @see net.mlanoe.language.vhdl.Model
-	 * @generated
-	 */
-	EClass getModel();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link net.mlanoe.language.vhdl.Model#getDesign <em>Design</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Design</em>'.
-	 * @see net.mlanoe.language.vhdl.Model#getDesign()
-	 * @see #getModel()
-	 * @generated
-	 */
-	EReference getModel_Design();
-
-	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.Entity <em>Entity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1268,27 +1244,6 @@ public interface VhdlPackage extends EPackage {
 	EReference getEntity_Statement();
 
 	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.Generics <em>Generics</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Generics</em>'.
-	 * @see net.mlanoe.language.vhdl.Generics
-	 * @generated
-	 */
-	EClass getGenerics();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link net.mlanoe.language.vhdl.Generics#getDeclaration <em>Declaration</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Declaration</em>'.
-	 * @see net.mlanoe.language.vhdl.Generics#getDeclaration()
-	 * @see #getGenerics()
-	 * @generated
-	 */
-	EReference getGenerics_Declaration();
-
-	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.GenericMaps <em>Generic Maps</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1310,6 +1265,58 @@ public interface VhdlPackage extends EPackage {
 	EReference getGenericMaps_Generic();
 
 	/**
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.Generics <em>Generics</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Generics</em>'.
+	 * @see net.mlanoe.language.vhdl.Generics
+	 * @generated
+	 */
+	EClass getGenerics();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link net.mlanoe.language.vhdl.Generics#getDeclaration <em>Declaration</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Declaration</em>'.
+	 * @see net.mlanoe.language.vhdl.Generics#getDeclaration()
+	 * @see #getGenerics()
+	 * @generated
+	 */
+	EReference getGenerics_Declaration();
+
+	/**
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.Model <em>Model</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Model</em>'.
+	 * @see net.mlanoe.language.vhdl.Model
+	 * @generated
+	 */
+	EClass getModel();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link net.mlanoe.language.vhdl.Model#getDesign <em>Design</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Design</em>'.
+	 * @see net.mlanoe.language.vhdl.Model#getDesign()
+	 * @see #getModel()
+	 * @generated
+	 */
+	EReference getModel_Design();
+
+	/**
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.Package <em>Package</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Package</em>'.
+	 * @see net.mlanoe.language.vhdl.Package
+	 * @generated
+	 */
+	EClass getPackage();
+
+	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.PackageBody <em>Package Body</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1329,16 +1336,6 @@ public interface VhdlPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getPackageBody_Name();
-
-	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.Package <em>Package</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Package</em>'.
-	 * @see net.mlanoe.language.vhdl.Package
-	 * @generated
-	 */
-	EClass getPackage();
 
 	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.Ports <em>Ports</em>}'.
@@ -1413,6 +1410,48 @@ public interface VhdlPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getSignature_Return();
+
+	/**
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.Named <em>Named</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Named</em>'.
+	 * @see net.mlanoe.language.vhdl.Named
+	 * @generated
+	 */
+	EClass getNamed();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.Named#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Name</em>'.
+	 * @see net.mlanoe.language.vhdl.Named#getName()
+	 * @see #getNamed()
+	 * @generated
+	 */
+	EReference getNamed_Name();
+
+	/**
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.MultiNamed <em>Multi Named</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Multi Named</em>'.
+	 * @see net.mlanoe.language.vhdl.MultiNamed
+	 * @generated
+	 */
+	EClass getMultiNamed();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.MultiNamed#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Name</em>'.
+	 * @see net.mlanoe.language.vhdl.MultiNamed#getName()
+	 * @see #getMultiNamed()
+	 * @generated
+	 */
+	EReference getMultiNamed_Name();
 
 	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.VhdlObject <em>Object</em>}'.
@@ -1622,48 +1661,6 @@ public interface VhdlPackage extends EPackage {
 	EAttribute getStringNamed_Name();
 
 	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.Named <em>Named</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Named</em>'.
-	 * @see net.mlanoe.language.vhdl.Named
-	 * @generated
-	 */
-	EClass getNamed();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.Named#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Name</em>'.
-	 * @see net.mlanoe.language.vhdl.Named#getName()
-	 * @see #getNamed()
-	 * @generated
-	 */
-	EReference getNamed_Name();
-
-	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.MultiNamed <em>Multi Named</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Multi Named</em>'.
-	 * @see net.mlanoe.language.vhdl.MultiNamed
-	 * @generated
-	 */
-	EClass getMultiNamed();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.MultiNamed#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Name</em>'.
-	 * @see net.mlanoe.language.vhdl.MultiNamed#getName()
-	 * @see #getMultiNamed()
-	 * @generated
-	 */
-	EReference getMultiNamed_Name();
-
-	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1790,24 +1787,6 @@ public interface VhdlPackage extends EPackage {
 		EReference MODULE__DECLARATION = eINSTANCE.getModule_Declaration();
 
 		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.impl.ModelImpl <em>Model</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.impl.ModelImpl
-		 * @see net.mlanoe.language.vhdl.impl.VhdlPackageImpl#getModel()
-		 * @generated
-		 */
-		EClass MODEL = eINSTANCE.getModel();
-
-		/**
-		 * The meta object literal for the '<em><b>Design</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference MODEL__DESIGN = eINSTANCE.getModel_Design();
-
-		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.impl.EntityImpl <em>Entity</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1842,24 +1821,6 @@ public interface VhdlPackage extends EPackage {
 		EReference ENTITY__STATEMENT = eINSTANCE.getEntity_Statement();
 
 		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.impl.GenericsImpl <em>Generics</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.impl.GenericsImpl
-		 * @see net.mlanoe.language.vhdl.impl.VhdlPackageImpl#getGenerics()
-		 * @generated
-		 */
-		EClass GENERICS = eINSTANCE.getGenerics();
-
-		/**
-		 * The meta object literal for the '<em><b>Declaration</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference GENERICS__DECLARATION = eINSTANCE.getGenerics_Declaration();
-
-		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.impl.GenericMapsImpl <em>Generic Maps</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1878,6 +1839,52 @@ public interface VhdlPackage extends EPackage {
 		EReference GENERIC_MAPS__GENERIC = eINSTANCE.getGenericMaps_Generic();
 
 		/**
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.impl.GenericsImpl <em>Generics</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.impl.GenericsImpl
+		 * @see net.mlanoe.language.vhdl.impl.VhdlPackageImpl#getGenerics()
+		 * @generated
+		 */
+		EClass GENERICS = eINSTANCE.getGenerics();
+
+		/**
+		 * The meta object literal for the '<em><b>Declaration</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GENERICS__DECLARATION = eINSTANCE.getGenerics_Declaration();
+
+		/**
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.impl.ModelImpl <em>Model</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.impl.ModelImpl
+		 * @see net.mlanoe.language.vhdl.impl.VhdlPackageImpl#getModel()
+		 * @generated
+		 */
+		EClass MODEL = eINSTANCE.getModel();
+
+		/**
+		 * The meta object literal for the '<em><b>Design</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MODEL__DESIGN = eINSTANCE.getModel_Design();
+
+		/**
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.impl.PackageImpl <em>Package</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.impl.PackageImpl
+		 * @see net.mlanoe.language.vhdl.impl.VhdlPackageImpl#getPackage()
+		 * @generated
+		 */
+		EClass PACKAGE = eINSTANCE.getPackage();
+
+		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.impl.PackageBodyImpl <em>Package Body</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1894,16 +1901,6 @@ public interface VhdlPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PACKAGE_BODY__NAME = eINSTANCE.getPackageBody_Name();
-
-		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.impl.PackageImpl <em>Package</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.impl.PackageImpl
-		 * @see net.mlanoe.language.vhdl.impl.VhdlPackageImpl#getPackage()
-		 * @generated
-		 */
-		EClass PACKAGE = eINSTANCE.getPackage();
 
 		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.impl.PortsImpl <em>Ports</em>}' class.
@@ -1966,6 +1963,42 @@ public interface VhdlPackage extends EPackage {
 		 * @generated
 		 */
 		EReference SIGNATURE__RETURN = eINSTANCE.getSignature_Return();
+
+		/**
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.Named <em>Named</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.Named
+		 * @see net.mlanoe.language.vhdl.impl.VhdlPackageImpl#getNamed()
+		 * @generated
+		 */
+		EClass NAMED = eINSTANCE.getNamed();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference NAMED__NAME = eINSTANCE.getNamed_Name();
+
+		/**
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.impl.MultiNamedImpl <em>Multi Named</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.impl.MultiNamedImpl
+		 * @see net.mlanoe.language.vhdl.impl.VhdlPackageImpl#getMultiNamed()
+		 * @generated
+		 */
+		EClass MULTI_NAMED = eINSTANCE.getMultiNamed();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MULTI_NAMED__NAME = eINSTANCE.getMultiNamed_Name();
 
 		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.impl.VhdlObjectImpl <em>Object</em>}' class.
@@ -2152,42 +2185,6 @@ public interface VhdlPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute STRING_NAMED__NAME = eINSTANCE.getStringNamed_Name();
-
-		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.Named <em>Named</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.Named
-		 * @see net.mlanoe.language.vhdl.impl.VhdlPackageImpl#getNamed()
-		 * @generated
-		 */
-		EClass NAMED = eINSTANCE.getNamed();
-
-		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference NAMED__NAME = eINSTANCE.getNamed_Name();
-
-		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.impl.MultiNamedImpl <em>Multi Named</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.impl.MultiNamedImpl
-		 * @see net.mlanoe.language.vhdl.impl.VhdlPackageImpl#getMultiNamed()
-		 * @generated
-		 */
-		EClass MULTI_NAMED = eINSTANCE.getMultiNamed();
-
-		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference MULTI_NAMED__NAME = eINSTANCE.getMultiNamed_Name();
 
 	}
 

@@ -4,7 +4,8 @@
  */
 package net.mlanoe.language.vhdl.expression.validation;
 
-import net.mlanoe.language.vhdl.expression.Expression;
+import net.mlanoe.language.vhdl.Name;
+
 import org.eclipse.emf.common.util.EList;
 
 /**
@@ -16,5 +17,5 @@ import org.eclipse.emf.common.util.EList;
 public interface NameExpressionValidator {
 	boolean validate();
 
-	boolean validateElement(EList<Expression> value);
+	boolean validateElement(EList<Name> value);
 }

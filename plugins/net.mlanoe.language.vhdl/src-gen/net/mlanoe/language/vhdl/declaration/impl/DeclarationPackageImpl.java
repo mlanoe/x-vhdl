@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -11,10 +8,15 @@
 package net.mlanoe.language.vhdl.declaration.impl;
 
 import net.mlanoe.language.vhdl.VhdlPackage;
+
 import net.mlanoe.language.vhdl.ams.AmsPackage;
+
 import net.mlanoe.language.vhdl.ams.impl.AmsPackageImpl;
+
 import net.mlanoe.language.vhdl.configuration.ConfigurationPackage;
+
 import net.mlanoe.language.vhdl.configuration.impl.ConfigurationPackageImpl;
+
 import net.mlanoe.language.vhdl.declaration.AliasDeclaration;
 import net.mlanoe.language.vhdl.declaration.AttributeDeclaration;
 import net.mlanoe.language.vhdl.declaration.AttributeSpecification;
@@ -49,20 +51,31 @@ import net.mlanoe.language.vhdl.declaration.TypeDeclaration;
 import net.mlanoe.language.vhdl.declaration.UseClauseDeclaration;
 import net.mlanoe.language.vhdl.declaration.ValueDeclaration;
 import net.mlanoe.language.vhdl.declaration.VariableDeclaration;
+
 import net.mlanoe.language.vhdl.expression.ExpressionPackage;
+
 import net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl;
+
 import net.mlanoe.language.vhdl.impl.VhdlPackageImpl;
+
 import net.mlanoe.language.vhdl.nature.NaturePackage;
+
 import net.mlanoe.language.vhdl.nature.impl.NaturePackageImpl;
+
 import net.mlanoe.language.vhdl.statement.StatementPackage;
+
 import net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl;
+
 import net.mlanoe.language.vhdl.type.TypePackage;
+
 import net.mlanoe.language.vhdl.type.impl.TypePackageImpl;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
+
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
@@ -77,14 +90,21 @@ public class DeclarationPackageImpl extends EPackageImpl implements DeclarationP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass quantityDeclarationEClass = null;
+	private EClass aliasDeclarationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass freeQuantityDeclarationEClass = null;
+	private EClass attributeDeclarationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass attributeSpecificationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -98,7 +118,7 @@ public class DeclarationPackageImpl extends EPackageImpl implements DeclarationP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass sourceQuantityDeclarationEClass = null;
+	private EClass freeQuantityDeclarationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -106,6 +126,20 @@ public class DeclarationPackageImpl extends EPackageImpl implements DeclarationP
 	 * @generated
 	 */
 	private EClass limitDeclarationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass quantityDeclarationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass sourceQuantityDeclarationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,27 +182,6 @@ public class DeclarationPackageImpl extends EPackageImpl implements DeclarationP
 	 * @generated
 	 */
 	private EClass subtypeDeclarationEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass aliasDeclarationEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass attributeDeclarationEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass attributeSpecificationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -385,8 +398,8 @@ public class DeclarationPackageImpl extends EPackageImpl implements DeclarationP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getQuantityDeclaration() {
-		return quantityDeclarationEClass;
+	public EClass getAliasDeclaration() {
+		return aliasDeclarationEClass;
 	}
 
 	/**
@@ -394,8 +407,8 @@ public class DeclarationPackageImpl extends EPackageImpl implements DeclarationP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getFreeQuantityDeclaration() {
-		return freeQuantityDeclarationEClass;
+	public EReference getAliasDeclaration_Alias() {
+		return (EReference)aliasDeclarationEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -403,8 +416,53 @@ public class DeclarationPackageImpl extends EPackageImpl implements DeclarationP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFreeQuantityDeclaration_Quantity() {
-		return (EReference)freeQuantityDeclarationEClass.getEStructuralFeatures().get(0);
+	public EReference getAliasDeclaration_Is() {
+		return (EReference)aliasDeclarationEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAttributeDeclaration() {
+		return attributeDeclarationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAttributeSpecification() {
+		return attributeSpecificationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAttributeSpecification_Entity() {
+		return (EReference)attributeSpecificationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAttributeSpecification_Class() {
+		return (EAttribute)attributeSpecificationEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAttributeSpecification_Is() {
+		return (EReference)attributeSpecificationEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -457,8 +515,8 @@ public class DeclarationPackageImpl extends EPackageImpl implements DeclarationP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getSourceQuantityDeclaration() {
-		return sourceQuantityDeclarationEClass;
+	public EClass getFreeQuantityDeclaration() {
+		return freeQuantityDeclarationEClass;
 	}
 
 	/**
@@ -466,8 +524,8 @@ public class DeclarationPackageImpl extends EPackageImpl implements DeclarationP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getSourceQuantityDeclaration_Source() {
-		return (EReference)sourceQuantityDeclarationEClass.getEStructuralFeatures().get(0);
+	public EReference getFreeQuantityDeclaration_Quantity() {
+		return (EReference)freeQuantityDeclarationEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -486,6 +544,33 @@ public class DeclarationPackageImpl extends EPackageImpl implements DeclarationP
 	 */
 	public EReference getLimitDeclaration_Value() {
 		return (EReference)limitDeclarationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getQuantityDeclaration() {
+		return quantityDeclarationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSourceQuantityDeclaration() {
+		return sourceQuantityDeclarationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSourceQuantityDeclaration_Source() {
+		return (EReference)sourceQuantityDeclarationEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -585,78 +670,6 @@ public class DeclarationPackageImpl extends EPackageImpl implements DeclarationP
 	 */
 	public EClass getSubtypeDeclaration() {
 		return subtypeDeclarationEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAliasDeclaration() {
-		return aliasDeclarationEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAliasDeclaration_Alias() {
-		return (EReference)aliasDeclarationEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAliasDeclaration_Is() {
-		return (EReference)aliasDeclarationEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAttributeDeclaration() {
-		return attributeDeclarationEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAttributeSpecification() {
-		return attributeSpecificationEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAttributeSpecification_Entity() {
-		return (EReference)attributeSpecificationEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getAttributeSpecification_Class() {
-		return (EAttribute)attributeSpecificationEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAttributeSpecification_Is() {
-		return (EReference)attributeSpecificationEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**

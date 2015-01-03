@@ -4,7 +4,6 @@
  */
 package net.mlanoe.language.vhdl.type.validation;
 
-import net.mlanoe.language.vhdl.type.TypeReference;
 
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.type.AccessTypeDefinition}.
@@ -15,5 +14,4 @@ import net.mlanoe.language.vhdl.type.TypeReference;
 public interface AccessTypeDefinitionValidator {
 	boolean validate();
 
-	boolean validateType(TypeReference value);
 }

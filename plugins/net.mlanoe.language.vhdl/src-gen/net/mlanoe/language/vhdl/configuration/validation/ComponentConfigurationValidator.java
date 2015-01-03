@@ -11,8 +11,6 @@ import net.mlanoe.language.vhdl.PortMaps;
 
 import net.mlanoe.language.vhdl.configuration.BlockConfiguration;
 
-import net.mlanoe.language.vhdl.expression.Expression;
-
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.configuration.ComponentConfiguration}.
  * This doesn't really do anything, and it's not a real EMF artifact.
@@ -23,8 +21,6 @@ public interface ComponentConfigurationValidator {
 	boolean validate();
 
 	boolean validateList(MultiName value);
-
-	boolean validateList(Expression value);
 	boolean validateComponent(Name value);
 	boolean validateEntity(Name value);
 	boolean validateConfiguration(Name value);

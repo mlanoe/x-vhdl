@@ -4,8 +4,6 @@
  */
 package net.mlanoe.language.vhdl.declaration.validation;
 
-import net.mlanoe.language.vhdl.expression.Expression;
-import net.mlanoe.language.vhdl.nature.NatureReference;
 
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.declaration.SubnatureDeclaration}.
@@ -16,7 +14,4 @@ import net.mlanoe.language.vhdl.nature.NatureReference;
 public interface SubnatureDeclarationValidator {
 	boolean validate();
 
-	boolean validateNature(NatureReference value);
-
-	boolean validateNature(Expression value);
 }

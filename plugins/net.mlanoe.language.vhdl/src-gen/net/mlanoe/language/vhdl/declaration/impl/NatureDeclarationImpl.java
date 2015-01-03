@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -13,6 +10,7 @@ package net.mlanoe.language.vhdl.declaration.impl;
 import net.mlanoe.language.vhdl.Name;
 import net.mlanoe.language.vhdl.Named;
 import net.mlanoe.language.vhdl.VhdlPackage;
+
 import net.mlanoe.language.vhdl.declaration.DeclarationPackage;
 import net.mlanoe.language.vhdl.declaration.NatureDeclaration;
 
@@ -50,6 +48,7 @@ public class NatureDeclarationImpl extends DeclarationImpl implements NatureDecl
 	 * @ordered
 	 */
 	protected Name name;
+
 	/**
 	 * The cached value of the '{@link #getIs() <em>Is</em>}' containment reference.
 	 * <!-- begin-user-doc -->

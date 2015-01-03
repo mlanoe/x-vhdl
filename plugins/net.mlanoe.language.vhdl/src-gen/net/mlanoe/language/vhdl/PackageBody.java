@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -28,7 +25,6 @@ package net.mlanoe.language.vhdl;
  * @generated
  */
 public interface PackageBody extends Module {
-
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
@@ -54,4 +50,5 @@ public interface PackageBody extends Module {
 	 * @generated
 	 */
 	void setName(PackageReference value);
+
 } // PackageBody

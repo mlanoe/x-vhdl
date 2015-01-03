@@ -8,11 +8,9 @@ import net.mlanoe.language.vhdl.ComponentReference;
 import net.mlanoe.language.vhdl.EntityReference;
 import net.mlanoe.language.vhdl.GenericMaps;
 import net.mlanoe.language.vhdl.MultiName;
-import net.mlanoe.language.vhdl.Name;
 import net.mlanoe.language.vhdl.PortMaps;
 
 import net.mlanoe.language.vhdl.configuration.ConfigurationReference;
-import net.mlanoe.language.vhdl.expression.Expression;
 
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.declaration.ConfigurationSpecification}.
@@ -24,17 +22,9 @@ public interface ConfigurationSpecificationValidator {
 	boolean validate();
 
 	boolean validateList(MultiName value);
-
 	boolean validateComponent(ComponentReference value);
-
 	boolean validateEntity(EntityReference value);
-
 	boolean validateConfiguration(ConfigurationReference value);
-
-	boolean validateList(Expression value);
-	boolean validateComponent(Name value);
-	boolean validateEntity(Name value);
-	boolean validateConfiguration(Name value);
 	boolean validateGenericMap(GenericMaps value);
 	boolean validatePortMap(PortMaps value);
 }

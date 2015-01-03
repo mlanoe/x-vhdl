@@ -4,9 +4,6 @@
  */
 package net.mlanoe.language.vhdl.type.validation;
 
-import net.mlanoe.language.vhdl.expression.Expression;
-
-import org.eclipse.emf.common.util.EList;
 
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.type.RecordTypeElement}.
@@ -17,6 +14,4 @@ import org.eclipse.emf.common.util.EList;
 public interface RecordTypeElementValidator {
 	boolean validate();
 
-	boolean validateIdentifier(EList<String> value);
-	boolean validateType(Expression value);
 }

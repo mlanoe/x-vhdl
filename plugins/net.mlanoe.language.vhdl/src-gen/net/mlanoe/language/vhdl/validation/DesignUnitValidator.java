@@ -7,8 +7,6 @@ package net.mlanoe.language.vhdl.validation;
 import net.mlanoe.language.vhdl.Module;
 import net.mlanoe.language.vhdl.Name;
 
-import net.mlanoe.language.vhdl.declaration.Declaration;
-
 import org.eclipse.emf.common.util.EList;
 
 /**
@@ -23,6 +21,4 @@ public interface DesignUnitValidator {
 	boolean validateLibrary(EList<String> value);
 	boolean validateUse(EList<Name> value);
 	boolean validateModule(Module value);
-
-	boolean validateDeclaration(EList<Declaration> value);
 }

@@ -6,7 +6,6 @@ package net.mlanoe.language.vhdl.expression.validation;
 
 import net.mlanoe.language.vhdl.nature.NatureReference;
 
-
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.expression.SubnatureIndicationExpression}.
  * This doesn't really do anything, and it's not a real EMF artifact.
@@ -17,5 +16,4 @@ public interface SubnatureIndicationExpressionValidator {
 	boolean validate();
 
 	boolean validateMark(NatureReference value);
-
 }

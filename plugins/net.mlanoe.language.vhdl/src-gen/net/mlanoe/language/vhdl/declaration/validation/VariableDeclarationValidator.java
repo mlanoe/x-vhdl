@@ -6,8 +6,6 @@ package net.mlanoe.language.vhdl.declaration.validation;
 
 import net.mlanoe.language.vhdl.declaration.Mode;
 
-import net.mlanoe.language.vhdl.expression.Expression;
-
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.declaration.VariableDeclaration}.
  * This doesn't really do anything, and it's not a real EMF artifact.
@@ -18,7 +16,5 @@ public interface VariableDeclarationValidator {
 	boolean validate();
 
 	boolean validateShared(boolean value);
-	boolean validateType(Expression value);
-	boolean validateInitial(Expression value);
 	boolean validateMode(Mode value);
 }

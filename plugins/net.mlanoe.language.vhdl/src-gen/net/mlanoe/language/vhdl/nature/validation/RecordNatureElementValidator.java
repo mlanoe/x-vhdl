@@ -4,9 +4,6 @@
  */
 package net.mlanoe.language.vhdl.nature.validation;
 
-import net.mlanoe.language.vhdl.expression.Expression;
-
-import org.eclipse.emf.common.util.EList;
 
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.nature.RecordNatureElement}.
@@ -17,6 +14,4 @@ import org.eclipse.emf.common.util.EList;
 public interface RecordNatureElementValidator {
 	boolean validate();
 
-	boolean validateName(EList<String> value);
-	boolean validateNature(Expression value);
 }

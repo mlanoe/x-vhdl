@@ -5,9 +5,8 @@
 package net.mlanoe.language.vhdl.declaration.validation;
 
 import net.mlanoe.language.vhdl.Name;
-import net.mlanoe.language.vhdl.ams.QuantityAspect;
 
-import net.mlanoe.language.vhdl.expression.Expression;
+import net.mlanoe.language.vhdl.ams.QuantityAspect;
 
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.declaration.BranchQuantityDeclaration}.
@@ -21,9 +20,5 @@ public interface BranchQuantityDeclarationValidator {
 	boolean validateAcross(QuantityAspect value);
 	boolean validateThrough(QuantityAspect value);
 	boolean validateLeft(Name value);
-
 	boolean validateRight(Name value);
-
-	boolean validateLeft(Expression value);
-	boolean validateRight(Expression value);
 }

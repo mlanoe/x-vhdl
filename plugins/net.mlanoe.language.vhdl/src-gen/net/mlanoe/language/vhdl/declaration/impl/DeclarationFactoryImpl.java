@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -141,9 +138,29 @@ public class DeclarationFactoryImpl extends EFactoryImpl implements DeclarationF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FreeQuantityDeclaration createFreeQuantityDeclaration() {
-		FreeQuantityDeclarationImpl freeQuantityDeclaration = new FreeQuantityDeclarationImpl();
-		return freeQuantityDeclaration;
+	public AliasDeclaration createAliasDeclaration() {
+		AliasDeclarationImpl aliasDeclaration = new AliasDeclarationImpl();
+		return aliasDeclaration;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AttributeDeclaration createAttributeDeclaration() {
+		AttributeDeclarationImpl attributeDeclaration = new AttributeDeclarationImpl();
+		return attributeDeclaration;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AttributeSpecification createAttributeSpecification() {
+		AttributeSpecificationImpl attributeSpecification = new AttributeSpecificationImpl();
+		return attributeSpecification;
 	}
 
 	/**
@@ -161,9 +178,9 @@ public class DeclarationFactoryImpl extends EFactoryImpl implements DeclarationF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SourceQuantityDeclaration createSourceQuantityDeclaration() {
-		SourceQuantityDeclarationImpl sourceQuantityDeclaration = new SourceQuantityDeclarationImpl();
-		return sourceQuantityDeclaration;
+	public FreeQuantityDeclaration createFreeQuantityDeclaration() {
+		FreeQuantityDeclarationImpl freeQuantityDeclaration = new FreeQuantityDeclarationImpl();
+		return freeQuantityDeclaration;
 	}
 
 	/**
@@ -174,6 +191,16 @@ public class DeclarationFactoryImpl extends EFactoryImpl implements DeclarationF
 	public LimitDeclaration createLimitDeclaration() {
 		LimitDeclarationImpl limitDeclaration = new LimitDeclarationImpl();
 		return limitDeclaration;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SourceQuantityDeclaration createSourceQuantityDeclaration() {
+		SourceQuantityDeclarationImpl sourceQuantityDeclaration = new SourceQuantityDeclarationImpl();
+		return sourceQuantityDeclaration;
 	}
 
 	/**
@@ -224,36 +251,6 @@ public class DeclarationFactoryImpl extends EFactoryImpl implements DeclarationF
 	public SubtypeDeclaration createSubtypeDeclaration() {
 		SubtypeDeclarationImpl subtypeDeclaration = new SubtypeDeclarationImpl();
 		return subtypeDeclaration;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AliasDeclaration createAliasDeclaration() {
-		AliasDeclarationImpl aliasDeclaration = new AliasDeclarationImpl();
-		return aliasDeclaration;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AttributeDeclaration createAttributeDeclaration() {
-		AttributeDeclarationImpl attributeDeclaration = new AttributeDeclarationImpl();
-		return attributeDeclaration;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AttributeSpecification createAttributeSpecification() {
-		AttributeSpecificationImpl attributeSpecification = new AttributeSpecificationImpl();
-		return attributeSpecification;
 	}
 
 	/**

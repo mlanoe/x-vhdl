@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -29,10 +26,13 @@ import net.mlanoe.language.vhdl.Ports;
 import net.mlanoe.language.vhdl.Signature;
 import net.mlanoe.language.vhdl.VhdlFactory;
 import net.mlanoe.language.vhdl.VhdlPackage;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
+
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
+
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
 /**
@@ -137,29 +137,9 @@ public class VhdlFactoryImpl extends EFactoryImpl implements VhdlFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Model createModel() {
-		ModelImpl model = new ModelImpl();
-		return model;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Entity createEntity() {
 		EntityImpl entity = new EntityImpl();
 		return entity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Generics createGenerics() {
-		GenericsImpl generics = new GenericsImpl();
-		return generics;
 	}
 
 	/**
@@ -177,9 +157,19 @@ public class VhdlFactoryImpl extends EFactoryImpl implements VhdlFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PackageBody createPackageBody() {
-		PackageBodyImpl packageBody = new PackageBodyImpl();
-		return packageBody;
+	public Generics createGenerics() {
+		GenericsImpl generics = new GenericsImpl();
+		return generics;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Model createModel() {
+		ModelImpl model = new ModelImpl();
+		return model;
 	}
 
 	/**
@@ -190,6 +180,16 @@ public class VhdlFactoryImpl extends EFactoryImpl implements VhdlFactory {
 	public net.mlanoe.language.vhdl.Package createPackage() {
 		PackageImpl package_ = new PackageImpl();
 		return package_;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PackageBody createPackageBody() {
+		PackageBodyImpl packageBody = new PackageBodyImpl();
+		return packageBody;
 	}
 
 	/**

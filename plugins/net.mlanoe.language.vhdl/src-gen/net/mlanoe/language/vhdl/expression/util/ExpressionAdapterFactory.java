@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -18,15 +15,22 @@ import net.mlanoe.language.vhdl.Name;
 import net.mlanoe.language.vhdl.Named;
 import net.mlanoe.language.vhdl.PackageReference;
 import net.mlanoe.language.vhdl.VhdlObject;
+
 import net.mlanoe.language.vhdl.configuration.ConfigurationReference;
+
 import net.mlanoe.language.vhdl.expression.*;
+
 import net.mlanoe.language.vhdl.nature.NatureReference;
+
 import net.mlanoe.language.vhdl.type.EnumerationLiteral;
 import net.mlanoe.language.vhdl.type.TypeReference;
 import net.mlanoe.language.vhdl.type.Typed;
+
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
+
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
+
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -426,48 +430,6 @@ public class ExpressionAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.expression.NullExpression <em>Null Expression</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.expression.NullExpression
-	 * @generated
-	 */
-	public Adapter createNullExpressionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.expression.WaveformExpression <em>Waveform Expression</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.expression.WaveformExpression
-	 * @generated
-	 */
-	public Adapter createWaveformExpressionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.expression.MultiExpression <em>Multi Expression</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.expression.MultiExpression
-	 * @generated
-	 */
-	public Adapter createMultiExpressionAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.expression.SubtypeIndicationExpression <em>Subtype Indication Expression</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -496,58 +458,16 @@ public class ExpressionAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.Name <em>Name</em>}'.
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.expression.LogicalExpression <em>Logical Expression</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.Name
+	 * @see net.mlanoe.language.vhdl.expression.LogicalExpression
 	 * @generated
 	 */
-	public Adapter createNameAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.type.Typed <em>Typed</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.type.Typed
-	 * @generated
-	 */
-	public Adapter createTypedAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.Named <em>Named</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.Named
-	 * @generated
-	 */
-	public Adapter createNamedAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.type.EnumerationLiteral <em>Enumeration Literal</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.type.EnumerationLiteral
-	 * @generated
-	 */
-	public Adapter createEnumerationLiteralAdapter() {
+	public Adapter createLogicalExpressionAdapter() {
 		return null;
 	}
 
@@ -566,16 +486,16 @@ public class ExpressionAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.expression.LogicalExpression <em>Logical Expression</em>}'.
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.expression.NullExpression <em>Null Expression</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.expression.LogicalExpression
+	 * @see net.mlanoe.language.vhdl.expression.NullExpression
 	 * @generated
 	 */
-	public Adapter createLogicalExpressionAdapter() {
+	public Adapter createNullExpressionAdapter() {
 		return null;
 	}
 
@@ -790,6 +710,34 @@ public class ExpressionAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.expression.WaveformExpression <em>Waveform Expression</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see net.mlanoe.language.vhdl.expression.WaveformExpression
+	 * @generated
+	 */
+	public Adapter createWaveformExpressionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.expression.MultiExpression <em>Multi Expression</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see net.mlanoe.language.vhdl.expression.MultiExpression
+	 * @generated
+	 */
+	public Adapter createMultiExpressionAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.VhdlObject <em>Object</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -912,6 +860,62 @@ public class ExpressionAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createCallReferenceAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.Name <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see net.mlanoe.language.vhdl.Name
+	 * @generated
+	 */
+	public Adapter createNameAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.type.Typed <em>Typed</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see net.mlanoe.language.vhdl.type.Typed
+	 * @generated
+	 */
+	public Adapter createTypedAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.Named <em>Named</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see net.mlanoe.language.vhdl.Named
+	 * @generated
+	 */
+	public Adapter createNamedAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.type.EnumerationLiteral <em>Enumeration Literal</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see net.mlanoe.language.vhdl.type.EnumerationLiteral
+	 * @generated
+	 */
+	public Adapter createEnumerationLiteralAdapter() {
 		return null;
 	}
 

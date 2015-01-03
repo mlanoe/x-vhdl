@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -13,12 +10,18 @@ package net.mlanoe.language.vhdl.declaration.util;
 import net.mlanoe.language.vhdl.MultiNamed;
 import net.mlanoe.language.vhdl.Named;
 import net.mlanoe.language.vhdl.VhdlObject;
+
 import net.mlanoe.language.vhdl.declaration.*;
+
 import net.mlanoe.language.vhdl.nature.Natured;
+
 import net.mlanoe.language.vhdl.type.Typed;
+
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
+
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
+
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -230,30 +233,44 @@ public class DeclarationAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.declaration.QuantityDeclaration <em>Quantity Declaration</em>}'.
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.declaration.AliasDeclaration <em>Alias Declaration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.declaration.QuantityDeclaration
+	 * @see net.mlanoe.language.vhdl.declaration.AliasDeclaration
 	 * @generated
 	 */
-	public Adapter createQuantityDeclarationAdapter() {
+	public Adapter createAliasDeclarationAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.declaration.FreeQuantityDeclaration <em>Free Quantity Declaration</em>}'.
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.declaration.AttributeDeclaration <em>Attribute Declaration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.declaration.FreeQuantityDeclaration
+	 * @see net.mlanoe.language.vhdl.declaration.AttributeDeclaration
 	 * @generated
 	 */
-	public Adapter createFreeQuantityDeclarationAdapter() {
+	public Adapter createAttributeDeclarationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.declaration.AttributeSpecification <em>Attribute Specification</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see net.mlanoe.language.vhdl.declaration.AttributeSpecification
+	 * @generated
+	 */
+	public Adapter createAttributeSpecificationAdapter() {
 		return null;
 	}
 
@@ -272,16 +289,16 @@ public class DeclarationAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.declaration.SourceQuantityDeclaration <em>Source Quantity Declaration</em>}'.
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.declaration.FreeQuantityDeclaration <em>Free Quantity Declaration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.declaration.SourceQuantityDeclaration
+	 * @see net.mlanoe.language.vhdl.declaration.FreeQuantityDeclaration
 	 * @generated
 	 */
-	public Adapter createSourceQuantityDeclarationAdapter() {
+	public Adapter createFreeQuantityDeclarationAdapter() {
 		return null;
 	}
 
@@ -296,6 +313,34 @@ public class DeclarationAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createLimitDeclarationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.declaration.QuantityDeclaration <em>Quantity Declaration</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see net.mlanoe.language.vhdl.declaration.QuantityDeclaration
+	 * @generated
+	 */
+	public Adapter createQuantityDeclarationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.declaration.SourceQuantityDeclaration <em>Source Quantity Declaration</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see net.mlanoe.language.vhdl.declaration.SourceQuantityDeclaration
+	 * @generated
+	 */
+	public Adapter createSourceQuantityDeclarationAdapter() {
 		return null;
 	}
 
@@ -380,48 +425,6 @@ public class DeclarationAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSubtypeDeclarationAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.declaration.AliasDeclaration <em>Alias Declaration</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.declaration.AliasDeclaration
-	 * @generated
-	 */
-	public Adapter createAliasDeclarationAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.declaration.AttributeDeclaration <em>Attribute Declaration</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.declaration.AttributeDeclaration
-	 * @generated
-	 */
-	public Adapter createAttributeDeclarationAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.declaration.AttributeSpecification <em>Attribute Specification</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.declaration.AttributeSpecification
-	 * @generated
-	 */
-	public Adapter createAttributeSpecificationAdapter() {
 		return null;
 	}
 

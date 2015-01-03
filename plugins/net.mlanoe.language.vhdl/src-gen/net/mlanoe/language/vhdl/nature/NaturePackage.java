@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -11,6 +8,7 @@
 package net.mlanoe.language.vhdl.nature;
 
 import net.mlanoe.language.vhdl.VhdlPackage;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -404,7 +402,6 @@ public interface NaturePackage extends EPackage {
 	 * @ordered
 	 */
 	int NATURE_REFERENCE_FEATURE_COUNT = 0;
-
 
 	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.nature.Natured <em>Natured</em>}' class.

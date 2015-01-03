@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -325,86 +322,6 @@ public interface TypePackage extends EPackage {
 	int UNCONSTRAINED_ARRAY_TYPE_DEFINITION_FEATURE_COUNT = ARRAY_TYPE_DEFINITION_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.type.impl.EnumerationTypeDefinitionImpl <em>Enumeration Type Definition</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.type.impl.EnumerationTypeDefinitionImpl
-	 * @see net.mlanoe.language.vhdl.type.impl.TypePackageImpl#getEnumerationTypeDefinition()
-	 * @generated
-	 */
-	int ENUMERATION_TYPE_DEFINITION = 7;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.type.impl.FileTypeDefinitionImpl <em>File Type Definition</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.type.impl.FileTypeDefinitionImpl
-	 * @see net.mlanoe.language.vhdl.type.impl.TypePackageImpl#getFileTypeDefinition()
-	 * @generated
-	 */
-	int FILE_TYPE_DEFINITION = 8;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.type.impl.PhysicalTypeDefinitionImpl <em>Physical Type Definition</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.type.impl.PhysicalTypeDefinitionImpl
-	 * @see net.mlanoe.language.vhdl.type.impl.TypePackageImpl#getPhysicalTypeDefinition()
-	 * @generated
-	 */
-	int PHYSICAL_TYPE_DEFINITION = 9;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.type.impl.PhysicalTypeDefinitionSecondaryImpl <em>Physical Type Definition Secondary</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.type.impl.PhysicalTypeDefinitionSecondaryImpl
-	 * @see net.mlanoe.language.vhdl.type.impl.TypePackageImpl#getPhysicalTypeDefinitionSecondary()
-	 * @generated
-	 */
-	int PHYSICAL_TYPE_DEFINITION_SECONDARY = 10;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.type.impl.RangeTypeDefinitionImpl <em>Range Type Definition</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.type.impl.RangeTypeDefinitionImpl
-	 * @see net.mlanoe.language.vhdl.type.impl.TypePackageImpl#getRangeTypeDefinition()
-	 * @generated
-	 */
-	int RANGE_TYPE_DEFINITION = 11;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.type.impl.RecordTypeElementImpl <em>Record Type Element</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.type.impl.RecordTypeElementImpl
-	 * @see net.mlanoe.language.vhdl.type.impl.TypePackageImpl#getRecordTypeElement()
-	 * @generated
-	 */
-	int RECORD_TYPE_ELEMENT = 12;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.type.Typed <em>Typed</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.type.Typed
-	 * @see net.mlanoe.language.vhdl.type.impl.TypePackageImpl#getTyped()
-	 * @generated
-	 */
-	int TYPED = 13;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.type.TypeReference <em>Reference</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.type.TypeReference
-	 * @see net.mlanoe.language.vhdl.type.impl.TypePackageImpl#getTypeReference()
-	 * @generated
-	 */
-	int TYPE_REFERENCE = 15;
-
-	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.type.EnumerationLiteral <em>Enumeration Literal</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -422,6 +339,16 @@ public interface TypePackage extends EPackage {
 	 * @ordered
 	 */
 	int ENUMERATION_LITERAL_FEATURE_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.type.impl.EnumerationTypeDefinitionImpl <em>Enumeration Type Definition</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.type.impl.EnumerationTypeDefinitionImpl
+	 * @see net.mlanoe.language.vhdl.type.impl.TypePackageImpl#getEnumerationTypeDefinition()
+	 * @generated
+	 */
+	int ENUMERATION_TYPE_DEFINITION = 7;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -451,6 +378,16 @@ public interface TypePackage extends EPackage {
 	int ENUMERATION_TYPE_DEFINITION_FEATURE_COUNT = TYPE_DEFINITION_FEATURE_COUNT + 1;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.type.impl.FileTypeDefinitionImpl <em>File Type Definition</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.type.impl.FileTypeDefinitionImpl
+	 * @see net.mlanoe.language.vhdl.type.impl.TypePackageImpl#getFileTypeDefinition()
+	 * @generated
+	 */
+	int FILE_TYPE_DEFINITION = 8;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -476,6 +413,16 @@ public interface TypePackage extends EPackage {
 	 * @ordered
 	 */
 	int FILE_TYPE_DEFINITION_FEATURE_COUNT = TYPE_DEFINITION_FEATURE_COUNT + 1;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.type.impl.PhysicalTypeDefinitionImpl <em>Physical Type Definition</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.type.impl.PhysicalTypeDefinitionImpl
+	 * @see net.mlanoe.language.vhdl.type.impl.TypePackageImpl#getPhysicalTypeDefinition()
+	 * @generated
+	 */
+	int PHYSICAL_TYPE_DEFINITION = 9;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -523,6 +470,16 @@ public interface TypePackage extends EPackage {
 	int PHYSICAL_TYPE_DEFINITION_FEATURE_COUNT = TYPE_DEFINITION_FEATURE_COUNT + 3;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.type.impl.PhysicalTypeDefinitionSecondaryImpl <em>Physical Type Definition Secondary</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.type.impl.PhysicalTypeDefinitionSecondaryImpl
+	 * @see net.mlanoe.language.vhdl.type.impl.TypePackageImpl#getPhysicalTypeDefinitionSecondary()
+	 * @generated
+	 */
+	int PHYSICAL_TYPE_DEFINITION_SECONDARY = 10;
+
+	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -557,6 +514,16 @@ public interface TypePackage extends EPackage {
 	 * @ordered
 	 */
 	int PHYSICAL_TYPE_DEFINITION_SECONDARY_FEATURE_COUNT = 3;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.type.impl.RangeTypeDefinitionImpl <em>Range Type Definition</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.type.impl.RangeTypeDefinitionImpl
+	 * @see net.mlanoe.language.vhdl.type.impl.TypePackageImpl#getRangeTypeDefinition()
+	 * @generated
+	 */
+	int RANGE_TYPE_DEFINITION = 11;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -604,6 +571,16 @@ public interface TypePackage extends EPackage {
 	int RANGE_TYPE_DEFINITION_FEATURE_COUNT = TYPE_DEFINITION_FEATURE_COUNT + 3;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.type.impl.RecordTypeElementImpl <em>Record Type Element</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.type.impl.RecordTypeElementImpl
+	 * @see net.mlanoe.language.vhdl.type.impl.TypePackageImpl#getRecordTypeElement()
+	 * @generated
+	 */
+	int RECORD_TYPE_ELEMENT = 12;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -640,6 +617,16 @@ public interface TypePackage extends EPackage {
 	int RECORD_TYPE_ELEMENT_FEATURE_COUNT = VhdlPackage.VHDL_OBJECT_FEATURE_COUNT + 2;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.type.Typed <em>Typed</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.type.Typed
+	 * @see net.mlanoe.language.vhdl.type.impl.TypePackageImpl#getTyped()
+	 * @generated
+	 */
+	int TYPED = 13;
+
+	/**
 	 * The feature id for the '<em><b>Type</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -658,6 +645,16 @@ public interface TypePackage extends EPackage {
 	int TYPED_FEATURE_COUNT = 1;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.type.TypeReference <em>Reference</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.type.TypeReference
+	 * @see net.mlanoe.language.vhdl.type.impl.TypePackageImpl#getTypeReference()
+	 * @generated
+	 */
+	int TYPE_REFERENCE = 15;
+
+	/**
 	 * The number of structural features of the '<em>Reference</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -665,6 +662,7 @@ public interface TypePackage extends EPackage {
 	 * @ordered
 	 */
 	int TYPE_REFERENCE_FEATURE_COUNT = 0;
+
 
 	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.type.AccessTypeDefinition <em>Access Type Definition</em>}'.
@@ -758,6 +756,16 @@ public interface TypePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getUnconstrainedArrayTypeDefinition_Index();
+
+	/**
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.type.EnumerationLiteral <em>Enumeration Literal</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Enumeration Literal</em>'.
+	 * @see net.mlanoe.language.vhdl.type.EnumerationLiteral
+	 * @generated
+	 */
+	EClass getEnumerationLiteral();
 
 	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.type.EnumerationTypeDefinition <em>Enumeration Type Definition</em>}'.
@@ -920,16 +928,6 @@ public interface TypePackage extends EPackage {
 	EReference getRangeTypeDefinition_Right();
 
 	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.type.TypeDefinition <em>Definition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Definition</em>'.
-	 * @see net.mlanoe.language.vhdl.type.TypeDefinition
-	 * @generated
-	 */
-	EClass getTypeDefinition();
-
-	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.type.RecordTypeElement <em>Record Type Element</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -961,6 +959,16 @@ public interface TypePackage extends EPackage {
 	EReference getTyped_Type();
 
 	/**
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.type.TypeDefinition <em>Definition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Definition</em>'.
+	 * @see net.mlanoe.language.vhdl.type.TypeDefinition
+	 * @generated
+	 */
+	EClass getTypeDefinition();
+
+	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.type.TypeReference <em>Reference</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -969,16 +977,6 @@ public interface TypePackage extends EPackage {
 	 * @generated
 	 */
 	EClass getTypeReference();
-
-	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.type.EnumerationLiteral <em>Enumeration Literal</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Enumeration Literal</em>'.
-	 * @see net.mlanoe.language.vhdl.type.EnumerationLiteral
-	 * @generated
-	 */
-	EClass getEnumerationLiteral();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -1085,6 +1083,16 @@ public interface TypePackage extends EPackage {
 		 * @generated
 		 */
 		EReference UNCONSTRAINED_ARRAY_TYPE_DEFINITION__INDEX = eINSTANCE.getUnconstrainedArrayTypeDefinition_Index();
+
+		/**
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.type.EnumerationLiteral <em>Enumeration Literal</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.type.EnumerationLiteral
+		 * @see net.mlanoe.language.vhdl.type.impl.TypePackageImpl#getEnumerationLiteral()
+		 * @generated
+		 */
+		EClass ENUMERATION_LITERAL = eINSTANCE.getEnumerationLiteral();
 
 		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.type.impl.EnumerationTypeDefinitionImpl <em>Enumeration Type Definition</em>}' class.
@@ -1217,16 +1225,6 @@ public interface TypePackage extends EPackage {
 		EReference RANGE_TYPE_DEFINITION__RIGHT = eINSTANCE.getRangeTypeDefinition_Right();
 
 		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.type.impl.TypeDefinitionImpl <em>Definition</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.type.impl.TypeDefinitionImpl
-		 * @see net.mlanoe.language.vhdl.type.impl.TypePackageImpl#getTypeDefinition()
-		 * @generated
-		 */
-		EClass TYPE_DEFINITION = eINSTANCE.getTypeDefinition();
-
-		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.type.impl.RecordTypeElementImpl <em>Record Type Element</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1255,6 +1253,16 @@ public interface TypePackage extends EPackage {
 		EReference TYPED__TYPE = eINSTANCE.getTyped_Type();
 
 		/**
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.type.impl.TypeDefinitionImpl <em>Definition</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.type.impl.TypeDefinitionImpl
+		 * @see net.mlanoe.language.vhdl.type.impl.TypePackageImpl#getTypeDefinition()
+		 * @generated
+		 */
+		EClass TYPE_DEFINITION = eINSTANCE.getTypeDefinition();
+
+		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.type.TypeReference <em>Reference</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1263,16 +1271,6 @@ public interface TypePackage extends EPackage {
 		 * @generated
 		 */
 		EClass TYPE_REFERENCE = eINSTANCE.getTypeReference();
-
-		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.type.EnumerationLiteral <em>Enumeration Literal</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.type.EnumerationLiteral
-		 * @see net.mlanoe.language.vhdl.type.impl.TypePackageImpl#getEnumerationLiteral()
-		 * @generated
-		 */
-		EClass ENUMERATION_LITERAL = eINSTANCE.getEnumerationLiteral();
 
 	}
 

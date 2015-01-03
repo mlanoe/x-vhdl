@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -196,286 +193,6 @@ public interface ExpressionPackage extends EPackage {
 	int ADDING_EXPRESSION_FEATURE_COUNT = BINARY_EXPRESSION_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.AggregateExpressionImpl <em>Aggregate Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.AggregateExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getAggregateExpression()
-	 * @generated
-	 */
-	int AGGREGATE_EXPRESSION = 1;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.AllExpressionImpl <em>All Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.AllExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getAllExpression()
-	 * @generated
-	 */
-	int ALL_EXPRESSION = 2;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.AllocatorExpressionImpl <em>Allocator Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.AllocatorExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getAllocatorExpression()
-	 * @generated
-	 */
-	int ALLOCATOR_EXPRESSION = 3;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.AssociationExpressionImpl <em>Association Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.AssociationExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getAssociationExpression()
-	 * @generated
-	 */
-	int ASSOCIATION_EXPRESSION = 4;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.AttributeExpressionImpl <em>Attribute Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.AttributeExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getAttributeExpression()
-	 * @generated
-	 */
-	int ATTRIBUTE_EXPRESSION = 5;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.ValueExpressionImpl <em>Value Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.ValueExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getValueExpression()
-	 * @generated
-	 */
-	int VALUE_EXPRESSION = 29;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.BitStringExpressionImpl <em>Bit String Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.BitStringExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getBitStringExpression()
-	 * @generated
-	 */
-	int BIT_STRING_EXPRESSION = 7;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.IndicationExpressionImpl <em>Indication Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.IndicationExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getIndicationExpression()
-	 * @generated
-	 */
-	int INDICATION_EXPRESSION = 9;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.NullExpressionImpl <em>Null Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.NullExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getNullExpression()
-	 * @generated
-	 */
-	int NULL_EXPRESSION = 14;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.WaveformExpressionImpl <em>Waveform Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.WaveformExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getWaveformExpression()
-	 * @generated
-	 */
-	int WAVEFORM_EXPRESSION = 30;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.NameExpressionImpl <em>Name Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.NameExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getNameExpression()
-	 * @generated
-	 */
-	int NAME_EXPRESSION = 13;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.LogicalExpressionImpl <em>Logical Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.LogicalExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getLogicalExpression()
-	 * @generated
-	 */
-	int LOGICAL_EXPRESSION = 12;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.MultiplyingExpressionImpl <em>Multiplying Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.MultiplyingExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getMultiplyingExpression()
-	 * @generated
-	 */
-	int MULTIPLYING_EXPRESSION = 15;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.PowerExpressionImpl <em>Power Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.PowerExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getPowerExpression()
-	 * @generated
-	 */
-	int POWER_EXPRESSION = 16;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.RelationalExpressionImpl <em>Relational Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.RelationalExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getRelationalExpression()
-	 * @generated
-	 */
-	int RELATIONAL_EXPRESSION = 17;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.ShiftExpressionImpl <em>Shift Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.ShiftExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getShiftExpression()
-	 * @generated
-	 */
-	int SHIFT_EXPRESSION = 18;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.SignatureExpressionImpl <em>Signature Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.SignatureExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getSignatureExpression()
-	 * @generated
-	 */
-	int SIGNATURE_EXPRESSION = 19;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.SignExpressionImpl <em>Sign Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.SignExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getSignExpression()
-	 * @generated
-	 */
-	int SIGN_EXPRESSION = 20;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.UnaryExpressionImpl <em>Unary Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.UnaryExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getUnaryExpression()
-	 * @generated
-	 */
-	int UNARY_EXPRESSION = 21;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.OpenExpressionImpl <em>Open Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.OpenExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getOpenExpression()
-	 * @generated
-	 */
-	int OPEN_EXPRESSION = 22;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.OthersExpressionImpl <em>Others Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.OthersExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getOthersExpression()
-	 * @generated
-	 */
-	int OTHERS_EXPRESSION = 23;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.RangeExpressionImpl <em>Range Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.RangeExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getRangeExpression()
-	 * @generated
-	 */
-	int RANGE_EXPRESSION = 24;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.StringExpressionImpl <em>String Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.StringExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getStringExpression()
-	 * @generated
-	 */
-	int STRING_EXPRESSION = 25;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.CharacterExpressionImpl <em>Character Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.CharacterExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getCharacterExpression()
-	 * @generated
-	 */
-	int CHARACTER_EXPRESSION = 26;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.IdentifierExpressionImpl <em>Identifier Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.IdentifierExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getIdentifierExpression()
-	 * @generated
-	 */
-	int IDENTIFIER_EXPRESSION = 27;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.UnitValueExpressionImpl <em>Unit Value Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.UnitValueExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getUnitValueExpression()
-	 * @generated
-	 */
-	int UNIT_VALUE_EXPRESSION = 28;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.SubtypeIndicationExpressionImpl <em>Subtype Indication Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.SubtypeIndicationExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getSubtypeIndicationExpression()
-	 * @generated
-	 */
-	int SUBTYPE_INDICATION_EXPRESSION = 10;
-
-	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.SubnatureIndicationExpressionImpl <em>Subnature Indication Expression</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.expression.impl.SubnatureIndicationExpressionImpl
-	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getSubnatureIndicationExpression()
-	 * @generated
-	 */
-	int SUBNATURE_INDICATION_EXPRESSION = 11;
-
-	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.MultiExpressionImpl <em>Multi Expression</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -513,6 +230,16 @@ public interface ExpressionPackage extends EPackage {
 	int MULTI_EXPRESSION_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 1;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.AggregateExpressionImpl <em>Aggregate Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.AggregateExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getAggregateExpression()
+	 * @generated
+	 */
+	int AGGREGATE_EXPRESSION = 1;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -540,6 +267,16 @@ public interface ExpressionPackage extends EPackage {
 	int AGGREGATE_EXPRESSION_FEATURE_COUNT = MULTI_EXPRESSION_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.AllExpressionImpl <em>All Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.AllExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getAllExpression()
+	 * @generated
+	 */
+	int ALL_EXPRESSION = 2;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -556,6 +293,16 @@ public interface ExpressionPackage extends EPackage {
 	 * @ordered
 	 */
 	int ALL_EXPRESSION_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.AllocatorExpressionImpl <em>Allocator Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.AllocatorExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getAllocatorExpression()
+	 * @generated
+	 */
+	int ALLOCATOR_EXPRESSION = 3;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -583,6 +330,16 @@ public interface ExpressionPackage extends EPackage {
 	 * @ordered
 	 */
 	int ALLOCATOR_EXPRESSION_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 1;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.AssociationExpressionImpl <em>Association Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.AssociationExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getAssociationExpression()
+	 * @generated
+	 */
+	int ASSOCIATION_EXPRESSION = 4;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -621,6 +378,16 @@ public interface ExpressionPackage extends EPackage {
 	int ASSOCIATION_EXPRESSION_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 2;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.ValueExpressionImpl <em>Value Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.ValueExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getValueExpression()
+	 * @generated
+	 */
+	int VALUE_EXPRESSION = 29;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -646,6 +413,16 @@ public interface ExpressionPackage extends EPackage {
 	 * @ordered
 	 */
 	int VALUE_EXPRESSION_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 1;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.AttributeExpressionImpl <em>Attribute Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.AttributeExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getAttributeExpression()
+	 * @generated
+	 */
+	int ATTRIBUTE_EXPRESSION = 5;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -684,6 +461,16 @@ public interface ExpressionPackage extends EPackage {
 	int ATTRIBUTE_EXPRESSION_FEATURE_COUNT = VALUE_EXPRESSION_FEATURE_COUNT + 1;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.BitStringExpressionImpl <em>Bit String Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.BitStringExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getBitStringExpression()
+	 * @generated
+	 */
+	int BIT_STRING_EXPRESSION = 7;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -709,6 +496,16 @@ public interface ExpressionPackage extends EPackage {
 	 * @ordered
 	 */
 	int BIT_STRING_EXPRESSION_FEATURE_COUNT = VALUE_EXPRESSION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.IndicationExpressionImpl <em>Indication Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.IndicationExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getIndicationExpression()
+	 * @generated
+	 */
+	int INDICATION_EXPRESSION = 9;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -754,6 +551,16 @@ public interface ExpressionPackage extends EPackage {
 	 * @ordered
 	 */
 	int INDICATION_EXPRESSION_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 3;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.SubtypeIndicationExpressionImpl <em>Subtype Indication Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.SubtypeIndicationExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getSubtypeIndicationExpression()
+	 * @generated
+	 */
+	int SUBTYPE_INDICATION_EXPRESSION = 10;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -819,6 +626,16 @@ public interface ExpressionPackage extends EPackage {
 	int SUBTYPE_INDICATION_EXPRESSION_FEATURE_COUNT = INDICATION_EXPRESSION_FEATURE_COUNT + 2;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.SubnatureIndicationExpressionImpl <em>Subnature Indication Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.SubnatureIndicationExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getSubnatureIndicationExpression()
+	 * @generated
+	 */
+	int SUBNATURE_INDICATION_EXPRESSION = 11;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -873,6 +690,16 @@ public interface ExpressionPackage extends EPackage {
 	int SUBNATURE_INDICATION_EXPRESSION_FEATURE_COUNT = INDICATION_EXPRESSION_FEATURE_COUNT + 1;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.LogicalExpressionImpl <em>Logical Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.LogicalExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getLogicalExpression()
+	 * @generated
+	 */
+	int LOGICAL_EXPRESSION = 12;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -918,6 +745,16 @@ public interface ExpressionPackage extends EPackage {
 	int LOGICAL_EXPRESSION_FEATURE_COUNT = BINARY_EXPRESSION_FEATURE_COUNT + 1;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.NameExpressionImpl <em>Name Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.NameExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getNameExpression()
+	 * @generated
+	 */
+	int NAME_EXPRESSION = 13;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -945,6 +782,16 @@ public interface ExpressionPackage extends EPackage {
 	int NAME_EXPRESSION_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 1;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.NullExpressionImpl <em>Null Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.NullExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getNullExpression()
+	 * @generated
+	 */
+	int NULL_EXPRESSION = 14;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -961,6 +808,16 @@ public interface ExpressionPackage extends EPackage {
 	 * @ordered
 	 */
 	int NULL_EXPRESSION_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.MultiplyingExpressionImpl <em>Multiplying Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.MultiplyingExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getMultiplyingExpression()
+	 * @generated
+	 */
+	int MULTIPLYING_EXPRESSION = 15;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1008,6 +865,16 @@ public interface ExpressionPackage extends EPackage {
 	int MULTIPLYING_EXPRESSION_FEATURE_COUNT = BINARY_EXPRESSION_FEATURE_COUNT + 1;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.PowerExpressionImpl <em>Power Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.PowerExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getPowerExpression()
+	 * @generated
+	 */
+	int POWER_EXPRESSION = 16;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1042,6 +909,16 @@ public interface ExpressionPackage extends EPackage {
 	 * @ordered
 	 */
 	int POWER_EXPRESSION_FEATURE_COUNT = BINARY_EXPRESSION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.RelationalExpressionImpl <em>Relational Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.RelationalExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getRelationalExpression()
+	 * @generated
+	 */
+	int RELATIONAL_EXPRESSION = 17;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1089,6 +966,16 @@ public interface ExpressionPackage extends EPackage {
 	int RELATIONAL_EXPRESSION_FEATURE_COUNT = BINARY_EXPRESSION_FEATURE_COUNT + 1;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.ShiftExpressionImpl <em>Shift Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.ShiftExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getShiftExpression()
+	 * @generated
+	 */
+	int SHIFT_EXPRESSION = 18;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1134,6 +1021,16 @@ public interface ExpressionPackage extends EPackage {
 	int SHIFT_EXPRESSION_FEATURE_COUNT = BINARY_EXPRESSION_FEATURE_COUNT + 1;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.SignatureExpressionImpl <em>Signature Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.SignatureExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getSignatureExpression()
+	 * @generated
+	 */
+	int SIGNATURE_EXPRESSION = 19;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1168,6 +1065,16 @@ public interface ExpressionPackage extends EPackage {
 	 * @ordered
 	 */
 	int SIGNATURE_EXPRESSION_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 2;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.SignExpressionImpl <em>Sign Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.SignExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getSignExpression()
+	 * @generated
+	 */
+	int SIGN_EXPRESSION = 20;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1206,6 +1113,16 @@ public interface ExpressionPackage extends EPackage {
 	int SIGN_EXPRESSION_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 2;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.UnaryExpressionImpl <em>Unary Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.UnaryExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getUnaryExpression()
+	 * @generated
+	 */
+	int UNARY_EXPRESSION = 21;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1242,6 +1159,16 @@ public interface ExpressionPackage extends EPackage {
 	int UNARY_EXPRESSION_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 2;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.OpenExpressionImpl <em>Open Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.OpenExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getOpenExpression()
+	 * @generated
+	 */
+	int OPEN_EXPRESSION = 22;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1260,6 +1187,16 @@ public interface ExpressionPackage extends EPackage {
 	int OPEN_EXPRESSION_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.OthersExpressionImpl <em>Others Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.OthersExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getOthersExpression()
+	 * @generated
+	 */
+	int OTHERS_EXPRESSION = 23;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1276,6 +1213,16 @@ public interface ExpressionPackage extends EPackage {
 	 * @ordered
 	 */
 	int OTHERS_EXPRESSION_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.RangeExpressionImpl <em>Range Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.RangeExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getRangeExpression()
+	 * @generated
+	 */
+	int RANGE_EXPRESSION = 24;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1323,6 +1270,16 @@ public interface ExpressionPackage extends EPackage {
 	int RANGE_EXPRESSION_FEATURE_COUNT = BINARY_EXPRESSION_FEATURE_COUNT + 1;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.StringExpressionImpl <em>String Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.StringExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getStringExpression()
+	 * @generated
+	 */
+	int STRING_EXPRESSION = 25;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1348,6 +1305,16 @@ public interface ExpressionPackage extends EPackage {
 	 * @ordered
 	 */
 	int STRING_EXPRESSION_FEATURE_COUNT = VALUE_EXPRESSION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.CharacterExpressionImpl <em>Character Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.CharacterExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getCharacterExpression()
+	 * @generated
+	 */
+	int CHARACTER_EXPRESSION = 26;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1377,6 +1344,16 @@ public interface ExpressionPackage extends EPackage {
 	int CHARACTER_EXPRESSION_FEATURE_COUNT = VALUE_EXPRESSION_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.IdentifierExpressionImpl <em>Identifier Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.IdentifierExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getIdentifierExpression()
+	 * @generated
+	 */
+	int IDENTIFIER_EXPRESSION = 27;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1402,6 +1379,16 @@ public interface ExpressionPackage extends EPackage {
 	 * @ordered
 	 */
 	int IDENTIFIER_EXPRESSION_FEATURE_COUNT = VALUE_EXPRESSION_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.UnitValueExpressionImpl <em>Unit Value Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.UnitValueExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getUnitValueExpression()
+	 * @generated
+	 */
+	int UNIT_VALUE_EXPRESSION = 28;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1438,6 +1425,16 @@ public interface ExpressionPackage extends EPackage {
 	 * @ordered
 	 */
 	int UNIT_VALUE_EXPRESSION_FEATURE_COUNT = VALUE_EXPRESSION_FEATURE_COUNT + 1;
+
+	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.WaveformExpressionImpl <em>Waveform Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.WaveformExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getWaveformExpression()
+	 * @generated
+	 */
+	int WAVEFORM_EXPRESSION = 30;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1756,69 +1753,6 @@ public interface ExpressionPackage extends EPackage {
 	EReference getIndicationExpression_Across();
 
 	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.expression.NullExpression <em>Null Expression</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Null Expression</em>'.
-	 * @see net.mlanoe.language.vhdl.expression.NullExpression
-	 * @generated
-	 */
-	EClass getNullExpression();
-
-	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.expression.WaveformExpression <em>Waveform Expression</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Waveform Expression</em>'.
-	 * @see net.mlanoe.language.vhdl.expression.WaveformExpression
-	 * @generated
-	 */
-	EClass getWaveformExpression();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.expression.WaveformExpression#getExpression <em>Expression</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Expression</em>'.
-	 * @see net.mlanoe.language.vhdl.expression.WaveformExpression#getExpression()
-	 * @see #getWaveformExpression()
-	 * @generated
-	 */
-	EReference getWaveformExpression_Expression();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.expression.WaveformExpression#getAfter <em>After</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>After</em>'.
-	 * @see net.mlanoe.language.vhdl.expression.WaveformExpression#getAfter()
-	 * @see #getWaveformExpression()
-	 * @generated
-	 */
-	EReference getWaveformExpression_After();
-
-	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.expression.MultiExpression <em>Multi Expression</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Multi Expression</em>'.
-	 * @see net.mlanoe.language.vhdl.expression.MultiExpression
-	 * @generated
-	 */
-	EClass getMultiExpression();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link net.mlanoe.language.vhdl.expression.MultiExpression#getExpression <em>Expression</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Expression</em>'.
-	 * @see net.mlanoe.language.vhdl.expression.MultiExpression#getExpression()
-	 * @see #getMultiExpression()
-	 * @generated
-	 */
-	EReference getMultiExpression_Expression();
-
-	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.expression.SubtypeIndicationExpression <em>Subtype Indication Expression</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1861,6 +1795,27 @@ public interface ExpressionPackage extends EPackage {
 	EReference getSubnatureIndicationExpression_Mark();
 
 	/**
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.expression.LogicalExpression <em>Logical Expression</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Logical Expression</em>'.
+	 * @see net.mlanoe.language.vhdl.expression.LogicalExpression
+	 * @generated
+	 */
+	EClass getLogicalExpression();
+
+	/**
+	 * Returns the meta object for the attribute '{@link net.mlanoe.language.vhdl.expression.LogicalExpression#getOperator <em>Operator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Operator</em>'.
+	 * @see net.mlanoe.language.vhdl.expression.LogicalExpression#getOperator()
+	 * @see #getLogicalExpression()
+	 * @generated
+	 */
+	EAttribute getLogicalExpression_Operator();
+
+	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.expression.NameExpression <em>Name Expression</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1882,25 +1837,14 @@ public interface ExpressionPackage extends EPackage {
 	EReference getNameExpression_Element();
 
 	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.expression.LogicalExpression <em>Logical Expression</em>}'.
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.expression.NullExpression <em>Null Expression</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Logical Expression</em>'.
-	 * @see net.mlanoe.language.vhdl.expression.LogicalExpression
+	 * @return the meta object for class '<em>Null Expression</em>'.
+	 * @see net.mlanoe.language.vhdl.expression.NullExpression
 	 * @generated
 	 */
-	EClass getLogicalExpression();
-
-	/**
-	 * Returns the meta object for the attribute '{@link net.mlanoe.language.vhdl.expression.LogicalExpression#getOperator <em>Operator</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Operator</em>'.
-	 * @see net.mlanoe.language.vhdl.expression.LogicalExpression#getOperator()
-	 * @see #getLogicalExpression()
-	 * @generated
-	 */
-	EAttribute getLogicalExpression_Operator();
+	EClass getNullExpression();
 
 	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.expression.MultiplyingExpression <em>Multiplying Expression</em>}'.
@@ -2185,6 +2129,59 @@ public interface ExpressionPackage extends EPackage {
 	EAttribute getValueExpression_Value();
 
 	/**
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.expression.WaveformExpression <em>Waveform Expression</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Waveform Expression</em>'.
+	 * @see net.mlanoe.language.vhdl.expression.WaveformExpression
+	 * @generated
+	 */
+	EClass getWaveformExpression();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.expression.WaveformExpression#getExpression <em>Expression</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Expression</em>'.
+	 * @see net.mlanoe.language.vhdl.expression.WaveformExpression#getExpression()
+	 * @see #getWaveformExpression()
+	 * @generated
+	 */
+	EReference getWaveformExpression_Expression();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.expression.WaveformExpression#getAfter <em>After</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>After</em>'.
+	 * @see net.mlanoe.language.vhdl.expression.WaveformExpression#getAfter()
+	 * @see #getWaveformExpression()
+	 * @generated
+	 */
+	EReference getWaveformExpression_After();
+
+	/**
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.expression.MultiExpression <em>Multi Expression</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Multi Expression</em>'.
+	 * @see net.mlanoe.language.vhdl.expression.MultiExpression
+	 * @generated
+	 */
+	EClass getMultiExpression();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link net.mlanoe.language.vhdl.expression.MultiExpression#getExpression <em>Expression</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Expression</em>'.
+	 * @see net.mlanoe.language.vhdl.expression.MultiExpression#getExpression()
+	 * @see #getMultiExpression()
+	 * @generated
+	 */
+	EReference getMultiExpression_Expression();
+
+	/**
 	 * Returns the meta object for enum '{@link net.mlanoe.language.vhdl.expression.UnaryOperator <em>Unary Operator</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2459,60 +2456,6 @@ public interface ExpressionPackage extends EPackage {
 		EReference INDICATION_EXPRESSION__ACROSS = eINSTANCE.getIndicationExpression_Across();
 
 		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.expression.impl.NullExpressionImpl <em>Null Expression</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.expression.impl.NullExpressionImpl
-		 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getNullExpression()
-		 * @generated
-		 */
-		EClass NULL_EXPRESSION = eINSTANCE.getNullExpression();
-
-		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.expression.impl.WaveformExpressionImpl <em>Waveform Expression</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.expression.impl.WaveformExpressionImpl
-		 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getWaveformExpression()
-		 * @generated
-		 */
-		EClass WAVEFORM_EXPRESSION = eINSTANCE.getWaveformExpression();
-
-		/**
-		 * The meta object literal for the '<em><b>Expression</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference WAVEFORM_EXPRESSION__EXPRESSION = eINSTANCE.getWaveformExpression_Expression();
-
-		/**
-		 * The meta object literal for the '<em><b>After</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference WAVEFORM_EXPRESSION__AFTER = eINSTANCE.getWaveformExpression_After();
-
-		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.expression.impl.MultiExpressionImpl <em>Multi Expression</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.expression.impl.MultiExpressionImpl
-		 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getMultiExpression()
-		 * @generated
-		 */
-		EClass MULTI_EXPRESSION = eINSTANCE.getMultiExpression();
-
-		/**
-		 * The meta object literal for the '<em><b>Expression</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference MULTI_EXPRESSION__EXPRESSION = eINSTANCE.getMultiExpression_Expression();
-
-		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.expression.impl.SubtypeIndicationExpressionImpl <em>Subtype Indication Expression</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2549,6 +2492,24 @@ public interface ExpressionPackage extends EPackage {
 		EReference SUBNATURE_INDICATION_EXPRESSION__MARK = eINSTANCE.getSubnatureIndicationExpression_Mark();
 
 		/**
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.expression.impl.LogicalExpressionImpl <em>Logical Expression</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.expression.impl.LogicalExpressionImpl
+		 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getLogicalExpression()
+		 * @generated
+		 */
+		EClass LOGICAL_EXPRESSION = eINSTANCE.getLogicalExpression();
+
+		/**
+		 * The meta object literal for the '<em><b>Operator</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOGICAL_EXPRESSION__OPERATOR = eINSTANCE.getLogicalExpression_Operator();
+
+		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.expression.impl.NameExpressionImpl <em>Name Expression</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2567,22 +2528,14 @@ public interface ExpressionPackage extends EPackage {
 		EReference NAME_EXPRESSION__ELEMENT = eINSTANCE.getNameExpression_Element();
 
 		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.expression.impl.LogicalExpressionImpl <em>Logical Expression</em>}' class.
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.expression.impl.NullExpressionImpl <em>Null Expression</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.expression.impl.LogicalExpressionImpl
-		 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getLogicalExpression()
+		 * @see net.mlanoe.language.vhdl.expression.impl.NullExpressionImpl
+		 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getNullExpression()
 		 * @generated
 		 */
-		EClass LOGICAL_EXPRESSION = eINSTANCE.getLogicalExpression();
-
-		/**
-		 * The meta object literal for the '<em><b>Operator</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute LOGICAL_EXPRESSION__OPERATOR = eINSTANCE.getLogicalExpression_Operator();
+		EClass NULL_EXPRESSION = eINSTANCE.getNullExpression();
 
 		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.expression.impl.MultiplyingExpressionImpl <em>Multiplying Expression</em>}' class.
@@ -2829,6 +2782,50 @@ public interface ExpressionPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute VALUE_EXPRESSION__VALUE = eINSTANCE.getValueExpression_Value();
+
+		/**
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.expression.impl.WaveformExpressionImpl <em>Waveform Expression</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.expression.impl.WaveformExpressionImpl
+		 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getWaveformExpression()
+		 * @generated
+		 */
+		EClass WAVEFORM_EXPRESSION = eINSTANCE.getWaveformExpression();
+
+		/**
+		 * The meta object literal for the '<em><b>Expression</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference WAVEFORM_EXPRESSION__EXPRESSION = eINSTANCE.getWaveformExpression_Expression();
+
+		/**
+		 * The meta object literal for the '<em><b>After</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference WAVEFORM_EXPRESSION__AFTER = eINSTANCE.getWaveformExpression_After();
+
+		/**
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.expression.impl.MultiExpressionImpl <em>Multi Expression</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.expression.impl.MultiExpressionImpl
+		 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getMultiExpression()
+		 * @generated
+		 */
+		EClass MULTI_EXPRESSION = eINSTANCE.getMultiExpression();
+
+		/**
+		 * The meta object literal for the '<em><b>Expression</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MULTI_EXPRESSION__EXPRESSION = eINSTANCE.getMultiExpression_Expression();
 
 		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.expression.UnaryOperator <em>Unary Operator</em>}' enum.

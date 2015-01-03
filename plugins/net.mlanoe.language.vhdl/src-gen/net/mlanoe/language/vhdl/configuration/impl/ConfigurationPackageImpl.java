@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -11,8 +8,11 @@
 package net.mlanoe.language.vhdl.configuration.impl;
 
 import net.mlanoe.language.vhdl.VhdlPackage;
+
 import net.mlanoe.language.vhdl.ams.AmsPackage;
+
 import net.mlanoe.language.vhdl.ams.impl.AmsPackageImpl;
+
 import net.mlanoe.language.vhdl.configuration.BlockConfiguration;
 import net.mlanoe.language.vhdl.configuration.ComponentConfiguration;
 import net.mlanoe.language.vhdl.configuration.Configuration;
@@ -21,20 +21,33 @@ import net.mlanoe.language.vhdl.configuration.ConfigurationItem;
 import net.mlanoe.language.vhdl.configuration.ConfigurationPackage;
 import net.mlanoe.language.vhdl.configuration.ConfigurationReference;
 import net.mlanoe.language.vhdl.configuration.ConfigurationResolvedReference;
+
 import net.mlanoe.language.vhdl.declaration.DeclarationPackage;
+
 import net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl;
+
 import net.mlanoe.language.vhdl.expression.ExpressionPackage;
+
 import net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl;
+
 import net.mlanoe.language.vhdl.impl.VhdlPackageImpl;
+
 import net.mlanoe.language.vhdl.nature.NaturePackage;
+
 import net.mlanoe.language.vhdl.nature.impl.NaturePackageImpl;
+
 import net.mlanoe.language.vhdl.statement.StatementPackage;
+
 import net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl;
+
 import net.mlanoe.language.vhdl.type.TypePackage;
+
 import net.mlanoe.language.vhdl.type.impl.TypePackageImpl;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
+
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**

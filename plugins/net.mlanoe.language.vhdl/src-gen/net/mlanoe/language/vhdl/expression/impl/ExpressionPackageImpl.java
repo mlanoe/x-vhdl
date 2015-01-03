@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -11,12 +8,19 @@
 package net.mlanoe.language.vhdl.expression.impl;
 
 import net.mlanoe.language.vhdl.VhdlPackage;
+
 import net.mlanoe.language.vhdl.ams.AmsPackage;
+
 import net.mlanoe.language.vhdl.ams.impl.AmsPackageImpl;
+
 import net.mlanoe.language.vhdl.configuration.ConfigurationPackage;
+
 import net.mlanoe.language.vhdl.configuration.impl.ConfigurationPackageImpl;
+
 import net.mlanoe.language.vhdl.declaration.DeclarationPackage;
+
 import net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl;
+
 import net.mlanoe.language.vhdl.expression.AddingExpression;
 import net.mlanoe.language.vhdl.expression.AddingOperator;
 import net.mlanoe.language.vhdl.expression.AggregateExpression;
@@ -59,18 +63,27 @@ import net.mlanoe.language.vhdl.expression.UnaryOperator;
 import net.mlanoe.language.vhdl.expression.UnitValueExpression;
 import net.mlanoe.language.vhdl.expression.ValueExpression;
 import net.mlanoe.language.vhdl.expression.WaveformExpression;
+
 import net.mlanoe.language.vhdl.impl.VhdlPackageImpl;
+
 import net.mlanoe.language.vhdl.nature.NaturePackage;
+
 import net.mlanoe.language.vhdl.nature.impl.NaturePackageImpl;
+
 import net.mlanoe.language.vhdl.statement.StatementPackage;
+
 import net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl;
+
 import net.mlanoe.language.vhdl.type.TypePackage;
+
 import net.mlanoe.language.vhdl.type.impl.TypePackageImpl;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
+
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
@@ -155,27 +168,6 @@ public class ExpressionPackageImpl extends EPackageImpl implements ExpressionPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass nullExpressionEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass waveformExpressionEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass multiExpressionEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass subtypeIndicationExpressionEClass = null;
 
 	/**
@@ -190,6 +182,13 @@ public class ExpressionPackageImpl extends EPackageImpl implements ExpressionPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass logicalExpressionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass nameExpressionEClass = null;
 
 	/**
@@ -197,7 +196,7 @@ public class ExpressionPackageImpl extends EPackageImpl implements ExpressionPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass logicalExpressionEClass = null;
+	private EClass nullExpressionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -303,6 +302,20 @@ public class ExpressionPackageImpl extends EPackageImpl implements ExpressionPac
 	 * @generated
 	 */
 	private EClass valueExpressionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass waveformExpressionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass multiExpressionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -620,60 +633,6 @@ public class ExpressionPackageImpl extends EPackageImpl implements ExpressionPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getNullExpression() {
-		return nullExpressionEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getWaveformExpression() {
-		return waveformExpressionEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getWaveformExpression_Expression() {
-		return (EReference)waveformExpressionEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getWaveformExpression_After() {
-		return (EReference)waveformExpressionEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getMultiExpression() {
-		return multiExpressionEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getMultiExpression_Expression() {
-		return (EReference)multiExpressionEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getSubtypeIndicationExpression() {
 		return subtypeIndicationExpressionEClass;
 	}
@@ -710,6 +669,24 @@ public class ExpressionPackageImpl extends EPackageImpl implements ExpressionPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getLogicalExpression() {
+		return logicalExpressionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getLogicalExpression_Operator() {
+		return (EAttribute)logicalExpressionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getNameExpression() {
 		return nameExpressionEClass;
 	}
@@ -728,17 +705,8 @@ public class ExpressionPackageImpl extends EPackageImpl implements ExpressionPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getLogicalExpression() {
-		return logicalExpressionEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getLogicalExpression_Operator() {
-		return (EAttribute)logicalExpressionEClass.getEStructuralFeatures().get(0);
+	public EClass getNullExpression() {
+		return nullExpressionEClass;
 	}
 
 	/**
@@ -982,6 +950,51 @@ public class ExpressionPackageImpl extends EPackageImpl implements ExpressionPac
 	 */
 	public EAttribute getValueExpression_Value() {
 		return (EAttribute)valueExpressionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getWaveformExpression() {
+		return waveformExpressionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getWaveformExpression_Expression() {
+		return (EReference)waveformExpressionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getWaveformExpression_After() {
+		return (EReference)waveformExpressionEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMultiExpression() {
+		return multiExpressionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getMultiExpression_Expression() {
+		return (EReference)multiExpressionEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**

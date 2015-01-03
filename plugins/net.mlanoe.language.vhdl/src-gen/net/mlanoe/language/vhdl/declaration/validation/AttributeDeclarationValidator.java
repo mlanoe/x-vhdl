@@ -4,8 +4,6 @@
  */
 package net.mlanoe.language.vhdl.declaration.validation;
 
-import net.mlanoe.language.vhdl.type.TypeReference;
-
 
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.declaration.AttributeDeclaration}.
@@ -16,7 +14,4 @@ import net.mlanoe.language.vhdl.type.TypeReference;
 public interface AttributeDeclarationValidator {
 	boolean validate();
 
-	boolean validateType(TypeReference value);
-
-	boolean validateType(String value);
 }

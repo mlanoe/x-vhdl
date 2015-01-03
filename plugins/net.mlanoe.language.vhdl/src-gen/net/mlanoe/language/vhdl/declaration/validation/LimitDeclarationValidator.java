@@ -6,8 +6,6 @@ package net.mlanoe.language.vhdl.declaration.validation;
 
 import net.mlanoe.language.vhdl.expression.Expression;
 
-import net.mlanoe.language.vhdl.type.TypeReference;
-
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.declaration.LimitDeclaration}.
  * This doesn't really do anything, and it's not a real EMF artifact.
@@ -17,6 +15,5 @@ import net.mlanoe.language.vhdl.type.TypeReference;
 public interface LimitDeclarationValidator {
 	boolean validate();
 
-	boolean validateType(TypeReference value);
 	boolean validateValue(Expression value);
 }

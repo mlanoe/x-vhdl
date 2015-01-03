@@ -5,9 +5,7 @@
 package net.mlanoe.language.vhdl.declaration.validation;
 
 import net.mlanoe.language.vhdl.Name;
-import net.mlanoe.language.vhdl.Signature;
 
-import net.mlanoe.language.vhdl.expression.Expression;
 import net.mlanoe.language.vhdl.type.TypeReference;
 
 /**
@@ -20,10 +18,5 @@ public interface AliasDeclarationValidator {
 	boolean validate();
 
 	boolean validateAlias(TypeReference value);
-
 	boolean validateIs(Name value);
-
-	boolean validateAlias(Expression value);
-	boolean validateIs(Expression value);
-	boolean validateSignature(Signature value);
 }

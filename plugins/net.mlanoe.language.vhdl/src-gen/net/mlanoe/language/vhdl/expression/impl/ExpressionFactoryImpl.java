@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -231,36 +228,6 @@ public class ExpressionFactoryImpl extends EFactoryImpl implements ExpressionFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NullExpression createNullExpression() {
-		NullExpressionImpl nullExpression = new NullExpressionImpl();
-		return nullExpression;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public WaveformExpression createWaveformExpression() {
-		WaveformExpressionImpl waveformExpression = new WaveformExpressionImpl();
-		return waveformExpression;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MultiExpression createMultiExpression() {
-		MultiExpressionImpl multiExpression = new MultiExpressionImpl();
-		return multiExpression;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public SubtypeIndicationExpression createSubtypeIndicationExpression() {
 		SubtypeIndicationExpressionImpl subtypeIndicationExpression = new SubtypeIndicationExpressionImpl();
 		return subtypeIndicationExpression;
@@ -281,6 +248,16 @@ public class ExpressionFactoryImpl extends EFactoryImpl implements ExpressionFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public LogicalExpression createLogicalExpression() {
+		LogicalExpressionImpl logicalExpression = new LogicalExpressionImpl();
+		return logicalExpression;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public NameExpression createNameExpression() {
 		NameExpressionImpl nameExpression = new NameExpressionImpl();
 		return nameExpression;
@@ -291,9 +268,9 @@ public class ExpressionFactoryImpl extends EFactoryImpl implements ExpressionFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LogicalExpression createLogicalExpression() {
-		LogicalExpressionImpl logicalExpression = new LogicalExpressionImpl();
-		return logicalExpression;
+	public NullExpression createNullExpression() {
+		NullExpressionImpl nullExpression = new NullExpressionImpl();
+		return nullExpression;
 	}
 
 	/**
@@ -434,6 +411,26 @@ public class ExpressionFactoryImpl extends EFactoryImpl implements ExpressionFac
 	public ValueExpression createValueExpression() {
 		ValueExpressionImpl valueExpression = new ValueExpressionImpl();
 		return valueExpression;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public WaveformExpression createWaveformExpression() {
+		WaveformExpressionImpl waveformExpression = new WaveformExpressionImpl();
+		return waveformExpression;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MultiExpression createMultiExpression() {
+		MultiExpressionImpl multiExpression = new MultiExpressionImpl();
+		return multiExpression;
 	}
 
 	/**

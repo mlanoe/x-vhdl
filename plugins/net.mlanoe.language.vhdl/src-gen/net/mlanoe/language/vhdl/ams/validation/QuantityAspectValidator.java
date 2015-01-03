@@ -6,8 +6,6 @@ package net.mlanoe.language.vhdl.ams.validation;
 
 import net.mlanoe.language.vhdl.expression.Expression;
 
-import org.eclipse.emf.common.util.EList;
-
 /**
  * A sample validator interface for {@link net.mlanoe.language.vhdl.ams.QuantityAspect}.
  * This doesn't really do anything, and it's not a real EMF artifact.
@@ -17,7 +15,6 @@ import org.eclipse.emf.common.util.EList;
 public interface QuantityAspectValidator {
 	boolean validate();
 
-	boolean validateName(EList<String> value);
 	boolean validateTolerance(Expression value);
 	boolean validateExpression(Expression value);
 }

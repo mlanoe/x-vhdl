@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -93,33 +90,6 @@ public interface ExpressionFactory extends EFactory {
 	BitStringExpression createBitStringExpression();
 
 	/**
-	 * Returns a new object of class '<em>Null Expression</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Null Expression</em>'.
-	 * @generated
-	 */
-	NullExpression createNullExpression();
-
-	/**
-	 * Returns a new object of class '<em>Waveform Expression</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Waveform Expression</em>'.
-	 * @generated
-	 */
-	WaveformExpression createWaveformExpression();
-
-	/**
-	 * Returns a new object of class '<em>Multi Expression</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Multi Expression</em>'.
-	 * @generated
-	 */
-	MultiExpression createMultiExpression();
-
-	/**
 	 * Returns a new object of class '<em>Subtype Indication Expression</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -138,6 +108,15 @@ public interface ExpressionFactory extends EFactory {
 	SubnatureIndicationExpression createSubnatureIndicationExpression();
 
 	/**
+	 * Returns a new object of class '<em>Logical Expression</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Logical Expression</em>'.
+	 * @generated
+	 */
+	LogicalExpression createLogicalExpression();
+
+	/**
 	 * Returns a new object of class '<em>Name Expression</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -147,13 +126,13 @@ public interface ExpressionFactory extends EFactory {
 	NameExpression createNameExpression();
 
 	/**
-	 * Returns a new object of class '<em>Logical Expression</em>'.
+	 * Returns a new object of class '<em>Null Expression</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Logical Expression</em>'.
+	 * @return a new object of class '<em>Null Expression</em>'.
 	 * @generated
 	 */
-	LogicalExpression createLogicalExpression();
+	NullExpression createNullExpression();
 
 	/**
 	 * Returns a new object of class '<em>Multiplying Expression</em>'.
@@ -280,6 +259,24 @@ public interface ExpressionFactory extends EFactory {
 	 * @generated
 	 */
 	ValueExpression createValueExpression();
+
+	/**
+	 * Returns a new object of class '<em>Waveform Expression</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Waveform Expression</em>'.
+	 * @generated
+	 */
+	WaveformExpression createWaveformExpression();
+
+	/**
+	 * Returns a new object of class '<em>Multi Expression</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Multi Expression</em>'.
+	 * @generated
+	 */
+	MultiExpression createMultiExpression();
 
 	/**
 	 * Returns the package supported by this factory.

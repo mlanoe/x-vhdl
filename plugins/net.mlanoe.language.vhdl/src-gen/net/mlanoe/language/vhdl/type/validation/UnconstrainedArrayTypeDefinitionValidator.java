@@ -4,7 +4,8 @@
  */
 package net.mlanoe.language.vhdl.type.validation;
 
-import net.mlanoe.language.vhdl.expression.Expression;
+import net.mlanoe.language.vhdl.type.TypeReference;
+
 import org.eclipse.emf.common.util.EList;
 
 /**
@@ -16,5 +17,5 @@ import org.eclipse.emf.common.util.EList;
 public interface UnconstrainedArrayTypeDefinitionValidator {
 	boolean validate();
 
-	boolean validateIndex(EList<Expression> value);
+	boolean validateIndex(EList<TypeReference> value);
 }

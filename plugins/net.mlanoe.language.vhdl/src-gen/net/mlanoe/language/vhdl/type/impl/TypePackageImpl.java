@@ -1,9 +1,6 @@
 /**
  * Copyright (c) 2014 mlanoe
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+ * Some rights reserved. See COPYING, AUTHORS.
  *   
  * Contributors:
  *     mlanoe - initial API and implementation
@@ -11,19 +8,33 @@
 package net.mlanoe.language.vhdl.type.impl;
 
 import net.mlanoe.language.vhdl.VhdlPackage;
+
 import net.mlanoe.language.vhdl.ams.AmsPackage;
+
 import net.mlanoe.language.vhdl.ams.impl.AmsPackageImpl;
+
 import net.mlanoe.language.vhdl.configuration.ConfigurationPackage;
+
 import net.mlanoe.language.vhdl.configuration.impl.ConfigurationPackageImpl;
+
 import net.mlanoe.language.vhdl.declaration.DeclarationPackage;
+
 import net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl;
+
 import net.mlanoe.language.vhdl.expression.ExpressionPackage;
+
 import net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl;
+
 import net.mlanoe.language.vhdl.impl.VhdlPackageImpl;
+
 import net.mlanoe.language.vhdl.nature.NaturePackage;
+
 import net.mlanoe.language.vhdl.nature.impl.NaturePackageImpl;
+
 import net.mlanoe.language.vhdl.statement.StatementPackage;
+
 import net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl;
+
 import net.mlanoe.language.vhdl.type.AccessTypeDefinition;
 import net.mlanoe.language.vhdl.type.ArrayTypeDefinition;
 import net.mlanoe.language.vhdl.type.CompositeTypeDefinition;
@@ -42,10 +53,12 @@ import net.mlanoe.language.vhdl.type.TypePackage;
 import net.mlanoe.language.vhdl.type.TypeReference;
 import net.mlanoe.language.vhdl.type.Typed;
 import net.mlanoe.language.vhdl.type.UnconstrainedArrayTypeDefinition;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
+
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
@@ -102,6 +115,13 @@ public class TypePackageImpl extends EPackageImpl implements TypePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass enumerationLiteralEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass enumerationTypeDefinitionEClass = null;
 
 	/**
@@ -137,13 +157,6 @@ public class TypePackageImpl extends EPackageImpl implements TypePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass typeDefinitionEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass recordTypeElementEClass = null;
 
 	/**
@@ -158,14 +171,14 @@ public class TypePackageImpl extends EPackageImpl implements TypePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass typeReferenceEClass = null;
+	private EClass typeDefinitionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass enumerationLiteralEClass = null;
+	private EClass typeReferenceEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -337,6 +350,15 @@ public class TypePackageImpl extends EPackageImpl implements TypePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getEnumerationLiteral() {
+		return enumerationLiteralEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getEnumerationTypeDefinition() {
 		return enumerationTypeDefinitionEClass;
 	}
@@ -472,15 +494,6 @@ public class TypePackageImpl extends EPackageImpl implements TypePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getTypeDefinition() {
-		return typeDefinitionEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getRecordTypeElement() {
 		return recordTypeElementEClass;
 	}
@@ -508,8 +521,8 @@ public class TypePackageImpl extends EPackageImpl implements TypePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getTypeReference() {
-		return typeReferenceEClass;
+	public EClass getTypeDefinition() {
+		return typeDefinitionEClass;
 	}
 
 	/**
@@ -517,8 +530,8 @@ public class TypePackageImpl extends EPackageImpl implements TypePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getEnumerationLiteral() {
-		return enumerationLiteralEClass;
+	public EClass getTypeReference() {
+		return typeReferenceEClass;
 	}
 
 	/**
