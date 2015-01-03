@@ -9,7 +9,7 @@
             class="net.mlanoe.language.vhdl.xtext.ui.VhdlExecutableExtensionFactory:org.eclipse.xtext.ui.editor.XtextEditor"
             contributorClass="org.eclipse.ui.editors.text.TextEditorActionContributor"
             default="true"
-            extensions="vhdl"
+            extensions="vhdl, vhd"
             id="net.mlanoe.language.vhdl.xtext.Vhdl"
             name="Vhdl Editor">
         </editor>
