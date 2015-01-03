@@ -1,5 +1,12 @@
 package net.mlanoe.language.vhdl.xtext.ui.outline.internal;
 
+/**
+ * Copyright (c) 2014 mlanoe
+ * Some rights reserved. See COPYING, AUTHORS.
+ *   
+ * Contributors:
+ *     mlanoe - initial API and implementation
+ */
 import net.mlanoe.language.vhdl.configuration.BlockConfiguration;
 import net.mlanoe.language.vhdl.configuration.ComponentConfiguration;
 import net.mlanoe.language.vhdl.configuration.Configuration;

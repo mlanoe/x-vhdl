@@ -1,3 +1,10 @@
+/**
+ * Copyright (c) 2014 mlanoe
+ * Some rights reserved. See COPYING, AUTHORS.
+ *   
+ * Contributors:
+ *     mlanoe - initial API and implementation
+ */
 package net.mlanoe.language.vhdl.xtext.ui.outline;
 
 import net.mlanoe.language.vhdl.xtext.ui.outline.internal.OutlineTextAmsSwitch;
