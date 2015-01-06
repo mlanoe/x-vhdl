@@ -107,10 +107,11 @@ public class OutlineTextExpressionSwitch extends ExpressionSwitch<String> {
 		StringBuilder builder = new StringBuilder();
 
 		if (object.getName() != null) {
-			builder.append(OutlineTextGenerator.getOutline(object.getMark()));
+			builder.append(OutlineTextGenerator.getOutline(object.getName()));
+			builder.append(" ");
 		}
 
-		builder.append(OutlineTextGenerator.getOutline(object.getName()));
+		builder.append(OutlineTextGenerator.getOutline(object.getMark()));
 		return builder.toString();
 	}
 

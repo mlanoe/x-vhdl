@@ -3,19 +3,31 @@
 */
 package net.mlanoe.language.vhdl.xtext.ui.outline
 
+import org.eclipse.xtext.ui.editor.outline.IOutlineNode
+import org.eclipse.emf.ecore.EObject
+
 /**
  * Customization of the default outline structure.
  *
  * see http://www.eclipse.org/Xtext/documentation.html#outline
  */
 class VhdlOutlineTreeProvider extends org.eclipse.xtext.ui.editor.outline.impl.DefaultOutlineTreeProvider {
-	  override Object _text(Object modelElement) {
-    var res = OutlineTextGenerator.getOutline(modelElement);
-    if(res == null) res = "";
+	override Object _text(Object modelElement) {
+    	var res = OutlineTextGenerator.getOutline(modelElement);
+    	if(res == null) res = "";
 
 //	    var klass = modelElement.getClass();
 //	    res = res + " - " + klass.getInterfaces().get(0).getSimpleName();
 
-    return res;
-  }	
+    	return res;
+	}	
+  
+  
+	override void _createChildren(IOutlineNode parentNode, EObject modelElement) {
+		var children = OutlineChildrenGenerator.getChildren(modelElement);
+		for(child : children) {
+			createNode(parentNode, child); 
+		}
+	}
+  
 }

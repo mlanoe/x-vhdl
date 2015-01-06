@@ -62,6 +62,8 @@ public class OutlineTextGenerator {
 				res = TYPE_SWITCH.doSwitch(eObject);
 			if (res == null)
 				res = AMS_SWITCH.doSwitch(eObject);
+		} else {
+			res = object.toString();
 		}
 		return res;
 	}

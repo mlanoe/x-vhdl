@@ -7,6 +7,7 @@
  */
 package net.mlanoe.language.vhdl.xtext.ui.outline.internal;
 
+import net.mlanoe.language.vhdl.expression.Expression;
 import net.mlanoe.language.vhdl.statement.AssertionStatement;
 import net.mlanoe.language.vhdl.statement.BlockStatement;
 import net.mlanoe.language.vhdl.statement.BreakStatement;
@@ -36,7 +37,6 @@ import net.mlanoe.language.vhdl.statement.ReportStatement;
 import net.mlanoe.language.vhdl.statement.ReturnStatement;
 import net.mlanoe.language.vhdl.statement.SelectedSignalAssignmentStatement;
 import net.mlanoe.language.vhdl.statement.SequentialSignalAssignmentStatement;
-import net.mlanoe.language.vhdl.statement.SignalAssignmentStatement;
 import net.mlanoe.language.vhdl.statement.SimpleSimultaneousStatement;
 import net.mlanoe.language.vhdl.statement.SimultaneousCaseStatement;
 import net.mlanoe.language.vhdl.statement.SimultaneousIfStatement;
@@ -92,18 +92,6 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 	}
 
 	@Override
-	public String caseSignalAssignmentStatement(SignalAssignmentStatement object) {
-		StringBuilder builder = new StringBuilder();
-		if (object.getLabel() != null) {
-			builder.append(object.getLabel());
-			builder.append(" : ");
-		}
-		builder.append(OutlineTextGenerator.getOutline(object.getTarget()));
-		builder.append(" <= ");
-		return builder.toString();
-	}
-
-	@Override
 	public String caseSequentialSignalAssignmentStatement(
 			SequentialSignalAssignmentStatement object) {
 		StringBuilder builder = new StringBuilder();
@@ -113,6 +101,16 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 		}
 		builder.append(OutlineTextGenerator.getOutline(object.getTarget()));
 		builder.append(" <= ");
+
+		boolean first = true;
+		for (Expression waveform : object.getWaveform()) {
+			if (!first) {
+				builder.append(", ");
+			}
+			first = false;
+			builder.append(OutlineTextGenerator.getOutline(waveform));
+		}
+
 		return builder.toString();
 	}
 
@@ -126,6 +124,15 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 		}
 		builder.append(OutlineTextGenerator.getOutline(object.getTarget()));
 		builder.append(" <= ");
+
+		boolean first = true;
+		for (ConditionalWaveform waveform : object.getWaveform()) {
+			if (!first) {
+				builder.append(", ");
+			}
+			first = false;
+			builder.append(OutlineTextGenerator.getOutline(waveform));
+		}
 		return builder.toString();
 	}
 
@@ -139,6 +146,16 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 		}
 		builder.append(OutlineTextGenerator.getOutline(object.getTarget()));
 		builder.append(" <= ");
+
+		boolean first = true;
+		for (ConditionalWaveform waveform : object.getWaveform()) {
+			if (!first) {
+				builder.append(", ");
+			}
+			first = false;
+			builder.append(OutlineTextGenerator.getOutline(waveform));
+		}
+
 		return builder.toString();
 	}
 
@@ -176,7 +193,7 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 
 	@Override
 	public String caseCaseAlternative(CaseAlternative object) {
-		return "when";
+		return "when " + OutlineTextGenerator.getOutline(object.getChoice());
 	}
 
 	@Override
@@ -199,7 +216,7 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 
 	@Override
 	public String caseIfStatementTest(IfStatementTest object) {
-		return "test";
+		return OutlineTextGenerator.getOutline(object.getCondition());
 	}
 
 	@Override
@@ -234,9 +251,13 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 		}
 
 		builder.append("process");
-		builder.append("(");
-		builder.append(OutlineTextGenerator.getOutline(object.getSensitivity()));
-		builder.append(")");
+
+		if (object.getSensitivity() != null) {
+			builder.append("(");
+			builder.append(OutlineTextGenerator.getOutline(object
+					.getSensitivity()));
+			builder.append(")");
+		}
 
 		return builder.toString();
 	}
