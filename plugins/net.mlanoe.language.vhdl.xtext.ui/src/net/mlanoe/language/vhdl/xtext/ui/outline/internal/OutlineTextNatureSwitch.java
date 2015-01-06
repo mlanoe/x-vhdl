@@ -42,7 +42,8 @@ public class OutlineTextNatureSwitch extends NatureSwitch<String> {
 
 	@Override
 	public String caseRecordNatureElement(RecordNatureElement object) {
-		return OutlineTextGenerator.getOutline(object.getName());
+		return OutlineTextGenerator.getOutline(object.getName()) + " : "
+				+ OutlineTextGenerator.getOutline(object.getNature());
 	}
 
 	@Override

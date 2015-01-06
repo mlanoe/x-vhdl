@@ -23,17 +23,19 @@ public class OutlineTextAmsSwitch extends AmsSwitch<String> {
 
 	@Override
 	public String caseQuantityAspect(QuantityAspect object) {
-		return OutlineTextGenerator.getOutline(object.getName());
+		return OutlineTextGenerator.getOutline(object.getName()) + " := "
+				+ OutlineTextGenerator.getOutline(object.getExpression());
 	}
 
 	@Override
 	public String caseSpectrum(Spectrum object) {
-		return "spectrum";
+		return "spectrum " + OutlineTextGenerator.getOutline(object.getLeft())
+				+ ", " + OutlineTextGenerator.getOutline(object.getRight());
 	}
 
 	@Override
 	public String caseNoise(Noise object) {
-		return "noise";
+		return "noise " + OutlineTextGenerator.getOutline(object.getNoise());
 	}
 
 }

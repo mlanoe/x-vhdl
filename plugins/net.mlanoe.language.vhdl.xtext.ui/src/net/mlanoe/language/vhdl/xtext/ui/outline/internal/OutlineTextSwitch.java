@@ -39,7 +39,8 @@ public class OutlineTextSwitch extends VhdlSwitch<String> {
 
 	@Override
 	public String caseArchitecture(Architecture object) {
-		return OutlineTextGenerator.getOutline(object.getName());
+		return OutlineTextGenerator.getOutline(object.getName()) + " of "
+				+ OutlineTextGenerator.getOutline(object.getOf());
 	}
 
 	@Override

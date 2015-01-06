@@ -14,6 +14,7 @@ import net.mlanoe.language.vhdl.declaration.BranchQuantityDeclaration;
 import net.mlanoe.language.vhdl.declaration.ConfigurationSpecification;
 import net.mlanoe.language.vhdl.declaration.Declaration;
 import net.mlanoe.language.vhdl.declaration.DisconnectionSpecification;
+import net.mlanoe.language.vhdl.declaration.EntityClass;
 import net.mlanoe.language.vhdl.declaration.FileDeclaration;
 import net.mlanoe.language.vhdl.declaration.FreeQuantityDeclaration;
 import net.mlanoe.language.vhdl.declaration.FunctionDeclaration;
@@ -160,7 +161,7 @@ public class OutlineTextDeclarationSwitch extends DeclarationSwitch<String> {
 	public String caseConfigurationSpecification(
 			ConfigurationSpecification object) {
 		return OutlineTextGenerator.getOutline(object.getList()) + " : "
-				+ OutlineTextGenerator.getOutline(object.getConfiguration());
+				+ OutlineTextGenerator.getOutline(object.getComponent());
 	}
 
 	@Override
@@ -184,12 +185,26 @@ public class OutlineTextDeclarationSwitch extends DeclarationSwitch<String> {
 
 	@Override
 	public String caseGroupDeclaration(GroupDeclaration object) {
-		return OutlineTextGenerator.getOutline(object.getName());
+		return OutlineTextGenerator.getOutline(object.getName()) + " : "
+				+ OutlineTextGenerator.getOutline(object.getIs()) + " ("
+				+ OutlineTextGenerator.getOutline(object.getMember()) + ")";
 	}
 
 	@Override
 	public String caseGroupTemplateDeclaration(GroupTemplateDeclaration object) {
-		return OutlineTextGenerator.getOutline(object.getName());
+		StringBuilder builder = new StringBuilder();
+		builder.append(OutlineTextGenerator.getOutline(object.getName()));
+
+		boolean first = true;
+		for (EntityClass entityClass : object.getEntry()) {
+			if (!first) {
+				builder.append(", ");
+			}
+			first = false;
+			builder.append(OutlineTextGenerator.getOutline(entityClass));
+		}
+
+		return builder.toString();
 	}
 
 	@Override
