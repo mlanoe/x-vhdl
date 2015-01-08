@@ -24,7 +24,7 @@ import net.mlanoe.language.vhdl.Signature;
  * </p>
  *
  * @see net.mlanoe.language.vhdl.expression.ExpressionPackage#getSignatureExpression()
- * @model abstract="true"
+ * @model
  * @generated
  */
 public interface SignatureExpression extends Expression, Name {
