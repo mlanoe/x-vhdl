@@ -744,29 +744,6 @@ public class StatementItemProviderAdapterFactory extends StatementAdapterFactory
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link net.mlanoe.language.vhdl.statement.ConditionalWaveform} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ConditionalWaveformItemProvider conditionalWaveformItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link net.mlanoe.language.vhdl.statement.ConditionalWaveform}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createConditionalWaveformAdapter() {
-		if (conditionalWaveformItemProvider == null) {
-			conditionalWaveformItemProvider = new ConditionalWaveformItemProvider(this);
-		}
-
-		return conditionalWaveformItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link net.mlanoe.language.vhdl.statement.IterationScheme} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1078,7 +1055,6 @@ public class StatementItemProviderAdapterFactory extends StatementAdapterFactory
 		if (generateStatementItemProvider != null) generateStatementItemProvider.dispose();
 		if (loopStatementItemProvider != null) loopStatementItemProvider.dispose();
 		if (nextStatementItemProvider != null) nextStatementItemProvider.dispose();
-		if (conditionalWaveformItemProvider != null) conditionalWaveformItemProvider.dispose();
 		if (iterationSchemeItemProvider != null) iterationSchemeItemProvider.dispose();
 		if (whileIterationSchemeItemProvider != null) whileIterationSchemeItemProvider.dispose();
 		if (expressionStatementItemProvider != null) expressionStatementItemProvider.dispose();

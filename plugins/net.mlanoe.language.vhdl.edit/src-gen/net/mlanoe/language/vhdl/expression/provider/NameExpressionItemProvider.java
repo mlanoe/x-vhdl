@@ -164,6 +164,11 @@ public class NameExpressionItemProvider extends ExpressionItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(ExpressionPackage.Literals.NAME_EXPRESSION__ELEMENT,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.NAME_EXPRESSION__ELEMENT,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add

@@ -182,6 +182,11 @@ public class QuantityAspectItemProvider extends VhdlObjectItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(VhdlPackage.Literals.MULTI_NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(VhdlPackage.Literals.MULTI_NAMED__NAME,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add
@@ -297,6 +302,11 @@ public class QuantityAspectItemProvider extends VhdlObjectItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(AmsPackage.Literals.QUANTITY_ASPECT__TOLERANCE,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(AmsPackage.Literals.QUANTITY_ASPECT__TOLERANCE,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -338,6 +348,11 @@ public class QuantityAspectItemProvider extends VhdlObjectItemProvider {
 			(createChildParameter
 				(AmsPackage.Literals.QUANTITY_ASPECT__TOLERANCE,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(AmsPackage.Literals.QUANTITY_ASPECT__TOLERANCE,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -437,6 +452,11 @@ public class QuantityAspectItemProvider extends VhdlObjectItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(AmsPackage.Literals.QUANTITY_ASPECT__EXPRESSION,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(AmsPackage.Literals.QUANTITY_ASPECT__EXPRESSION,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -478,6 +498,11 @@ public class QuantityAspectItemProvider extends VhdlObjectItemProvider {
 			(createChildParameter
 				(AmsPackage.Literals.QUANTITY_ASPECT__EXPRESSION,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(AmsPackage.Literals.QUANTITY_ASPECT__EXPRESSION,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

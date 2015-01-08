@@ -169,6 +169,11 @@ public class SubnatureIndicationExpressionItemProvider extends IndicationExpress
 		newChildDescriptors.add
 			(createChildParameter
 				(ExpressionPackage.Literals.SUBNATURE_INDICATION_EXPRESSION__MARK,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.SUBNATURE_INDICATION_EXPRESSION__MARK,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add

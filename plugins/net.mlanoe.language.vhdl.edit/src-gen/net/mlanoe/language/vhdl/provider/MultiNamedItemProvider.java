@@ -183,6 +183,11 @@ public class MultiNamedItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(VhdlPackage.Literals.MULTI_NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(VhdlPackage.Literals.MULTI_NAMED__NAME,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add

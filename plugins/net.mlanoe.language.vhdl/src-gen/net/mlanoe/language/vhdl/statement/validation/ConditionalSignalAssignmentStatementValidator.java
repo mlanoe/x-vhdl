@@ -4,7 +4,7 @@
  */
 package net.mlanoe.language.vhdl.statement.validation;
 
-import net.mlanoe.language.vhdl.statement.ConditionalWaveform;
+import net.mlanoe.language.vhdl.expression.Expression;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -17,5 +17,5 @@ import org.eclipse.emf.common.util.EList;
 public interface ConditionalSignalAssignmentStatementValidator {
 	boolean validate();
 
-	boolean validateWaveform(EList<ConditionalWaveform> value);
+	boolean validateWaveform(EList<Expression> value);
 }

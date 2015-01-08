@@ -235,6 +235,11 @@ public class IfGenerationSchemeItemProvider extends GenerationSchemeItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.IF_GENERATION_SCHEME__CONDITION,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.IF_GENERATION_SCHEME__CONDITION,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -276,6 +281,11 @@ public class IfGenerationSchemeItemProvider extends GenerationSchemeItemProvider
 			(createChildParameter
 				(StatementPackage.Literals.IF_GENERATION_SCHEME__CONDITION,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.IF_GENERATION_SCHEME__CONDITION,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

@@ -181,6 +181,11 @@ public class SourceQuantityDeclarationItemProvider extends QuantityDeclarationIt
 		newChildDescriptors.add
 			(createChildParameter
 				(VhdlPackage.Literals.MULTI_NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(VhdlPackage.Literals.MULTI_NAMED__NAME,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add
@@ -227,6 +232,11 @@ public class SourceQuantityDeclarationItemProvider extends QuantityDeclarationIt
 			(createChildParameter
 				(TypePackage.Literals.TYPED__TYPE,
 				 ExpressionFactory.eINSTANCE.createNameExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TypePackage.Literals.TYPED__TYPE,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

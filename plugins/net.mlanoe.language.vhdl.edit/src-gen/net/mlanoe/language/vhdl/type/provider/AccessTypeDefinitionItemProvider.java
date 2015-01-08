@@ -170,6 +170,11 @@ public class AccessTypeDefinitionItemProvider extends TypeDefinitionItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(TypePackage.Literals.TYPED__TYPE,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TypePackage.Literals.TYPED__TYPE,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add

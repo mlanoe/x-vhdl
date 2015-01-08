@@ -164,6 +164,11 @@ public class UnitValueExpressionItemProvider extends ValueExpressionItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(ExpressionPackage.Literals.UNIT_VALUE_EXPRESSION__UNIT,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.UNIT_VALUE_EXPRESSION__UNIT,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add

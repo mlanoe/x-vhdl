@@ -16,7 +16,6 @@ import net.mlanoe.language.vhdl.statement.CaseAlternative;
 import net.mlanoe.language.vhdl.statement.CaseStatement;
 import net.mlanoe.language.vhdl.statement.ComponentInstantiationStatement;
 import net.mlanoe.language.vhdl.statement.ConditionalSignalAssignmentStatement;
-import net.mlanoe.language.vhdl.statement.ConditionalWaveform;
 import net.mlanoe.language.vhdl.statement.ConfigurationInstantiationStatement;
 import net.mlanoe.language.vhdl.statement.DelayMechanism;
 import net.mlanoe.language.vhdl.statement.EntityInstantiationStatement;
@@ -101,15 +100,7 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 		}
 		builder.append(OutlineTextGenerator.getOutline(object.getTarget()));
 		builder.append(" <= ");
-
-		boolean first = true;
-		for (Expression waveform : object.getWaveform()) {
-			if (!first) {
-				builder.append(", ");
-			}
-			first = false;
-			builder.append(OutlineTextGenerator.getOutline(waveform));
-		}
+		builder.append(OutlineTextGenerator.getOutline(object.getWaveform()));
 
 		return builder.toString();
 	}
@@ -126,7 +117,7 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 		builder.append(" <= ");
 
 		boolean first = true;
-		for (ConditionalWaveform waveform : object.getWaveform()) {
+		for (Expression waveform : object.getWaveform()) {
 			if (!first) {
 				builder.append(", ");
 			}
@@ -148,7 +139,7 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 		builder.append(" <= ");
 
 		boolean first = true;
-		for (ConditionalWaveform waveform : object.getWaveform()) {
+		for (Expression waveform : object.getWaveform()) {
 			if (!first) {
 				builder.append(", ");
 			}
@@ -392,12 +383,6 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 
 		builder.append(OutlineTextGenerator.getOutline(object.getNext()));
 		return builder.toString();
-	}
-
-	@Override
-	public String caseConditionalWaveform(ConditionalWaveform object) {
-		// TODO
-		return "waveform";
 	}
 
 	@Override

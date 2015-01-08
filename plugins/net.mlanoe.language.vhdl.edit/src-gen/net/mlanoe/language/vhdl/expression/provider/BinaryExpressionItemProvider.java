@@ -225,6 +225,11 @@ public class BinaryExpressionItemProvider extends ExpressionItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(ExpressionPackage.Literals.BINARY_EXPRESSION__LEFT,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.BINARY_EXPRESSION__LEFT,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -266,6 +271,11 @@ public class BinaryExpressionItemProvider extends ExpressionItemProvider {
 			(createChildParameter
 				(ExpressionPackage.Literals.BINARY_EXPRESSION__LEFT,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.BINARY_EXPRESSION__LEFT,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -365,6 +375,11 @@ public class BinaryExpressionItemProvider extends ExpressionItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(ExpressionPackage.Literals.BINARY_EXPRESSION__RIGHT,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.BINARY_EXPRESSION__RIGHT,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -406,6 +421,11 @@ public class BinaryExpressionItemProvider extends ExpressionItemProvider {
 			(createChildParameter
 				(ExpressionPackage.Literals.BINARY_EXPRESSION__RIGHT,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.BINARY_EXPRESSION__RIGHT,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

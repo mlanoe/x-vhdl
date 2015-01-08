@@ -9,8 +9,6 @@ package net.mlanoe.language.vhdl.statement;
 
 import net.mlanoe.language.vhdl.expression.Expression;
 
-import org.eclipse.emf.common.util.EList;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Sequential Signal Assignment Statement</b></em>'.
@@ -29,19 +27,29 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface SequentialSignalAssignmentStatement extends SignalAssignmentStatement {
 	/**
-	 * Returns the value of the '<em><b>Waveform</b></em>' containment reference list.
-	 * The list contents are of type {@link net.mlanoe.language.vhdl.expression.Expression}.
+	 * Returns the value of the '<em><b>Waveform</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Waveform</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Waveform</em>' containment reference list.
+	 * @return the value of the '<em>Waveform</em>' containment reference.
+	 * @see #setWaveform(Expression)
 	 * @see net.mlanoe.language.vhdl.statement.StatementPackage#getSequentialSignalAssignmentStatement_Waveform()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<Expression> getWaveform();
+	Expression getWaveform();
+
+	/**
+	 * Sets the value of the '{@link net.mlanoe.language.vhdl.statement.SequentialSignalAssignmentStatement#getWaveform <em>Waveform</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Waveform</em>' containment reference.
+	 * @see #getWaveform()
+	 * @generated
+	 */
+	void setWaveform(Expression value);
 
 } // SequentialSignalAssignmentStatement

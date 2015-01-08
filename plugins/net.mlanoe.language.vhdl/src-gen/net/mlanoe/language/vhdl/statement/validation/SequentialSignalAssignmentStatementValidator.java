@@ -17,5 +17,7 @@ import org.eclipse.emf.common.util.EList;
 public interface SequentialSignalAssignmentStatementValidator {
 	boolean validate();
 
+	boolean validateWaveform(Expression value);
+
 	boolean validateWaveform(EList<Expression> value);
 }

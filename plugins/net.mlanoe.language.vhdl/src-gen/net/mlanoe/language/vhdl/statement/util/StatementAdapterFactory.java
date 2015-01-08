@@ -199,10 +199,6 @@ public class StatementAdapterFactory extends AdapterFactoryImpl {
 				return createStatementAdapter();
 			}
 			@Override
-			public Adapter caseConditionalWaveform(ConditionalWaveform object) {
-				return createConditionalWaveformAdapter();
-			}
-			@Override
 			public Adapter caseIterationScheme(IterationScheme object) {
 				return createIterationSchemeAdapter();
 			}
@@ -697,20 +693,6 @@ public class StatementAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createStatementAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.statement.ConditionalWaveform <em>Conditional Waveform</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.statement.ConditionalWaveform
-	 * @generated
-	 */
-	public Adapter createConditionalWaveformAdapter() {
 		return null;
 	}
 

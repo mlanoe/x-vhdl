@@ -267,6 +267,11 @@ public class AssertionStatementItemProvider extends StatementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.ASSERTION_STATEMENT__CONDITION,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.ASSERTION_STATEMENT__CONDITION,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -308,6 +313,11 @@ public class AssertionStatementItemProvider extends StatementItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.ASSERTION_STATEMENT__CONDITION,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.ASSERTION_STATEMENT__CONDITION,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -407,6 +417,11 @@ public class AssertionStatementItemProvider extends StatementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.ASSERTION_STATEMENT__REPORT,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.ASSERTION_STATEMENT__REPORT,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -448,6 +463,11 @@ public class AssertionStatementItemProvider extends StatementItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.ASSERTION_STATEMENT__REPORT,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.ASSERTION_STATEMENT__REPORT,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -547,6 +567,11 @@ public class AssertionStatementItemProvider extends StatementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.ASSERTION_STATEMENT__SEVERITY,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.ASSERTION_STATEMENT__SEVERITY,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -588,6 +613,11 @@ public class AssertionStatementItemProvider extends StatementItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.ASSERTION_STATEMENT__SEVERITY,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.ASSERTION_STATEMENT__SEVERITY,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

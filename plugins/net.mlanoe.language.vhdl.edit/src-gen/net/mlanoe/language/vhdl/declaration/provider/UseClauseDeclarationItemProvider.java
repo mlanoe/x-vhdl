@@ -172,6 +172,11 @@ public class UseClauseDeclarationItemProvider extends DeclarationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(DeclarationPackage.Literals.USE_CLAUSE_DECLARATION__USE,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.USE_CLAUSE_DECLARATION__USE,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add

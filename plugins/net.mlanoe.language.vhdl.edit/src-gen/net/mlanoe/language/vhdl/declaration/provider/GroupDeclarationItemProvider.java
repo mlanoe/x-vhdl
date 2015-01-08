@@ -172,6 +172,11 @@ public class GroupDeclarationItemProvider extends DeclarationItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(VhdlPackage.Literals.NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(VhdlPackage.Literals.NAMED__NAME,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add
@@ -213,6 +218,11 @@ public class GroupDeclarationItemProvider extends DeclarationItemProvider {
 			(createChildParameter
 				(DeclarationPackage.Literals.GROUP_DECLARATION__IS,
 				 ExpressionFactory.eINSTANCE.createNameExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.GROUP_DECLARATION__IS,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -263,6 +273,11 @@ public class GroupDeclarationItemProvider extends DeclarationItemProvider {
 			(createChildParameter
 				(DeclarationPackage.Literals.GROUP_DECLARATION__MEMBER,
 				 ExpressionFactory.eINSTANCE.createNameExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.GROUP_DECLARATION__MEMBER,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

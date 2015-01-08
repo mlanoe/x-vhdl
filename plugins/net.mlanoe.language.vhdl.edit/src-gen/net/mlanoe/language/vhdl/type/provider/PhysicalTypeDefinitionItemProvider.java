@@ -266,6 +266,11 @@ public class PhysicalTypeDefinitionItemProvider extends TypeDefinitionItemProvid
 		newChildDescriptors.add
 			(createChildParameter
 				(TypePackage.Literals.PHYSICAL_TYPE_DEFINITION__RANGE,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TypePackage.Literals.PHYSICAL_TYPE_DEFINITION__RANGE,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -307,6 +312,11 @@ public class PhysicalTypeDefinitionItemProvider extends TypeDefinitionItemProvid
 			(createChildParameter
 				(TypePackage.Literals.PHYSICAL_TYPE_DEFINITION__RANGE,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TypePackage.Literals.PHYSICAL_TYPE_DEFINITION__RANGE,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

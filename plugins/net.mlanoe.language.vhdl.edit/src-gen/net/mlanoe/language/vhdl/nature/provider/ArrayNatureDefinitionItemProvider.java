@@ -170,6 +170,11 @@ public class ArrayNatureDefinitionItemProvider extends CompositeNatureDefinition
 		newChildDescriptors.add
 			(createChildParameter
 				(NaturePackage.Literals.NATURED__NATURE,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(NaturePackage.Literals.NATURED__NATURE,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add

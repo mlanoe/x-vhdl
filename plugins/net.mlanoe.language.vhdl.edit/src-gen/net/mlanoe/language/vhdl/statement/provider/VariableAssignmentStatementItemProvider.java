@@ -237,6 +237,11 @@ public class VariableAssignmentStatementItemProvider extends StatementItemProvid
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.VARIABLE_ASSIGNMENT_STATEMENT__TARGET,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.VARIABLE_ASSIGNMENT_STATEMENT__TARGET,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -278,6 +283,11 @@ public class VariableAssignmentStatementItemProvider extends StatementItemProvid
 			(createChildParameter
 				(StatementPackage.Literals.VARIABLE_ASSIGNMENT_STATEMENT__TARGET,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.VARIABLE_ASSIGNMENT_STATEMENT__TARGET,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -377,6 +387,11 @@ public class VariableAssignmentStatementItemProvider extends StatementItemProvid
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.VARIABLE_ASSIGNMENT_STATEMENT__INITIAL,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.VARIABLE_ASSIGNMENT_STATEMENT__INITIAL,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -418,6 +433,11 @@ public class VariableAssignmentStatementItemProvider extends StatementItemProvid
 			(createChildParameter
 				(StatementPackage.Literals.VARIABLE_ASSIGNMENT_STATEMENT__INITIAL,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.VARIABLE_ASSIGNMENT_STATEMENT__INITIAL,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

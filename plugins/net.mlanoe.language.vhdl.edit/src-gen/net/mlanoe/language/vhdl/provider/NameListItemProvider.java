@@ -165,6 +165,11 @@ public class NameListItemProvider extends VhdlObjectItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(VhdlPackage.Literals.NAME_LIST__NAME,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(VhdlPackage.Literals.NAME_LIST__NAME,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add

@@ -235,6 +235,11 @@ public class GenericMapsItemProvider extends VhdlObjectItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(VhdlPackage.Literals.GENERIC_MAPS__GENERIC,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(VhdlPackage.Literals.GENERIC_MAPS__GENERIC,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -276,6 +281,11 @@ public class GenericMapsItemProvider extends VhdlObjectItemProvider {
 			(createChildParameter
 				(VhdlPackage.Literals.GENERIC_MAPS__GENERIC,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(VhdlPackage.Literals.GENERIC_MAPS__GENERIC,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

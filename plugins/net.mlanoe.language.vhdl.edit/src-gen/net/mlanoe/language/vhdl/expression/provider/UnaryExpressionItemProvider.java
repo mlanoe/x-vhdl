@@ -262,6 +262,11 @@ public class UnaryExpressionItemProvider extends ExpressionItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(ExpressionPackage.Literals.UNARY_EXPRESSION__EXPRESSION,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.UNARY_EXPRESSION__EXPRESSION,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -303,6 +308,11 @@ public class UnaryExpressionItemProvider extends ExpressionItemProvider {
 			(createChildParameter
 				(ExpressionPackage.Literals.UNARY_EXPRESSION__EXPRESSION,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.UNARY_EXPRESSION__EXPRESSION,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

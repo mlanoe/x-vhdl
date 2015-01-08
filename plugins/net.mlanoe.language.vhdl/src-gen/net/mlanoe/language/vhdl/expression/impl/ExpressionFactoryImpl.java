@@ -78,6 +78,7 @@ public class ExpressionFactoryImpl extends EFactoryImpl implements ExpressionFac
 			case ExpressionPackage.POWER_EXPRESSION: return createPowerExpression();
 			case ExpressionPackage.RELATIONAL_EXPRESSION: return createRelationalExpression();
 			case ExpressionPackage.SHIFT_EXPRESSION: return createShiftExpression();
+			case ExpressionPackage.SIGNATURE_EXPRESSION: return createSignatureExpression();
 			case ExpressionPackage.SIGN_EXPRESSION: return createSignExpression();
 			case ExpressionPackage.UNARY_EXPRESSION: return createUnaryExpression();
 			case ExpressionPackage.OPEN_EXPRESSION: return createOpenExpression();
@@ -87,6 +88,7 @@ public class ExpressionFactoryImpl extends EFactoryImpl implements ExpressionFac
 			case ExpressionPackage.CHARACTER_EXPRESSION: return createCharacterExpression();
 			case ExpressionPackage.IDENTIFIER_EXPRESSION: return createIdentifierExpression();
 			case ExpressionPackage.UNIT_VALUE_EXPRESSION: return createUnitValueExpression();
+			case ExpressionPackage.UNAFFECTED_EXPRESSION: return createUnaffectedExpression();
 			case ExpressionPackage.VALUE_EXPRESSION: return createValueExpression();
 			case ExpressionPackage.WAVEFORM_EXPRESSION: return createWaveformExpression();
 			case ExpressionPackage.MULTI_EXPRESSION: return createMultiExpression();
@@ -318,6 +320,16 @@ public class ExpressionFactoryImpl extends EFactoryImpl implements ExpressionFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public SignatureExpression createSignatureExpression() {
+		SignatureExpressionImpl signatureExpression = new SignatureExpressionImpl();
+		return signatureExpression;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public SignExpression createSignExpression() {
 		SignExpressionImpl signExpression = new SignExpressionImpl();
 		return signExpression;
@@ -401,6 +413,16 @@ public class ExpressionFactoryImpl extends EFactoryImpl implements ExpressionFac
 	public UnitValueExpression createUnitValueExpression() {
 		UnitValueExpressionImpl unitValueExpression = new UnitValueExpressionImpl();
 		return unitValueExpression;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public UnaffectedExpression createUnaffectedExpression() {
+		UnaffectedExpressionImpl unaffectedExpression = new UnaffectedExpressionImpl();
+		return unaffectedExpression;
 	}
 
 	/**

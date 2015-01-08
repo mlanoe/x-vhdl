@@ -171,6 +171,15 @@ public interface ExpressionFactory extends EFactory {
 	ShiftExpression createShiftExpression();
 
 	/**
+	 * Returns a new object of class '<em>Signature Expression</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Signature Expression</em>'.
+	 * @generated
+	 */
+	SignatureExpression createSignatureExpression();
+
+	/**
 	 * Returns a new object of class '<em>Sign Expression</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -250,6 +259,15 @@ public interface ExpressionFactory extends EFactory {
 	 * @generated
 	 */
 	UnitValueExpression createUnitValueExpression();
+
+	/**
+	 * Returns a new object of class '<em>Unaffected Expression</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Unaffected Expression</em>'.
+	 * @generated
+	 */
+	UnaffectedExpression createUnaffectedExpression();
 
 	/**
 	 * Returns a new object of class '<em>Value Expression</em>'.

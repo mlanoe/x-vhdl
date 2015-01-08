@@ -238,6 +238,11 @@ public class CaseStatementItemProvider extends StatementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.CASE_STATEMENT__CASE,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CASE_STATEMENT__CASE,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -279,6 +284,11 @@ public class CaseStatementItemProvider extends StatementItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.CASE_STATEMENT__CASE,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CASE_STATEMENT__CASE,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

@@ -178,6 +178,11 @@ public class DisconnectionSpecificationItemProvider extends DeclarationItemProvi
 		newChildDescriptors.add
 			(createChildParameter
 				(TypePackage.Literals.TYPED__TYPE,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TypePackage.Literals.TYPED__TYPE,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add
@@ -224,6 +229,11 @@ public class DisconnectionSpecificationItemProvider extends DeclarationItemProvi
 			(createChildParameter
 				(DeclarationPackage.Literals.DISCONNECTION_SPECIFICATION__DISCONNECT,
 				 ExpressionFactory.eINSTANCE.createNameExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.DISCONNECTION_SPECIFICATION__DISCONNECT,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -343,6 +353,11 @@ public class DisconnectionSpecificationItemProvider extends DeclarationItemProvi
 		newChildDescriptors.add
 			(createChildParameter
 				(DeclarationPackage.Literals.DISCONNECTION_SPECIFICATION__AFTER,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.DISCONNECTION_SPECIFICATION__AFTER,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -384,6 +399,11 @@ public class DisconnectionSpecificationItemProvider extends DeclarationItemProvi
 			(createChildParameter
 				(DeclarationPackage.Literals.DISCONNECTION_SPECIFICATION__AFTER,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.DISCONNECTION_SPECIFICATION__AFTER,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

@@ -288,15 +288,6 @@ public interface StatementFactory extends EFactory {
 	NextStatement createNextStatement();
 
 	/**
-	 * Returns a new object of class '<em>Conditional Waveform</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Conditional Waveform</em>'.
-	 * @generated
-	 */
-	ConditionalWaveform createConditionalWaveform();
-
-	/**
 	 * Returns a new object of class '<em>Iteration Scheme</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

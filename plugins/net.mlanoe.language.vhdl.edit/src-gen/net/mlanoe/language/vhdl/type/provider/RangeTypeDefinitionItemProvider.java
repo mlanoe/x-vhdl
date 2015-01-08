@@ -265,6 +265,11 @@ public class RangeTypeDefinitionItemProvider extends TypeDefinitionItemProvider 
 		newChildDescriptors.add
 			(createChildParameter
 				(TypePackage.Literals.RANGE_TYPE_DEFINITION__LEFT,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TypePackage.Literals.RANGE_TYPE_DEFINITION__LEFT,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -306,6 +311,11 @@ public class RangeTypeDefinitionItemProvider extends TypeDefinitionItemProvider 
 			(createChildParameter
 				(TypePackage.Literals.RANGE_TYPE_DEFINITION__LEFT,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TypePackage.Literals.RANGE_TYPE_DEFINITION__LEFT,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -405,6 +415,11 @@ public class RangeTypeDefinitionItemProvider extends TypeDefinitionItemProvider 
 		newChildDescriptors.add
 			(createChildParameter
 				(TypePackage.Literals.RANGE_TYPE_DEFINITION__RIGHT,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TypePackage.Literals.RANGE_TYPE_DEFINITION__RIGHT,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -446,6 +461,11 @@ public class RangeTypeDefinitionItemProvider extends TypeDefinitionItemProvider 
 			(createChildParameter
 				(TypePackage.Literals.RANGE_TYPE_DEFINITION__RIGHT,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TypePackage.Literals.RANGE_TYPE_DEFINITION__RIGHT,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

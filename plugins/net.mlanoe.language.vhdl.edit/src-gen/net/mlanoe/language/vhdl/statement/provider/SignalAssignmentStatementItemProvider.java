@@ -290,6 +290,11 @@ public class SignalAssignmentStatementItemProvider extends StatementItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.SIGNAL_ASSIGNMENT_STATEMENT__TARGET,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.SIGNAL_ASSIGNMENT_STATEMENT__TARGET,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -331,6 +336,11 @@ public class SignalAssignmentStatementItemProvider extends StatementItemProvider
 			(createChildParameter
 				(StatementPackage.Literals.SIGNAL_ASSIGNMENT_STATEMENT__TARGET,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.SIGNAL_ASSIGNMENT_STATEMENT__TARGET,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

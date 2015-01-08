@@ -235,6 +235,11 @@ public class RejectMechanismItemProvider extends DelayMechanismItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.REJECT_MECHANISM__REJECT,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.REJECT_MECHANISM__REJECT,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -276,6 +281,11 @@ public class RejectMechanismItemProvider extends DelayMechanismItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.REJECT_MECHANISM__REJECT,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.REJECT_MECHANISM__REJECT,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

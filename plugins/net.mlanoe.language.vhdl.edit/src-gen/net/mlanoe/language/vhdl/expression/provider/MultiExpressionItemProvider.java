@@ -234,6 +234,11 @@ public class MultiExpressionItemProvider extends ExpressionItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(ExpressionPackage.Literals.MULTI_EXPRESSION__EXPRESSION,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.MULTI_EXPRESSION__EXPRESSION,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -275,6 +280,11 @@ public class MultiExpressionItemProvider extends ExpressionItemProvider {
 			(createChildParameter
 				(ExpressionPackage.Literals.MULTI_EXPRESSION__EXPRESSION,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.MULTI_EXPRESSION__EXPRESSION,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

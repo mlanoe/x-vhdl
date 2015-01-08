@@ -235,6 +235,11 @@ public class ConstrainedArrayNatureDefinitionItemProvider extends ArrayNatureDef
 		newChildDescriptors.add
 			(createChildParameter
 				(NaturePackage.Literals.CONSTRAINED_ARRAY_NATURE_DEFINITION__CONSTRAINT,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(NaturePackage.Literals.CONSTRAINED_ARRAY_NATURE_DEFINITION__CONSTRAINT,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -276,6 +281,11 @@ public class ConstrainedArrayNatureDefinitionItemProvider extends ArrayNatureDef
 			(createChildParameter
 				(NaturePackage.Literals.CONSTRAINED_ARRAY_NATURE_DEFINITION__CONSTRAINT,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(NaturePackage.Literals.CONSTRAINED_ARRAY_NATURE_DEFINITION__CONSTRAINT,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

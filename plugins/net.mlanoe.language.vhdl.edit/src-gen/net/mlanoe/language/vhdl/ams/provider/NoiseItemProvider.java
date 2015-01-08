@@ -235,6 +235,11 @@ public class NoiseItemProvider extends SourceAspectItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(AmsPackage.Literals.NOISE__NOISE,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(AmsPackage.Literals.NOISE__NOISE,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -276,6 +281,11 @@ public class NoiseItemProvider extends SourceAspectItemProvider {
 			(createChildParameter
 				(AmsPackage.Literals.NOISE__NOISE,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(AmsPackage.Literals.NOISE__NOISE,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

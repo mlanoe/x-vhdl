@@ -327,13 +327,6 @@ public class StatementSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case StatementPackage.CONDITIONAL_WAVEFORM: {
-				ConditionalWaveform conditionalWaveform = (ConditionalWaveform)theEObject;
-				T result = caseConditionalWaveform(conditionalWaveform);
-				if (result == null) result = caseVhdlObject(conditionalWaveform);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case StatementPackage.ITERATION_SCHEME: {
 				IterationScheme iterationScheme = (IterationScheme)theEObject;
 				T result = caseIterationScheme(iterationScheme);
@@ -877,21 +870,6 @@ public class StatementSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseStatement(Statement object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Conditional Waveform</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Conditional Waveform</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseConditionalWaveform(ConditionalWaveform object) {
 		return null;
 	}
 

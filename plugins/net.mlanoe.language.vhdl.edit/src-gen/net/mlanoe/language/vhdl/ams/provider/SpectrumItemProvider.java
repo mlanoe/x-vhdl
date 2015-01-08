@@ -237,6 +237,11 @@ public class SpectrumItemProvider extends SourceAspectItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(AmsPackage.Literals.SPECTRUM__LEFT,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(AmsPackage.Literals.SPECTRUM__LEFT,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -278,6 +283,11 @@ public class SpectrumItemProvider extends SourceAspectItemProvider {
 			(createChildParameter
 				(AmsPackage.Literals.SPECTRUM__LEFT,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(AmsPackage.Literals.SPECTRUM__LEFT,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -377,6 +387,11 @@ public class SpectrumItemProvider extends SourceAspectItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(AmsPackage.Literals.SPECTRUM__RIGHT,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(AmsPackage.Literals.SPECTRUM__RIGHT,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -418,6 +433,11 @@ public class SpectrumItemProvider extends SourceAspectItemProvider {
 			(createChildParameter
 				(AmsPackage.Literals.SPECTRUM__RIGHT,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(AmsPackage.Literals.SPECTRUM__RIGHT,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

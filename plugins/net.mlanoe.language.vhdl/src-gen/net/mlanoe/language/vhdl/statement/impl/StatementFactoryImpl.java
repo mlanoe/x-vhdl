@@ -90,7 +90,6 @@ public class StatementFactoryImpl extends EFactoryImpl implements StatementFacto
 			case StatementPackage.GENERATE_STATEMENT: return createGenerateStatement();
 			case StatementPackage.LOOP_STATEMENT: return createLoopStatement();
 			case StatementPackage.NEXT_STATEMENT: return createNextStatement();
-			case StatementPackage.CONDITIONAL_WAVEFORM: return createConditionalWaveform();
 			case StatementPackage.ITERATION_SCHEME: return createIterationScheme();
 			case StatementPackage.WHILE_ITERATION_SCHEME: return createWhileIterationScheme();
 			case StatementPackage.EXPRESSION_STATEMENT: return createExpressionStatement();
@@ -392,16 +391,6 @@ public class StatementFactoryImpl extends EFactoryImpl implements StatementFacto
 	public NextStatement createNextStatement() {
 		NextStatementImpl nextStatement = new NextStatementImpl();
 		return nextStatement;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ConditionalWaveform createConditionalWaveform() {
-		ConditionalWaveformImpl conditionalWaveform = new ConditionalWaveformImpl();
-		return conditionalWaveform;
 	}
 
 	/**

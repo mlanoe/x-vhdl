@@ -263,6 +263,11 @@ public class ForGenerationSchemeItemProvider extends GenerationSchemeItemProvide
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.FOR_GENERATION_SCHEME__IN,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.FOR_GENERATION_SCHEME__IN,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -304,6 +309,11 @@ public class ForGenerationSchemeItemProvider extends GenerationSchemeItemProvide
 			(createChildParameter
 				(StatementPackage.Literals.FOR_GENERATION_SCHEME__IN,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.FOR_GENERATION_SCHEME__IN,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

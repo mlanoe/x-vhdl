@@ -237,6 +237,11 @@ public class ReportStatementItemProvider extends StatementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.REPORT_STATEMENT__REPORT,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.REPORT_STATEMENT__REPORT,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -278,6 +283,11 @@ public class ReportStatementItemProvider extends StatementItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.REPORT_STATEMENT__REPORT,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.REPORT_STATEMENT__REPORT,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -377,6 +387,11 @@ public class ReportStatementItemProvider extends StatementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.REPORT_STATEMENT__SEVERITY,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.REPORT_STATEMENT__SEVERITY,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -418,6 +433,11 @@ public class ReportStatementItemProvider extends StatementItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.REPORT_STATEMENT__SEVERITY,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.REPORT_STATEMENT__SEVERITY,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

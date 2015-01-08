@@ -236,6 +236,11 @@ public class WaveformExpressionItemProvider extends ExpressionItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(ExpressionPackage.Literals.WAVEFORM_EXPRESSION__EXPRESSION,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.WAVEFORM_EXPRESSION__EXPRESSION,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -277,6 +282,11 @@ public class WaveformExpressionItemProvider extends ExpressionItemProvider {
 			(createChildParameter
 				(ExpressionPackage.Literals.WAVEFORM_EXPRESSION__EXPRESSION,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.WAVEFORM_EXPRESSION__EXPRESSION,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -376,6 +386,11 @@ public class WaveformExpressionItemProvider extends ExpressionItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(ExpressionPackage.Literals.WAVEFORM_EXPRESSION__AFTER,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.WAVEFORM_EXPRESSION__AFTER,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -417,6 +432,11 @@ public class WaveformExpressionItemProvider extends ExpressionItemProvider {
 			(createChildParameter
 				(ExpressionPackage.Literals.WAVEFORM_EXPRESSION__AFTER,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.WAVEFORM_EXPRESSION__AFTER,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

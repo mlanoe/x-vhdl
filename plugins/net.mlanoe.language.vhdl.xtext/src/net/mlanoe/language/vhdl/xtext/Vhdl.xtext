@@ -227,9 +227,9 @@ SubprogramDeclarativeItem returns declaration::Declaration:
 ;
 
 ArchitectureStatement returns statement::Statement: 
-    ConfigurationInstantiationStatement
+    ProcessStatement
+  | ConfigurationInstantiationStatement
   | BlockStatement
-  | ProcessStatement
   | ConcurrentAssertionStatement
   | SimultaneousProceduralStatement
   | SimultaneousCaseStatement
@@ -237,11 +237,10 @@ ArchitectureStatement returns statement::Statement:
   | ConcurrentBreakStatement
   | EntityInstantiationStatement
   | ConcurrentProcedureCallStatement
-  | SequentialSignalAssignmentStatement
-  | ConditionalSignalAssignmentStatement
   | SelectedSignalAssignmentStatement
   | ComponentInstantiationStatement
   | GenerateStatement
+  | ConditionalSignalAssignmentStatement
   | SimpleSimultaneousStatement
 ;
   
@@ -280,20 +279,6 @@ AssertionStatement returns statement::AssertionStatement:
 ConcurrentAssertionStatement returns statement::AssertionStatement: 
   ( label = Label ':' )? ( postponed ?= 'postponed' )? 'assert' condition = Expression 
   ( 'report' report = Expression )? ( 'severity' severity = Expression )? ';'
-;
-
-/*
- * aggregate = "(" element_association { "," element_association } ")".
- *
- * Associations with elements' simple names are allowed in record aggregates only.
- * Associations with simple expressions or discrete ranges as choices are allowed only in array aggregates.
- * Each element of the value defined by an aggregate must be represented once and only once in the aggregate.
- * Aggregates containing the single element association must always be specified 
- * using named association in order to distinguish them from parenthesized expressions.
- * The others choice can be only the last in an aggregate.
- */
-Aggregate returns expression::AggregateExpression:
-  {expression::AggregateExpression} '(' (expression += Parameter ( ',' expression += Parameter )*) ? ')'
 ;
 
 Parameter returns expression::Expression:
@@ -426,7 +411,7 @@ CaseStatement returns statement::CaseStatement:
 ;
 
 CaseAlternative returns statement::CaseAlternative:
-  'when' choice = Choices '=>' ( statement += SequentialStatement )*
+  'when' choice = Choices '=>' (statement += SequentialStatement )*
 ;
 
 All returns expression::AllExpression:
@@ -435,6 +420,10 @@ All returns expression::AllExpression:
 
 Others returns expression::OthersExpression:
   {expression::OthersExpression} 'others'
+;
+
+Unaffected returns expression::UnaffectedExpression:
+  {expression::UnaffectedExpression} 'unaffected'
 ;
 
 ComponentConfiguration returns configuration::ComponentConfiguration:
@@ -496,30 +485,6 @@ CompositeTypeDefinition returns type::CompositeTypeDefinition:
 ;
 
 /*
- * sequential signal assignment statement
- *
- * [ label : ] target "<=" [ "guarded" ] [ delay_mechanism ] waveform ";".
- */
-SequentialSignalAssignmentStatement returns statement::SequentialSignalAssignmentStatement:
-  ( label = Label ':' )? ( postponed ?= 'postponed' )?
-  target = Target '<=' ( guarded ?= 'guarded' )? ( delay = DelayMechanism )? 
-   ('unaffected' | waveform += Waveform ( ',' waveform += Waveform )*) 
-   ';'
-;
-
-/*
- * [ label : ] [ postponed ] conditional_signal_assignment_statement ;
- *
- * target <= waveform when choice; -- choice is a boolean expression
- * target <= waveform when choice else waveform;
- */
-ConditionalSignalAssignmentStatement returns statement::ConditionalSignalAssignmentStatement:
-  ( label = Label ':' )? ( postponed ?= 'postponed' )?
-   target = Target '<=' ( guarded ?= 'guarded' )? ( delay = DelayMechanism )? 
-   waveform += ConditionalWaveform ('else' waveform += ConditionalWaveform)* ';'
-;
-
-/*
  * [ label : ] [ postponed ] selected_signal_assignment_statement ;
  *
  * with expression select target <=
@@ -532,13 +497,50 @@ SelectedSignalAssignmentStatement returns statement::SelectedSignalAssignmentSta
   ( ',' waveform += ConditionalWaveform )* ';'
 ;
 
-SimpleSimultaneousStatement returns statement::SimpleSimultaneousStatement:
-  ( label = Label ':' )?
-    left = SimpleExpression '==' right = SimpleExpression ( 'tolerance' tolerance = Expression )? ';'
+/*
+ * [ label : ] [ postponed ] conditional_signal_assignment_statement ;
+ *
+ * target <= waveform when choice; -- choice is a boolean expression
+ * target <= waveform when choice else waveform;
+ */
+ConditionalSignalAssignmentStatement returns statement::ConditionalSignalAssignmentStatement:
+  ( label = Label ':' )? ( postponed ?= 'postponed' )?
+   target = Target '<=' ( guarded ?= 'guarded' )? ( delay = DelayMechanism )? 
+   waveform += ConditionalWaveform (=> 'else' waveform += ConditionalWaveform)* ';'
 ;
 
-ConditionalWaveform returns statement::ConditionalWaveform:
-  ('unaffected' | waveform += Waveform ( ',' waveform += Waveform )*) 'when' choice = Choices
+/*
+ * sequential signal assignment statement
+ *
+ * [ label : ] target "<=" [ "guarded" ] [ delay_mechanism ] waveform ";".
+ */
+SequentialSignalAssignmentStatement returns statement::SequentialSignalAssignmentStatement:
+  ( label = Label ':' )? ( postponed ?= 'postponed' )?
+  target = Target '<=' ( guarded ?= 'guarded' )? ( delay = DelayMechanism )? 
+   waveform = Waveforms 
+   ';'
+;
+
+/*
+ * [ label: ] target := expression ;
+ */
+VariableAssignmentStatement returns statement::VariableAssignmentStatement:
+   => (( label = Label ':' )? 
+   target = Target ':=') initial = Expression ';'
+;
+
+SimpleSimultaneousStatement returns statement::SimpleSimultaneousStatement:
+  => (( label = Label ':' )?
+    left = SimpleExpression '==') right = SimpleExpression ( 'tolerance' tolerance = Expression )? ';'
+;
+
+ConditionalWaveform returns expression::Expression:
+  Waveforms ({expression::AssociationExpression.expression=current} 'when' choice = Choices)?
+;
+
+Waveforms returns expression::Expression:
+    Unaffected 
+  | Waveform ( {expression::MultiExpression.expression+=current} (',' expression += Waveform )+ )?
 ;
 
 ConfigurationItem returns configuration::ConfigurationItem:
@@ -615,7 +617,7 @@ EnumerationLiteral returns type::EnumerationLiteral:
  */
 ExitStatement returns statement::ExitStatement:
   {statement::ExitStatement}
-    ( label = Label ':' )? 'exit' ( exit = Identifier )? ( 'when' when = Expression )? ';'
+    ( label = Label ':' )? 'exit' ( exit = Identifier )? ('when' when = Expression )? ';'
 ;
 
 /*
@@ -793,24 +795,6 @@ IndexConstraint returns expression::Expression:
    '(' DiscreteRange ({expression::MultiExpression.expression+=current} (',' expression += DiscreteRange )+ )? ')'
 ;
 
-/*
- * discrete_range = discrete_subtype_indication
- *	              | range
- */
-DiscreteRange returns expression::Expression:
-    RangeSpecification
-  | SubtypeIndicationExpression
-;
-
-Range returns expression::Expression:
-   RangeSpecification
- | SimpleExpression
-;
-
-RangeSpecification returns expression::RangeExpression:
-  {expression::RangeExpression} left = SimpleExpression direction = RangeDirection right = SimpleExpression
-;
-
 GenericDeclaration returns declaration::Declaration: 
     InterfaceConstantDeclaration
 ;
@@ -925,10 +909,6 @@ SelectedName returns Name:
   )
 ;
 
-SliceName returns Name:
-	'(' RangeSpecification ')'
-;
-
 AttributeName returns expression::AttributeExpression:
   {expression::AttributeExpression} (signature = Signature )? value = ATTRIBUTE
 ;
@@ -953,24 +933,6 @@ ScalarNatureDefinition returns nature::ScalarNatureDefinition:
 NextStatement returns statement::NextStatement:
   {statement::NextStatement}
     ( label = Label ':' )? 'next' ( next = Identifier )? ( 'when' when = Expression )? ';'
-;
-
-/*
- *  range left_bound to right_bound
- *  units
- *    primary_unit_name
- *    (secondary_unit_name = number primary_unit_name)*
- * end units type_name
- */
-PhysicalTypeDefinition returns type::PhysicalTypeDefinition:
-    range = RangeConstraint 'units' 
-      primary = Identifier ';'
-      ( secondary += PhysicalTypeDefinitionSecondary )* 
-    'end' 'units' ( Identifier )?
-;
-
-PhysicalTypeDefinitionSecondary returns type::PhysicalTypeDefinitionSecondary:
-  name = Identifier '=' ( number = ABSTRACT_LITERAL )? of = Name ';'
 ;
   
 Ports returns Ports: 
@@ -999,7 +961,7 @@ ConcurrentProcedureCallStatement returns statement::ProcedureCallStatement:
 ProcessStatement returns statement::ProcessStatement:
   {statement::ProcessStatement}
     ( label = Label ':' )? ( postponed ?= 'postponed' )? 
-    'process' 
+    'process'
       ( '(' sensitivity = MultiIdentifierName ')' )? 
       ( 'is' )?
       ( declaration += ProcessDeclarativeItem )*
@@ -1063,21 +1025,14 @@ SequentialStatement returns statement::Statement:
   | ReturnStatement
   | NullStatement
   | BreakStatement
-  | VariableAssignmentStatement
   | ProcedureCallStatement
+  | VariableAssignmentStatement
   | SequentialSignalAssignmentStatement
 ;
 
 NullStatement returns statement::ExpressionStatement:
   {statement::ExpressionStatement}
     ( label = Label ':' )? expression = NullExpression ';'
-;
-
-/*
- * [ label: ] target := expression ;
- */
-VariableAssignmentStatement returns statement::VariableAssignmentStatement:
-  ( label = Label ':' )? target = Target ':=' initial = Expression ';'
 ;
 
 SignalDeclaration returns declaration::SignalDeclaration:
@@ -1155,11 +1110,6 @@ SimultaneousStatement returns statement::Statement:
   | NullStatement
 ;
 
-SourceAspect returns ams::SourceAspect:
-   Spectrum
- | Noise
-;
-
 Spectrum returns ams::Spectrum:
   'spectrum' left = SimpleExpression ',' right = SimpleExpression
 ;
@@ -1169,20 +1119,9 @@ Noise returns ams::Noise:
 ;
 
 QuantityDeclaration returns declaration::QuantityDeclaration:
-    FreeQuantityDeclaration
-  | BranchQuantityDeclaration
+    BranchQuantityDeclaration
+  | FreeQuantityDeclaration
   | SourceQuantityDeclaration
-;
-
-FreeQuantityDeclaration returns declaration::FreeQuantityDeclaration:
-    'quantity' 
-      name = MultiIdentifierName 
-    ':' type = SubtypeIndication ( ':=' quantity = Expression )? ';'
-;
-
-BranchQuantityDeclaration returns declaration::BranchQuantityDeclaration:
-  'quantity' ( across = QuantityAspect 'across')?
-    ( through = QuantityAspect 'through')? left = Name ( 'to' right = Name )? ';'
 ;
 
 /* 
@@ -1193,10 +1132,26 @@ QuantityAspect returns ams::QuantityAspect:
   ( ':=' expression = Expression )?
 ;
 
+BranchQuantityDeclaration returns declaration::BranchQuantityDeclaration:
+  'quantity' ( across = QuantityAspect 'across')?
+    ( through = QuantityAspect 'through')? left = Name ( 'to' right = Name )? ';'
+;
+
+FreeQuantityDeclaration returns declaration::FreeQuantityDeclaration:
+    'quantity' 
+      name = MultiIdentifierName 
+    ':' type = SubtypeIndication ( ':=' quantity = Expression )? ';'
+;
+
 SourceQuantityDeclaration returns declaration::SourceQuantityDeclaration:
     'quantity' 
       name = MultiIdentifierName 
     ':' type = SubtypeIndication source = SourceAspect ';'
+;
+
+SourceAspect returns ams::SourceAspect:
+   Spectrum
+ | Noise
 ;
 
 LimitDeclaration returns declaration::LimitDeclaration:
@@ -1240,25 +1195,60 @@ AliasDeclaration returns declaration::AliasDeclaration:
     is = NameSignature ';'
 ;
 
+Range returns expression::Expression:
+  SimpleExpression ({expression::RangeExpression.left=current} direction = RangeDirection right = SimpleExpression)? 
+;
+
+/*
+ * discrete_range = discrete_subtype_indication
+ *	              | range
+ */
+DiscreteRange returns expression::Expression:
+    RangeSpecification
+  | SubtypeIndicationExpression
+;
+
+/*
+ * aggregate = "(" element_association { "," element_association } ")".
+ *
+ * Associations with elements' simple names are allowed in record aggregates only.
+ * Associations with simple expressions or discrete ranges as choices are allowed only in array aggregates.
+ * Each element of the value defined by an aggregate must be represented once and only once in the aggregate.
+ * Aggregates containing the single element association must always be specified 
+ * using named association in order to distinguish them from parenthesized expressions.
+ * The others choice can be only the last in an aggregate.
+ */
+Aggregate returns expression::AggregateExpression:
+  {expression::AggregateExpression} '(' (expression += Parameter ( ',' expression += Parameter )*) ? ')'
+;
+
+SliceName returns Name:
+	'(' RangeSpecification ')'
+;
+
+RangeSpecification returns expression::RangeExpression:
+  {expression::RangeExpression} =>(left = SimpleExpression direction = RangeDirection) right = SimpleExpression
+;
+
 /*
  * NAME_PATTERN (NAME_PATTERN)? = [ resolution_indication ] type_mark [ constraint ].
  */
 SubtypeIndication returns type::TypeReference:
     {expression::SubtypeIndicationExpression} name = Name mark = Name (constraint = Constraint)? ('tolerance' tolerance = Expression ('across' across = Expression 'through')? )?
-  | {expression::SubtypeIndicationExpression} mark = Name constraint = Constraint ('tolerance' tolerance = Expression ('across' across = Expression 'through')? )?
-  | {expression::SubtypeIndicationExpression} mark = Name 'tolerance' tolerance = Expression ('across' across = Expression 'through')?
+  | {expression::SubtypeIndicationExpression} => (mark = Name constraint = Constraint) ('tolerance' tolerance = Expression ('across' across = Expression 'through')? )?
+  | {expression::SubtypeIndicationExpression} => (mark = Name 'tolerance') tolerance = Expression ('across' across = Expression 'through')?
   | Name
 ;
 
 SubtypeIndicationExpression returns expression::Expression:
     {expression::SubtypeIndicationExpression} name = Name mark = Name (constraint = Constraint)? ('tolerance' tolerance = Expression ('across' across = Expression 'through')? )?
-  | {expression::SubtypeIndicationExpression} mark = Name constraint = Constraint ('tolerance' tolerance = Expression ('across' across = Expression 'through')? )?
-  | {expression::SubtypeIndicationExpression} mark = Name 'tolerance' tolerance = Expression ('across' across = Expression 'through')?
+  | {expression::SubtypeIndicationExpression} => (mark = Name constraint = Constraint) ('tolerance' tolerance = Expression ('across' across = Expression 'through')? )?
+  | {expression::SubtypeIndicationExpression} => (mark = Name 'tolerance') tolerance = Expression ('across' across = Expression 'through')?
   | NameExpression
 ;
 
 SubnatureIndication returns nature::NatureReference:
-    {expression::SubnatureIndicationExpression} mark= Name constraint = IndexConstraint ('tolerance' tolerance = Expression ('across' across = Expression 'through')? )?
+    {expression::SubnatureIndicationExpression} => (mark= Name constraint = IndexConstraint) ('tolerance' tolerance = Expression ('across' across = Expression 'through')? )?
   | {expression::SubnatureIndicationExpression} mark= Name 'tolerance' tolerance = Expression ('across' across = Expression 'through')?
   | Name 
 ;
@@ -1277,11 +1267,11 @@ TypeDeclaration returns declaration::TypeDeclaration:
 ;
  
 TypeDefinition returns type::TypeDefinition:
-    PhysicalTypeDefinition
-  | EnumerationTypeDefinition
+    EnumerationTypeDefinition
   | CompositeTypeDefinition
   | AccessTypeDefinition
   | FileTypeDefinition
+  | PhysicalTypeDefinition
   | RangeTypeDefinition
 ;
 
@@ -1290,24 +1280,45 @@ RangeTypeDefinition returns type::RangeTypeDefinition:
  | {type::RangeTypeDefinition} 'range' '<>'
 ;
 
+/*
+ *  range left_bound to right_bound
+ *  units
+ *    primary_unit_name
+ *    (secondary_unit_name = number primary_unit_name)*
+ * end units type_name
+ */
+PhysicalTypeDefinition returns type::PhysicalTypeDefinition:
+  => ('range' range = Range 'units') 
+      primary = Identifier ';'
+      ( secondary += PhysicalTypeDefinitionSecondary )* 
+    'end' 'units' ( Identifier )?
+;
+
+PhysicalTypeDefinitionSecondary returns type::PhysicalTypeDefinitionSecondary:
+  name = Identifier '=' ( number = ABSTRACT_LITERAL )? of = Name ';'
+;
+
+
 UnconstrainedArrayTypeDefinition returns type::UnconstrainedArrayTypeDefinition:
     'array' '(' 
         index += Name 'range' '<>' ( ',' index += Name 'range' '<>' )* 
     ')' 'of' type = SubtypeIndication
 ;
 
-UnconstrainedArrayNatureDefinition returns nature::UnconstrainedArrayNatureDefinition:
-    'array' '(' 
-        index += Name 'range' '<>' ( ',' index += Name 'range' '<>' )* 
-    ')' 'of' nature = SubnatureIndication
-;
-
 ConstrainedArrayTypeDefinition returns type::ConstrainedArrayTypeDefinition:
     'array' constraint = IndexConstraint 'of' type = SubtypeIndication
 ;
 
+UnconstrainedArrayNatureDefinition returns nature::UnconstrainedArrayNatureDefinition:
+  'array' '(' 
+    index += Name 'range' '<>' ( ',' index += Name 'range' '<>' )* 
+  ')' 'of' nature = SubnatureIndication
+;
+
 ConstrainedArrayNatureDefinition returns nature::ConstrainedArrayNatureDefinition:
-    'array' constraint = IndexConstraint 'of' nature = SubnatureIndication
+  'array' 
+    constraint = IndexConstraint 
+  'of' nature = SubnatureIndication
 ;
 
 /*

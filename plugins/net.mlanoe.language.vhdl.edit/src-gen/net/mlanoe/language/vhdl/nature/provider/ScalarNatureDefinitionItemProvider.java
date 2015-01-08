@@ -169,6 +169,11 @@ public class ScalarNatureDefinitionItemProvider extends NatureDefinitionItemProv
 		newChildDescriptors.add
 			(createChildParameter
 				(NaturePackage.Literals.SCALAR_NATURE_DEFINITION__NAME,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(NaturePackage.Literals.SCALAR_NATURE_DEFINITION__NAME,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add
@@ -214,6 +219,11 @@ public class ScalarNatureDefinitionItemProvider extends NatureDefinitionItemProv
 		newChildDescriptors.add
 			(createChildParameter
 				(NaturePackage.Literals.SCALAR_NATURE_DEFINITION__ACROSS,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(NaturePackage.Literals.SCALAR_NATURE_DEFINITION__ACROSS,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add
@@ -255,6 +265,11 @@ public class ScalarNatureDefinitionItemProvider extends NatureDefinitionItemProv
 			(createChildParameter
 				(NaturePackage.Literals.SCALAR_NATURE_DEFINITION__THROUGH,
 				 ExpressionFactory.eINSTANCE.createNameExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(NaturePackage.Literals.SCALAR_NATURE_DEFINITION__THROUGH,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

@@ -235,6 +235,11 @@ public class SelectedSignalAssignmentStatementItemProvider extends ConditionalSi
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.SELECTED_SIGNAL_ASSIGNMENT_STATEMENT__SELECTED,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.SELECTED_SIGNAL_ASSIGNMENT_STATEMENT__SELECTED,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -280,6 +285,11 @@ public class SelectedSignalAssignmentStatementItemProvider extends ConditionalSi
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.SELECTED_SIGNAL_ASSIGNMENT_STATEMENT__SELECTED,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.SELECTED_SIGNAL_ASSIGNMENT_STATEMENT__SELECTED,
 				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
 	}
 
@@ -296,6 +306,7 @@ public class SelectedSignalAssignmentStatementItemProvider extends ConditionalSi
 
 		boolean qualify =
 			childFeature == StatementPackage.Literals.SIGNAL_ASSIGNMENT_STATEMENT__TARGET ||
+			childFeature == StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM ||
 			childFeature == StatementPackage.Literals.SELECTED_SIGNAL_ASSIGNMENT_STATEMENT__SELECTED;
 
 		if (qualify) {

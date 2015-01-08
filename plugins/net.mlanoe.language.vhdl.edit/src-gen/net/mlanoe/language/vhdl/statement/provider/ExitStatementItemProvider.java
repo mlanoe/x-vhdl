@@ -263,6 +263,11 @@ public class ExitStatementItemProvider extends StatementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.EXIT_STATEMENT__WHEN,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.EXIT_STATEMENT__WHEN,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -304,6 +309,11 @@ public class ExitStatementItemProvider extends StatementItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.EXIT_STATEMENT__WHEN,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.EXIT_STATEMENT__WHEN,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

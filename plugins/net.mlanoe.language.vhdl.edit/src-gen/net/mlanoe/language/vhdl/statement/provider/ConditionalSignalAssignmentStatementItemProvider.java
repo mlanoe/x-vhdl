@@ -10,16 +10,12 @@ package net.mlanoe.language.vhdl.statement.provider;
 
 import java.util.Collection;
 import java.util.List;
-
+import net.mlanoe.language.vhdl.expression.ExpressionFactory;
 import net.mlanoe.language.vhdl.statement.ConditionalSignalAssignmentStatement;
-import net.mlanoe.language.vhdl.statement.StatementFactory;
 import net.mlanoe.language.vhdl.statement.StatementPackage;
-
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EStructuralFeature;
-
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
@@ -144,7 +140,175 @@ public class ConditionalSignalAssignmentStatementItemProvider extends SignalAssi
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
-				 StatementFactory.eINSTANCE.createConditionalWaveform()));
+				 ExpressionFactory.eINSTANCE.createAddingExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createMultiExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createAggregateExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createAllExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createAllocatorExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createAssociationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createAttributeExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createBitStringExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createSubtypeIndicationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createSubnatureIndicationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createLogicalExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createNameExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createNullExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createMultiplyingExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createPowerExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createRelationalExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createShiftExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createSignExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createUnaryExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createOpenExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createOthersExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createRangeExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createStringExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createCharacterExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
+	}
+
+	/**
+	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
+		Object childFeature = feature;
+		Object childObject = child;
+
+		boolean qualify =
+			childFeature == StatementPackage.Literals.SIGNAL_ASSIGNMENT_STATEMENT__TARGET ||
+			childFeature == StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM;
+
+		if (qualify) {
+			return getString
+				("_UI_CreateChild_text2",
+				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+		}
+		return super.getCreateChildText(owner, feature, child, selection);
 	}
 
 }
