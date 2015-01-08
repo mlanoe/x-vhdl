@@ -35,7 +35,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public abstract class SignatureExpressionImpl extends ExpressionImpl implements SignatureExpression {
+public class SignatureExpressionImpl extends ExpressionImpl implements SignatureExpression {
 	/**
 	 * The cached value of the '{@link #getSignature() <em>Signature</em>}' containment reference.
 	 * <!-- begin-user-doc -->
