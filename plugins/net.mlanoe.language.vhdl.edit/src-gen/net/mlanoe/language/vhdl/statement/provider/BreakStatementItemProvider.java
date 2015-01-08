@@ -247,6 +247,11 @@ public class BreakStatementItemProvider extends StatementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.BREAK_STATEMENT__WHEN,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.BREAK_STATEMENT__WHEN,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -292,6 +297,11 @@ public class BreakStatementItemProvider extends StatementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.BREAK_STATEMENT__WHEN,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.BREAK_STATEMENT__WHEN,
 				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
 
 		newChildDescriptors.add
@@ -318,6 +328,11 @@ public class BreakStatementItemProvider extends StatementItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.BREAK_STATEMENT__SENSITIVITY,
 				 ExpressionFactory.eINSTANCE.createNameExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.BREAK_STATEMENT__SENSITIVITY,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

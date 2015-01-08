@@ -235,6 +235,11 @@ public class ConstrainedArrayTypeDefinitionItemProvider extends ArrayTypeDefinit
 		newChildDescriptors.add
 			(createChildParameter
 				(TypePackage.Literals.CONSTRAINED_ARRAY_TYPE_DEFINITION__CONSTRAINT,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TypePackage.Literals.CONSTRAINED_ARRAY_TYPE_DEFINITION__CONSTRAINT,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -276,6 +281,11 @@ public class ConstrainedArrayTypeDefinitionItemProvider extends ArrayTypeDefinit
 			(createChildParameter
 				(TypePackage.Literals.CONSTRAINED_ARRAY_TYPE_DEFINITION__CONSTRAINT,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TypePackage.Literals.CONSTRAINED_ARRAY_TYPE_DEFINITION__CONSTRAINT,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

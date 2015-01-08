@@ -162,7 +162,7 @@ public interface StatementPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getExpressionStatement()
 	 * @generated
 	 */
-	int EXPRESSION_STATEMENT = 35;
+	int EXPRESSION_STATEMENT = 34;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -557,7 +557,7 @@ public interface StatementPackage extends EPackage {
 	int SEQUENTIAL_SIGNAL_ASSIGNMENT_STATEMENT__DELAY = SIGNAL_ASSIGNMENT_STATEMENT__DELAY;
 
 	/**
-	 * The feature id for the '<em><b>Waveform</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Waveform</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2021,52 +2021,6 @@ public interface StatementPackage extends EPackage {
 	int NEXT_STATEMENT_FEATURE_COUNT = STATEMENT_FEATURE_COUNT + 2;
 
 	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.statement.impl.ConditionalWaveformImpl <em>Conditional Waveform</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.statement.impl.ConditionalWaveformImpl
-	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getConditionalWaveform()
-	 * @generated
-	 */
-	int CONDITIONAL_WAVEFORM = 31;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_WAVEFORM__ID = VhdlPackage.VHDL_OBJECT__ID;
-
-	/**
-	 * The feature id for the '<em><b>Waveform</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_WAVEFORM__WAVEFORM = VhdlPackage.VHDL_OBJECT_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Choice</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_WAVEFORM__CHOICE = VhdlPackage.VHDL_OBJECT_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of structural features of the '<em>Conditional Waveform</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_WAVEFORM_FEATURE_COUNT = VhdlPackage.VHDL_OBJECT_FEATURE_COUNT + 2;
-
-	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.statement.impl.IterationSchemeImpl <em>Iteration Scheme</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2074,7 +2028,7 @@ public interface StatementPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getIterationScheme()
 	 * @generated
 	 */
-	int ITERATION_SCHEME = 32;
+	int ITERATION_SCHEME = 31;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2102,7 +2056,7 @@ public interface StatementPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getWhileIterationScheme()
 	 * @generated
 	 */
-	int WHILE_ITERATION_SCHEME = 33;
+	int WHILE_ITERATION_SCHEME = 32;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2139,7 +2093,7 @@ public interface StatementPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getDelayMechanism()
 	 * @generated
 	 */
-	int DELAY_MECHANISM = 34;
+	int DELAY_MECHANISM = 33;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2167,7 +2121,7 @@ public interface StatementPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getGenerationScheme()
 	 * @generated
 	 */
-	int GENERATION_SCHEME = 38;
+	int GENERATION_SCHEME = 37;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2195,7 +2149,7 @@ public interface StatementPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getForGenerationScheme()
 	 * @generated
 	 */
-	int FOR_GENERATION_SCHEME = 36;
+	int FOR_GENERATION_SCHEME = 35;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2241,7 +2195,7 @@ public interface StatementPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getForIterationScheme()
 	 * @generated
 	 */
-	int FOR_ITERATION_SCHEME = 37;
+	int FOR_ITERATION_SCHEME = 36;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2287,7 +2241,7 @@ public interface StatementPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getIfGenerationScheme()
 	 * @generated
 	 */
-	int IF_GENERATION_SCHEME = 39;
+	int IF_GENERATION_SCHEME = 38;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2324,7 +2278,7 @@ public interface StatementPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getRejectMechanism()
 	 * @generated
 	 */
-	int REJECT_MECHANISM = 40;
+	int REJECT_MECHANISM = 39;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2361,7 +2315,7 @@ public interface StatementPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getTransportMechanism()
 	 * @generated
 	 */
-	int TRANSPORT_MECHANISM = 41;
+	int TRANSPORT_MECHANISM = 40;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2477,10 +2431,10 @@ public interface StatementPackage extends EPackage {
 	EClass getSequentialSignalAssignmentStatement();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link net.mlanoe.language.vhdl.statement.SequentialSignalAssignmentStatement#getWaveform <em>Waveform</em>}'.
+	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.statement.SequentialSignalAssignmentStatement#getWaveform <em>Waveform</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Waveform</em>'.
+	 * @return the meta object for the containment reference '<em>Waveform</em>'.
 	 * @see net.mlanoe.language.vhdl.statement.SequentialSignalAssignmentStatement#getWaveform()
 	 * @see #getSequentialSignalAssignmentStatement()
 	 * @generated
@@ -3408,38 +3362,6 @@ public interface StatementPackage extends EPackage {
 	EAttribute getStatement_Label();
 
 	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.ConditionalWaveform <em>Conditional Waveform</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Conditional Waveform</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.ConditionalWaveform
-	 * @generated
-	 */
-	EClass getConditionalWaveform();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link net.mlanoe.language.vhdl.statement.ConditionalWaveform#getWaveform <em>Waveform</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Waveform</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.ConditionalWaveform#getWaveform()
-	 * @see #getConditionalWaveform()
-	 * @generated
-	 */
-	EReference getConditionalWaveform_Waveform();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.statement.ConditionalWaveform#getChoice <em>Choice</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Choice</em>'.
-	 * @see net.mlanoe.language.vhdl.statement.ConditionalWaveform#getChoice()
-	 * @see #getConditionalWaveform()
-	 * @generated
-	 */
-	EReference getConditionalWaveform_Choice();
-
-	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.statement.IterationScheme <em>Iteration Scheme</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3732,7 +3654,7 @@ public interface StatementPackage extends EPackage {
 		EClass SEQUENTIAL_SIGNAL_ASSIGNMENT_STATEMENT = eINSTANCE.getSequentialSignalAssignmentStatement();
 
 		/**
-		 * The meta object literal for the '<em><b>Waveform</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Waveform</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -4478,32 +4400,6 @@ public interface StatementPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute STATEMENT__LABEL = eINSTANCE.getStatement_Label();
-
-		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.ConditionalWaveformImpl <em>Conditional Waveform</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.statement.impl.ConditionalWaveformImpl
-		 * @see net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl#getConditionalWaveform()
-		 * @generated
-		 */
-		EClass CONDITIONAL_WAVEFORM = eINSTANCE.getConditionalWaveform();
-
-		/**
-		 * The meta object literal for the '<em><b>Waveform</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CONDITIONAL_WAVEFORM__WAVEFORM = eINSTANCE.getConditionalWaveform_Waveform();
-
-		/**
-		 * The meta object literal for the '<em><b>Choice</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CONDITIONAL_WAVEFORM__CHOICE = eINSTANCE.getConditionalWaveform_Choice();
 
 		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.statement.impl.IterationSchemeImpl <em>Iteration Scheme</em>}' class.

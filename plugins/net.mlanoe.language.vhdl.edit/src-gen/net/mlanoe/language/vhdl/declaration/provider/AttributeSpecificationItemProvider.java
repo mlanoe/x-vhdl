@@ -200,6 +200,11 @@ public class AttributeSpecificationItemProvider extends DeclarationItemProvider 
 		newChildDescriptors.add
 			(createChildParameter
 				(VhdlPackage.Literals.NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(VhdlPackage.Literals.NAMED__NAME,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add
@@ -246,6 +251,11 @@ public class AttributeSpecificationItemProvider extends DeclarationItemProvider 
 			(createChildParameter
 				(DeclarationPackage.Literals.ATTRIBUTE_SPECIFICATION__ENTITY,
 				 ExpressionFactory.eINSTANCE.createNameExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.ATTRIBUTE_SPECIFICATION__ENTITY,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -365,6 +375,11 @@ public class AttributeSpecificationItemProvider extends DeclarationItemProvider 
 		newChildDescriptors.add
 			(createChildParameter
 				(DeclarationPackage.Literals.ATTRIBUTE_SPECIFICATION__IS,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.ATTRIBUTE_SPECIFICATION__IS,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -406,6 +421,11 @@ public class AttributeSpecificationItemProvider extends DeclarationItemProvider 
 			(createChildParameter
 				(DeclarationPackage.Literals.ATTRIBUTE_SPECIFICATION__IS,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.ATTRIBUTE_SPECIFICATION__IS,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

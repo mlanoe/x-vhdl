@@ -58,6 +58,7 @@ import net.mlanoe.language.vhdl.expression.SignatureExpression;
 import net.mlanoe.language.vhdl.expression.StringExpression;
 import net.mlanoe.language.vhdl.expression.SubnatureIndicationExpression;
 import net.mlanoe.language.vhdl.expression.SubtypeIndicationExpression;
+import net.mlanoe.language.vhdl.expression.UnaffectedExpression;
 import net.mlanoe.language.vhdl.expression.UnaryExpression;
 import net.mlanoe.language.vhdl.expression.UnaryOperator;
 import net.mlanoe.language.vhdl.expression.UnitValueExpression;
@@ -295,6 +296,13 @@ public class ExpressionPackageImpl extends EPackageImpl implements ExpressionPac
 	 * @generated
 	 */
 	private EClass unitValueExpressionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass unaffectedExpressionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -939,6 +947,15 @@ public class ExpressionPackageImpl extends EPackageImpl implements ExpressionPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getUnaffectedExpression() {
+		return unaffectedExpressionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getValueExpression() {
 		return valueExpressionEClass;
 	}
@@ -1179,6 +1196,8 @@ public class ExpressionPackageImpl extends EPackageImpl implements ExpressionPac
 		unitValueExpressionEClass = createEClass(UNIT_VALUE_EXPRESSION);
 		createEReference(unitValueExpressionEClass, UNIT_VALUE_EXPRESSION__UNIT);
 
+		unaffectedExpressionEClass = createEClass(UNAFFECTED_EXPRESSION);
+
 		valueExpressionEClass = createEClass(VALUE_EXPRESSION);
 		createEAttribute(valueExpressionEClass, VALUE_EXPRESSION__VALUE);
 
@@ -1278,6 +1297,7 @@ public class ExpressionPackageImpl extends EPackageImpl implements ExpressionPac
 		identifierExpressionEClass.getESuperTypes().add(theVhdlPackage.getName_());
 		identifierExpressionEClass.getESuperTypes().add(theTypePackage.getEnumerationLiteral());
 		unitValueExpressionEClass.getESuperTypes().add(this.getValueExpression());
+		unaffectedExpressionEClass.getESuperTypes().add(this.getExpression());
 		valueExpressionEClass.getESuperTypes().add(this.getExpression());
 		waveformExpressionEClass.getESuperTypes().add(this.getExpression());
 		multiExpressionEClass.getESuperTypes().add(this.getExpression());
@@ -1337,7 +1357,7 @@ public class ExpressionPackageImpl extends EPackageImpl implements ExpressionPac
 		initEClass(shiftExpressionEClass, ShiftExpression.class, "ShiftExpression", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getShiftExpression_Operator(), this.getShiftOperator(), "operator", null, 0, 1, ShiftExpression.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(signatureExpressionEClass, SignatureExpression.class, "SignatureExpression", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(signatureExpressionEClass, SignatureExpression.class, "SignatureExpression", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getSignatureExpression_Signature(), theVhdlPackage.getSignature(), null, "signature", null, 0, 1, SignatureExpression.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSignatureExpression_Name(), theVhdlPackage.getName_(), null, "name", null, 0, 1, SignatureExpression.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -1364,6 +1384,8 @@ public class ExpressionPackageImpl extends EPackageImpl implements ExpressionPac
 
 		initEClass(unitValueExpressionEClass, UnitValueExpression.class, "UnitValueExpression", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getUnitValueExpression_Unit(), theVhdlPackage.getName_(), null, "unit", null, 0, 1, UnitValueExpression.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(unaffectedExpressionEClass, UnaffectedExpression.class, "UnaffectedExpression", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(valueExpressionEClass, ValueExpression.class, "ValueExpression", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getValueExpression_Value(), ecorePackage.getEString(), "value", null, 0, 1, ValueExpression.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

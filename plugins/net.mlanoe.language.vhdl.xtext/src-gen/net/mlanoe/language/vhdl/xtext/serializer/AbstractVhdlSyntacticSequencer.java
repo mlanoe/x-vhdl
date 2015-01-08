@@ -51,7 +51,7 @@ public abstract class AbstractVhdlSyntacticSequencer extends AbstractSyntacticSe
 	protected AbstractElementAlias match_PackageBody___PackageKeyword_6_0_BodyKeyword_6_1__q;
 	protected AbstractElementAlias match_Package_IdentifierParserRuleCall_6_q;
 	protected AbstractElementAlias match_Package_PackageKeyword_5_q;
-	protected AbstractElementAlias match_PhysicalTypeDefinition_IdentifierParserRuleCall_7_q;
+	protected AbstractElementAlias match_PhysicalTypeDefinition_IdentifierParserRuleCall_6_q;
 	protected AbstractElementAlias match_ProcessStatement_IdentifierParserRuleCall_12_q;
 	protected AbstractElementAlias match_ProcessStatement_IsKeyword_5_q;
 	protected AbstractElementAlias match_ProcessStatement_PostponedKeyword_10_q;
@@ -100,7 +100,7 @@ public abstract class AbstractVhdlSyntacticSequencer extends AbstractSyntacticSe
 		match_PackageBody___PackageKeyword_6_0_BodyKeyword_6_1__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getPackageBodyAccess().getPackageKeyword_6_0()), new TokenAlias(false, false, grammarAccess.getPackageBodyAccess().getBodyKeyword_6_1()));
 		match_Package_IdentifierParserRuleCall_6_q = new TokenAlias(false, true, grammarAccess.getPackageAccess().getIdentifierParserRuleCall_6());
 		match_Package_PackageKeyword_5_q = new TokenAlias(false, true, grammarAccess.getPackageAccess().getPackageKeyword_5());
-		match_PhysicalTypeDefinition_IdentifierParserRuleCall_7_q = new TokenAlias(false, true, grammarAccess.getPhysicalTypeDefinitionAccess().getIdentifierParserRuleCall_7());
+		match_PhysicalTypeDefinition_IdentifierParserRuleCall_6_q = new TokenAlias(false, true, grammarAccess.getPhysicalTypeDefinitionAccess().getIdentifierParserRuleCall_6());
 		match_ProcessStatement_IdentifierParserRuleCall_12_q = new TokenAlias(false, true, grammarAccess.getProcessStatementAccess().getIdentifierParserRuleCall_12());
 		match_ProcessStatement_IsKeyword_5_q = new TokenAlias(false, true, grammarAccess.getProcessStatementAccess().getIsKeyword_5());
 		match_ProcessStatement_PostponedKeyword_10_q = new TokenAlias(false, true, grammarAccess.getProcessStatementAccess().getPostponedKeyword_10());
@@ -218,8 +218,8 @@ public abstract class AbstractVhdlSyntacticSequencer extends AbstractSyntacticSe
 				emit_Package_IdentifierParserRuleCall_6_q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_Package_PackageKeyword_5_q.equals(syntax))
 				emit_Package_PackageKeyword_5_q(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_PhysicalTypeDefinition_IdentifierParserRuleCall_7_q.equals(syntax))
-				emit_PhysicalTypeDefinition_IdentifierParserRuleCall_7_q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_PhysicalTypeDefinition_IdentifierParserRuleCall_6_q.equals(syntax))
+				emit_PhysicalTypeDefinition_IdentifierParserRuleCall_6_q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_ProcessStatement_IdentifierParserRuleCall_12_q.equals(syntax))
 				emit_ProcessStatement_IdentifierParserRuleCall_12_q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_ProcessStatement_IsKeyword_5_q.equals(syntax))
@@ -508,7 +508,7 @@ public abstract class AbstractVhdlSyntacticSequencer extends AbstractSyntacticSe
 	 * Syntax:
 	 *     Identifier?
 	 */
-	protected void emit_PhysicalTypeDefinition_IdentifierParserRuleCall_7_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_PhysicalTypeDefinition_IdentifierParserRuleCall_6_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	

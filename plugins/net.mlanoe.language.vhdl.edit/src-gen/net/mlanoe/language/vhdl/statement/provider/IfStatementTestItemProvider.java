@@ -243,6 +243,11 @@ public class IfStatementTestItemProvider extends VhdlObjectItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.IF_STATEMENT_TEST__CONDITION,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.IF_STATEMENT_TEST__CONDITION,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -284,6 +289,11 @@ public class IfStatementTestItemProvider extends VhdlObjectItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.IF_STATEMENT_TEST__CONDITION,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.IF_STATEMENT_TEST__CONDITION,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

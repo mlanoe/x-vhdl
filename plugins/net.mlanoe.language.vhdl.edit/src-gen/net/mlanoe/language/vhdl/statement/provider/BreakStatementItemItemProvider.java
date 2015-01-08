@@ -174,6 +174,11 @@ public class BreakStatementItemItemProvider extends VhdlObjectItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.BREAK_STATEMENT_ITEM__NAME,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.BREAK_STATEMENT_ITEM__NAME,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add
@@ -215,6 +220,11 @@ public class BreakStatementItemItemProvider extends VhdlObjectItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.BREAK_STATEMENT_ITEM__USE,
 				 ExpressionFactory.eINSTANCE.createNameExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.BREAK_STATEMENT_ITEM__USE,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -334,6 +344,11 @@ public class BreakStatementItemItemProvider extends VhdlObjectItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.BREAK_STATEMENT_ITEM__ARROW,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.BREAK_STATEMENT_ITEM__ARROW,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -375,6 +390,11 @@ public class BreakStatementItemItemProvider extends VhdlObjectItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.BREAK_STATEMENT_ITEM__ARROW,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.BREAK_STATEMENT_ITEM__ARROW,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

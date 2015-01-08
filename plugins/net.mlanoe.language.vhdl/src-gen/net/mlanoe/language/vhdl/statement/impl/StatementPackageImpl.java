@@ -8,29 +8,17 @@
 package net.mlanoe.language.vhdl.statement.impl;
 
 import net.mlanoe.language.vhdl.VhdlPackage;
-
 import net.mlanoe.language.vhdl.ams.AmsPackage;
-
 import net.mlanoe.language.vhdl.ams.impl.AmsPackageImpl;
-
 import net.mlanoe.language.vhdl.configuration.ConfigurationPackage;
-
 import net.mlanoe.language.vhdl.configuration.impl.ConfigurationPackageImpl;
-
 import net.mlanoe.language.vhdl.declaration.DeclarationPackage;
-
 import net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl;
-
 import net.mlanoe.language.vhdl.expression.ExpressionPackage;
-
 import net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl;
-
 import net.mlanoe.language.vhdl.impl.VhdlPackageImpl;
-
 import net.mlanoe.language.vhdl.nature.NaturePackage;
-
 import net.mlanoe.language.vhdl.nature.impl.NaturePackageImpl;
-
 import net.mlanoe.language.vhdl.statement.AssertionStatement;
 import net.mlanoe.language.vhdl.statement.BlockStatement;
 import net.mlanoe.language.vhdl.statement.BreakStatement;
@@ -39,7 +27,6 @@ import net.mlanoe.language.vhdl.statement.CaseAlternative;
 import net.mlanoe.language.vhdl.statement.CaseStatement;
 import net.mlanoe.language.vhdl.statement.ComponentInstantiationStatement;
 import net.mlanoe.language.vhdl.statement.ConditionalSignalAssignmentStatement;
-import net.mlanoe.language.vhdl.statement.ConditionalWaveform;
 import net.mlanoe.language.vhdl.statement.ConfigurationInstantiationStatement;
 import net.mlanoe.language.vhdl.statement.DelayMechanism;
 import net.mlanoe.language.vhdl.statement.EntityInstantiationStatement;
@@ -75,16 +62,12 @@ import net.mlanoe.language.vhdl.statement.TransportMechanism;
 import net.mlanoe.language.vhdl.statement.VariableAssignmentStatement;
 import net.mlanoe.language.vhdl.statement.WaitStatement;
 import net.mlanoe.language.vhdl.statement.WhileIterationScheme;
-
 import net.mlanoe.language.vhdl.type.TypePackage;
-
 import net.mlanoe.language.vhdl.type.impl.TypePackageImpl;
-
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
-
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
@@ -310,13 +293,6 @@ public class StatementPackageImpl extends EPackageImpl implements StatementPacka
 	 * @generated
 	 */
 	private EClass statementEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass conditionalWaveformEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1341,33 +1317,6 @@ public class StatementPackageImpl extends EPackageImpl implements StatementPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getConditionalWaveform() {
-		return conditionalWaveformEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getConditionalWaveform_Waveform() {
-		return (EReference)conditionalWaveformEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getConditionalWaveform_Choice() {
-		return (EReference)conditionalWaveformEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getIterationScheme() {
 		return iterationSchemeEClass;
 	}
@@ -1680,10 +1629,6 @@ public class StatementPackageImpl extends EPackageImpl implements StatementPacka
 		statementEClass = createEClass(STATEMENT);
 		createEAttribute(statementEClass, STATEMENT__LABEL);
 
-		conditionalWaveformEClass = createEClass(CONDITIONAL_WAVEFORM);
-		createEReference(conditionalWaveformEClass, CONDITIONAL_WAVEFORM__WAVEFORM);
-		createEReference(conditionalWaveformEClass, CONDITIONAL_WAVEFORM__CHOICE);
-
 		iterationSchemeEClass = createEClass(ITERATION_SCHEME);
 
 		whileIterationSchemeEClass = createEClass(WHILE_ITERATION_SCHEME);
@@ -1778,7 +1723,6 @@ public class StatementPackageImpl extends EPackageImpl implements StatementPacka
 		loopStatementEClass.getESuperTypes().add(this.getStatement());
 		nextStatementEClass.getESuperTypes().add(this.getStatement());
 		statementEClass.getESuperTypes().add(theVhdlPackage.getVhdlObject());
-		conditionalWaveformEClass.getESuperTypes().add(theVhdlPackage.getVhdlObject());
 		iterationSchemeEClass.getESuperTypes().add(theVhdlPackage.getVhdlObject());
 		whileIterationSchemeEClass.getESuperTypes().add(this.getIterationScheme());
 		delayMechanismEClass.getESuperTypes().add(theVhdlPackage.getVhdlObject());
@@ -1798,13 +1742,13 @@ public class StatementPackageImpl extends EPackageImpl implements StatementPacka
 		initEClass(returnStatementEClass, ReturnStatement.class, "ReturnStatement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(conditionalSignalAssignmentStatementEClass, ConditionalSignalAssignmentStatement.class, "ConditionalSignalAssignmentStatement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getConditionalSignalAssignmentStatement_Waveform(), this.getConditionalWaveform(), null, "waveform", null, 0, -1, ConditionalSignalAssignmentStatement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getConditionalSignalAssignmentStatement_Waveform(), theExpressionPackage.getExpression(), null, "waveform", null, 0, -1, ConditionalSignalAssignmentStatement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(selectedSignalAssignmentStatementEClass, SelectedSignalAssignmentStatement.class, "SelectedSignalAssignmentStatement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getSelectedSignalAssignmentStatement_Selected(), theExpressionPackage.getExpression(), null, "selected", null, 0, 1, SelectedSignalAssignmentStatement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(sequentialSignalAssignmentStatementEClass, SequentialSignalAssignmentStatement.class, "SequentialSignalAssignmentStatement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getSequentialSignalAssignmentStatement_Waveform(), theExpressionPackage.getExpression(), null, "waveform", null, 0, -1, SequentialSignalAssignmentStatement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSequentialSignalAssignmentStatement_Waveform(), theExpressionPackage.getExpression(), null, "waveform", null, 0, 1, SequentialSignalAssignmentStatement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(signalAssignmentStatementEClass, SignalAssignmentStatement.class, "SignalAssignmentStatement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSignalAssignmentStatement_Postponed(), ecorePackage.getEBoolean(), "postponed", null, 0, 1, SignalAssignmentStatement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1917,10 +1861,6 @@ public class StatementPackageImpl extends EPackageImpl implements StatementPacka
 
 		initEClass(statementEClass, Statement.class, "Statement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getStatement_Label(), ecorePackage.getEString(), "label", null, 0, 1, Statement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(conditionalWaveformEClass, ConditionalWaveform.class, "ConditionalWaveform", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getConditionalWaveform_Waveform(), theExpressionPackage.getExpression(), null, "waveform", null, 0, -1, ConditionalWaveform.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getConditionalWaveform_Choice(), theExpressionPackage.getExpression(), null, "choice", null, 0, 1, ConditionalWaveform.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(iterationSchemeEClass, IterationScheme.class, "IterationScheme", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

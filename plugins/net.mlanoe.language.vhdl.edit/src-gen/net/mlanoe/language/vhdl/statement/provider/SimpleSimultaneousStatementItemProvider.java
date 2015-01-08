@@ -239,6 +239,11 @@ public class SimpleSimultaneousStatementItemProvider extends StatementItemProvid
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.SIMPLE_SIMULTANEOUS_STATEMENT__LEFT,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.SIMPLE_SIMULTANEOUS_STATEMENT__LEFT,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -280,6 +285,11 @@ public class SimpleSimultaneousStatementItemProvider extends StatementItemProvid
 			(createChildParameter
 				(StatementPackage.Literals.SIMPLE_SIMULTANEOUS_STATEMENT__LEFT,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.SIMPLE_SIMULTANEOUS_STATEMENT__LEFT,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -379,6 +389,11 @@ public class SimpleSimultaneousStatementItemProvider extends StatementItemProvid
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.SIMPLE_SIMULTANEOUS_STATEMENT__RIGHT,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.SIMPLE_SIMULTANEOUS_STATEMENT__RIGHT,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -420,6 +435,11 @@ public class SimpleSimultaneousStatementItemProvider extends StatementItemProvid
 			(createChildParameter
 				(StatementPackage.Literals.SIMPLE_SIMULTANEOUS_STATEMENT__RIGHT,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.SIMPLE_SIMULTANEOUS_STATEMENT__RIGHT,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -519,6 +539,11 @@ public class SimpleSimultaneousStatementItemProvider extends StatementItemProvid
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.SIMPLE_SIMULTANEOUS_STATEMENT__TOLERANCE,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.SIMPLE_SIMULTANEOUS_STATEMENT__TOLERANCE,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -560,6 +585,11 @@ public class SimpleSimultaneousStatementItemProvider extends StatementItemProvid
 			(createChildParameter
 				(StatementPackage.Literals.SIMPLE_SIMULTANEOUS_STATEMENT__TOLERANCE,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.SIMPLE_SIMULTANEOUS_STATEMENT__TOLERANCE,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

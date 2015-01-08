@@ -28,6 +28,7 @@ import net.mlanoe.language.vhdl.expression.SignExpression;
 import net.mlanoe.language.vhdl.expression.SignatureExpression;
 import net.mlanoe.language.vhdl.expression.SubnatureIndicationExpression;
 import net.mlanoe.language.vhdl.expression.SubtypeIndicationExpression;
+import net.mlanoe.language.vhdl.expression.UnaffectedExpression;
 import net.mlanoe.language.vhdl.expression.UnaryExpression;
 import net.mlanoe.language.vhdl.expression.UnitValueExpression;
 import net.mlanoe.language.vhdl.expression.ValueExpression;
@@ -44,6 +45,12 @@ import org.eclipse.emf.ecore.EObject;
  */
 public class OutlineChildrenExpressionSwitch extends
 		ExpressionSwitch<Iterable<? extends EObject>> {
+
+	@Override
+	public Iterable<? extends EObject> caseUnaffectedExpression(
+			UnaffectedExpression object) {
+		return Collections.emptyList();
+	}
 
 	@Override
 	public Iterable<? extends EObject> caseAddingExpression(

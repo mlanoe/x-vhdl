@@ -7,6 +7,7 @@
  */
 package net.mlanoe.language.vhdl.statement;
 
+import net.mlanoe.language.vhdl.expression.Expression;
 import org.eclipse.emf.common.util.EList;
 
 /**
@@ -28,7 +29,7 @@ import org.eclipse.emf.common.util.EList;
 public interface ConditionalSignalAssignmentStatement extends SignalAssignmentStatement {
 	/**
 	 * Returns the value of the '<em><b>Waveform</b></em>' containment reference list.
-	 * The list contents are of type {@link net.mlanoe.language.vhdl.statement.ConditionalWaveform}.
+	 * The list contents are of type {@link net.mlanoe.language.vhdl.expression.Expression}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Waveform</em>' containment reference list isn't clear,
@@ -40,6 +41,6 @@ public interface ConditionalSignalAssignmentStatement extends SignalAssignmentSt
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<ConditionalWaveform> getWaveform();
+	EList<Expression> getWaveform();
 
 } // ConditionalSignalAssignmentStatement

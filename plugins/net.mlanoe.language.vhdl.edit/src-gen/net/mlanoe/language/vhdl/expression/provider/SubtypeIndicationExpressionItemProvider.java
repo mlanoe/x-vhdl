@@ -168,6 +168,11 @@ public class SubtypeIndicationExpressionItemProvider extends IndicationExpressio
 		newChildDescriptors.add
 			(createChildParameter
 				(VhdlPackage.Literals.NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(VhdlPackage.Literals.NAMED__NAME,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add
@@ -214,6 +219,11 @@ public class SubtypeIndicationExpressionItemProvider extends IndicationExpressio
 			(createChildParameter
 				(ExpressionPackage.Literals.SUBTYPE_INDICATION_EXPRESSION__MARK,
 				 ExpressionFactory.eINSTANCE.createNameExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.SUBTYPE_INDICATION_EXPRESSION__MARK,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

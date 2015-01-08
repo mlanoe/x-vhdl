@@ -170,6 +170,11 @@ public class UnconstrainedArrayNatureDefinitionItemProvider extends ArrayNatureD
 		newChildDescriptors.add
 			(createChildParameter
 				(NaturePackage.Literals.UNCONSTRAINED_ARRAY_NATURE_DEFINITION__INDEX,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(NaturePackage.Literals.UNCONSTRAINED_ARRAY_NATURE_DEFINITION__INDEX,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add

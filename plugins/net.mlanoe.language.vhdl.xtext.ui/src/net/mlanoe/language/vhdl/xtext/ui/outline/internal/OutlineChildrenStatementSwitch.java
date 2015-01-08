@@ -17,7 +17,6 @@ import net.mlanoe.language.vhdl.statement.CaseAlternative;
 import net.mlanoe.language.vhdl.statement.CaseStatement;
 import net.mlanoe.language.vhdl.statement.ComponentInstantiationStatement;
 import net.mlanoe.language.vhdl.statement.ConditionalSignalAssignmentStatement;
-import net.mlanoe.language.vhdl.statement.ConditionalWaveform;
 import net.mlanoe.language.vhdl.statement.ConfigurationInstantiationStatement;
 import net.mlanoe.language.vhdl.statement.DelayMechanism;
 import net.mlanoe.language.vhdl.statement.EntityInstantiationStatement;
@@ -217,12 +216,6 @@ public class OutlineChildrenStatementSwitch extends
 	@Override
 	public Iterable<? extends EObject> caseNextStatement(NextStatement object) {
 		return Collections.emptyList();
-	}
-
-	@Override
-	public Iterable<? extends EObject> caseConditionalWaveform(
-			ConditionalWaveform object) {
-		return object.eContents();
 	}
 
 	@Override

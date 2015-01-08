@@ -200,7 +200,7 @@ public interface ExpressionPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getMultiExpression()
 	 * @generated
 	 */
-	int MULTI_EXPRESSION = 31;
+	int MULTI_EXPRESSION = 32;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -385,7 +385,7 @@ public interface ExpressionPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getValueExpression()
 	 * @generated
 	 */
-	int VALUE_EXPRESSION = 29;
+	int VALUE_EXPRESSION = 30;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1427,6 +1427,34 @@ public interface ExpressionPackage extends EPackage {
 	int UNIT_VALUE_EXPRESSION_FEATURE_COUNT = VALUE_EXPRESSION_FEATURE_COUNT + 1;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.UnaffectedExpressionImpl <em>Unaffected Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.UnaffectedExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getUnaffectedExpression()
+	 * @generated
+	 */
+	int UNAFFECTED_EXPRESSION = 29;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNAFFECTED_EXPRESSION__ID = EXPRESSION__ID;
+
+	/**
+	 * The number of structural features of the '<em>Unaffected Expression</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNAFFECTED_EXPRESSION_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.WaveformExpressionImpl <em>Waveform Expression</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1434,7 +1462,7 @@ public interface ExpressionPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getWaveformExpression()
 	 * @generated
 	 */
-	int WAVEFORM_EXPRESSION = 30;
+	int WAVEFORM_EXPRESSION = 31;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1480,7 +1508,7 @@ public interface ExpressionPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getUnaryOperator()
 	 * @generated
 	 */
-	int UNARY_OPERATOR = 32;
+	int UNARY_OPERATOR = 33;
 
 	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.MultiplyingOperator <em>Multiplying Operator</em>}' enum.
@@ -1490,7 +1518,7 @@ public interface ExpressionPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getMultiplyingOperator()
 	 * @generated
 	 */
-	int MULTIPLYING_OPERATOR = 33;
+	int MULTIPLYING_OPERATOR = 34;
 
 	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.ShiftOperator <em>Shift Operator</em>}' enum.
@@ -1500,7 +1528,7 @@ public interface ExpressionPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getShiftOperator()
 	 * @generated
 	 */
-	int SHIFT_OPERATOR = 34;
+	int SHIFT_OPERATOR = 35;
 
 	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.RelationalOperator <em>Relational Operator</em>}' enum.
@@ -1510,7 +1538,7 @@ public interface ExpressionPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getRelationalOperator()
 	 * @generated
 	 */
-	int RELATIONAL_OPERATOR = 35;
+	int RELATIONAL_OPERATOR = 36;
 
 	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.LogicalOperator <em>Logical Operator</em>}' enum.
@@ -1520,7 +1548,7 @@ public interface ExpressionPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getLogicalOperator()
 	 * @generated
 	 */
-	int LOGICAL_OPERATOR = 36;
+	int LOGICAL_OPERATOR = 37;
 
 	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.AddingOperator <em>Adding Operator</em>}' enum.
@@ -1530,7 +1558,7 @@ public interface ExpressionPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getAddingOperator()
 	 * @generated
 	 */
-	int ADDING_OPERATOR = 37;
+	int ADDING_OPERATOR = 38;
 
 	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.Sign <em>Sign</em>}' enum.
@@ -1540,7 +1568,7 @@ public interface ExpressionPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getSign()
 	 * @generated
 	 */
-	int SIGN = 38;
+	int SIGN = 39;
 
 	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.RangeDirection <em>Range Direction</em>}' enum.
@@ -1550,7 +1578,7 @@ public interface ExpressionPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getRangeDirection()
 	 * @generated
 	 */
-	int RANGE_DIRECTION = 39;
+	int RANGE_DIRECTION = 40;
 
 
 	/**
@@ -2106,6 +2134,16 @@ public interface ExpressionPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getUnitValueExpression_Unit();
+
+	/**
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.expression.UnaffectedExpression <em>Unaffected Expression</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Unaffected Expression</em>'.
+	 * @see net.mlanoe.language.vhdl.expression.UnaffectedExpression
+	 * @generated
+	 */
+	EClass getUnaffectedExpression();
 
 	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.expression.ValueExpression <em>Value Expression</em>}'.
@@ -2764,6 +2802,16 @@ public interface ExpressionPackage extends EPackage {
 		 * @generated
 		 */
 		EReference UNIT_VALUE_EXPRESSION__UNIT = eINSTANCE.getUnitValueExpression_Unit();
+
+		/**
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.expression.impl.UnaffectedExpressionImpl <em>Unaffected Expression</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.expression.impl.UnaffectedExpressionImpl
+		 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getUnaffectedExpression()
+		 * @generated
+		 */
+		EClass UNAFFECTED_EXPRESSION = eINSTANCE.getUnaffectedExpression();
 
 		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.expression.impl.ValueExpressionImpl <em>Value Expression</em>}' class.

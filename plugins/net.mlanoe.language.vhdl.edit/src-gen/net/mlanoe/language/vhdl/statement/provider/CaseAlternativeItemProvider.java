@@ -243,6 +243,11 @@ public class CaseAlternativeItemProvider extends VhdlObjectItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.CASE_ALTERNATIVE__CHOICE,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CASE_ALTERNATIVE__CHOICE,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -284,6 +289,11 @@ public class CaseAlternativeItemProvider extends VhdlObjectItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.CASE_ALTERNATIVE__CHOICE,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CASE_ALTERNATIVE__CHOICE,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

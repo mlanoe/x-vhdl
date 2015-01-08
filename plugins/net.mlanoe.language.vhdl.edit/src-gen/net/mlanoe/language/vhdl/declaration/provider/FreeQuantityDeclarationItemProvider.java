@@ -179,6 +179,11 @@ public class FreeQuantityDeclarationItemProvider extends QuantityDeclarationItem
 		newChildDescriptors.add
 			(createChildParameter
 				(VhdlPackage.Literals.MULTI_NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(VhdlPackage.Literals.MULTI_NAMED__NAME,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add
@@ -225,6 +230,11 @@ public class FreeQuantityDeclarationItemProvider extends QuantityDeclarationItem
 			(createChildParameter
 				(TypePackage.Literals.TYPED__TYPE,
 				 ExpressionFactory.eINSTANCE.createNameExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TypePackage.Literals.TYPED__TYPE,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -344,6 +354,11 @@ public class FreeQuantityDeclarationItemProvider extends QuantityDeclarationItem
 		newChildDescriptors.add
 			(createChildParameter
 				(DeclarationPackage.Literals.FREE_QUANTITY_DECLARATION__QUANTITY,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.FREE_QUANTITY_DECLARATION__QUANTITY,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -385,6 +400,11 @@ public class FreeQuantityDeclarationItemProvider extends QuantityDeclarationItem
 			(createChildParameter
 				(DeclarationPackage.Literals.FREE_QUANTITY_DECLARATION__QUANTITY,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.FREE_QUANTITY_DECLARATION__QUANTITY,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

@@ -250,7 +250,7 @@ public class VhdlFormatter extends AbstractDeclarativeFormatter {
 		c.setLinewrap().after(getSequentialSignalAssignmentStatementAccess().getSemicolonKeyword_7());
 		c.setLinewrap().after(getConditionalSignalAssignmentStatementAccess().getSemicolonKeyword_8());
 		c.setLinewrap().after(getSelectedSignalAssignmentStatementAccess().getSemicolonKeyword_11());
-		c.setLinewrap().after(getVariableAssignmentStatementAccess().getSemicolonKeyword_4());
+		c.setLinewrap().after(getVariableAssignmentStatementAccess().getSemicolonKeyword_2());
 		
 		/* signal declaration 
 		 * constant declaration

@@ -8,18 +8,13 @@
 package net.mlanoe.language.vhdl.statement.impl;
 
 import java.util.Collection;
-
+import net.mlanoe.language.vhdl.expression.Expression;
 import net.mlanoe.language.vhdl.statement.ConditionalSignalAssignmentStatement;
-import net.mlanoe.language.vhdl.statement.ConditionalWaveform;
 import net.mlanoe.language.vhdl.statement.StatementPackage;
-
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -45,7 +40,7 @@ public class ConditionalSignalAssignmentStatementImpl extends SignalAssignmentSt
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<ConditionalWaveform> waveform;
+	protected EList<Expression> waveform;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -71,9 +66,9 @@ public class ConditionalSignalAssignmentStatementImpl extends SignalAssignmentSt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ConditionalWaveform> getWaveform() {
+	public EList<Expression> getWaveform() {
 		if (waveform == null) {
-			waveform = new EObjectContainmentEList<ConditionalWaveform>(ConditionalWaveform.class, this, StatementPackage.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM);
+			waveform = new EObjectContainmentEList<Expression>(Expression.class, this, StatementPackage.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM);
 		}
 		return waveform;
 	}
@@ -117,7 +112,7 @@ public class ConditionalSignalAssignmentStatementImpl extends SignalAssignmentSt
 		switch (featureID) {
 			case StatementPackage.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM:
 				getWaveform().clear();
-				getWaveform().addAll((Collection<? extends ConditionalWaveform>)newValue);
+				getWaveform().addAll((Collection<? extends Expression>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);

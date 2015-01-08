@@ -31,6 +31,7 @@ import net.mlanoe.language.vhdl.expression.SignatureExpression;
 import net.mlanoe.language.vhdl.expression.StringExpression;
 import net.mlanoe.language.vhdl.expression.SubnatureIndicationExpression;
 import net.mlanoe.language.vhdl.expression.SubtypeIndicationExpression;
+import net.mlanoe.language.vhdl.expression.UnaffectedExpression;
 import net.mlanoe.language.vhdl.expression.UnaryExpression;
 import net.mlanoe.language.vhdl.expression.UnitValueExpression;
 import net.mlanoe.language.vhdl.expression.ValueExpression;
@@ -45,6 +46,11 @@ import net.mlanoe.language.vhdl.xtext.ui.outline.OutlineTextGenerator;
  *
  */
 public class OutlineTextExpressionSwitch extends ExpressionSwitch<String> {
+
+	@Override
+	public String caseUnaffectedExpression(UnaffectedExpression object) {
+		return "unaffected";
+	}
 
 	@Override
 	public String caseAddingExpression(AddingExpression object) {

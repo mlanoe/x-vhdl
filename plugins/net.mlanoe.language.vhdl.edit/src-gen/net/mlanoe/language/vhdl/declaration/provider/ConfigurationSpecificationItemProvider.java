@@ -184,6 +184,11 @@ public class ConfigurationSpecificationItemProvider extends DeclarationItemProvi
 		newChildDescriptors.add
 			(createChildParameter
 				(DeclarationPackage.Literals.CONFIGURATION_SPECIFICATION__LIST,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.CONFIGURATION_SPECIFICATION__LIST,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add
@@ -230,6 +235,11 @@ public class ConfigurationSpecificationItemProvider extends DeclarationItemProvi
 			(createChildParameter
 				(DeclarationPackage.Literals.CONFIGURATION_SPECIFICATION__COMPONENT,
 				 ExpressionFactory.eINSTANCE.createNameExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.CONFIGURATION_SPECIFICATION__COMPONENT,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -284,6 +294,11 @@ public class ConfigurationSpecificationItemProvider extends DeclarationItemProvi
 		newChildDescriptors.add
 			(createChildParameter
 				(DeclarationPackage.Literals.CONFIGURATION_SPECIFICATION__ENTITY,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.CONFIGURATION_SPECIFICATION__ENTITY,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add
@@ -325,6 +340,11 @@ public class ConfigurationSpecificationItemProvider extends DeclarationItemProvi
 			(createChildParameter
 				(DeclarationPackage.Literals.CONFIGURATION_SPECIFICATION__CONFIGURATION,
 				 ExpressionFactory.eINSTANCE.createNameExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.CONFIGURATION_SPECIFICATION__CONFIGURATION,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

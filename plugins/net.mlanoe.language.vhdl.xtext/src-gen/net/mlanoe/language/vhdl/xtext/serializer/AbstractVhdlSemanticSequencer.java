@@ -74,6 +74,7 @@ import net.mlanoe.language.vhdl.expression.SignatureExpression;
 import net.mlanoe.language.vhdl.expression.StringExpression;
 import net.mlanoe.language.vhdl.expression.SubnatureIndicationExpression;
 import net.mlanoe.language.vhdl.expression.SubtypeIndicationExpression;
+import net.mlanoe.language.vhdl.expression.UnaffectedExpression;
 import net.mlanoe.language.vhdl.expression.UnaryExpression;
 import net.mlanoe.language.vhdl.expression.UnitValueExpression;
 import net.mlanoe.language.vhdl.expression.ValueExpression;
@@ -92,7 +93,6 @@ import net.mlanoe.language.vhdl.statement.CaseAlternative;
 import net.mlanoe.language.vhdl.statement.CaseStatement;
 import net.mlanoe.language.vhdl.statement.ComponentInstantiationStatement;
 import net.mlanoe.language.vhdl.statement.ConditionalSignalAssignmentStatement;
-import net.mlanoe.language.vhdl.statement.ConditionalWaveform;
 import net.mlanoe.language.vhdl.statement.ConfigurationInstantiationStatement;
 import net.mlanoe.language.vhdl.statement.EntityInstantiationStatement;
 import net.mlanoe.language.vhdl.statement.ExitStatement;
@@ -491,19 +491,24 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				if(context == grammarAccess.getChoiceRule() ||
 				   context == grammarAccess.getChoicesRule() ||
 				   context == grammarAccess.getChoicesAccess().getMultiExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
 				   context == grammarAccess.getConstraintRule() ||
 				   context == grammarAccess.getExpressionRule() ||
 				   context == grammarAccess.getExpressionAccess().getLogicalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getParameterRule() ||
 				   context == grammarAccess.getRangeRule() ||
 				   context == grammarAccess.getRangeConstraintRule() ||
+				   context == grammarAccess.getRangeAccess().getRangeExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getRelationRule() ||
 				   context == grammarAccess.getRelationAccess().getRelationalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getShiftExpressionRule() ||
 				   context == grammarAccess.getShiftExpressionAccess().getShiftExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getSimpleExpressionRule() ||
 				   context == grammarAccess.getWaveformRule() ||
-				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0()) {
+				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformsRule() ||
+				   context == grammarAccess.getWaveformsAccess().getMultiExpressionExpressionAction_1_1_0()) {
 					sequence_SimpleExpression(context, (AddingExpression) semanticObject); 
 					return; 
 				}
@@ -521,6 +526,8 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getChoiceRule() ||
 				   context == grammarAccess.getChoicesRule() ||
 				   context == grammarAccess.getChoicesAccess().getMultiExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
 				   context == grammarAccess.getConstraintRule() ||
 				   context == grammarAccess.getExpressionRule() ||
 				   context == grammarAccess.getExpressionAccess().getLogicalExpressionLeftAction_1_0() ||
@@ -531,6 +538,7 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getPrimaryRule() ||
 				   context == grammarAccess.getRangeRule() ||
 				   context == grammarAccess.getRangeConstraintRule() ||
+				   context == grammarAccess.getRangeAccess().getRangeExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getRelationRule() ||
 				   context == grammarAccess.getRelationAccess().getRelationalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getShiftExpressionRule() ||
@@ -541,7 +549,9 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getTermExpressionRule() ||
 				   context == grammarAccess.getTermExpressionAccess().getMultiplyingExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getWaveformRule() ||
-				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0()) {
+				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformsRule() ||
+				   context == grammarAccess.getWaveformsAccess().getMultiExpressionExpressionAction_1_1_0()) {
 					sequence_Aggregate(context, (AggregateExpression) semanticObject); 
 					return; 
 				}
@@ -554,6 +564,8 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getChoiceRule() ||
 				   context == grammarAccess.getChoicesRule() ||
 				   context == grammarAccess.getChoicesAccess().getMultiExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
 				   context == grammarAccess.getConstraintRule() ||
 				   context == grammarAccess.getDiscreteRangeRule() ||
 				   context == grammarAccess.getExpressionRule() ||
@@ -580,6 +592,7 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getPrimaryRule() ||
 				   context == grammarAccess.getRangeRule() ||
 				   context == grammarAccess.getRangeConstraintRule() ||
+				   context == grammarAccess.getRangeAccess().getRangeExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getRelationRule() ||
 				   context == grammarAccess.getRelationAccess().getRelationalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getSelectedNameRule() ||
@@ -594,7 +607,9 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getTermExpressionRule() ||
 				   context == grammarAccess.getTermExpressionAccess().getMultiplyingExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getWaveformRule() ||
-				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0()) {
+				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformsRule() ||
+				   context == grammarAccess.getWaveformsAccess().getMultiExpressionExpressionAction_1_1_0()) {
 					sequence_All(context, (AllExpression) semanticObject); 
 					return; 
 				}
@@ -604,6 +619,8 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getChoiceRule() ||
 				   context == grammarAccess.getChoicesRule() ||
 				   context == grammarAccess.getChoicesAccess().getMultiExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
 				   context == grammarAccess.getConstraintRule() ||
 				   context == grammarAccess.getExpressionRule() ||
 				   context == grammarAccess.getExpressionAccess().getLogicalExpressionLeftAction_1_0() ||
@@ -613,6 +630,7 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getPrimaryRule() ||
 				   context == grammarAccess.getRangeRule() ||
 				   context == grammarAccess.getRangeConstraintRule() ||
+				   context == grammarAccess.getRangeAccess().getRangeExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getRelationRule() ||
 				   context == grammarAccess.getRelationAccess().getRelationalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getShiftExpressionRule() ||
@@ -622,13 +640,19 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getTermExpressionRule() ||
 				   context == grammarAccess.getTermExpressionAccess().getMultiplyingExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getWaveformRule() ||
-				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0()) {
+				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformsRule() ||
+				   context == grammarAccess.getWaveformsAccess().getMultiExpressionExpressionAction_1_1_0()) {
 					sequence_AllocatorExpression(context, (AllocatorExpression) semanticObject); 
 					return; 
 				}
 				else break;
 			case ExpressionPackage.ASSOCIATION_EXPRESSION:
-				if(context == grammarAccess.getParameterRule()) {
+				if(context == grammarAccess.getConditionalWaveformRule()) {
+					sequence_ConditionalWaveform(context, (AssociationExpression) semanticObject); 
+					return; 
+				}
+				else if(context == grammarAccess.getParameterRule()) {
 					sequence_Parameter(context, (AssociationExpression) semanticObject); 
 					return; 
 				}
@@ -645,6 +669,8 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getChoiceRule() ||
 				   context == grammarAccess.getChoicesRule() ||
 				   context == grammarAccess.getChoicesAccess().getMultiExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
 				   context == grammarAccess.getConstraintRule() ||
 				   context == grammarAccess.getExpressionRule() ||
 				   context == grammarAccess.getExpressionAccess().getLogicalExpressionLeftAction_1_0() ||
@@ -654,6 +680,7 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getPrimaryRule() ||
 				   context == grammarAccess.getRangeRule() ||
 				   context == grammarAccess.getRangeConstraintRule() ||
+				   context == grammarAccess.getRangeAccess().getRangeExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getRelationRule() ||
 				   context == grammarAccess.getRelationAccess().getRelationalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getShiftExpressionRule() ||
@@ -663,7 +690,9 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getTermExpressionRule() ||
 				   context == grammarAccess.getTermExpressionAccess().getMultiplyingExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getWaveformRule() ||
-				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0()) {
+				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformsRule() ||
+				   context == grammarAccess.getWaveformsAccess().getMultiExpressionExpressionAction_1_1_0()) {
 					sequence_BitStringName(context, (BitStringExpression) semanticObject); 
 					return; 
 				}
@@ -677,6 +706,8 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getChoiceRule() ||
 				   context == grammarAccess.getChoicesRule() ||
 				   context == grammarAccess.getChoicesAccess().getMultiExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
 				   context == grammarAccess.getConstraintRule() ||
 				   context == grammarAccess.getEnumerationLiteralRule() ||
 				   context == grammarAccess.getExpressionRule() ||
@@ -691,6 +722,7 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getPrimaryRule() ||
 				   context == grammarAccess.getRangeRule() ||
 				   context == grammarAccess.getRangeConstraintRule() ||
+				   context == grammarAccess.getRangeAccess().getRangeExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getRelationRule() ||
 				   context == grammarAccess.getRelationAccess().getRelationalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getSelectedNameRule() ||
@@ -701,7 +733,9 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getTermExpressionRule() ||
 				   context == grammarAccess.getTermExpressionAccess().getMultiplyingExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getWaveformRule() ||
-				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0()) {
+				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformsRule() ||
+				   context == grammarAccess.getWaveformsAccess().getMultiExpressionExpressionAction_1_1_0()) {
 					sequence_CharacterName(context, (CharacterExpression) semanticObject); 
 					return; 
 				}
@@ -718,6 +752,8 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getChoiceRule() ||
 				   context == grammarAccess.getChoicesRule() ||
 				   context == grammarAccess.getChoicesAccess().getMultiExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
 				   context == grammarAccess.getConstraintRule() ||
 				   context == grammarAccess.getDesignatorNameRule() ||
 				   context == grammarAccess.getDiscreteRangeRule() ||
@@ -749,6 +785,7 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getPrimaryRule() ||
 				   context == grammarAccess.getRangeRule() ||
 				   context == grammarAccess.getRangeConstraintRule() ||
+				   context == grammarAccess.getRangeAccess().getRangeExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getRelationRule() ||
 				   context == grammarAccess.getRelationAccess().getRelationalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getSelectedNameRule() ||
@@ -763,17 +800,23 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getTermExpressionRule() ||
 				   context == grammarAccess.getTermExpressionAccess().getMultiplyingExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getWaveformRule() ||
-				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0()) {
+				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformsRule() ||
+				   context == grammarAccess.getWaveformsAccess().getMultiExpressionExpressionAction_1_1_0()) {
 					sequence_IdentifierName(context, (IdentifierExpression) semanticObject); 
 					return; 
 				}
 				else break;
 			case ExpressionPackage.LOGICAL_EXPRESSION:
-				if(context == grammarAccess.getExpressionRule() ||
+				if(context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getExpressionRule() ||
 				   context == grammarAccess.getExpressionAccess().getLogicalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getParameterRule() ||
 				   context == grammarAccess.getWaveformRule() ||
-				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0()) {
+				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformsRule() ||
+				   context == grammarAccess.getWaveformsAccess().getMultiExpressionExpressionAction_1_1_0()) {
 					sequence_Expression(context, (LogicalExpression) semanticObject); 
 					return; 
 				}
@@ -788,6 +831,12 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 					sequence_IndexConstraint(context, (MultiExpression) semanticObject); 
 					return; 
 				}
+				else if(context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformsRule()) {
+					sequence_Waveforms(context, (MultiExpression) semanticObject); 
+					return; 
+				}
 				else break;
 			case ExpressionPackage.MULTIPLYING_EXPRESSION:
 				if(context == grammarAccess.getSignTermExpressionRule() ||
@@ -799,19 +848,24 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				else if(context == grammarAccess.getChoiceRule() ||
 				   context == grammarAccess.getChoicesRule() ||
 				   context == grammarAccess.getChoicesAccess().getMultiExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
 				   context == grammarAccess.getConstraintRule() ||
 				   context == grammarAccess.getExpressionRule() ||
 				   context == grammarAccess.getExpressionAccess().getLogicalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getParameterRule() ||
 				   context == grammarAccess.getRangeRule() ||
 				   context == grammarAccess.getRangeConstraintRule() ||
+				   context == grammarAccess.getRangeAccess().getRangeExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getRelationRule() ||
 				   context == grammarAccess.getRelationAccess().getRelationalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getShiftExpressionRule() ||
 				   context == grammarAccess.getShiftExpressionAccess().getShiftExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getSimpleExpressionRule() ||
 				   context == grammarAccess.getWaveformRule() ||
-				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0()) {
+				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformsRule() ||
+				   context == grammarAccess.getWaveformsAccess().getMultiExpressionExpressionAction_1_1_0()) {
 					sequence_SignTermExpression_TermExpression(context, (MultiplyingExpression) semanticObject); 
 					return; 
 				}
@@ -826,6 +880,8 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				if(context == grammarAccess.getChoiceRule() ||
 				   context == grammarAccess.getChoicesRule() ||
 				   context == grammarAccess.getChoicesAccess().getMultiExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
 				   context == grammarAccess.getConstraintRule() ||
 				   context == grammarAccess.getDiscreteRangeRule() ||
 				   context == grammarAccess.getExpressionRule() ||
@@ -839,6 +895,7 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getPrimaryRule() ||
 				   context == grammarAccess.getRangeRule() ||
 				   context == grammarAccess.getRangeConstraintRule() ||
+				   context == grammarAccess.getRangeAccess().getRangeExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getRelationRule() ||
 				   context == grammarAccess.getRelationAccess().getRelationalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getShiftExpressionRule() ||
@@ -850,7 +907,9 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getTermExpressionRule() ||
 				   context == grammarAccess.getTermExpressionAccess().getMultiplyingExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getWaveformRule() ||
-				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0()) {
+				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformsRule() ||
+				   context == grammarAccess.getWaveformsAccess().getMultiExpressionExpressionAction_1_1_0()) {
 					sequence_NameExpression(context, (NameExpression) semanticObject); 
 					return; 
 				}
@@ -872,6 +931,8 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				if(context == grammarAccess.getChoiceRule() ||
 				   context == grammarAccess.getChoicesRule() ||
 				   context == grammarAccess.getChoicesAccess().getMultiExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
 				   context == grammarAccess.getConstraintRule() ||
 				   context == grammarAccess.getExpressionRule() ||
 				   context == grammarAccess.getExpressionAccess().getLogicalExpressionLeftAction_1_0() ||
@@ -882,6 +943,7 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getPrimaryRule() ||
 				   context == grammarAccess.getRangeRule() ||
 				   context == grammarAccess.getRangeConstraintRule() ||
+				   context == grammarAccess.getRangeAccess().getRangeExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getRelationRule() ||
 				   context == grammarAccess.getRelationAccess().getRelationalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getShiftExpressionRule() ||
@@ -891,7 +953,9 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getTermExpressionRule() ||
 				   context == grammarAccess.getTermExpressionAccess().getMultiplyingExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getWaveformRule() ||
-				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0()) {
+				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformsRule() ||
+				   context == grammarAccess.getWaveformsAccess().getMultiExpressionExpressionAction_1_1_0()) {
 					sequence_NullExpression(context, (NullExpression) semanticObject); 
 					return; 
 				}
@@ -910,6 +974,8 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getChoiceRule() ||
 				   context == grammarAccess.getChoicesRule() ||
 				   context == grammarAccess.getChoicesAccess().getMultiExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
 				   context == grammarAccess.getConstraintRule() ||
 				   context == grammarAccess.getDiscreteRangeRule() ||
 				   context == grammarAccess.getExpressionRule() ||
@@ -936,6 +1002,7 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getPrimaryRule() ||
 				   context == grammarAccess.getRangeRule() ||
 				   context == grammarAccess.getRangeConstraintRule() ||
+				   context == grammarAccess.getRangeAccess().getRangeExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getRelationRule() ||
 				   context == grammarAccess.getRelationAccess().getRelationalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getShiftExpressionRule() ||
@@ -949,7 +1016,9 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getTermExpressionRule() ||
 				   context == grammarAccess.getTermExpressionAccess().getMultiplyingExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getWaveformRule() ||
-				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0()) {
+				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformsRule() ||
+				   context == grammarAccess.getWaveformsAccess().getMultiExpressionExpressionAction_1_1_0()) {
 					sequence_Others(context, (OthersExpression) semanticObject); 
 					return; 
 				}
@@ -965,19 +1034,24 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				else if(context == grammarAccess.getChoiceRule() ||
 				   context == grammarAccess.getChoicesRule() ||
 				   context == grammarAccess.getChoicesAccess().getMultiExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
 				   context == grammarAccess.getConstraintRule() ||
 				   context == grammarAccess.getExpressionRule() ||
 				   context == grammarAccess.getExpressionAccess().getLogicalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getParameterRule() ||
 				   context == grammarAccess.getRangeRule() ||
 				   context == grammarAccess.getRangeConstraintRule() ||
+				   context == grammarAccess.getRangeAccess().getRangeExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getRelationRule() ||
 				   context == grammarAccess.getRelationAccess().getRelationalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getShiftExpressionRule() ||
 				   context == grammarAccess.getShiftExpressionAccess().getShiftExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getSimpleExpressionRule() ||
 				   context == grammarAccess.getWaveformRule() ||
-				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0()) {
+				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformsRule() ||
+				   context == grammarAccess.getWaveformsAccess().getMultiExpressionExpressionAction_1_1_0()) {
 					sequence_Factor_SignFactor(context, (PowerExpression) semanticObject); 
 					return; 
 				}
@@ -990,42 +1064,56 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				}
 				else break;
 			case ExpressionPackage.RANGE_EXPRESSION:
-				if(context == grammarAccess.getChoiceRule() ||
+				if(context == grammarAccess.getConstraintRule()) {
+					sequence_Constraint_Range_RangeSpecification(context, (RangeExpression) semanticObject); 
+					return; 
+				}
+				else if(context == grammarAccess.getChoiceRule() ||
 				   context == grammarAccess.getChoicesRule() ||
 				   context == grammarAccess.getChoicesAccess().getMultiExpressionExpressionAction_1_0() ||
-				   context == grammarAccess.getConstraintRule() ||
 				   context == grammarAccess.getDiscreteRangeRule() ||
 				   context == grammarAccess.getIndexConstraintRule() ||
 				   context == grammarAccess.getIndexConstraintAccess().getMultiExpressionExpressionAction_2_0() ||
 				   context == grammarAccess.getNameSuffixRule() ||
-				   context == grammarAccess.getRangeRule() ||
-				   context == grammarAccess.getRangeConstraintRule() ||
 				   context == grammarAccess.getRangeSpecificationRule() ||
 				   context == grammarAccess.getSliceNameRule()) {
 					sequence_RangeSpecification(context, (RangeExpression) semanticObject); 
 					return; 
 				}
+				else if(context == grammarAccess.getRangeRule() ||
+				   context == grammarAccess.getRangeConstraintRule()) {
+					sequence_Range(context, (RangeExpression) semanticObject); 
+					return; 
+				}
 				else break;
 			case ExpressionPackage.RELATIONAL_EXPRESSION:
-				if(context == grammarAccess.getExpressionRule() ||
+				if(context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getExpressionRule() ||
 				   context == grammarAccess.getExpressionAccess().getLogicalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getParameterRule() ||
 				   context == grammarAccess.getRelationRule() ||
 				   context == grammarAccess.getWaveformRule() ||
-				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0()) {
+				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformsRule() ||
+				   context == grammarAccess.getWaveformsAccess().getMultiExpressionExpressionAction_1_1_0()) {
 					sequence_Relation(context, (RelationalExpression) semanticObject); 
 					return; 
 				}
 				else break;
 			case ExpressionPackage.SHIFT_EXPRESSION:
-				if(context == grammarAccess.getExpressionRule() ||
+				if(context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getExpressionRule() ||
 				   context == grammarAccess.getExpressionAccess().getLogicalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getParameterRule() ||
 				   context == grammarAccess.getRelationRule() ||
 				   context == grammarAccess.getRelationAccess().getRelationalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getShiftExpressionRule() ||
 				   context == grammarAccess.getWaveformRule() ||
-				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0()) {
+				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformsRule() ||
+				   context == grammarAccess.getWaveformsAccess().getMultiExpressionExpressionAction_1_1_0()) {
 					sequence_ShiftExpression(context, (ShiftExpression) semanticObject); 
 					return; 
 				}
@@ -1039,12 +1127,15 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				else if(context == grammarAccess.getChoiceRule() ||
 				   context == grammarAccess.getChoicesRule() ||
 				   context == grammarAccess.getChoicesAccess().getMultiExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
 				   context == grammarAccess.getConstraintRule() ||
 				   context == grammarAccess.getExpressionRule() ||
 				   context == grammarAccess.getExpressionAccess().getLogicalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getParameterRule() ||
 				   context == grammarAccess.getRangeRule() ||
 				   context == grammarAccess.getRangeConstraintRule() ||
+				   context == grammarAccess.getRangeAccess().getRangeExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getRelationRule() ||
 				   context == grammarAccess.getRelationAccess().getRelationalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getShiftExpressionRule() ||
@@ -1055,7 +1146,9 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getSimpleExpressionRule() ||
 				   context == grammarAccess.getSimpleExpressionAccess().getAddingExpressionLeftAction_1_1_0() ||
 				   context == grammarAccess.getWaveformRule() ||
-				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0()) {
+				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformsRule() ||
+				   context == grammarAccess.getWaveformsAccess().getMultiExpressionExpressionAction_1_1_0()) {
 					sequence_SignPrimary_SignUnaryExpression(context, (SignExpression) semanticObject); 
 					return; 
 				}
@@ -1084,6 +1177,8 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getChoiceRule() ||
 				   context == grammarAccess.getChoicesRule() ||
 				   context == grammarAccess.getChoicesAccess().getMultiExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
 				   context == grammarAccess.getConstraintRule() ||
 				   context == grammarAccess.getDesignatorNameRule() ||
 				   context == grammarAccess.getDiscreteRangeRule() ||
@@ -1110,6 +1205,7 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getPrimaryRule() ||
 				   context == grammarAccess.getRangeRule() ||
 				   context == grammarAccess.getRangeConstraintRule() ||
+				   context == grammarAccess.getRangeAccess().getRangeExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getRelationRule() ||
 				   context == grammarAccess.getRelationAccess().getRelationalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getSelectedNameRule() ||
@@ -1125,7 +1221,9 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getTermExpressionRule() ||
 				   context == grammarAccess.getTermExpressionAccess().getMultiplyingExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getWaveformRule() ||
-				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0()) {
+				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformsRule() ||
+				   context == grammarAccess.getWaveformsAccess().getMultiExpressionExpressionAction_1_1_0()) {
 					sequence_StringName(context, (StringExpression) semanticObject); 
 					return; 
 				}
@@ -1153,10 +1251,21 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 					return; 
 				}
 				else break;
+			case ExpressionPackage.UNAFFECTED_EXPRESSION:
+				if(context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getUnaffectedRule() ||
+				   context == grammarAccess.getWaveformsRule()) {
+					sequence_Unaffected(context, (UnaffectedExpression) semanticObject); 
+					return; 
+				}
+				else break;
 			case ExpressionPackage.UNARY_EXPRESSION:
 				if(context == grammarAccess.getChoiceRule() ||
 				   context == grammarAccess.getChoicesRule() ||
 				   context == grammarAccess.getChoicesAccess().getMultiExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
 				   context == grammarAccess.getConstraintRule() ||
 				   context == grammarAccess.getExpressionRule() ||
 				   context == grammarAccess.getExpressionAccess().getLogicalExpressionLeftAction_1_0() ||
@@ -1164,6 +1273,7 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getParameterRule() ||
 				   context == grammarAccess.getRangeRule() ||
 				   context == grammarAccess.getRangeConstraintRule() ||
+				   context == grammarAccess.getRangeAccess().getRangeExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getRelationRule() ||
 				   context == grammarAccess.getRelationAccess().getRelationalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getShiftExpressionRule() ||
@@ -1174,7 +1284,9 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getTermExpressionAccess().getMultiplyingExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getUnaryExpressionRule() ||
 				   context == grammarAccess.getWaveformRule() ||
-				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0()) {
+				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformsRule() ||
+				   context == grammarAccess.getWaveformsAccess().getMultiExpressionExpressionAction_1_1_0()) {
 					sequence_UnaryExpression(context, (UnaryExpression) semanticObject); 
 					return; 
 				}
@@ -1183,6 +1295,8 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				if(context == grammarAccess.getChoiceRule() ||
 				   context == grammarAccess.getChoicesRule() ||
 				   context == grammarAccess.getChoicesAccess().getMultiExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
 				   context == grammarAccess.getConstraintRule() ||
 				   context == grammarAccess.getExpressionRule() ||
 				   context == grammarAccess.getExpressionAccess().getLogicalExpressionLeftAction_1_0() ||
@@ -1192,6 +1306,7 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getPrimaryRule() ||
 				   context == grammarAccess.getRangeRule() ||
 				   context == grammarAccess.getRangeConstraintRule() ||
+				   context == grammarAccess.getRangeAccess().getRangeExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getRelationRule() ||
 				   context == grammarAccess.getRelationAccess().getRelationalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getShiftExpressionRule() ||
@@ -1202,7 +1317,9 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getTermExpressionAccess().getMultiplyingExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getValueExpressionRule() ||
 				   context == grammarAccess.getWaveformRule() ||
-				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0()) {
+				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformsRule() ||
+				   context == grammarAccess.getWaveformsAccess().getMultiExpressionExpressionAction_1_1_0()) {
 					sequence_ValueExpression(context, (UnitValueExpression) semanticObject); 
 					return; 
 				}
@@ -1211,6 +1328,8 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				if(context == grammarAccess.getChoiceRule() ||
 				   context == grammarAccess.getChoicesRule() ||
 				   context == grammarAccess.getChoicesAccess().getMultiExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
 				   context == grammarAccess.getConstraintRule() ||
 				   context == grammarAccess.getExpressionRule() ||
 				   context == grammarAccess.getExpressionAccess().getLogicalExpressionLeftAction_1_0() ||
@@ -1220,6 +1339,7 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getPrimaryRule() ||
 				   context == grammarAccess.getRangeRule() ||
 				   context == grammarAccess.getRangeConstraintRule() ||
+				   context == grammarAccess.getRangeAccess().getRangeExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getRelationRule() ||
 				   context == grammarAccess.getRelationAccess().getRelationalExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getShiftExpressionRule() ||
@@ -1230,13 +1350,19 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				   context == grammarAccess.getTermExpressionAccess().getMultiplyingExpressionLeftAction_1_0() ||
 				   context == grammarAccess.getValueExpressionRule() ||
 				   context == grammarAccess.getWaveformRule() ||
-				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0()) {
+				   context == grammarAccess.getWaveformAccess().getWaveformExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformsRule() ||
+				   context == grammarAccess.getWaveformsAccess().getMultiExpressionExpressionAction_1_1_0()) {
 					sequence_ValueExpression(context, (ValueExpression) semanticObject); 
 					return; 
 				}
 				else break;
 			case ExpressionPackage.WAVEFORM_EXPRESSION:
-				if(context == grammarAccess.getWaveformRule()) {
+				if(context == grammarAccess.getConditionalWaveformRule() ||
+				   context == grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0() ||
+				   context == grammarAccess.getWaveformRule() ||
+				   context == grammarAccess.getWaveformsRule() ||
+				   context == grammarAccess.getWaveformsAccess().getMultiExpressionExpressionAction_1_1_0()) {
 					sequence_Waveform(context, (WaveformExpression) semanticObject); 
 					return; 
 				}
@@ -1350,12 +1476,6 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				if(context == grammarAccess.getArchitectureStatementRule() ||
 				   context == grammarAccess.getConditionalSignalAssignmentStatementRule()) {
 					sequence_ConditionalSignalAssignmentStatement(context, (ConditionalSignalAssignmentStatement) semanticObject); 
-					return; 
-				}
-				else break;
-			case StatementPackage.CONDITIONAL_WAVEFORM:
-				if(context == grammarAccess.getConditionalWaveformRule()) {
-					sequence_ConditionalWaveform(context, (ConditionalWaveform) semanticObject); 
 					return; 
 				}
 				else break;
@@ -1497,8 +1617,7 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 				}
 				else break;
 			case StatementPackage.SEQUENTIAL_SIGNAL_ASSIGNMENT_STATEMENT:
-				if(context == grammarAccess.getArchitectureStatementRule() ||
-				   context == grammarAccess.getSequentialSignalAssignmentStatementRule() ||
+				if(context == grammarAccess.getSequentialSignalAssignmentStatementRule() ||
 				   context == grammarAccess.getSequentialStatementRule()) {
 					sequence_SequentialSignalAssignmentStatement(context, (SequentialSignalAssignmentStatement) semanticObject); 
 					return; 
@@ -2045,9 +2164,9 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 	
 	/**
 	 * Constraint:
-	 *     ((waveform+=Waveform waveform+=Waveform*)? choice=Choices)
+	 *     (expression=ConditionalWaveform_AssociationExpression_1_0 choice=Choices)
 	 */
-	protected void sequence_ConditionalWaveform(EObject context, ConditionalWaveform semanticObject) {
+	protected void sequence_ConditionalWaveform(EObject context, AssociationExpression semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -2102,6 +2221,18 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 	 *     (constraint=IndexConstraint type=SubtypeIndication)
 	 */
 	protected void sequence_ConstrainedArrayTypeDefinition(EObject context, ConstrainedArrayTypeDefinition semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (
+	 *         (left=Range_RangeExpression_1_0 direction=RangeDirection right=SimpleExpression) | 
+	 *         (left=SimpleExpression direction=RangeDirection right=SimpleExpression)
+	 *     )
+	 */
+	protected void sequence_Constraint_Range_RangeSpecification(EObject context, RangeExpression semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -2555,7 +2686,7 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 	
 	/**
 	 * Constraint:
-	 *     (range=RangeConstraint primary=Identifier secondary+=PhysicalTypeDefinitionSecondary*)
+	 *     (range=Range primary=Identifier secondary+=PhysicalTypeDefinitionSecondary*)
 	 */
 	protected void sequence_PhysicalTypeDefinition(EObject context, PhysicalTypeDefinition semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -2630,6 +2761,15 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 	 *     (left=SimpleExpression direction=RangeDirection right=SimpleExpression)
 	 */
 	protected void sequence_RangeTypeDefinition(EObject context, RangeTypeDefinition semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (left=Range_RangeExpression_1_0 direction=RangeDirection right=SimpleExpression)
+	 */
+	protected void sequence_Range(EObject context, RangeExpression semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -2741,7 +2881,7 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 	 *         target=Target 
 	 *         guarded?='guarded'? 
 	 *         delay=DelayMechanism? 
-	 *         (waveform+=Waveform waveform+=Waveform*)?
+	 *         waveform=Waveforms
 	 *     )
 	 */
 	protected void sequence_SequentialSignalAssignmentStatement(EObject context, SequentialSignalAssignmentStatement semanticObject) {
@@ -3044,6 +3184,15 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 	
 	/**
 	 * Constraint:
+	 *     {UnaffectedExpression}
+	 */
+	protected void sequence_Unaffected(EObject context, UnaffectedExpression semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
 	 *     (operator=UnaryOperator expression=Primary)
 	 */
 	protected void sequence_UnaryExpression(EObject context, UnaryExpression semanticObject) {
@@ -3128,6 +3277,15 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 	 *     (expression=Waveform_WaveformExpression_1_0 after=Expression)
 	 */
 	protected void sequence_Waveform(EObject context, WaveformExpression semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (expression+=Waveforms_MultiExpression_1_1_0 expression+=Waveform+)
+	 */
+	protected void sequence_Waveforms(EObject context, MultiExpression semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	

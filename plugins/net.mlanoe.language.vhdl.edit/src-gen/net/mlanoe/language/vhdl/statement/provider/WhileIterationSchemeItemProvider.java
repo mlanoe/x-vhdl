@@ -235,6 +235,11 @@ public class WhileIterationSchemeItemProvider extends IterationSchemeItemProvide
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.WHILE_ITERATION_SCHEME__CONDITION,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.WHILE_ITERATION_SCHEME__CONDITION,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -276,6 +281,11 @@ public class WhileIterationSchemeItemProvider extends IterationSchemeItemProvide
 			(createChildParameter
 				(StatementPackage.Literals.WHILE_ITERATION_SCHEME__CONDITION,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.WHILE_ITERATION_SCHEME__CONDITION,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

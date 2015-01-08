@@ -445,6 +445,29 @@ public class ExpressionItemProviderAdapterFactory extends ExpressionAdapterFacto
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link net.mlanoe.language.vhdl.expression.SignatureExpression} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected SignatureExpressionItemProvider signatureExpressionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link net.mlanoe.language.vhdl.expression.SignatureExpression}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createSignatureExpressionAdapter() {
+		if (signatureExpressionItemProvider == null) {
+			signatureExpressionItemProvider = new SignatureExpressionItemProvider(this);
+		}
+
+		return signatureExpressionItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link net.mlanoe.language.vhdl.expression.SignExpression} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -652,6 +675,29 @@ public class ExpressionItemProviderAdapterFactory extends ExpressionAdapterFacto
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link net.mlanoe.language.vhdl.expression.UnaffectedExpression} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected UnaffectedExpressionItemProvider unaffectedExpressionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link net.mlanoe.language.vhdl.expression.UnaffectedExpression}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createUnaffectedExpressionAdapter() {
+		if (unaffectedExpressionItemProvider == null) {
+			unaffectedExpressionItemProvider = new UnaffectedExpressionItemProvider(this);
+		}
+
+		return unaffectedExpressionItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link net.mlanoe.language.vhdl.expression.ValueExpression} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -835,6 +881,7 @@ public class ExpressionItemProviderAdapterFactory extends ExpressionAdapterFacto
 		if (powerExpressionItemProvider != null) powerExpressionItemProvider.dispose();
 		if (relationalExpressionItemProvider != null) relationalExpressionItemProvider.dispose();
 		if (shiftExpressionItemProvider != null) shiftExpressionItemProvider.dispose();
+		if (signatureExpressionItemProvider != null) signatureExpressionItemProvider.dispose();
 		if (signExpressionItemProvider != null) signExpressionItemProvider.dispose();
 		if (unaryExpressionItemProvider != null) unaryExpressionItemProvider.dispose();
 		if (openExpressionItemProvider != null) openExpressionItemProvider.dispose();
@@ -844,6 +891,7 @@ public class ExpressionItemProviderAdapterFactory extends ExpressionAdapterFacto
 		if (characterExpressionItemProvider != null) characterExpressionItemProvider.dispose();
 		if (identifierExpressionItemProvider != null) identifierExpressionItemProvider.dispose();
 		if (unitValueExpressionItemProvider != null) unitValueExpressionItemProvider.dispose();
+		if (unaffectedExpressionItemProvider != null) unaffectedExpressionItemProvider.dispose();
 		if (valueExpressionItemProvider != null) valueExpressionItemProvider.dispose();
 		if (waveformExpressionItemProvider != null) waveformExpressionItemProvider.dispose();
 		if (multiExpressionItemProvider != null) multiExpressionItemProvider.dispose();

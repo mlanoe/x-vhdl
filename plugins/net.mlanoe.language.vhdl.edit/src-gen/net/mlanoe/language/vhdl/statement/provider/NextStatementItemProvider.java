@@ -263,6 +263,11 @@ public class NextStatementItemProvider extends StatementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.NEXT_STATEMENT__WHEN,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.NEXT_STATEMENT__WHEN,
 				 ExpressionFactory.eINSTANCE.createSignExpression()));
 
 		newChildDescriptors.add
@@ -304,6 +309,11 @@ public class NextStatementItemProvider extends StatementItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.NEXT_STATEMENT__WHEN,
 				 ExpressionFactory.eINSTANCE.createUnitValueExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.NEXT_STATEMENT__WHEN,
+				 ExpressionFactory.eINSTANCE.createUnaffectedExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

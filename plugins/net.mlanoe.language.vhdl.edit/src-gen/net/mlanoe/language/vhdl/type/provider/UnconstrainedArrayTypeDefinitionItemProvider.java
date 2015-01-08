@@ -170,6 +170,11 @@ public class UnconstrainedArrayTypeDefinitionItemProvider extends ArrayTypeDefin
 		newChildDescriptors.add
 			(createChildParameter
 				(TypePackage.Literals.UNCONSTRAINED_ARRAY_TYPE_DEFINITION__INDEX,
+				 ExpressionFactory.eINSTANCE.createSignatureExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TypePackage.Literals.UNCONSTRAINED_ARRAY_TYPE_DEFINITION__INDEX,
 				 ExpressionFactory.eINSTANCE.createOthersExpression()));
 
 		newChildDescriptors.add

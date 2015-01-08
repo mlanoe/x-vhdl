@@ -114,7 +114,7 @@
     <eClassifiers xsi:type="ecore:EClass" name="ConditionalSignalAssignmentStatement"
         eSuperTypes="#//statement/SignalAssignmentStatement">
       <eStructuralFeatures xsi:type="ecore:EReference" name="waveform" upperBound="-1"
-          eType="#//statement/ConditionalWaveform" containment="true"/>
+          eType="#//expression/Expression" containment="true"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="SelectedSignalAssignmentStatement"
         eSuperTypes="#//statement/ConditionalSignalAssignmentStatement">
@@ -123,8 +123,8 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="SequentialSignalAssignmentStatement"
         eSuperTypes="#//statement/SignalAssignmentStatement">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="waveform" upperBound="-1"
-          eType="#//expression/Expression" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="waveform" eType="#//expression/Expression"
+          containment="true"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="SignalAssignmentStatement" abstract="true"
         eSuperTypes="#//statement/Statement">
@@ -290,12 +290,6 @@
     <eClassifiers xsi:type="ecore:EClass" name="Statement" abstract="true" eSuperTypes="#//VhdlObject">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="ConditionalWaveform" eSuperTypes="#//VhdlObject">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="waveform" upperBound="-1"
-          eType="#//expression/Expression" containment="true"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="choice" eType="#//expression/Expression"
-          containment="true"/>
-    </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="IterationScheme" eSuperTypes="#//VhdlObject"/>
     <eClassifiers xsi:type="ecore:EClass" name="WhileIterationScheme" eSuperTypes="#//statement/IterationScheme">
       <eStructuralFeatures xsi:type="ecore:EReference" name="condition" eType="#//expression/Expression"
@@ -390,8 +384,7 @@
     <eClassifiers xsi:type="ecore:EClass" name="ShiftExpression" eSuperTypes="#//expression/BinaryExpression">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="operator" eType="#//expression/ShiftOperator"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="SignatureExpression" abstract="true"
-        eSuperTypes="#//expression/Expression #//Name">
+    <eClassifiers xsi:type="ecore:EClass" name="SignatureExpression" eSuperTypes="#//expression/Expression #//Name">
       <eStructuralFeatures xsi:type="ecore:EReference" name="signature" eType="#//Signature"
           containment="true"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"
@@ -419,6 +412,7 @@
       <eStructuralFeatures xsi:type="ecore:EReference" name="unit" eType="#//Name"
           containment="true"/>
     </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="UnaffectedExpression" eSuperTypes="#//expression/Expression"/>
     <eClassifiers xsi:type="ecore:EClass" name="ValueExpression" eSuperTypes="#//expression/Expression">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eClassifiers>
