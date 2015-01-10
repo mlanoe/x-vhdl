@@ -767,6 +767,29 @@ public class ExpressionItemProviderAdapterFactory extends ExpressionAdapterFacto
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link net.mlanoe.language.vhdl.expression.ConditionalWaveformExpression} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ConditionalWaveformExpressionItemProvider conditionalWaveformExpressionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link net.mlanoe.language.vhdl.expression.ConditionalWaveformExpression}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createConditionalWaveformExpressionAdapter() {
+		if (conditionalWaveformExpressionItemProvider == null) {
+			conditionalWaveformExpressionItemProvider = new ConditionalWaveformExpressionItemProvider(this);
+		}
+
+		return conditionalWaveformExpressionItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -895,6 +918,7 @@ public class ExpressionItemProviderAdapterFactory extends ExpressionAdapterFacto
 		if (valueExpressionItemProvider != null) valueExpressionItemProvider.dispose();
 		if (waveformExpressionItemProvider != null) waveformExpressionItemProvider.dispose();
 		if (multiExpressionItemProvider != null) multiExpressionItemProvider.dispose();
+		if (conditionalWaveformExpressionItemProvider != null) conditionalWaveformExpressionItemProvider.dispose();
 	}
 
 }

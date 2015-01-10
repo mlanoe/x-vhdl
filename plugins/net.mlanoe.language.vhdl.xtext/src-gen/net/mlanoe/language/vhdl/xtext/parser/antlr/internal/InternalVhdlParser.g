@@ -6600,7 +6600,7 @@ ruleConditionalWaveform returns [EObject current=null]
 	}
     {
         $current = forceCreateModelElementAndSet(
-            grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0(),
+            grammarAccess.getConditionalWaveformAccess().getConditionalWaveformExpressionExpressionAction_1_0(),
             $current);
     }
 )

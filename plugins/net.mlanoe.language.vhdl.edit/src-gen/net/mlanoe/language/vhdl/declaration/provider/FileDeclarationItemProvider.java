@@ -415,6 +415,11 @@ public class FileDeclarationItemProvider extends DeclarationItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(DeclarationPackage.Literals.FILE_DECLARATION__OPEN,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(DeclarationPackage.Literals.FILE_DECLARATION__IS,
 				 ExpressionFactory.eINSTANCE.createAddingExpression()));
 
@@ -562,6 +567,11 @@ public class FileDeclarationItemProvider extends DeclarationItemProvider {
 			(createChildParameter
 				(DeclarationPackage.Literals.FILE_DECLARATION__IS,
 				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.FILE_DECLARATION__IS,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
 	}
 
 	/**

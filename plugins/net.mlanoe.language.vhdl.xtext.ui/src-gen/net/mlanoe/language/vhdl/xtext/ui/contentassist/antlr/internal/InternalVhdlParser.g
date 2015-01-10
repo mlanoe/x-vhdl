@@ -20287,11 +20287,11 @@ rule__ConditionalWaveform__Group_1__0__Impl
     }
 :
 (
-{ before(grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0()); }
+{ before(grammarAccess.getConditionalWaveformAccess().getConditionalWaveformExpressionExpressionAction_1_0()); }
 (
 
 )
-{ after(grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0()); }
+{ after(grammarAccess.getConditionalWaveformAccess().getConditionalWaveformExpressionExpressionAction_1_0()); }
 )
 
 ;

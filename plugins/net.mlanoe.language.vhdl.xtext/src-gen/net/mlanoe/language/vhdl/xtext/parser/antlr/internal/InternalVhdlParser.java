@@ -17403,7 +17403,7 @@ public class InternalVhdlParser extends AbstractInternalAntlrParser {
                     if ( state.backtracking==0 ) {
 
                               current = forceCreateModelElementAndSet(
-                                  grammarAccess.getConditionalWaveformAccess().getAssociationExpressionExpressionAction_1_0(),
+                                  grammarAccess.getConditionalWaveformAccess().getConditionalWaveformExpressionExpressionAction_1_0(),
                                   current);
                           
                     }

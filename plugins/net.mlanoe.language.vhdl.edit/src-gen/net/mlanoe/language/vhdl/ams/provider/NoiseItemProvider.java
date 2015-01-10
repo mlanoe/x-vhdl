@@ -291,6 +291,11 @@ public class NoiseItemProvider extends SourceAspectItemProvider {
 			(createChildParameter
 				(AmsPackage.Literals.NOISE__NOISE,
 				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(AmsPackage.Literals.NOISE__NOISE,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
 	}
 
 }

@@ -3463,26 +3463,26 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cWaveformsParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
-		private final Action cAssociationExpressionExpressionAction_1_0 = (Action)cGroup_1.eContents().get(0);
+		private final Action cConditionalWaveformExpressionExpressionAction_1_0 = (Action)cGroup_1.eContents().get(0);
 		private final Keyword cWhenKeyword_1_1 = (Keyword)cGroup_1.eContents().get(1);
 		private final Assignment cChoiceAssignment_1_2 = (Assignment)cGroup_1.eContents().get(2);
 		private final RuleCall cChoiceChoicesParserRuleCall_1_2_0 = (RuleCall)cChoiceAssignment_1_2.eContents().get(0);
 		
 		//ConditionalWaveform returns expression::Expression:
-		//	Waveforms ({expression::AssociationExpression.expression=current} "when" choice=Choices)?;
+		//	Waveforms ({expression::ConditionalWaveformExpression.expression=current} "when" choice=Choices)?;
 		public ParserRule getRule() { return rule; }
 
-		//Waveforms ({expression::AssociationExpression.expression=current} "when" choice=Choices)?
+		//Waveforms ({expression::ConditionalWaveformExpression.expression=current} "when" choice=Choices)?
 		public Group getGroup() { return cGroup; }
 
 		//Waveforms
 		public RuleCall getWaveformsParserRuleCall_0() { return cWaveformsParserRuleCall_0; }
 
-		//({expression::AssociationExpression.expression=current} "when" choice=Choices)?
+		//({expression::ConditionalWaveformExpression.expression=current} "when" choice=Choices)?
 		public Group getGroup_1() { return cGroup_1; }
 
-		//{expression::AssociationExpression.expression=current}
-		public Action getAssociationExpressionExpressionAction_1_0() { return cAssociationExpressionExpressionAction_1_0; }
+		//{expression::ConditionalWaveformExpression.expression=current}
+		public Action getConditionalWaveformExpressionExpressionAction_1_0() { return cConditionalWaveformExpressionExpressionAction_1_0; }
 
 		//"when"
 		public Keyword getWhenKeyword_1_1() { return cWhenKeyword_1_1; }
@@ -11782,7 +11782,7 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//ConditionalWaveform returns expression::Expression:
-	//	Waveforms ({expression::AssociationExpression.expression=current} "when" choice=Choices)?;
+	//	Waveforms ({expression::ConditionalWaveformExpression.expression=current} "when" choice=Choices)?;
 	public ConditionalWaveformElements getConditionalWaveformAccess() {
 		return pConditionalWaveform;
 	}

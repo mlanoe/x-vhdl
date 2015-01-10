@@ -291,6 +291,11 @@ public class SelectedSignalAssignmentStatementItemProvider extends ConditionalSi
 			(createChildParameter
 				(StatementPackage.Literals.SELECTED_SIGNAL_ASSIGNMENT_STATEMENT__SELECTED,
 				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.SELECTED_SIGNAL_ASSIGNMENT_STATEMENT__SELECTED,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
 	}
 
 	/**

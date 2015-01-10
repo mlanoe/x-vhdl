@@ -319,6 +319,11 @@ public class ForIterationSchemeItemProvider extends IterationSchemeItemProvider 
 			(createChildParameter
 				(StatementPackage.Literals.FOR_ITERATION_SCHEME__IN,
 				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.FOR_ITERATION_SCHEME__IN,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
 	}
 
 }

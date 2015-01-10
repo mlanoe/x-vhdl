@@ -297,6 +297,11 @@ public class IndicationExpressionItemProvider extends ExpressionItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(ExpressionPackage.Literals.INDICATION_EXPRESSION__CONSTRAINT,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(ExpressionPackage.Literals.INDICATION_EXPRESSION__TOLERANCE,
 				 ExpressionFactory.eINSTANCE.createAddingExpression()));
 
@@ -447,6 +452,11 @@ public class IndicationExpressionItemProvider extends ExpressionItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(ExpressionPackage.Literals.INDICATION_EXPRESSION__TOLERANCE,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(ExpressionPackage.Literals.INDICATION_EXPRESSION__ACROSS,
 				 ExpressionFactory.eINSTANCE.createAddingExpression()));
 
@@ -594,6 +604,11 @@ public class IndicationExpressionItemProvider extends ExpressionItemProvider {
 			(createChildParameter
 				(ExpressionPackage.Literals.INDICATION_EXPRESSION__ACROSS,
 				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.INDICATION_EXPRESSION__ACROSS,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
 	}
 
 	/**

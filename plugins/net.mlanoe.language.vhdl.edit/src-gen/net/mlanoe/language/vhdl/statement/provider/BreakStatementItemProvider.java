@@ -306,6 +306,11 @@ public class BreakStatementItemProvider extends StatementItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(StatementPackage.Literals.BREAK_STATEMENT__WHEN,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(StatementPackage.Literals.BREAK_STATEMENT__SENSITIVITY,
 				 VhdlFactory.eINSTANCE.createNameList()));
 
