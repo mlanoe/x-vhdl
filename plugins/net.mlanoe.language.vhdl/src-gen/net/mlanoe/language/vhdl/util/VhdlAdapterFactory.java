@@ -32,23 +32,15 @@ import net.mlanoe.language.vhdl.PackageResolvedReference;
 import net.mlanoe.language.vhdl.PortMaps;
 import net.mlanoe.language.vhdl.Ports;
 import net.mlanoe.language.vhdl.Signature;
-import net.mlanoe.language.vhdl.StringNamed;
 import net.mlanoe.language.vhdl.VhdlObject;
 import net.mlanoe.language.vhdl.VhdlPackage;
-
 import net.mlanoe.language.vhdl.configuration.ConfigurationReference;
-
 import net.mlanoe.language.vhdl.declaration.Declaration;
-
 import net.mlanoe.language.vhdl.nature.NatureReference;
-
 import net.mlanoe.language.vhdl.type.TypeReference;
-
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
-
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
-
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -214,10 +206,6 @@ public class VhdlAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseCallResolvedReference(CallResolvedReference object) {
 				return createCallResolvedReferenceAdapter();
-			}
-			@Override
-			public Adapter caseStringNamed(StringNamed object) {
-				return createStringNamedAdapter();
 			}
 			@Override
 			public Adapter caseDeclaration(Declaration object) {
@@ -630,20 +618,6 @@ public class VhdlAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createCallResolvedReferenceAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.StringNamed <em>String Named</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see net.mlanoe.language.vhdl.StringNamed
-	 * @generated
-	 */
-	public Adapter createStringNamedAdapter() {
 		return null;
 	}
 

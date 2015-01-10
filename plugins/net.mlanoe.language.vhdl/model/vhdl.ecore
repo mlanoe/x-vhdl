@@ -99,9 +99,6 @@
   <eClassifiers xsi:type="ecore:EClass" name="CallResolvedReference" eSuperTypes="#//CallReference">
     <eStructuralFeatures xsi:type="ecore:EReference" name="call" eType="#//declaration/SubprogramDeclaration"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="StringNamed" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-  </eClassifiers>
   <eSubpackages name="statement" nsURI="http://mlanoe.net/language/vhdl/statement/1.0"
       nsPrefix="statement">
     <eClassifiers xsi:type="ecore:EClass" name="ReportStatement" eSuperTypes="#//statement/Statement">

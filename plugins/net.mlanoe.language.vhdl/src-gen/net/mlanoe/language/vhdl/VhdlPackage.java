@@ -1044,35 +1044,6 @@ public interface VhdlPackage extends EPackage {
 	int CALL_RESOLVED_REFERENCE_FEATURE_COUNT = CALL_REFERENCE_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link net.mlanoe.language.vhdl.impl.StringNamedImpl <em>String Named</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see net.mlanoe.language.vhdl.impl.StringNamedImpl
-	 * @see net.mlanoe.language.vhdl.impl.VhdlPackageImpl#getStringNamed()
-	 * @generated
-	 */
-	int STRING_NAMED = 27;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRING_NAMED__NAME = 0;
-
-	/**
-	 * The number of structural features of the '<em>String Named</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRING_NAMED_FEATURE_COUNT = 1;
-
-
-	/**
 	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.Architecture <em>Architecture</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1640,27 +1611,6 @@ public interface VhdlPackage extends EPackage {
 	EReference getCallResolvedReference_Call();
 
 	/**
-	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.StringNamed <em>String Named</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>String Named</em>'.
-	 * @see net.mlanoe.language.vhdl.StringNamed
-	 * @generated
-	 */
-	EClass getStringNamed();
-
-	/**
-	 * Returns the meta object for the attribute '{@link net.mlanoe.language.vhdl.StringNamed#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see net.mlanoe.language.vhdl.StringNamed#getName()
-	 * @see #getStringNamed()
-	 * @generated
-	 */
-	EAttribute getStringNamed_Name();
-
-	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2167,24 +2117,6 @@ public interface VhdlPackage extends EPackage {
 		 * @generated
 		 */
 		EReference CALL_RESOLVED_REFERENCE__CALL = eINSTANCE.getCallResolvedReference_Call();
-
-		/**
-		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.impl.StringNamedImpl <em>String Named</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see net.mlanoe.language.vhdl.impl.StringNamedImpl
-		 * @see net.mlanoe.language.vhdl.impl.VhdlPackageImpl#getStringNamed()
-		 * @generated
-		 */
-		EClass STRING_NAMED = eINSTANCE.getStringNamed();
-
-		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute STRING_NAMED__NAME = eINSTANCE.getStringNamed_Name();
 
 	}
 
