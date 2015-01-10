@@ -295,6 +295,11 @@ public class AssociationExpressionItemProvider extends ExpressionItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(ExpressionPackage.Literals.ASSOCIATION_EXPRESSION__CHOICE,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(ExpressionPackage.Literals.ASSOCIATION_EXPRESSION__EXPRESSION,
 				 ExpressionFactory.eINSTANCE.createAddingExpression()));
 
@@ -442,6 +447,11 @@ public class AssociationExpressionItemProvider extends ExpressionItemProvider {
 			(createChildParameter
 				(ExpressionPackage.Literals.ASSOCIATION_EXPRESSION__EXPRESSION,
 				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.ASSOCIATION_EXPRESSION__EXPRESSION,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
 	}
 
 	/**

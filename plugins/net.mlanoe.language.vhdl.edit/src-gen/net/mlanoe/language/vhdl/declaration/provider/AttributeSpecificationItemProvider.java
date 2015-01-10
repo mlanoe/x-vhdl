@@ -431,6 +431,11 @@ public class AttributeSpecificationItemProvider extends DeclarationItemProvider 
 			(createChildParameter
 				(DeclarationPackage.Literals.ATTRIBUTE_SPECIFICATION__IS,
 				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.ATTRIBUTE_SPECIFICATION__IS,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
 	}
 
 	/**

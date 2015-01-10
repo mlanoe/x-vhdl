@@ -410,6 +410,11 @@ public class FreeQuantityDeclarationItemProvider extends QuantityDeclarationItem
 			(createChildParameter
 				(DeclarationPackage.Literals.FREE_QUANTITY_DECLARATION__QUANTITY,
 				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.FREE_QUANTITY_DECLARATION__QUANTITY,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
 	}
 
 	/**

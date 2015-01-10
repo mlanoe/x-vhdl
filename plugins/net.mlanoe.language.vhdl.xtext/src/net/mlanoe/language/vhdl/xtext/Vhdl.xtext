@@ -535,7 +535,7 @@ SimpleSimultaneousStatement returns statement::SimpleSimultaneousStatement:
 ;
 
 ConditionalWaveform returns expression::Expression:
-  Waveforms ({expression::AssociationExpression.expression=current} 'when' choice = Choices)?
+  Waveforms ({expression::ConditionalWaveformExpression.expression=current} 'when' choice = Choices)?
 ;
 
 Waveforms returns expression::Expression:

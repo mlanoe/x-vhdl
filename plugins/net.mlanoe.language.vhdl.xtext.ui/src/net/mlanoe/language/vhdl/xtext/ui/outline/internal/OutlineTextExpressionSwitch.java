@@ -14,6 +14,7 @@ import net.mlanoe.language.vhdl.expression.AllExpression;
 import net.mlanoe.language.vhdl.expression.AllocatorExpression;
 import net.mlanoe.language.vhdl.expression.AssociationExpression;
 import net.mlanoe.language.vhdl.expression.CharacterExpression;
+import net.mlanoe.language.vhdl.expression.ConditionalWaveformExpression;
 import net.mlanoe.language.vhdl.expression.Expression;
 import net.mlanoe.language.vhdl.expression.IdentifierExpression;
 import net.mlanoe.language.vhdl.expression.LogicalExpression;
@@ -99,6 +100,16 @@ public class OutlineTextExpressionSwitch extends ExpressionSwitch<String> {
 		builder.append(OutlineTextGenerator.getOutline(object.getChoice()));
 		builder.append(" => ");
 		builder.append(OutlineTextGenerator.getOutline(object.getExpression()));
+		return builder.toString();
+	}
+
+	@Override
+	public String caseConditionalWaveformExpression(
+			ConditionalWaveformExpression object) {
+		StringBuilder builder = new StringBuilder();
+		builder.append(OutlineTextGenerator.getOutline(object.getExpression()));
+		builder.append(" when ");
+		builder.append(OutlineTextGenerator.getOutline(object.getChoice()));
 		return builder.toString();
 	}
 

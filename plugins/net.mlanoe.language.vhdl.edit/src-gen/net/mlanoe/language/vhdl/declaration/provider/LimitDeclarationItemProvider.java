@@ -410,6 +410,11 @@ public class LimitDeclarationItemProvider extends DeclarationItemProvider {
 			(createChildParameter
 				(DeclarationPackage.Literals.LIMIT_DECLARATION__VALUE,
 				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.LIMIT_DECLARATION__VALUE,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
 	}
 
 	/**

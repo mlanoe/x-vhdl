@@ -400,6 +400,11 @@ public class BreakStatementItemItemProvider extends VhdlObjectItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.BREAK_STATEMENT_ITEM__ARROW,
 				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.BREAK_STATEMENT_ITEM__ARROW,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
 	}
 
 	/**

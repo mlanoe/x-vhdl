@@ -290,6 +290,11 @@ public class MultiExpressionItemProvider extends ExpressionItemProvider {
 			(createChildParameter
 				(ExpressionPackage.Literals.MULTI_EXPRESSION__EXPRESSION,
 				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.MULTI_EXPRESSION__EXPRESSION,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
 	}
 
 }

@@ -399,6 +399,11 @@ public class ValueDeclarationItemProvider extends DeclarationItemProvider {
 			(createChildParameter
 				(DeclarationPackage.Literals.VALUE_DECLARATION__INITIAL,
 				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.VALUE_DECLARATION__INITIAL,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
 	}
 
 	/**

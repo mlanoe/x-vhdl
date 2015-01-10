@@ -296,6 +296,11 @@ public class SpectrumItemProvider extends SourceAspectItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(AmsPackage.Literals.SPECTRUM__LEFT,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(AmsPackage.Literals.SPECTRUM__RIGHT,
 				 ExpressionFactory.eINSTANCE.createAddingExpression()));
 
@@ -443,6 +448,11 @@ public class SpectrumItemProvider extends SourceAspectItemProvider {
 			(createChildParameter
 				(AmsPackage.Literals.SPECTRUM__RIGHT,
 				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(AmsPackage.Literals.SPECTRUM__RIGHT,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
 	}
 
 	/**

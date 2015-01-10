@@ -297,6 +297,15 @@ public interface ExpressionFactory extends EFactory {
 	MultiExpression createMultiExpression();
 
 	/**
+	 * Returns a new object of class '<em>Conditional Waveform Expression</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Conditional Waveform Expression</em>'.
+	 * @generated
+	 */
+	ConditionalWaveformExpression createConditionalWaveformExpression();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -319,6 +319,11 @@ public class ExitStatementItemProvider extends StatementItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.EXIT_STATEMENT__WHEN,
 				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.EXIT_STATEMENT__WHEN,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
 	}
 
 }

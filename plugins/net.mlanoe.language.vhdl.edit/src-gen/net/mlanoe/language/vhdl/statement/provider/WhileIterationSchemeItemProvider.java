@@ -291,6 +291,11 @@ public class WhileIterationSchemeItemProvider extends IterationSchemeItemProvide
 			(createChildParameter
 				(StatementPackage.Literals.WHILE_ITERATION_SCHEME__CONDITION,
 				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.WHILE_ITERATION_SCHEME__CONDITION,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
 	}
 
 }

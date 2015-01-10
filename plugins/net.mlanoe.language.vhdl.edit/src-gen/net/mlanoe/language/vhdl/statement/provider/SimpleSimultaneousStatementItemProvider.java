@@ -298,6 +298,11 @@ public class SimpleSimultaneousStatementItemProvider extends StatementItemProvid
 
 		newChildDescriptors.add
 			(createChildParameter
+				(StatementPackage.Literals.SIMPLE_SIMULTANEOUS_STATEMENT__LEFT,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(StatementPackage.Literals.SIMPLE_SIMULTANEOUS_STATEMENT__RIGHT,
 				 ExpressionFactory.eINSTANCE.createAddingExpression()));
 
@@ -448,6 +453,11 @@ public class SimpleSimultaneousStatementItemProvider extends StatementItemProvid
 
 		newChildDescriptors.add
 			(createChildParameter
+				(StatementPackage.Literals.SIMPLE_SIMULTANEOUS_STATEMENT__RIGHT,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(StatementPackage.Literals.SIMPLE_SIMULTANEOUS_STATEMENT__TOLERANCE,
 				 ExpressionFactory.eINSTANCE.createAddingExpression()));
 
@@ -595,6 +605,11 @@ public class SimpleSimultaneousStatementItemProvider extends StatementItemProvid
 			(createChildParameter
 				(StatementPackage.Literals.SIMPLE_SIMULTANEOUS_STATEMENT__TOLERANCE,
 				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.SIMPLE_SIMULTANEOUS_STATEMENT__TOLERANCE,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
 	}
 
 	/**

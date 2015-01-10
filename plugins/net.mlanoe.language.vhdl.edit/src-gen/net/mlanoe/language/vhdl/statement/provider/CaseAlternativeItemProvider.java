@@ -302,6 +302,11 @@ public class CaseAlternativeItemProvider extends VhdlObjectItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(StatementPackage.Literals.CASE_ALTERNATIVE__CHOICE,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(StatementPackage.Literals.CASE_ALTERNATIVE__STATEMENT,
 				 StatementFactory.eINSTANCE.createReportStatement()));
 

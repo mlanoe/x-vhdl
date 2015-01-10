@@ -324,6 +324,11 @@ public class RangeTypeDefinitionItemProvider extends TypeDefinitionItemProvider 
 
 		newChildDescriptors.add
 			(createChildParameter
+				(TypePackage.Literals.RANGE_TYPE_DEFINITION__LEFT,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(TypePackage.Literals.RANGE_TYPE_DEFINITION__RIGHT,
 				 ExpressionFactory.eINSTANCE.createAddingExpression()));
 
@@ -471,6 +476,11 @@ public class RangeTypeDefinitionItemProvider extends TypeDefinitionItemProvider 
 			(createChildParameter
 				(TypePackage.Literals.RANGE_TYPE_DEFINITION__RIGHT,
 				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TypePackage.Literals.RANGE_TYPE_DEFINITION__RIGHT,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
 	}
 
 	/**

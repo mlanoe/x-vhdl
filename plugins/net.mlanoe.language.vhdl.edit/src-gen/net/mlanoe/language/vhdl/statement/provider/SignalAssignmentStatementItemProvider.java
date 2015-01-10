@@ -349,6 +349,11 @@ public class SignalAssignmentStatementItemProvider extends StatementItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
+				(StatementPackage.Literals.SIGNAL_ASSIGNMENT_STATEMENT__TARGET,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(StatementPackage.Literals.SIGNAL_ASSIGNMENT_STATEMENT__DELAY,
 				 StatementFactory.eINSTANCE.createRejectMechanism()));
 

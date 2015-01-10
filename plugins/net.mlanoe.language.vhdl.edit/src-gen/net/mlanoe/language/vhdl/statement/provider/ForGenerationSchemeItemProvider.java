@@ -319,6 +319,11 @@ public class ForGenerationSchemeItemProvider extends GenerationSchemeItemProvide
 			(createChildParameter
 				(StatementPackage.Literals.FOR_GENERATION_SCHEME__IN,
 				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.FOR_GENERATION_SCHEME__IN,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
 	}
 
 }

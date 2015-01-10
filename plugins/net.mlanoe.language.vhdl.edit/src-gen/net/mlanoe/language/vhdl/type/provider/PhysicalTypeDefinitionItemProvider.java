@@ -325,6 +325,11 @@ public class PhysicalTypeDefinitionItemProvider extends TypeDefinitionItemProvid
 
 		newChildDescriptors.add
 			(createChildParameter
+				(TypePackage.Literals.PHYSICAL_TYPE_DEFINITION__RANGE,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(TypePackage.Literals.PHYSICAL_TYPE_DEFINITION__SECONDARY,
 				 TypeFactory.eINSTANCE.createPhysicalTypeDefinitionSecondary()));
 	}

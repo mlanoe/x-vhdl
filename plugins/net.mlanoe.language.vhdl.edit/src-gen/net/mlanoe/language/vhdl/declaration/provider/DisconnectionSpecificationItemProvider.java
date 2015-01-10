@@ -409,6 +409,11 @@ public class DisconnectionSpecificationItemProvider extends DeclarationItemProvi
 			(createChildParameter
 				(DeclarationPackage.Literals.DISCONNECTION_SPECIFICATION__AFTER,
 				 ExpressionFactory.eINSTANCE.createWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.DISCONNECTION_SPECIFICATION__AFTER,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
 	}
 
 	/**

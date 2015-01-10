@@ -311,6 +311,11 @@ public class BlockStatementItemProvider extends StatementItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(StatementPackage.Literals.BLOCK_STATEMENT__GUARD,
+				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(StatementPackage.Literals.BLOCK_STATEMENT__GENERIC,
 				 VhdlFactory.eINSTANCE.createGenerics()));
 
