@@ -32,44 +32,27 @@ import net.mlanoe.language.vhdl.PackageResolvedReference;
 import net.mlanoe.language.vhdl.PortMaps;
 import net.mlanoe.language.vhdl.Ports;
 import net.mlanoe.language.vhdl.Signature;
-import net.mlanoe.language.vhdl.StringNamed;
 import net.mlanoe.language.vhdl.VhdlFactory;
 import net.mlanoe.language.vhdl.VhdlObject;
 import net.mlanoe.language.vhdl.VhdlPackage;
-
 import net.mlanoe.language.vhdl.ams.AmsPackage;
-
 import net.mlanoe.language.vhdl.ams.impl.AmsPackageImpl;
-
 import net.mlanoe.language.vhdl.configuration.ConfigurationPackage;
-
 import net.mlanoe.language.vhdl.configuration.impl.ConfigurationPackageImpl;
-
 import net.mlanoe.language.vhdl.declaration.DeclarationPackage;
-
 import net.mlanoe.language.vhdl.declaration.impl.DeclarationPackageImpl;
-
 import net.mlanoe.language.vhdl.expression.ExpressionPackage;
-
 import net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl;
-
 import net.mlanoe.language.vhdl.nature.NaturePackage;
-
 import net.mlanoe.language.vhdl.nature.impl.NaturePackageImpl;
-
 import net.mlanoe.language.vhdl.statement.StatementPackage;
-
 import net.mlanoe.language.vhdl.statement.impl.StatementPackageImpl;
-
 import net.mlanoe.language.vhdl.type.TypePackage;
-
 import net.mlanoe.language.vhdl.type.impl.TypePackageImpl;
-
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
-
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
@@ -267,13 +250,6 @@ public class VhdlPackageImpl extends EPackageImpl implements VhdlPackage {
 	 * @generated
 	 */
 	private EClass callResolvedReferenceEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass stringNamedEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -850,24 +826,6 @@ public class VhdlPackageImpl extends EPackageImpl implements VhdlPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getStringNamed() {
-		return stringNamedEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getStringNamed_Name() {
-		return (EAttribute)stringNamedEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public VhdlFactory getVhdlFactory() {
 		return (VhdlFactory)getEFactoryInstance();
 	}
@@ -971,9 +929,6 @@ public class VhdlPackageImpl extends EPackageImpl implements VhdlPackage {
 
 		callResolvedReferenceEClass = createEClass(CALL_RESOLVED_REFERENCE);
 		createEReference(callResolvedReferenceEClass, CALL_RESOLVED_REFERENCE__CALL);
-
-		stringNamedEClass = createEClass(STRING_NAMED);
-		createEAttribute(stringNamedEClass, STRING_NAMED__NAME);
 	}
 
 	/**
@@ -1138,9 +1093,6 @@ public class VhdlPackageImpl extends EPackageImpl implements VhdlPackage {
 
 		initEClass(callResolvedReferenceEClass, CallResolvedReference.class, "CallResolvedReference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCallResolvedReference_Call(), theDeclarationPackage.getSubprogramDeclaration(), null, "call", null, 0, 1, CallResolvedReference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(stringNamedEClass, StringNamed.class, "StringNamed", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getStringNamed_Name(), ecorePackage.getEString(), "name", null, 0, 1, StringNamed.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

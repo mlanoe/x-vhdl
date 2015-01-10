@@ -87,6 +87,3 @@ Package vhdl <http://mlanoe.net/language/vhdl/1.0>
 
   Class CallResolvedReference -> CallReference
     Reference call : SubprogramDeclaration
-
-  Class StringNamed
-    Attribute name : EString

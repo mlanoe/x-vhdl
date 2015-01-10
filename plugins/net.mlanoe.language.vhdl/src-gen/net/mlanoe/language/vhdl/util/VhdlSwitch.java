@@ -32,21 +32,14 @@ import net.mlanoe.language.vhdl.PackageResolvedReference;
 import net.mlanoe.language.vhdl.PortMaps;
 import net.mlanoe.language.vhdl.Ports;
 import net.mlanoe.language.vhdl.Signature;
-import net.mlanoe.language.vhdl.StringNamed;
 import net.mlanoe.language.vhdl.VhdlObject;
 import net.mlanoe.language.vhdl.VhdlPackage;
-
 import net.mlanoe.language.vhdl.configuration.ConfigurationReference;
-
 import net.mlanoe.language.vhdl.declaration.Declaration;
-
 import net.mlanoe.language.vhdl.nature.NatureReference;
-
 import net.mlanoe.language.vhdl.type.TypeReference;
-
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.util.Switch;
 
 /**
@@ -304,12 +297,6 @@ public class VhdlSwitch<T> extends Switch<T> {
 				CallResolvedReference callResolvedReference = (CallResolvedReference)theEObject;
 				T result = caseCallResolvedReference(callResolvedReference);
 				if (result == null) result = caseCallReference(callResolvedReference);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case VhdlPackage.STRING_NAMED: {
-				StringNamed stringNamed = (StringNamed)theEObject;
-				T result = caseStringNamed(stringNamed);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -719,21 +706,6 @@ public class VhdlSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseCallResolvedReference(CallResolvedReference object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>String Named</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>String Named</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseStringNamed(StringNamed object) {
 		return null;
 	}
 
