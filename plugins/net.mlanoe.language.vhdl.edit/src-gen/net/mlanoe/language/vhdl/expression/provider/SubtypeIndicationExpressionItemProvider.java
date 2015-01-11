@@ -197,6 +197,11 @@ public class SubtypeIndicationExpressionItemProvider extends IndicationExpressio
 
 		newChildDescriptors.add
 			(createChildParameter
+				(VhdlPackage.Literals.NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(ExpressionPackage.Literals.SUBTYPE_INDICATION_EXPRESSION__MARK,
 				 ExpressionFactory.eINSTANCE.createAggregateExpression()));
 
@@ -249,6 +254,11 @@ public class SubtypeIndicationExpressionItemProvider extends IndicationExpressio
 			(createChildParameter
 				(ExpressionPackage.Literals.SUBTYPE_INDICATION_EXPRESSION__MARK,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.SUBTYPE_INDICATION_EXPRESSION__MARK,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

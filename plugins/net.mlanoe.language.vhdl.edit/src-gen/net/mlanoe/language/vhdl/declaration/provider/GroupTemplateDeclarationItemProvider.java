@@ -221,6 +221,11 @@ public class GroupTemplateDeclarationItemProvider extends DeclarationItemProvide
 			(createChildParameter
 				(VhdlPackage.Literals.NAMED__NAME,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(VhdlPackage.Literals.NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 }

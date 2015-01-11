@@ -196,6 +196,11 @@ public class ArrayTypeDefinitionItemProvider extends CompositeTypeDefinitionItem
 			(createChildParameter
 				(TypePackage.Literals.TYPED__TYPE,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TypePackage.Literals.TYPED__TYPE,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 }

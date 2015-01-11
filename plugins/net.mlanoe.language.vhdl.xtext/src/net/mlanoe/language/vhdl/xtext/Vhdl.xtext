@@ -236,12 +236,12 @@ ArchitectureStatement returns statement::Statement:
   | SimultaneousIfStatement
   | ConcurrentBreakStatement
   | EntityInstantiationStatement
-  | ConcurrentProcedureCallStatement
   | SelectedSignalAssignmentStatement
   | ComponentInstantiationStatement
   | GenerateStatement
   | ConditionalSignalAssignmentStatement
   | SimpleSimultaneousStatement
+  | ConcurrentProcedureCallStatement
 ;
   
 /*
@@ -292,10 +292,9 @@ Choices returns expression::Expression:
 ;
 
 Choice returns expression::Expression: 
-    RangeSpecification
+    Others
+  | Expression ({expression::RangeExpression.left=current} direction = RangeDirection right = SimpleExpression)?
   | SubtypeIndicationExpression
-  | SimpleExpression
-  | Others
 ;
 
 Open returns expression::OpenExpression:
@@ -682,7 +681,7 @@ Primary returns expression::Expression:
 
 FileDeclaration returns declaration::FileDeclaration:
     'file' name = MultiIdentifierName ':' 
-      type = SubtypeIndication ( ( 'open' open = Expression )? 'is' is = Expression )? ';'
+      type = SubtypeIndication ( ( 'open' open = Expression )? 'is' ('in')? is = Expression )? ';'
 ;
 
 InterfaceFileDeclaration returns declaration::FileDeclaration:
@@ -880,12 +879,14 @@ NamePrefixExpression returns expression::Expression:
  *   AttributeName: prefix = Prefix (signature = Signature )? '\'' AttributeDesignator ( '(' expression = Expression ')' )?	
  *   IndexedName: prefix = Prefix '(' index += Expression ( ',' index += Expression )* ')'
  *   SliceName: prefix = Prefix '(' range = DiscreteRange ')'
+ *   TypeQualificationName: prefix = Prefix ''' '(' expression = Expression ') 
  */
 NameSuffix returns Name:
     SelectedName
   | AttributeName
   | Aggregate
   | SliceName
+  | TypeQualification
 ;
 
 StringName returns expression::StringExpression:
@@ -1224,6 +1225,10 @@ Aggregate returns expression::AggregateExpression:
 
 SliceName returns Name:
 	'(' RangeSpecification ')'
+;
+
+TypeQualification returns expression::TypeQualificationExpression:
+  {expression::TypeQualificationExpression} "'(" expression = SimpleExpression ')' 
 ;
 
 RangeSpecification returns expression::RangeExpression:

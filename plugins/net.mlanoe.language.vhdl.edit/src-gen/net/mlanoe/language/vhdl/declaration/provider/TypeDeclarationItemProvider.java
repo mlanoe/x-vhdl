@@ -200,6 +200,11 @@ public class TypeDeclarationItemProvider extends DeclarationItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(VhdlPackage.Literals.NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(DeclarationPackage.Literals.TYPE_DECLARATION__IS,
 				 TypeFactory.eINSTANCE.createAccessTypeDefinition()));
 

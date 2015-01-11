@@ -226,6 +226,11 @@ public class ProcedureCallStatementItemProvider extends StatementItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.PROCEDURE_CALL_STATEMENT__PROCEDURE,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.PROCEDURE_CALL_STATEMENT__PROCEDURE,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 }

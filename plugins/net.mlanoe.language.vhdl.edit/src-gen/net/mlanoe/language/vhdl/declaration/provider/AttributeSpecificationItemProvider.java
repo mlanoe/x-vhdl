@@ -229,6 +229,11 @@ public class AttributeSpecificationItemProvider extends DeclarationItemProvider 
 
 		newChildDescriptors.add
 			(createChildParameter
+				(VhdlPackage.Literals.NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(DeclarationPackage.Literals.ATTRIBUTE_SPECIFICATION__ENTITY,
 				 VhdlFactory.eINSTANCE.createNameList()));
 
@@ -281,6 +286,11 @@ public class AttributeSpecificationItemProvider extends DeclarationItemProvider 
 			(createChildParameter
 				(DeclarationPackage.Literals.ATTRIBUTE_SPECIFICATION__ENTITY,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.ATTRIBUTE_SPECIFICATION__ENTITY,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -436,6 +446,11 @@ public class AttributeSpecificationItemProvider extends DeclarationItemProvider 
 			(createChildParameter
 				(DeclarationPackage.Literals.ATTRIBUTE_SPECIFICATION__IS,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.ATTRIBUTE_SPECIFICATION__IS,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

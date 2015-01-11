@@ -198,6 +198,11 @@ public class ComponentInstantiationStatementItemProvider extends InstantiationSt
 			(createChildParameter
 				(StatementPackage.Literals.COMPONENT_INSTANTIATION_STATEMENT__NAME,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.COMPONENT_INSTANTIATION_STATEMENT__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 }

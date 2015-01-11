@@ -311,6 +311,11 @@ public class BreakStatementItemProvider extends StatementItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(StatementPackage.Literals.BREAK_STATEMENT__WHEN,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(StatementPackage.Literals.BREAK_STATEMENT__SENSITIVITY,
 				 VhdlFactory.eINSTANCE.createNameList()));
 
@@ -363,6 +368,11 @@ public class BreakStatementItemProvider extends StatementItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.BREAK_STATEMENT__SENSITIVITY,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.BREAK_STATEMENT__SENSITIVITY,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

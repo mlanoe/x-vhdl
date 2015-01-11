@@ -296,6 +296,11 @@ public class RejectMechanismItemProvider extends DelayMechanismItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.REJECT_MECHANISM__REJECT,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.REJECT_MECHANISM__REJECT,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 }

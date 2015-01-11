@@ -296,6 +296,11 @@ public class GenericMapsItemProvider extends VhdlObjectItemProvider {
 			(createChildParameter
 				(VhdlPackage.Literals.GENERIC_MAPS__GENERIC,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(VhdlPackage.Literals.GENERIC_MAPS__GENERIC,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 }

@@ -198,6 +198,11 @@ public class ScalarNatureDefinitionItemProvider extends NatureDefinitionItemProv
 
 		newChildDescriptors.add
 			(createChildParameter
+				(NaturePackage.Literals.SCALAR_NATURE_DEFINITION__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(NaturePackage.Literals.SCALAR_NATURE_DEFINITION__ACROSS,
 				 ExpressionFactory.eINSTANCE.createAggregateExpression()));
 
@@ -248,6 +253,11 @@ public class ScalarNatureDefinitionItemProvider extends NatureDefinitionItemProv
 
 		newChildDescriptors.add
 			(createChildParameter
+				(NaturePackage.Literals.SCALAR_NATURE_DEFINITION__ACROSS,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(NaturePackage.Literals.SCALAR_NATURE_DEFINITION__THROUGH,
 				 ExpressionFactory.eINSTANCE.createAggregateExpression()));
 
@@ -295,6 +305,11 @@ public class ScalarNatureDefinitionItemProvider extends NatureDefinitionItemProv
 			(createChildParameter
 				(NaturePackage.Literals.SCALAR_NATURE_DEFINITION__THROUGH,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(NaturePackage.Literals.SCALAR_NATURE_DEFINITION__THROUGH,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

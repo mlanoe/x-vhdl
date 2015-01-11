@@ -209,6 +209,11 @@ public class MultiNamedItemProvider
 			(createChildParameter
 				(VhdlPackage.Literals.MULTI_NAMED__NAME,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(VhdlPackage.Literals.MULTI_NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

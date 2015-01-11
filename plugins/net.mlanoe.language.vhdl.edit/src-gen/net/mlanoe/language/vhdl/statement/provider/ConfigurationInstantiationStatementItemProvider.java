@@ -197,6 +197,11 @@ public class ConfigurationInstantiationStatementItemProvider extends Instantiati
 		newChildDescriptors.add
 			(createChildParameter
 				(StatementPackage.Literals.CONFIGURATION_INSTANTIATION_STATEMENT__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONFIGURATION_INSTANTIATION_STATEMENT__NAME,
 				 ConfigurationFactory.eINSTANCE.createConfigurationResolvedReference()));
 	}
 

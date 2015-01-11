@@ -213,6 +213,11 @@ public class ConfigurationSpecificationItemProvider extends DeclarationItemProvi
 
 		newChildDescriptors.add
 			(createChildParameter
+				(DeclarationPackage.Literals.CONFIGURATION_SPECIFICATION__LIST,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(DeclarationPackage.Literals.CONFIGURATION_SPECIFICATION__COMPONENT,
 				 VhdlFactory.eINSTANCE.createComponentResolvedReference()));
 
@@ -265,6 +270,11 @@ public class ConfigurationSpecificationItemProvider extends DeclarationItemProvi
 			(createChildParameter
 				(DeclarationPackage.Literals.CONFIGURATION_SPECIFICATION__COMPONENT,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.CONFIGURATION_SPECIFICATION__COMPONENT,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -323,6 +333,11 @@ public class ConfigurationSpecificationItemProvider extends DeclarationItemProvi
 
 		newChildDescriptors.add
 			(createChildParameter
+				(DeclarationPackage.Literals.CONFIGURATION_SPECIFICATION__ENTITY,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(DeclarationPackage.Literals.CONFIGURATION_SPECIFICATION__CONFIGURATION,
 				 ExpressionFactory.eINSTANCE.createAggregateExpression()));
 
@@ -370,6 +385,11 @@ public class ConfigurationSpecificationItemProvider extends DeclarationItemProvi
 			(createChildParameter
 				(DeclarationPackage.Literals.CONFIGURATION_SPECIFICATION__CONFIGURATION,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.CONFIGURATION_SPECIFICATION__CONFIGURATION,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

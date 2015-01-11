@@ -222,6 +222,8 @@ Use : ('U'|'u')('S'|'s')('E'|'e');
 
 Xor : ('X'|'x')('O'|'o')('R'|'r');
 
+ApostropheLeftParenthesis : '\'''(';
+
 AsteriskAsterisk : '*''*';
 
 SolidusEqualsSign : '/''=';

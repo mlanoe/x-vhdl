@@ -307,6 +307,11 @@ public class IfStatementTestItemProvider extends VhdlObjectItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(StatementPackage.Literals.IF_STATEMENT_TEST__CONDITION,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(StatementPackage.Literals.IF_STATEMENT_TEST__STATEMENT,
 				 StatementFactory.eINSTANCE.createReportStatement()));
 

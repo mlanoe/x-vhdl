@@ -201,6 +201,11 @@ public class GroupDeclarationItemProvider extends DeclarationItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(VhdlPackage.Literals.NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(DeclarationPackage.Literals.GROUP_DECLARATION__IS,
 				 ExpressionFactory.eINSTANCE.createAggregateExpression()));
 
@@ -248,6 +253,11 @@ public class GroupDeclarationItemProvider extends DeclarationItemProvider {
 			(createChildParameter
 				(DeclarationPackage.Literals.GROUP_DECLARATION__IS,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.GROUP_DECLARATION__IS,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -303,6 +313,11 @@ public class GroupDeclarationItemProvider extends DeclarationItemProvider {
 			(createChildParameter
 				(DeclarationPackage.Literals.GROUP_DECLARATION__MEMBER,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.GROUP_DECLARATION__MEMBER,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

@@ -296,6 +296,11 @@ public class SequentialSignalAssignmentStatementItemProvider extends SignalAssig
 			(createChildParameter
 				(StatementPackage.Literals.SEQUENTIAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.SEQUENTIAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

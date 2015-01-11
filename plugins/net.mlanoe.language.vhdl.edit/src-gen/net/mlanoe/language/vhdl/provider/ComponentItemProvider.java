@@ -203,6 +203,11 @@ public class ComponentItemProvider extends DeclarationItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(VhdlPackage.Literals.NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(VhdlPackage.Literals.COMPONENT__GENERIC,
 				 VhdlFactory.eINSTANCE.createGenerics()));
 

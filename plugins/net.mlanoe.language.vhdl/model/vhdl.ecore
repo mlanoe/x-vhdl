@@ -424,6 +424,10 @@
           eType="#//expression/Expression" containment="true"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="ConditionalWaveformExpression" eSuperTypes="#//expression/AssociationExpression"/>
+    <eClassifiers xsi:type="ecore:EClass" name="TypeQualificationExpression" eSuperTypes="#//expression/Expression #//Name">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="expression" eType="#//expression/Expression"
+          containment="true"/>
+    </eClassifiers>
     <eClassifiers xsi:type="ecore:EEnum" name="UnaryOperator">
       <eLiterals name="ABS" literal="abs"/>
       <eLiterals name="NOT" value="1" literal="not"/>

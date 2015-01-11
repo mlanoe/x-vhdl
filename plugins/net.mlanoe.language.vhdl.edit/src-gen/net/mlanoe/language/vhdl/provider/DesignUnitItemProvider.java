@@ -227,6 +227,11 @@ public class DesignUnitItemProvider extends VhdlObjectItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(VhdlPackage.Literals.DESIGN_UNIT__USE,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(VhdlPackage.Literals.DESIGN_UNIT__MODULE,
 				 VhdlFactory.eINSTANCE.createArchitecture()));
 

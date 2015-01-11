@@ -301,6 +301,11 @@ public class VariableAssignmentStatementItemProvider extends StatementItemProvid
 
 		newChildDescriptors.add
 			(createChildParameter
+				(StatementPackage.Literals.VARIABLE_ASSIGNMENT_STATEMENT__TARGET,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(StatementPackage.Literals.VARIABLE_ASSIGNMENT_STATEMENT__INITIAL,
 				 ExpressionFactory.eINSTANCE.createAddingExpression()));
 
@@ -453,6 +458,11 @@ public class VariableAssignmentStatementItemProvider extends StatementItemProvid
 			(createChildParameter
 				(StatementPackage.Literals.VARIABLE_ASSIGNMENT_STATEMENT__INITIAL,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.VARIABLE_ASSIGNMENT_STATEMENT__INITIAL,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

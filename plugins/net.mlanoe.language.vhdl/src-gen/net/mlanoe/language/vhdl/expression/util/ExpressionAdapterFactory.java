@@ -226,6 +226,10 @@ public class ExpressionAdapterFactory extends AdapterFactoryImpl {
 				return createConditionalWaveformExpressionAdapter();
 			}
 			@Override
+			public Adapter caseTypeQualificationExpression(TypeQualificationExpression object) {
+				return createTypeQualificationExpressionAdapter();
+			}
+			@Override
 			public Adapter caseVhdlObject(VhdlObject object) {
 				return createVhdlObjectAdapter();
 			}
@@ -770,6 +774,20 @@ public class ExpressionAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createConditionalWaveformExpressionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link net.mlanoe.language.vhdl.expression.TypeQualificationExpression <em>Type Qualification Expression</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see net.mlanoe.language.vhdl.expression.TypeQualificationExpression
+	 * @generated
+	 */
+	public Adapter createTypeQualificationExpressionAdapter() {
 		return null;
 	}
 

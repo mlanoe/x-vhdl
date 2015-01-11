@@ -190,6 +190,11 @@ public class UnitValueExpressionItemProvider extends ValueExpressionItemProvider
 			(createChildParameter
 				(ExpressionPackage.Literals.UNIT_VALUE_EXPRESSION__UNIT,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.UNIT_VALUE_EXPRESSION__UNIT,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 }

@@ -301,6 +301,11 @@ public class ReportStatementItemProvider extends StatementItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(StatementPackage.Literals.REPORT_STATEMENT__REPORT,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(StatementPackage.Literals.REPORT_STATEMENT__SEVERITY,
 				 ExpressionFactory.eINSTANCE.createAddingExpression()));
 
@@ -453,6 +458,11 @@ public class ReportStatementItemProvider extends StatementItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.REPORT_STATEMENT__SEVERITY,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.REPORT_STATEMENT__SEVERITY,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

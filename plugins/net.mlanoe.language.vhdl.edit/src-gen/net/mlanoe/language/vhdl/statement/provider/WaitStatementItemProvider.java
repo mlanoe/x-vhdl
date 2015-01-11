@@ -205,6 +205,11 @@ public class WaitStatementItemProvider extends StatementItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(StatementPackage.Literals.WAIT_STATEMENT__SENSITIVITY,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(StatementPackage.Literals.WAIT_STATEMENT__UNTIL,
 				 ExpressionFactory.eINSTANCE.createAddingExpression()));
 
@@ -360,6 +365,11 @@ public class WaitStatementItemProvider extends StatementItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(StatementPackage.Literals.WAIT_STATEMENT__UNTIL,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(StatementPackage.Literals.WAIT_STATEMENT__TIME,
 				 ExpressionFactory.eINSTANCE.createAddingExpression()));
 
@@ -512,6 +522,11 @@ public class WaitStatementItemProvider extends StatementItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.WAIT_STATEMENT__TIME,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.WAIT_STATEMENT__TIME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

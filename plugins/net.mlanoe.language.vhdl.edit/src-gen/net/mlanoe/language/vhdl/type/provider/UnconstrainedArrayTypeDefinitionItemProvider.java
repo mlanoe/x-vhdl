@@ -196,6 +196,11 @@ public class UnconstrainedArrayTypeDefinitionItemProvider extends ArrayTypeDefin
 			(createChildParameter
 				(TypePackage.Literals.UNCONSTRAINED_ARRAY_TYPE_DEFINITION__INDEX,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TypePackage.Literals.UNCONSTRAINED_ARRAY_TYPE_DEFINITION__INDEX,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

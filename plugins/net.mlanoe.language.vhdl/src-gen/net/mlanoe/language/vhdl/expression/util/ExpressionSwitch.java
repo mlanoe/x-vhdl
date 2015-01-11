@@ -472,6 +472,23 @@ public class ExpressionSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ExpressionPackage.TYPE_QUALIFICATION_EXPRESSION: {
+				TypeQualificationExpression typeQualificationExpression = (TypeQualificationExpression)theEObject;
+				T result = caseTypeQualificationExpression(typeQualificationExpression);
+				if (result == null) result = caseExpression(typeQualificationExpression);
+				if (result == null) result = caseName(typeQualificationExpression);
+				if (result == null) result = caseVhdlObject(typeQualificationExpression);
+				if (result == null) result = caseMultiName(typeQualificationExpression);
+				if (result == null) result = caseTypeReference(typeQualificationExpression);
+				if (result == null) result = caseNatureReference(typeQualificationExpression);
+				if (result == null) result = caseEntityReference(typeQualificationExpression);
+				if (result == null) result = casePackageReference(typeQualificationExpression);
+				if (result == null) result = caseComponentReference(typeQualificationExpression);
+				if (result == null) result = caseConfigurationReference(typeQualificationExpression);
+				if (result == null) result = caseCallReference(typeQualificationExpression);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -983,6 +1000,21 @@ public class ExpressionSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseConditionalWaveformExpression(ConditionalWaveformExpression object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Type Qualification Expression</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Type Qualification Expression</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTypeQualificationExpression(TypeQualificationExpression object) {
 		return null;
 	}
 

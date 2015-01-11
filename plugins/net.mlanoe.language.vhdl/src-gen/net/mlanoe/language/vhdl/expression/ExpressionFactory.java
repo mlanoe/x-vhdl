@@ -306,6 +306,15 @@ public interface ExpressionFactory extends EFactory {
 	ConditionalWaveformExpression createConditionalWaveformExpression();
 
 	/**
+	 * Returns a new object of class '<em>Type Qualification Expression</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Type Qualification Expression</em>'.
+	 * @generated
+	 */
+	TypeQualificationExpression createTypeQualificationExpression();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

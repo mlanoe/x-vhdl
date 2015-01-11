@@ -324,6 +324,11 @@ public class NextStatementItemProvider extends StatementItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.NEXT_STATEMENT__WHEN,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.NEXT_STATEMENT__WHEN,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 }

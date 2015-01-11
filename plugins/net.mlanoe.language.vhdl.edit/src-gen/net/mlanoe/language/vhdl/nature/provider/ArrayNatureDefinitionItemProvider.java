@@ -196,6 +196,11 @@ public class ArrayNatureDefinitionItemProvider extends CompositeNatureDefinition
 			(createChildParameter
 				(NaturePackage.Literals.NATURED__NATURE,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(NaturePackage.Literals.NATURED__NATURE,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 }

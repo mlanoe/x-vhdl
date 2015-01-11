@@ -302,6 +302,11 @@ public class CaseStatementItemProvider extends StatementItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(StatementPackage.Literals.CASE_STATEMENT__CASE,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(StatementPackage.Literals.CASE_STATEMENT__WHEN,
 				 StatementFactory.eINSTANCE.createCaseAlternative()));
 	}

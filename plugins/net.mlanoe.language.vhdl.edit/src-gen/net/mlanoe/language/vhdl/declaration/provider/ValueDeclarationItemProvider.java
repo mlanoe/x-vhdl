@@ -197,6 +197,11 @@ public class ValueDeclarationItemProvider extends DeclarationItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(VhdlPackage.Literals.MULTI_NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(TypePackage.Literals.TYPED__TYPE,
 				 ExpressionFactory.eINSTANCE.createAggregateExpression()));
 
@@ -249,6 +254,11 @@ public class ValueDeclarationItemProvider extends DeclarationItemProvider {
 			(createChildParameter
 				(TypePackage.Literals.TYPED__TYPE,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TypePackage.Literals.TYPED__TYPE,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -404,6 +414,11 @@ public class ValueDeclarationItemProvider extends DeclarationItemProvider {
 			(createChildParameter
 				(DeclarationPackage.Literals.VALUE_DECLARATION__INITIAL,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.VALUE_DECLARATION__INITIAL,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

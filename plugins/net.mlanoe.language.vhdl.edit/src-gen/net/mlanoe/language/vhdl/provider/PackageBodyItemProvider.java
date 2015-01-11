@@ -197,6 +197,11 @@ public class PackageBodyItemProvider extends ModuleItemProvider {
 			(createChildParameter
 				(VhdlPackage.Literals.PACKAGE_BODY__NAME,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(VhdlPackage.Literals.PACKAGE_BODY__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 }

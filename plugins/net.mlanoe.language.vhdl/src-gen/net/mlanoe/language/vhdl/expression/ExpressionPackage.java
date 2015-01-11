@@ -1547,6 +1547,43 @@ public interface ExpressionPackage extends EPackage {
 	int CONDITIONAL_WAVEFORM_EXPRESSION_FEATURE_COUNT = ASSOCIATION_EXPRESSION_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.impl.TypeQualificationExpressionImpl <em>Type Qualification Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see net.mlanoe.language.vhdl.expression.impl.TypeQualificationExpressionImpl
+	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getTypeQualificationExpression()
+	 * @generated
+	 */
+	int TYPE_QUALIFICATION_EXPRESSION = 34;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPE_QUALIFICATION_EXPRESSION__ID = EXPRESSION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPE_QUALIFICATION_EXPRESSION__EXPRESSION = EXPRESSION_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Type Qualification Expression</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPE_QUALIFICATION_EXPRESSION_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 1;
+
+	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.UnaryOperator <em>Unary Operator</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1554,7 +1591,7 @@ public interface ExpressionPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getUnaryOperator()
 	 * @generated
 	 */
-	int UNARY_OPERATOR = 34;
+	int UNARY_OPERATOR = 35;
 
 	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.MultiplyingOperator <em>Multiplying Operator</em>}' enum.
@@ -1564,7 +1601,7 @@ public interface ExpressionPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getMultiplyingOperator()
 	 * @generated
 	 */
-	int MULTIPLYING_OPERATOR = 35;
+	int MULTIPLYING_OPERATOR = 36;
 
 	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.ShiftOperator <em>Shift Operator</em>}' enum.
@@ -1574,7 +1611,7 @@ public interface ExpressionPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getShiftOperator()
 	 * @generated
 	 */
-	int SHIFT_OPERATOR = 36;
+	int SHIFT_OPERATOR = 37;
 
 	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.RelationalOperator <em>Relational Operator</em>}' enum.
@@ -1584,7 +1621,7 @@ public interface ExpressionPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getRelationalOperator()
 	 * @generated
 	 */
-	int RELATIONAL_OPERATOR = 37;
+	int RELATIONAL_OPERATOR = 38;
 
 	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.LogicalOperator <em>Logical Operator</em>}' enum.
@@ -1594,7 +1631,7 @@ public interface ExpressionPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getLogicalOperator()
 	 * @generated
 	 */
-	int LOGICAL_OPERATOR = 38;
+	int LOGICAL_OPERATOR = 39;
 
 	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.AddingOperator <em>Adding Operator</em>}' enum.
@@ -1604,7 +1641,7 @@ public interface ExpressionPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getAddingOperator()
 	 * @generated
 	 */
-	int ADDING_OPERATOR = 39;
+	int ADDING_OPERATOR = 40;
 
 	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.Sign <em>Sign</em>}' enum.
@@ -1614,7 +1651,7 @@ public interface ExpressionPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getSign()
 	 * @generated
 	 */
-	int SIGN = 40;
+	int SIGN = 41;
 
 	/**
 	 * The meta object id for the '{@link net.mlanoe.language.vhdl.expression.RangeDirection <em>Range Direction</em>}' enum.
@@ -1624,7 +1661,7 @@ public interface ExpressionPackage extends EPackage {
 	 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getRangeDirection()
 	 * @generated
 	 */
-	int RANGE_DIRECTION = 41;
+	int RANGE_DIRECTION = 42;
 
 
 	/**
@@ -2274,6 +2311,27 @@ public interface ExpressionPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getConditionalWaveformExpression();
+
+	/**
+	 * Returns the meta object for class '{@link net.mlanoe.language.vhdl.expression.TypeQualificationExpression <em>Type Qualification Expression</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Type Qualification Expression</em>'.
+	 * @see net.mlanoe.language.vhdl.expression.TypeQualificationExpression
+	 * @generated
+	 */
+	EClass getTypeQualificationExpression();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link net.mlanoe.language.vhdl.expression.TypeQualificationExpression#getExpression <em>Expression</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Expression</em>'.
+	 * @see net.mlanoe.language.vhdl.expression.TypeQualificationExpression#getExpression()
+	 * @see #getTypeQualificationExpression()
+	 * @generated
+	 */
+	EReference getTypeQualificationExpression_Expression();
 
 	/**
 	 * Returns the meta object for enum '{@link net.mlanoe.language.vhdl.expression.UnaryOperator <em>Unary Operator</em>}'.
@@ -2940,6 +2998,24 @@ public interface ExpressionPackage extends EPackage {
 		 * @generated
 		 */
 		EClass CONDITIONAL_WAVEFORM_EXPRESSION = eINSTANCE.getConditionalWaveformExpression();
+
+		/**
+		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.expression.impl.TypeQualificationExpressionImpl <em>Type Qualification Expression</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see net.mlanoe.language.vhdl.expression.impl.TypeQualificationExpressionImpl
+		 * @see net.mlanoe.language.vhdl.expression.impl.ExpressionPackageImpl#getTypeQualificationExpression()
+		 * @generated
+		 */
+		EClass TYPE_QUALIFICATION_EXPRESSION = eINSTANCE.getTypeQualificationExpression();
+
+		/**
+		 * The meta object literal for the '<em><b>Expression</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TYPE_QUALIFICATION_EXPRESSION__EXPRESSION = eINSTANCE.getTypeQualificationExpression_Expression();
 
 		/**
 		 * The meta object literal for the '{@link net.mlanoe.language.vhdl.expression.UnaryOperator <em>Unary Operator</em>}' enum.

@@ -208,6 +208,11 @@ public class LimitDeclarationItemProvider extends DeclarationItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(VhdlPackage.Literals.MULTI_NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(TypePackage.Literals.TYPED__TYPE,
 				 ExpressionFactory.eINSTANCE.createAggregateExpression()));
 
@@ -260,6 +265,11 @@ public class LimitDeclarationItemProvider extends DeclarationItemProvider {
 			(createChildParameter
 				(TypePackage.Literals.TYPED__TYPE,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TypePackage.Literals.TYPED__TYPE,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -415,6 +425,11 @@ public class LimitDeclarationItemProvider extends DeclarationItemProvider {
 			(createChildParameter
 				(DeclarationPackage.Literals.LIMIT_DECLARATION__VALUE,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.LIMIT_DECLARATION__VALUE,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

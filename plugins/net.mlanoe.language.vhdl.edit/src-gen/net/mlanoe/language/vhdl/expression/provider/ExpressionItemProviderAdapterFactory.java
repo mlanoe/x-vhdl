@@ -790,6 +790,29 @@ public class ExpressionItemProviderAdapterFactory extends ExpressionAdapterFacto
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link net.mlanoe.language.vhdl.expression.TypeQualificationExpression} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected TypeQualificationExpressionItemProvider typeQualificationExpressionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link net.mlanoe.language.vhdl.expression.TypeQualificationExpression}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createTypeQualificationExpressionAdapter() {
+		if (typeQualificationExpressionItemProvider == null) {
+			typeQualificationExpressionItemProvider = new TypeQualificationExpressionItemProvider(this);
+		}
+
+		return typeQualificationExpressionItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -919,6 +942,7 @@ public class ExpressionItemProviderAdapterFactory extends ExpressionAdapterFacto
 		if (waveformExpressionItemProvider != null) waveformExpressionItemProvider.dispose();
 		if (multiExpressionItemProvider != null) multiExpressionItemProvider.dispose();
 		if (conditionalWaveformExpressionItemProvider != null) conditionalWaveformExpressionItemProvider.dispose();
+		if (typeQualificationExpressionItemProvider != null) typeQualificationExpressionItemProvider.dispose();
 	}
 
 }

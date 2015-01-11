@@ -207,6 +207,11 @@ public class ConfigurationItemProvider extends ModuleItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(VhdlPackage.Literals.NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(ConfigurationPackage.Literals.CONFIGURATION__OF,
 				 VhdlFactory.eINSTANCE.createEntityResolvedReference()));
 
@@ -259,6 +264,11 @@ public class ConfigurationItemProvider extends ModuleItemProvider {
 			(createChildParameter
 				(ConfigurationPackage.Literals.CONFIGURATION__OF,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ConfigurationPackage.Literals.CONFIGURATION__OF,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

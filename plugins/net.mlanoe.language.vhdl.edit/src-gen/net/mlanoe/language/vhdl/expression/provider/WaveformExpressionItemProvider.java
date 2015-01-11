@@ -300,6 +300,11 @@ public class WaveformExpressionItemProvider extends ExpressionItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(ExpressionPackage.Literals.WAVEFORM_EXPRESSION__EXPRESSION,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(ExpressionPackage.Literals.WAVEFORM_EXPRESSION__AFTER,
 				 ExpressionFactory.eINSTANCE.createAddingExpression()));
 
@@ -452,6 +457,11 @@ public class WaveformExpressionItemProvider extends ExpressionItemProvider {
 			(createChildParameter
 				(ExpressionPackage.Literals.WAVEFORM_EXPRESSION__AFTER,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.WAVEFORM_EXPRESSION__AFTER,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

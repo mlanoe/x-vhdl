@@ -195,6 +195,11 @@ public class SubnatureIndicationExpressionItemProvider extends IndicationExpress
 			(createChildParameter
 				(ExpressionPackage.Literals.SUBNATURE_INDICATION_EXPRESSION__MARK,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.SUBNATURE_INDICATION_EXPRESSION__MARK,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

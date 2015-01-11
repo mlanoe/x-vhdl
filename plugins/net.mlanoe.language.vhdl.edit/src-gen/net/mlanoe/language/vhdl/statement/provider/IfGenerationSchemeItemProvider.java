@@ -296,6 +296,11 @@ public class IfGenerationSchemeItemProvider extends GenerationSchemeItemProvider
 			(createChildParameter
 				(StatementPackage.Literals.IF_GENERATION_SCHEME__CONDITION,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.IF_GENERATION_SCHEME__CONDITION,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 }

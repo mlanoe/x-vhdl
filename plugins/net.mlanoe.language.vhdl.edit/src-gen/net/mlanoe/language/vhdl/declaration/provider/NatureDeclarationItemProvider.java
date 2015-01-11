@@ -200,6 +200,11 @@ public class NatureDeclarationItemProvider extends DeclarationItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(VhdlPackage.Literals.NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(DeclarationPackage.Literals.NATURE_DECLARATION__IS,
 				 NatureFactory.eINSTANCE.createNatureDefinition()));
 

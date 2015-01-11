@@ -212,6 +212,11 @@ public class BranchQuantityDeclarationItemProvider extends QuantityDeclarationIt
 
 		newChildDescriptors.add
 			(createChildParameter
+				(DeclarationPackage.Literals.BRANCH_QUANTITY_DECLARATION__LEFT,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(DeclarationPackage.Literals.BRANCH_QUANTITY_DECLARATION__RIGHT,
 				 ExpressionFactory.eINSTANCE.createAggregateExpression()));
 
@@ -259,6 +264,11 @@ public class BranchQuantityDeclarationItemProvider extends QuantityDeclarationIt
 			(createChildParameter
 				(DeclarationPackage.Literals.BRANCH_QUANTITY_DECLARATION__RIGHT,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.BRANCH_QUANTITY_DECLARATION__RIGHT,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

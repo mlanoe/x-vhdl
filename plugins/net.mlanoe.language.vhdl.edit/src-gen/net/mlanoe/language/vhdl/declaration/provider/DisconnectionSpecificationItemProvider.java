@@ -207,6 +207,11 @@ public class DisconnectionSpecificationItemProvider extends DeclarationItemProvi
 
 		newChildDescriptors.add
 			(createChildParameter
+				(TypePackage.Literals.TYPED__TYPE,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(DeclarationPackage.Literals.DISCONNECTION_SPECIFICATION__DISCONNECT,
 				 VhdlFactory.eINSTANCE.createNameList()));
 
@@ -259,6 +264,11 @@ public class DisconnectionSpecificationItemProvider extends DeclarationItemProvi
 			(createChildParameter
 				(DeclarationPackage.Literals.DISCONNECTION_SPECIFICATION__DISCONNECT,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.DISCONNECTION_SPECIFICATION__DISCONNECT,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -414,6 +424,11 @@ public class DisconnectionSpecificationItemProvider extends DeclarationItemProvi
 			(createChildParameter
 				(DeclarationPackage.Literals.DISCONNECTION_SPECIFICATION__AFTER,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.DISCONNECTION_SPECIFICATION__AFTER,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**
