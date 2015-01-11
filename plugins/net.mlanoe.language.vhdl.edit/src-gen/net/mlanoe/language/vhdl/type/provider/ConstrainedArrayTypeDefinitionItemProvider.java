@@ -296,6 +296,11 @@ public class ConstrainedArrayTypeDefinitionItemProvider extends ArrayTypeDefinit
 			(createChildParameter
 				(TypePackage.Literals.CONSTRAINED_ARRAY_TYPE_DEFINITION__CONSTRAINT,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TypePackage.Literals.CONSTRAINED_ARRAY_TYPE_DEFINITION__CONSTRAINT,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

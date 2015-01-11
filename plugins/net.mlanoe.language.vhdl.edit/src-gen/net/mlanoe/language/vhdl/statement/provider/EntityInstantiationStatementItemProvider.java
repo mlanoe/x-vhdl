@@ -198,6 +198,11 @@ public class EntityInstantiationStatementItemProvider extends InstantiationState
 			(createChildParameter
 				(StatementPackage.Literals.ENTITY_INSTANTIATION_STATEMENT__NAME,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.ENTITY_INSTANTIATION_STATEMENT__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 }

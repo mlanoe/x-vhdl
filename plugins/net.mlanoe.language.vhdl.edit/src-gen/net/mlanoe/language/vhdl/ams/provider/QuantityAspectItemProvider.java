@@ -211,6 +211,11 @@ public class QuantityAspectItemProvider extends VhdlObjectItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(VhdlPackage.Literals.MULTI_NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(AmsPackage.Literals.QUANTITY_ASPECT__TOLERANCE,
 				 ExpressionFactory.eINSTANCE.createAddingExpression()));
 
@@ -366,6 +371,11 @@ public class QuantityAspectItemProvider extends VhdlObjectItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(AmsPackage.Literals.QUANTITY_ASPECT__TOLERANCE,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(AmsPackage.Literals.QUANTITY_ASPECT__EXPRESSION,
 				 ExpressionFactory.eINSTANCE.createAddingExpression()));
 
@@ -518,6 +528,11 @@ public class QuantityAspectItemProvider extends VhdlObjectItemProvider {
 			(createChildParameter
 				(AmsPackage.Literals.QUANTITY_ASPECT__EXPRESSION,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(AmsPackage.Literals.QUANTITY_ASPECT__EXPRESSION,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

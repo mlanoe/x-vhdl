@@ -28,6 +28,8 @@ import net.mlanoe.language.vhdl.PackageResolvedReference;
 import net.mlanoe.language.vhdl.PortMaps;
 import net.mlanoe.language.vhdl.Ports;
 import net.mlanoe.language.vhdl.Signature;
+import net.mlanoe.language.vhdl.statement.ProcessStatement;
+import net.mlanoe.language.vhdl.statement.Statement;
 import net.mlanoe.language.vhdl.util.VhdlSwitch;
 
 import org.eclipse.emf.ecore.EObject;
@@ -47,7 +49,12 @@ public class OutlineChildrenSwitch extends
 				&& !object.getStatement().isEmpty()) {
 			List<EObject> res = new ArrayList<EObject>();
 			res.addAll(object.getDeclaration());
-			res.addAll(object.getStatement());
+			for (Statement statement : object.getStatement()) {
+				if (statement instanceof ProcessStatement) {
+					res.add(statement);
+				}
+			}
+
 			return res;
 		}
 

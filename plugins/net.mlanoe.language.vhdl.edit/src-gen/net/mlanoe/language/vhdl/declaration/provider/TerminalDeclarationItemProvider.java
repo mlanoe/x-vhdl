@@ -206,6 +206,11 @@ public class TerminalDeclarationItemProvider extends DeclarationItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(VhdlPackage.Literals.MULTI_NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(NaturePackage.Literals.NATURED__NATURE,
 				 ExpressionFactory.eINSTANCE.createAggregateExpression()));
 
@@ -258,6 +263,11 @@ public class TerminalDeclarationItemProvider extends DeclarationItemProvider {
 			(createChildParameter
 				(NaturePackage.Literals.NATURED__NATURE,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(NaturePackage.Literals.NATURED__NATURE,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

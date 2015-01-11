@@ -296,6 +296,11 @@ public class ConstrainedArrayNatureDefinitionItemProvider extends ArrayNatureDef
 			(createChildParameter
 				(NaturePackage.Literals.CONSTRAINED_ARRAY_NATURE_DEFINITION__CONSTRAINT,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(NaturePackage.Literals.CONSTRAINED_ARRAY_NATURE_DEFINITION__CONSTRAINT,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

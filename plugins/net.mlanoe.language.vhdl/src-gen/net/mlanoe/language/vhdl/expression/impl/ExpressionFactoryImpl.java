@@ -93,6 +93,7 @@ public class ExpressionFactoryImpl extends EFactoryImpl implements ExpressionFac
 			case ExpressionPackage.WAVEFORM_EXPRESSION: return createWaveformExpression();
 			case ExpressionPackage.MULTI_EXPRESSION: return createMultiExpression();
 			case ExpressionPackage.CONDITIONAL_WAVEFORM_EXPRESSION: return createConditionalWaveformExpression();
+			case ExpressionPackage.TYPE_QUALIFICATION_EXPRESSION: return createTypeQualificationExpression();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -464,6 +465,16 @@ public class ExpressionFactoryImpl extends EFactoryImpl implements ExpressionFac
 	public ConditionalWaveformExpression createConditionalWaveformExpression() {
 		ConditionalWaveformExpressionImpl conditionalWaveformExpression = new ConditionalWaveformExpressionImpl();
 		return conditionalWaveformExpression;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TypeQualificationExpression createTypeQualificationExpression() {
+		TypeQualificationExpressionImpl typeQualificationExpression = new TypeQualificationExpressionImpl();
+		return typeQualificationExpression;
 	}
 
 	/**

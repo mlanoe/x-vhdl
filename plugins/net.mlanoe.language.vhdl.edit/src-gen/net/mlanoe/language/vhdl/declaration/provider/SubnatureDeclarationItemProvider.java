@@ -200,6 +200,11 @@ public class SubnatureDeclarationItemProvider extends DeclarationItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(VhdlPackage.Literals.NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(NaturePackage.Literals.NATURED__NATURE,
 				 ExpressionFactory.eINSTANCE.createAggregateExpression()));
 
@@ -252,6 +257,11 @@ public class SubnatureDeclarationItemProvider extends DeclarationItemProvider {
 			(createChildParameter
 				(NaturePackage.Literals.NATURED__NATURE,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(NaturePackage.Literals.NATURED__NATURE,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

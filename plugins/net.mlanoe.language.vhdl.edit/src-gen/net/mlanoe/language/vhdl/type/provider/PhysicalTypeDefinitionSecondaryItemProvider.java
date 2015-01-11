@@ -260,6 +260,11 @@ public class PhysicalTypeDefinitionSecondaryItemProvider
 			(createChildParameter
 				(TypePackage.Literals.PHYSICAL_TYPE_DEFINITION_SECONDARY__OF,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TypePackage.Literals.PHYSICAL_TYPE_DEFINITION_SECONDARY__OF,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

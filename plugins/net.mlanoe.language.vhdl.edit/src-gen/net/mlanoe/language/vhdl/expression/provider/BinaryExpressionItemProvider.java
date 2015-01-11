@@ -289,6 +289,11 @@ public class BinaryExpressionItemProvider extends ExpressionItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(ExpressionPackage.Literals.BINARY_EXPRESSION__LEFT,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(ExpressionPackage.Literals.BINARY_EXPRESSION__RIGHT,
 				 ExpressionFactory.eINSTANCE.createAddingExpression()));
 
@@ -441,6 +446,11 @@ public class BinaryExpressionItemProvider extends ExpressionItemProvider {
 			(createChildParameter
 				(ExpressionPackage.Literals.BINARY_EXPRESSION__RIGHT,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ExpressionPackage.Literals.BINARY_EXPRESSION__RIGHT,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

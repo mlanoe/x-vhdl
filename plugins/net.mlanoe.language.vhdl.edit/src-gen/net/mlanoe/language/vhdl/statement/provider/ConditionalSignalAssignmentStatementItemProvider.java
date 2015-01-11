@@ -291,6 +291,11 @@ public class ConditionalSignalAssignmentStatementItemProvider extends SignalAssi
 			(createChildParameter
 				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.CONDITIONAL_SIGNAL_ASSIGNMENT_STATEMENT__WAVEFORM,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

@@ -200,6 +200,11 @@ public class AliasDeclarationItemProvider extends DeclarationItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(VhdlPackage.Literals.NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(DeclarationPackage.Literals.ALIAS_DECLARATION__ALIAS,
 				 ExpressionFactory.eINSTANCE.createAggregateExpression()));
 
@@ -255,6 +260,11 @@ public class AliasDeclarationItemProvider extends DeclarationItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(DeclarationPackage.Literals.ALIAS_DECLARATION__ALIAS,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(DeclarationPackage.Literals.ALIAS_DECLARATION__IS,
 				 ExpressionFactory.eINSTANCE.createAggregateExpression()));
 
@@ -302,6 +312,11 @@ public class AliasDeclarationItemProvider extends DeclarationItemProvider {
 			(createChildParameter
 				(DeclarationPackage.Literals.ALIAS_DECLARATION__IS,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.ALIAS_DECLARATION__IS,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

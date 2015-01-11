@@ -214,6 +214,11 @@ public class ComponentConfigurationItemProvider extends ConfigurationItemItemPro
 
 		newChildDescriptors.add
 			(createChildParameter
+				(ConfigurationPackage.Literals.COMPONENT_CONFIGURATION__LIST,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(ConfigurationPackage.Literals.COMPONENT_CONFIGURATION__COMPONENT,
 				 ExpressionFactory.eINSTANCE.createAggregateExpression()));
 
@@ -264,6 +269,11 @@ public class ComponentConfigurationItemProvider extends ConfigurationItemItemPro
 
 		newChildDescriptors.add
 			(createChildParameter
+				(ConfigurationPackage.Literals.COMPONENT_CONFIGURATION__COMPONENT,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(ConfigurationPackage.Literals.COMPONENT_CONFIGURATION__ENTITY,
 				 ExpressionFactory.eINSTANCE.createAggregateExpression()));
 
@@ -314,6 +324,11 @@ public class ComponentConfigurationItemProvider extends ConfigurationItemItemPro
 
 		newChildDescriptors.add
 			(createChildParameter
+				(ConfigurationPackage.Literals.COMPONENT_CONFIGURATION__ENTITY,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(ConfigurationPackage.Literals.COMPONENT_CONFIGURATION__CONFIGURATION,
 				 ExpressionFactory.eINSTANCE.createAggregateExpression()));
 
@@ -361,6 +376,11 @@ public class ComponentConfigurationItemProvider extends ConfigurationItemItemPro
 			(createChildParameter
 				(ConfigurationPackage.Literals.COMPONENT_CONFIGURATION__CONFIGURATION,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ConfigurationPackage.Literals.COMPONENT_CONFIGURATION__CONFIGURATION,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

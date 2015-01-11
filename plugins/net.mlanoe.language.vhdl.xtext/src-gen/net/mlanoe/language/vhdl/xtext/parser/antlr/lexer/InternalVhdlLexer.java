@@ -13,24 +13,24 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalVhdlLexer extends Lexer {
     public static final int Sra=103;
-    public static final int RULE_ID=148;
+    public static final int RULE_ID=149;
     public static final int Tolerance=15;
-    public static final int RightParenthesis=124;
+    public static final int RightParenthesis=125;
     public static final int Array=54;
     public static final int After=52;
     public static final int Group=59;
     public static final int Srl=104;
-    public static final int LeftParenthesis=123;
-    public static final int RightSquareBracket=137;
+    public static final int LeftParenthesis=124;
+    public static final int RightSquareBracket=138;
     public static final int Library=29;
-    public static final int Solidus=130;
+    public static final int Solidus=131;
     public static final int Elsif=58;
     public static final int EOF=-1;
     public static final int Attribute=9;
-    public static final int EqualsSignEqualsSign=112;
+    public static final int EqualsSignEqualsSign=113;
     public static final int Bus=89;
-    public static final int RULE_BIT_STRING_LITERAL=145;
-    public static final int FullStop=129;
+    public static final int RULE_BIT_STRING_LITERAL=146;
+    public static final int FullStop=130;
     public static final int Xor=106;
     public static final int Reject=46;
     public static final int Through=35;
@@ -38,18 +38,18 @@ public class InternalVhdlLexer extends Lexer {
     public static final int Rol=99;
     public static final int Variable=26;
     public static final int Signal=51;
-    public static final int To=121;
+    public static final int To=122;
     public static final int Register=22;
     public static final int Linkage=30;
     public static final int Across=37;
     public static final int Xnor=85;
-    public static final int LessThanSign=133;
+    public static final int LessThanSign=134;
     public static final int Disconnect=6;
     public static final int Pure=79;
     public static final int Nature=43;
     public static final int When=83;
     public static final int Port=78;
-    public static final int RULE_CHAR=150;
+    public static final int RULE_CHAR=151;
     public static final int Transport=16;
     public static final int Ror=100;
     public static final int Access=36;
@@ -60,33 +60,34 @@ public class InternalVhdlLexer extends Lexer {
     public static final int Mod=93;
     public static final int Others=44;
     public static final int Abs=86;
-    public static final int RULE_LETTER_OR_DIGIT_FRAGMENT=147;
-    public static final int ColonEqualsSign=109;
+    public static final int RULE_LETTER_OR_DIGIT_FRAGMENT=148;
+    public static final int ColonEqualsSign=110;
     public static final int Subnature=14;
-    public static final int LessThanSignEqualsSign=110;
-    public static final int Colon=131;
-    public static final int RULE_EXTENDED_IDENTIFIER=149;
+    public static final int LessThanSignEqualsSign=111;
+    public static final int Colon=132;
+    public static final int RULE_EXTENDED_IDENTIFIER=150;
     public static final int With=84;
     public static final int Block=56;
     public static final int Range=64;
-    public static final int RULE_STRING=144;
+    public static final int RULE_STRING=145;
     public static final int Break=57;
     public static final int Function=18;
-    public static final int VerticalLine=138;
+    public static final int VerticalLine=139;
     public static final int Inout=60;
     public static final int Guarded=28;
     public static final int Next=75;
-    public static final int On=119;
+    public static final int On=120;
     public static final int Else=70;
     public static final int Wait=82;
     public static final int Label=61;
-    public static final int Of=118;
+    public static final int Of=119;
     public static final int Generate=19;
     public static final int Loop=73;
     public static final int End=90;
     public static final int Exit=71;
     public static final int Open=77;
-    public static final int HyphenMinus=128;
+    public static final int ApostropheLeftParenthesis=107;
+    public static final int HyphenMinus=129;
     public static final int Architecture=5;
     public static final int All=87;
     public static final int Assert=38;
@@ -94,58 +95,58 @@ public class InternalVhdlLexer extends Lexer {
     public static final int Severity=23;
     public static final int Nand=74;
     public static final int While=67;
-    public static final int LessThanSignGreaterThanSign=111;
+    public static final int LessThanSignGreaterThanSign=112;
     public static final int Process=33;
     public static final int Case=69;
-    public static final int GreaterThanSign=135;
+    public static final int GreaterThanSign=136;
     public static final int Component=10;
     public static final int Begin=55;
-    public static final int RULE_INTEGER_FRAGMENT=139;
+    public static final int RULE_INTEGER_FRAGMENT=140;
     public static final int Body=68;
     public static final int Literal=31;
     public static final int Terminal=25;
-    public static final int RULE_EXPONENT_FRAGMENT=141;
+    public static final int RULE_EXPONENT_FRAGMENT=142;
     public static final int Map=92;
-    public static final int RULE_DIGIT_FRAGMENT=154;
+    public static final int RULE_DIGIT_FRAGMENT=155;
     public static final int Spectrum=24;
-    public static final int EqualsSignGreaterThanSign=113;
-    public static final int RULE_ABSTRACT_LITERAL=142;
+    public static final int EqualsSignGreaterThanSign=114;
+    public static final int RULE_ABSTRACT_LITERAL=143;
     public static final int Subtype=34;
     public static final int Select=49;
-    public static final int AsteriskAsterisk=107;
-    public static final int LeftSquareBracket=136;
-    public static final int Or=120;
+    public static final int AsteriskAsterisk=108;
+    public static final int LeftSquareBracket=137;
+    public static final int Or=121;
     public static final int Return=48;
     public static final int Noise=63;
-    public static final int RULE_LETTER_FRAGMENT=146;
+    public static final int RULE_LETTER_FRAGMENT=147;
     public static final int Downto=40;
     public static final int Reference=13;
-    public static final int If=115;
-    public static final int RULE_BASED_INTEGER_FRAGMENT=140;
+    public static final int If=116;
+    public static final int RULE_BASED_INTEGER_FRAGMENT=141;
     public static final int And=88;
     public static final int Entity=41;
-    public static final int Asterisk=125;
-    public static final int RULE_BASE_SPECIFIER_FRAGMENT=143;
-    public static final int In=116;
+    public static final int Asterisk=126;
+    public static final int RULE_BASE_SPECIFIER_FRAGMENT=144;
+    public static final int In=117;
     public static final int Type=81;
     public static final int Sla=101;
     public static final int Then=80;
     public static final int Report=47;
     public static final int Procedure=12;
-    public static final int RULE_ATTRIBUTE=151;
+    public static final int RULE_ATTRIBUTE=152;
     public static final int Buffer=39;
-    public static final int Is=117;
-    public static final int SolidusEqualsSign=108;
+    public static final int Is=118;
+    public static final int SolidusEqualsSign=109;
     public static final int Units=65;
-    public static final int Semicolon=132;
-    public static final int RULE_SL_COMMENT=152;
+    public static final int Semicolon=133;
+    public static final int RULE_SL_COMMENT=153;
     public static final int For=91;
     public static final int Package=32;
     public static final int Sll=102;
-    public static final int Ampersand=122;
+    public static final int Ampersand=123;
     public static final int Quantity=21;
     public static final int Shared=50;
-    public static final int PlusSign=126;
+    public static final int PlusSign=127;
     public static final int Unaffected=8;
     public static final int File=72;
     public static final int Rem=98;
@@ -153,15 +154,15 @@ public class InternalVhdlLexer extends Lexer {
     public static final int Configuration=4;
     public static final int Nor=95;
     public static final int Not=96;
-    public static final int GreaterThanSignEqualsSign=114;
+    public static final int GreaterThanSignEqualsSign=115;
     public static final int Impure=42;
     public static final int Record=45;
     public static final int Alias=53;
-    public static final int RULE_WS=153;
+    public static final int RULE_WS=154;
     public static final int Generic=27;
     public static final int Procedural=7;
-    public static final int EqualsSign=134;
-    public static final int Comma=127;
+    public static final int EqualsSign=135;
+    public static final int Comma=128;
     public static final int Until=66;
     public static final int Postponed=11;
 
@@ -7364,13 +7365,34 @@ public class InternalVhdlLexer extends Lexer {
     }
     // $ANTLR end "Xor"
 
+    // $ANTLR start "ApostropheLeftParenthesis"
+    public final void mApostropheLeftParenthesis() throws RecognitionException {
+        try {
+            int _type = ApostropheLeftParenthesis;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:225:27: ( '\\'' '(' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:225:29: '\\'' '('
+            {
+            match('\''); 
+            match('('); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "ApostropheLeftParenthesis"
+
     // $ANTLR start "AsteriskAsterisk"
     public final void mAsteriskAsterisk() throws RecognitionException {
         try {
             int _type = AsteriskAsterisk;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:225:18: ( '*' '*' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:225:20: '*' '*'
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:227:18: ( '*' '*' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:227:20: '*' '*'
             {
             match('*'); 
             match('*'); 
@@ -7390,8 +7412,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = SolidusEqualsSign;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:227:19: ( '/' '=' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:227:21: '/' '='
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:229:19: ( '/' '=' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:229:21: '/' '='
             {
             match('/'); 
             match('='); 
@@ -7411,8 +7433,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = ColonEqualsSign;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:229:17: ( ':' '=' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:229:19: ':' '='
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:231:17: ( ':' '=' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:231:19: ':' '='
             {
             match(':'); 
             match('='); 
@@ -7432,8 +7454,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = LessThanSignEqualsSign;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:231:24: ( '<' '=' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:231:26: '<' '='
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:233:24: ( '<' '=' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:233:26: '<' '='
             {
             match('<'); 
             match('='); 
@@ -7453,8 +7475,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = LessThanSignGreaterThanSign;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:233:29: ( '<' '>' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:233:31: '<' '>'
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:235:29: ( '<' '>' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:235:31: '<' '>'
             {
             match('<'); 
             match('>'); 
@@ -7474,8 +7496,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = EqualsSignEqualsSign;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:235:22: ( '=' '=' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:235:24: '=' '='
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:237:22: ( '=' '=' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:237:24: '=' '='
             {
             match('='); 
             match('='); 
@@ -7495,8 +7517,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = EqualsSignGreaterThanSign;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:237:27: ( '=' '>' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:237:29: '=' '>'
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:239:27: ( '=' '>' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:239:29: '=' '>'
             {
             match('='); 
             match('>'); 
@@ -7516,8 +7538,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = GreaterThanSignEqualsSign;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:239:27: ( '>' '=' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:239:29: '>' '='
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:241:27: ( '>' '=' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:241:29: '>' '='
             {
             match('>'); 
             match('='); 
@@ -7537,8 +7559,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = If;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:241:4: ( ( 'I' | 'i' ) ( 'F' | 'f' ) )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:241:6: ( 'I' | 'i' ) ( 'F' | 'f' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:243:4: ( ( 'I' | 'i' ) ( 'F' | 'f' ) )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:243:6: ( 'I' | 'i' ) ( 'F' | 'f' )
             {
             if ( input.LA(1)=='I'||input.LA(1)=='i' ) {
                 input.consume();
@@ -7574,8 +7596,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = In;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:243:4: ( ( 'I' | 'i' ) ( 'N' | 'n' ) )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:243:6: ( 'I' | 'i' ) ( 'N' | 'n' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:245:4: ( ( 'I' | 'i' ) ( 'N' | 'n' ) )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:245:6: ( 'I' | 'i' ) ( 'N' | 'n' )
             {
             if ( input.LA(1)=='I'||input.LA(1)=='i' ) {
                 input.consume();
@@ -7611,8 +7633,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = Is;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:245:4: ( ( 'I' | 'i' ) ( 'S' | 's' ) )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:245:6: ( 'I' | 'i' ) ( 'S' | 's' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:247:4: ( ( 'I' | 'i' ) ( 'S' | 's' ) )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:247:6: ( 'I' | 'i' ) ( 'S' | 's' )
             {
             if ( input.LA(1)=='I'||input.LA(1)=='i' ) {
                 input.consume();
@@ -7648,8 +7670,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = Of;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:247:4: ( ( 'O' | 'o' ) ( 'F' | 'f' ) )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:247:6: ( 'O' | 'o' ) ( 'F' | 'f' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:249:4: ( ( 'O' | 'o' ) ( 'F' | 'f' ) )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:249:6: ( 'O' | 'o' ) ( 'F' | 'f' )
             {
             if ( input.LA(1)=='O'||input.LA(1)=='o' ) {
                 input.consume();
@@ -7685,8 +7707,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = On;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:249:4: ( ( 'O' | 'o' ) ( 'N' | 'n' ) )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:249:6: ( 'O' | 'o' ) ( 'N' | 'n' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:251:4: ( ( 'O' | 'o' ) ( 'N' | 'n' ) )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:251:6: ( 'O' | 'o' ) ( 'N' | 'n' )
             {
             if ( input.LA(1)=='O'||input.LA(1)=='o' ) {
                 input.consume();
@@ -7722,8 +7744,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = Or;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:251:4: ( ( 'O' | 'o' ) ( 'R' | 'r' ) )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:251:6: ( 'O' | 'o' ) ( 'R' | 'r' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:253:4: ( ( 'O' | 'o' ) ( 'R' | 'r' ) )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:253:6: ( 'O' | 'o' ) ( 'R' | 'r' )
             {
             if ( input.LA(1)=='O'||input.LA(1)=='o' ) {
                 input.consume();
@@ -7759,8 +7781,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = To;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:253:4: ( ( 'T' | 't' ) ( 'O' | 'o' ) )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:253:6: ( 'T' | 't' ) ( 'O' | 'o' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:255:4: ( ( 'T' | 't' ) ( 'O' | 'o' ) )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:255:6: ( 'T' | 't' ) ( 'O' | 'o' )
             {
             if ( input.LA(1)=='T'||input.LA(1)=='t' ) {
                 input.consume();
@@ -7796,8 +7818,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = Ampersand;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:255:11: ( '&' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:255:13: '&'
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:257:11: ( '&' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:257:13: '&'
             {
             match('&'); 
 
@@ -7816,8 +7838,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = LeftParenthesis;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:257:17: ( '(' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:257:19: '('
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:259:17: ( '(' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:259:19: '('
             {
             match('('); 
 
@@ -7836,8 +7858,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = RightParenthesis;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:259:18: ( ')' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:259:20: ')'
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:261:18: ( ')' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:261:20: ')'
             {
             match(')'); 
 
@@ -7856,8 +7878,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = Asterisk;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:261:10: ( '*' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:261:12: '*'
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:263:10: ( '*' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:263:12: '*'
             {
             match('*'); 
 
@@ -7876,8 +7898,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = PlusSign;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:263:10: ( '+' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:263:12: '+'
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:265:10: ( '+' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:265:12: '+'
             {
             match('+'); 
 
@@ -7896,8 +7918,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = Comma;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:265:7: ( ',' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:265:9: ','
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:267:7: ( ',' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:267:9: ','
             {
             match(','); 
 
@@ -7916,8 +7938,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = HyphenMinus;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:267:13: ( '-' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:267:15: '-'
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:269:13: ( '-' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:269:15: '-'
             {
             match('-'); 
 
@@ -7936,8 +7958,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = FullStop;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:269:10: ( '.' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:269:12: '.'
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:271:10: ( '.' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:271:12: '.'
             {
             match('.'); 
 
@@ -7956,8 +7978,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = Solidus;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:271:9: ( '/' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:271:11: '/'
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:273:9: ( '/' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:273:11: '/'
             {
             match('/'); 
 
@@ -7976,8 +7998,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = Colon;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:273:7: ( ':' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:273:9: ':'
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:275:7: ( ':' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:275:9: ':'
             {
             match(':'); 
 
@@ -7996,8 +8018,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = Semicolon;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:275:11: ( ';' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:275:13: ';'
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:277:11: ( ';' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:277:13: ';'
             {
             match(';'); 
 
@@ -8016,8 +8038,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = LessThanSign;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:277:14: ( '<' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:277:16: '<'
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:279:14: ( '<' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:279:16: '<'
             {
             match('<'); 
 
@@ -8036,8 +8058,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = EqualsSign;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:279:12: ( '=' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:279:14: '='
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:281:12: ( '=' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:281:14: '='
             {
             match('='); 
 
@@ -8056,8 +8078,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = GreaterThanSign;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:281:17: ( '>' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:281:19: '>'
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:283:17: ( '>' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:283:19: '>'
             {
             match('>'); 
 
@@ -8076,8 +8098,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = LeftSquareBracket;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:283:19: ( '[' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:283:21: '['
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:285:19: ( '[' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:285:21: '['
             {
             match('['); 
 
@@ -8096,8 +8118,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = RightSquareBracket;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:285:20: ( ']' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:285:22: ']'
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:287:20: ( ']' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:287:22: ']'
             {
             match(']'); 
 
@@ -8116,8 +8138,8 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = VerticalLine;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:287:14: ( '|' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:287:16: '|'
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:289:14: ( '|' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:289:16: '|'
             {
             match('|'); 
 
@@ -8136,11 +8158,11 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = RULE_ABSTRACT_LITERAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:291:23: ( RULE_INTEGER_FRAGMENT ( ( '.' RULE_INTEGER_FRAGMENT )? | '#' RULE_BASED_INTEGER_FRAGMENT ( '.' RULE_BASED_INTEGER_FRAGMENT )? '#' ) ( RULE_EXPONENT_FRAGMENT )? )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:291:25: RULE_INTEGER_FRAGMENT ( ( '.' RULE_INTEGER_FRAGMENT )? | '#' RULE_BASED_INTEGER_FRAGMENT ( '.' RULE_BASED_INTEGER_FRAGMENT )? '#' ) ( RULE_EXPONENT_FRAGMENT )?
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:293:23: ( RULE_INTEGER_FRAGMENT ( ( '.' RULE_INTEGER_FRAGMENT )? | '#' RULE_BASED_INTEGER_FRAGMENT ( '.' RULE_BASED_INTEGER_FRAGMENT )? '#' ) ( RULE_EXPONENT_FRAGMENT )? )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:293:25: RULE_INTEGER_FRAGMENT ( ( '.' RULE_INTEGER_FRAGMENT )? | '#' RULE_BASED_INTEGER_FRAGMENT ( '.' RULE_BASED_INTEGER_FRAGMENT )? '#' ) ( RULE_EXPONENT_FRAGMENT )?
             {
             mRULE_INTEGER_FRAGMENT(); 
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:291:47: ( ( '.' RULE_INTEGER_FRAGMENT )? | '#' RULE_BASED_INTEGER_FRAGMENT ( '.' RULE_BASED_INTEGER_FRAGMENT )? '#' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:293:47: ( ( '.' RULE_INTEGER_FRAGMENT )? | '#' RULE_BASED_INTEGER_FRAGMENT ( '.' RULE_BASED_INTEGER_FRAGMENT )? '#' )
             int alt3=2;
             int LA3_0 = input.LA(1);
 
@@ -8151,9 +8173,9 @@ public class InternalVhdlLexer extends Lexer {
                 alt3=1;}
             switch (alt3) {
                 case 1 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:291:48: ( '.' RULE_INTEGER_FRAGMENT )?
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:293:48: ( '.' RULE_INTEGER_FRAGMENT )?
                     {
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:291:48: ( '.' RULE_INTEGER_FRAGMENT )?
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:293:48: ( '.' RULE_INTEGER_FRAGMENT )?
                     int alt1=2;
                     int LA1_0 = input.LA(1);
 
@@ -8162,7 +8184,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     switch (alt1) {
                         case 1 :
-                            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:291:49: '.' RULE_INTEGER_FRAGMENT
+                            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:293:49: '.' RULE_INTEGER_FRAGMENT
                             {
                             match('.'); 
                             mRULE_INTEGER_FRAGMENT(); 
@@ -8176,11 +8198,11 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:291:77: '#' RULE_BASED_INTEGER_FRAGMENT ( '.' RULE_BASED_INTEGER_FRAGMENT )? '#'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:293:77: '#' RULE_BASED_INTEGER_FRAGMENT ( '.' RULE_BASED_INTEGER_FRAGMENT )? '#'
                     {
                     match('#'); 
                     mRULE_BASED_INTEGER_FRAGMENT(); 
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:291:109: ( '.' RULE_BASED_INTEGER_FRAGMENT )?
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:293:109: ( '.' RULE_BASED_INTEGER_FRAGMENT )?
                     int alt2=2;
                     int LA2_0 = input.LA(1);
 
@@ -8189,7 +8211,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     switch (alt2) {
                         case 1 :
-                            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:291:110: '.' RULE_BASED_INTEGER_FRAGMENT
+                            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:293:110: '.' RULE_BASED_INTEGER_FRAGMENT
                             {
                             match('.'); 
                             mRULE_BASED_INTEGER_FRAGMENT(); 
@@ -8206,7 +8228,7 @@ public class InternalVhdlLexer extends Lexer {
 
             }
 
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:291:149: ( RULE_EXPONENT_FRAGMENT )?
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:293:149: ( RULE_EXPONENT_FRAGMENT )?
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -8215,7 +8237,7 @@ public class InternalVhdlLexer extends Lexer {
             }
             switch (alt4) {
                 case 1 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:291:149: RULE_EXPONENT_FRAGMENT
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:293:149: RULE_EXPONENT_FRAGMENT
                     {
                     mRULE_EXPONENT_FRAGMENT(); 
 
@@ -8240,10 +8262,10 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = RULE_BIT_STRING_LITERAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:293:25: ( ( RULE_INTEGER_FRAGMENT )? RULE_BASE_SPECIFIER_FRAGMENT RULE_STRING )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:293:27: ( RULE_INTEGER_FRAGMENT )? RULE_BASE_SPECIFIER_FRAGMENT RULE_STRING
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:295:25: ( ( RULE_INTEGER_FRAGMENT )? RULE_BASE_SPECIFIER_FRAGMENT RULE_STRING )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:295:27: ( RULE_INTEGER_FRAGMENT )? RULE_BASE_SPECIFIER_FRAGMENT RULE_STRING
             {
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:293:27: ( RULE_INTEGER_FRAGMENT )?
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:295:27: ( RULE_INTEGER_FRAGMENT )?
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -8252,7 +8274,7 @@ public class InternalVhdlLexer extends Lexer {
             }
             switch (alt5) {
                 case 1 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:293:27: RULE_INTEGER_FRAGMENT
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:295:27: RULE_INTEGER_FRAGMENT
                     {
                     mRULE_INTEGER_FRAGMENT(); 
 
@@ -8279,10 +8301,10 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:295:9: ( ( '^' )? RULE_LETTER_FRAGMENT ( '_' | RULE_LETTER_OR_DIGIT_FRAGMENT )* )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:295:11: ( '^' )? RULE_LETTER_FRAGMENT ( '_' | RULE_LETTER_OR_DIGIT_FRAGMENT )*
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:297:9: ( ( '^' )? RULE_LETTER_FRAGMENT ( '_' | RULE_LETTER_OR_DIGIT_FRAGMENT )* )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:297:11: ( '^' )? RULE_LETTER_FRAGMENT ( '_' | RULE_LETTER_OR_DIGIT_FRAGMENT )*
             {
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:295:11: ( '^' )?
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:297:11: ( '^' )?
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -8291,7 +8313,7 @@ public class InternalVhdlLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:295:11: '^'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:297:11: '^'
                     {
                     match('^'); 
 
@@ -8301,7 +8323,7 @@ public class InternalVhdlLexer extends Lexer {
             }
 
             mRULE_LETTER_FRAGMENT(); 
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:295:37: ( '_' | RULE_LETTER_OR_DIGIT_FRAGMENT )*
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:297:37: ( '_' | RULE_LETTER_OR_DIGIT_FRAGMENT )*
             loop7:
             do {
                 int alt7=2;
@@ -8350,11 +8372,11 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = RULE_EXTENDED_IDENTIFIER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:297:26: ( '\\\\' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\r' | '\\n' ) ) )+ '\\\\' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:297:28: '\\\\' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\r' | '\\n' ) ) )+ '\\\\'
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:299:26: ( '\\\\' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\r' | '\\n' ) ) )+ '\\\\' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:299:28: '\\\\' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\r' | '\\n' ) ) )+ '\\\\'
             {
             match('\\'); 
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:297:33: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\r' | '\\n' ) ) )+
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:299:33: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\r' | '\\n' ) ) )+
             int cnt8=0;
             loop8:
             do {
@@ -8377,7 +8399,7 @@ public class InternalVhdlLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:297:34: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' )
+            	    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:299:34: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' )
             	    {
             	    match('\\'); 
             	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||input.LA(1)=='t' ) {
@@ -8393,7 +8415,7 @@ public class InternalVhdlLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:297:75: ~ ( ( '\\\\' | '\\r' | '\\n' ) )
+            	    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:299:75: ~ ( ( '\\\\' | '\\r' | '\\n' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -8434,11 +8456,11 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:299:13: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' | '\\r' | '\\n' ) ) )* '\"' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:299:15: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' | '\\r' | '\\n' ) ) )* '\"'
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:13: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' | '\\r' | '\\n' ) ) )* '\"' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:15: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' | '\\r' | '\\n' ) ) )* '\"'
             {
             match('\"'); 
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:299:19: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' | '\\r' | '\\n' ) ) )*
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:19: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' | '\\r' | '\\n' ) ) )*
             loop9:
             do {
                 int alt9=3;
@@ -8454,7 +8476,7 @@ public class InternalVhdlLexer extends Lexer {
 
                 switch (alt9) {
             	case 1 :
-            	    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:299:20: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' )
+            	    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:20: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' )
             	    {
             	    match('\\'); 
             	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||input.LA(1)=='t' ) {
@@ -8470,7 +8492,7 @@ public class InternalVhdlLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:299:61: ~ ( ( '\\\\' | '\"' | '\\r' | '\\n' ) )
+            	    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:61: ~ ( ( '\\\\' | '\"' | '\\r' | '\\n' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -8507,15 +8529,15 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = RULE_CHAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:11: ( ( '\\'a\\'' | '\\'b\\'' | '\\'c\\'' | '\\'d\\'' | '\\'e\\'' | '\\'f\\'' | '\\'g\\'' | '\\'h\\'' | '\\'i\\'' | '\\'j\\'' | '\\'k\\'' | '\\'l\\'' | '\\'m\\'' | '\\'n\\'' | '\\'o\\'' | '\\'p\\'' | '\\'q\\'' | '\\'r\\'' | '\\'s\\'' | '\\'t\\'' | '\\'u\\'' | '\\'v\\'' | '\\'w\\'' | '\\'x\\'' | '\\'y\\'' | '\\'z\\'' | '\\'A\\'' | '\\'B\\'' | '\\'C\\'' | '\\'D\\'' | '\\'E\\'' | '\\'F\\'' | '\\'G\\'' | '\\'H\\'' | '\\'I\\'' | '\\'J\\'' | '\\'K\\'' | '\\'L\\'' | '\\'M\\'' | '\\'N\\'' | '\\'O\\'' | '\\'P\\'' | '\\'Q\\'' | '\\'R\\'' | '\\'S\\'' | '\\'T\\'' | '\\'U\\'' | '\\'V\\'' | '\\'W\\'' | '\\'X\\'' | '\\'Y\\'' | '\\'Z\\'' | '\\'0\\'' | '\\'1\\'' | '\\'2\\'' | '\\'3\\'' | '\\'4\\'' | '\\'5\\'' | '\\'6\\'' | '\\'7\\'' | '\\'8\\'' | '\\'9\\'' | '\\'&\\'' | '\\'\\'\\'' | '\\'(\\'' | '\\')\\'' | '\\'+\\'' | '\\',\\'' | '\\'-\\'' | '\\'.\\'' | '\\'/\\'' | '\\':\\'' | '\\';\\'' | '\\'<\\'' | '\\'=\\'' | '\\'>\\'' | '\\'|\\'' | '\\' \\'' | '\\'#\\'' | '\\'[\\'' | '\\']\\'' | '\\'_\\'' | '\\'*\\'' | '\\'\"\\'' | '\\'!\\'' | '\\'$\\'' | '\\'%\\'' | '\\'@\\'' | '\\'?\\'' | '\\'^\\'' | '\\'`\\'' | '\\'{\\'' | '\\'}\\'' | '\\'~\\'' | '\\'\\u00A0\\'' | '\\'\\u00A1\\'' | '\\'\\u00A2\\'' | '\\'\\u00A3\\'' | '\\'\\u20AC\\'' | '\\'\\u00A5\\'' | '\\'\\u0160\\'' | '\\'\\u00A7\\'' | '\\'\\u0161\\'' | '\\'\\u00A9\\'' | '\\'\\u00AA\\'' | '\\'\\u00AB\\'' | '\\'\\u00AC\\'' | '\\'\\'' | '\\'\\u00AE\\'' | '\\'\\u00AF\\'' | '\\'\\u00B0\\'' | '\\'\\u00B1\\'' | '\\'\\u00B2\\'' | '\\'\\u00B3\\'' | '\\'\\u017D\\'' | '\\'\\u00B5\\'' | '\\'\\u00B6\\'' | '\\'\\u00B7\\'' | '\\'\\u017E\\'' | '\\'\\u00B9\\'' | '\\'\\u00BA\\'' | '\\'\\u00BB\\'' | '\\'\\u0152\\'' | '\\'\\u0153\\'' | '\\'\\u0178\\'' | '\\'\\u00BF\\'' | '\\'\\u00C0\\'' | '\\'\\u00C1\\'' | '\\'\\u00C2\\'' | '\\'\\u00C3\\'' | '\\'\\u00C4\\'' | '\\'\\u00C5\\'' | '\\'\\u00C6\\'' | '\\'\\u00C7\\'' | '\\'\\u00C8\\'' | '\\'\\u00C9\\'' | '\\'\\u00CA\\'' | '\\'\\u00CB\\'' | '\\'\\u00CC\\'' | '\\'\\u00CD\\'' | '\\'\\u00CE\\'' | '\\'\\u00CF\\'' | '\\'\\u00D0\\'' | '\\'\\u00D1\\'' | '\\'\\u00D2\\'' | '\\'\\u00D3\\'' | '\\'\\u00D4\\'' | '\\'\\u00D5\\'' | '\\'\\u00D6\\'' | '\\'\\u00D7\\'' | '\\'\\u00D8\\'' | '\\'\\u00D9\\'' | '\\'\\u00DA\\'' | '\\'\\u00DB\\'' | '\\'\\u00DC\\'' | '\\'\\u00DD\\'' | '\\'\\u00DE\\'' | '\\'\\u00DF\\'' | '\\'\\u00E0\\'' | '\\'\\u00E1\\'' | '\\'\\u00E2\\'' | '\\'\\u00E3\\'' | '\\'\\u00E4\\'' | '\\'\\u00E5\\'' | '\\'\\u00E6\\'' | '\\'\\u00E7\\'' | '\\'\\u00E8\\'' | '\\'\\u00E9\\'' | '\\'\\u00EA\\'' | '\\'\\u00EB\\'' | '\\'\\u00EC\\'' | '\\'\\u00ED\\'' | '\\'\\u00EE\\'' | '\\'\\u00EF\\'' | '\\'\\u00F0\\'' | '\\'\\u00F1\\'' | '\\'\\u00F2\\'' | '\\'\\u00F3\\'' | '\\'\\u00F4\\'' | '\\'\\u00F5\\'' | '\\'\\u00F6\\'' | '\\'\\u00F7\\'' | '\\'\\u00F8\\'' | '\\'\\u00F9\\'' | '\\'\\u00FA\\'' | '\\'\\u00FB\\'' | '\\'\\u00FC\\'' | '\\'\\u00FD\\'' | '\\'\\u00FE\\'' | '\\'\\u00FF\\'' ) )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:13: ( '\\'a\\'' | '\\'b\\'' | '\\'c\\'' | '\\'d\\'' | '\\'e\\'' | '\\'f\\'' | '\\'g\\'' | '\\'h\\'' | '\\'i\\'' | '\\'j\\'' | '\\'k\\'' | '\\'l\\'' | '\\'m\\'' | '\\'n\\'' | '\\'o\\'' | '\\'p\\'' | '\\'q\\'' | '\\'r\\'' | '\\'s\\'' | '\\'t\\'' | '\\'u\\'' | '\\'v\\'' | '\\'w\\'' | '\\'x\\'' | '\\'y\\'' | '\\'z\\'' | '\\'A\\'' | '\\'B\\'' | '\\'C\\'' | '\\'D\\'' | '\\'E\\'' | '\\'F\\'' | '\\'G\\'' | '\\'H\\'' | '\\'I\\'' | '\\'J\\'' | '\\'K\\'' | '\\'L\\'' | '\\'M\\'' | '\\'N\\'' | '\\'O\\'' | '\\'P\\'' | '\\'Q\\'' | '\\'R\\'' | '\\'S\\'' | '\\'T\\'' | '\\'U\\'' | '\\'V\\'' | '\\'W\\'' | '\\'X\\'' | '\\'Y\\'' | '\\'Z\\'' | '\\'0\\'' | '\\'1\\'' | '\\'2\\'' | '\\'3\\'' | '\\'4\\'' | '\\'5\\'' | '\\'6\\'' | '\\'7\\'' | '\\'8\\'' | '\\'9\\'' | '\\'&\\'' | '\\'\\'\\'' | '\\'(\\'' | '\\')\\'' | '\\'+\\'' | '\\',\\'' | '\\'-\\'' | '\\'.\\'' | '\\'/\\'' | '\\':\\'' | '\\';\\'' | '\\'<\\'' | '\\'=\\'' | '\\'>\\'' | '\\'|\\'' | '\\' \\'' | '\\'#\\'' | '\\'[\\'' | '\\']\\'' | '\\'_\\'' | '\\'*\\'' | '\\'\"\\'' | '\\'!\\'' | '\\'$\\'' | '\\'%\\'' | '\\'@\\'' | '\\'?\\'' | '\\'^\\'' | '\\'`\\'' | '\\'{\\'' | '\\'}\\'' | '\\'~\\'' | '\\'\\u00A0\\'' | '\\'\\u00A1\\'' | '\\'\\u00A2\\'' | '\\'\\u00A3\\'' | '\\'\\u20AC\\'' | '\\'\\u00A5\\'' | '\\'\\u0160\\'' | '\\'\\u00A7\\'' | '\\'\\u0161\\'' | '\\'\\u00A9\\'' | '\\'\\u00AA\\'' | '\\'\\u00AB\\'' | '\\'\\u00AC\\'' | '\\'\\'' | '\\'\\u00AE\\'' | '\\'\\u00AF\\'' | '\\'\\u00B0\\'' | '\\'\\u00B1\\'' | '\\'\\u00B2\\'' | '\\'\\u00B3\\'' | '\\'\\u017D\\'' | '\\'\\u00B5\\'' | '\\'\\u00B6\\'' | '\\'\\u00B7\\'' | '\\'\\u017E\\'' | '\\'\\u00B9\\'' | '\\'\\u00BA\\'' | '\\'\\u00BB\\'' | '\\'\\u0152\\'' | '\\'\\u0153\\'' | '\\'\\u0178\\'' | '\\'\\u00BF\\'' | '\\'\\u00C0\\'' | '\\'\\u00C1\\'' | '\\'\\u00C2\\'' | '\\'\\u00C3\\'' | '\\'\\u00C4\\'' | '\\'\\u00C5\\'' | '\\'\\u00C6\\'' | '\\'\\u00C7\\'' | '\\'\\u00C8\\'' | '\\'\\u00C9\\'' | '\\'\\u00CA\\'' | '\\'\\u00CB\\'' | '\\'\\u00CC\\'' | '\\'\\u00CD\\'' | '\\'\\u00CE\\'' | '\\'\\u00CF\\'' | '\\'\\u00D0\\'' | '\\'\\u00D1\\'' | '\\'\\u00D2\\'' | '\\'\\u00D3\\'' | '\\'\\u00D4\\'' | '\\'\\u00D5\\'' | '\\'\\u00D6\\'' | '\\'\\u00D7\\'' | '\\'\\u00D8\\'' | '\\'\\u00D9\\'' | '\\'\\u00DA\\'' | '\\'\\u00DB\\'' | '\\'\\u00DC\\'' | '\\'\\u00DD\\'' | '\\'\\u00DE\\'' | '\\'\\u00DF\\'' | '\\'\\u00E0\\'' | '\\'\\u00E1\\'' | '\\'\\u00E2\\'' | '\\'\\u00E3\\'' | '\\'\\u00E4\\'' | '\\'\\u00E5\\'' | '\\'\\u00E6\\'' | '\\'\\u00E7\\'' | '\\'\\u00E8\\'' | '\\'\\u00E9\\'' | '\\'\\u00EA\\'' | '\\'\\u00EB\\'' | '\\'\\u00EC\\'' | '\\'\\u00ED\\'' | '\\'\\u00EE\\'' | '\\'\\u00EF\\'' | '\\'\\u00F0\\'' | '\\'\\u00F1\\'' | '\\'\\u00F2\\'' | '\\'\\u00F3\\'' | '\\'\\u00F4\\'' | '\\'\\u00F5\\'' | '\\'\\u00F6\\'' | '\\'\\u00F7\\'' | '\\'\\u00F8\\'' | '\\'\\u00F9\\'' | '\\'\\u00FA\\'' | '\\'\\u00FB\\'' | '\\'\\u00FC\\'' | '\\'\\u00FD\\'' | '\\'\\u00FE\\'' | '\\'\\u00FF\\'' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:11: ( ( '\\'a\\'' | '\\'b\\'' | '\\'c\\'' | '\\'d\\'' | '\\'e\\'' | '\\'f\\'' | '\\'g\\'' | '\\'h\\'' | '\\'i\\'' | '\\'j\\'' | '\\'k\\'' | '\\'l\\'' | '\\'m\\'' | '\\'n\\'' | '\\'o\\'' | '\\'p\\'' | '\\'q\\'' | '\\'r\\'' | '\\'s\\'' | '\\'t\\'' | '\\'u\\'' | '\\'v\\'' | '\\'w\\'' | '\\'x\\'' | '\\'y\\'' | '\\'z\\'' | '\\'A\\'' | '\\'B\\'' | '\\'C\\'' | '\\'D\\'' | '\\'E\\'' | '\\'F\\'' | '\\'G\\'' | '\\'H\\'' | '\\'I\\'' | '\\'J\\'' | '\\'K\\'' | '\\'L\\'' | '\\'M\\'' | '\\'N\\'' | '\\'O\\'' | '\\'P\\'' | '\\'Q\\'' | '\\'R\\'' | '\\'S\\'' | '\\'T\\'' | '\\'U\\'' | '\\'V\\'' | '\\'W\\'' | '\\'X\\'' | '\\'Y\\'' | '\\'Z\\'' | '\\'0\\'' | '\\'1\\'' | '\\'2\\'' | '\\'3\\'' | '\\'4\\'' | '\\'5\\'' | '\\'6\\'' | '\\'7\\'' | '\\'8\\'' | '\\'9\\'' | '\\'&\\'' | '\\'\\'\\'' | '\\'(\\'' | '\\')\\'' | '\\'+\\'' | '\\',\\'' | '\\'-\\'' | '\\'.\\'' | '\\'/\\'' | '\\':\\'' | '\\';\\'' | '\\'<\\'' | '\\'=\\'' | '\\'>\\'' | '\\'|\\'' | '\\' \\'' | '\\'#\\'' | '\\'[\\'' | '\\']\\'' | '\\'_\\'' | '\\'*\\'' | '\\'\"\\'' | '\\'!\\'' | '\\'$\\'' | '\\'%\\'' | '\\'@\\'' | '\\'?\\'' | '\\'^\\'' | '\\'`\\'' | '\\'{\\'' | '\\'}\\'' | '\\'~\\'' | '\\'\\u00A0\\'' | '\\'\\u00A1\\'' | '\\'\\u00A2\\'' | '\\'\\u00A3\\'' | '\\'\\u20AC\\'' | '\\'\\u00A5\\'' | '\\'\\u0160\\'' | '\\'\\u00A7\\'' | '\\'\\u0161\\'' | '\\'\\u00A9\\'' | '\\'\\u00AA\\'' | '\\'\\u00AB\\'' | '\\'\\u00AC\\'' | '\\'\\'' | '\\'\\u00AE\\'' | '\\'\\u00AF\\'' | '\\'\\u00B0\\'' | '\\'\\u00B1\\'' | '\\'\\u00B2\\'' | '\\'\\u00B3\\'' | '\\'\\u017D\\'' | '\\'\\u00B5\\'' | '\\'\\u00B6\\'' | '\\'\\u00B7\\'' | '\\'\\u017E\\'' | '\\'\\u00B9\\'' | '\\'\\u00BA\\'' | '\\'\\u00BB\\'' | '\\'\\u0152\\'' | '\\'\\u0153\\'' | '\\'\\u0178\\'' | '\\'\\u00BF\\'' | '\\'\\u00C0\\'' | '\\'\\u00C1\\'' | '\\'\\u00C2\\'' | '\\'\\u00C3\\'' | '\\'\\u00C4\\'' | '\\'\\u00C5\\'' | '\\'\\u00C6\\'' | '\\'\\u00C7\\'' | '\\'\\u00C8\\'' | '\\'\\u00C9\\'' | '\\'\\u00CA\\'' | '\\'\\u00CB\\'' | '\\'\\u00CC\\'' | '\\'\\u00CD\\'' | '\\'\\u00CE\\'' | '\\'\\u00CF\\'' | '\\'\\u00D0\\'' | '\\'\\u00D1\\'' | '\\'\\u00D2\\'' | '\\'\\u00D3\\'' | '\\'\\u00D4\\'' | '\\'\\u00D5\\'' | '\\'\\u00D6\\'' | '\\'\\u00D7\\'' | '\\'\\u00D8\\'' | '\\'\\u00D9\\'' | '\\'\\u00DA\\'' | '\\'\\u00DB\\'' | '\\'\\u00DC\\'' | '\\'\\u00DD\\'' | '\\'\\u00DE\\'' | '\\'\\u00DF\\'' | '\\'\\u00E0\\'' | '\\'\\u00E1\\'' | '\\'\\u00E2\\'' | '\\'\\u00E3\\'' | '\\'\\u00E4\\'' | '\\'\\u00E5\\'' | '\\'\\u00E6\\'' | '\\'\\u00E7\\'' | '\\'\\u00E8\\'' | '\\'\\u00E9\\'' | '\\'\\u00EA\\'' | '\\'\\u00EB\\'' | '\\'\\u00EC\\'' | '\\'\\u00ED\\'' | '\\'\\u00EE\\'' | '\\'\\u00EF\\'' | '\\'\\u00F0\\'' | '\\'\\u00F1\\'' | '\\'\\u00F2\\'' | '\\'\\u00F3\\'' | '\\'\\u00F4\\'' | '\\'\\u00F5\\'' | '\\'\\u00F6\\'' | '\\'\\u00F7\\'' | '\\'\\u00F8\\'' | '\\'\\u00F9\\'' | '\\'\\u00FA\\'' | '\\'\\u00FB\\'' | '\\'\\u00FC\\'' | '\\'\\u00FD\\'' | '\\'\\u00FE\\'' | '\\'\\u00FF\\'' ) )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:13: ( '\\'a\\'' | '\\'b\\'' | '\\'c\\'' | '\\'d\\'' | '\\'e\\'' | '\\'f\\'' | '\\'g\\'' | '\\'h\\'' | '\\'i\\'' | '\\'j\\'' | '\\'k\\'' | '\\'l\\'' | '\\'m\\'' | '\\'n\\'' | '\\'o\\'' | '\\'p\\'' | '\\'q\\'' | '\\'r\\'' | '\\'s\\'' | '\\'t\\'' | '\\'u\\'' | '\\'v\\'' | '\\'w\\'' | '\\'x\\'' | '\\'y\\'' | '\\'z\\'' | '\\'A\\'' | '\\'B\\'' | '\\'C\\'' | '\\'D\\'' | '\\'E\\'' | '\\'F\\'' | '\\'G\\'' | '\\'H\\'' | '\\'I\\'' | '\\'J\\'' | '\\'K\\'' | '\\'L\\'' | '\\'M\\'' | '\\'N\\'' | '\\'O\\'' | '\\'P\\'' | '\\'Q\\'' | '\\'R\\'' | '\\'S\\'' | '\\'T\\'' | '\\'U\\'' | '\\'V\\'' | '\\'W\\'' | '\\'X\\'' | '\\'Y\\'' | '\\'Z\\'' | '\\'0\\'' | '\\'1\\'' | '\\'2\\'' | '\\'3\\'' | '\\'4\\'' | '\\'5\\'' | '\\'6\\'' | '\\'7\\'' | '\\'8\\'' | '\\'9\\'' | '\\'&\\'' | '\\'\\'\\'' | '\\'(\\'' | '\\')\\'' | '\\'+\\'' | '\\',\\'' | '\\'-\\'' | '\\'.\\'' | '\\'/\\'' | '\\':\\'' | '\\';\\'' | '\\'<\\'' | '\\'=\\'' | '\\'>\\'' | '\\'|\\'' | '\\' \\'' | '\\'#\\'' | '\\'[\\'' | '\\']\\'' | '\\'_\\'' | '\\'*\\'' | '\\'\"\\'' | '\\'!\\'' | '\\'$\\'' | '\\'%\\'' | '\\'@\\'' | '\\'?\\'' | '\\'^\\'' | '\\'`\\'' | '\\'{\\'' | '\\'}\\'' | '\\'~\\'' | '\\'\\u00A0\\'' | '\\'\\u00A1\\'' | '\\'\\u00A2\\'' | '\\'\\u00A3\\'' | '\\'\\u20AC\\'' | '\\'\\u00A5\\'' | '\\'\\u0160\\'' | '\\'\\u00A7\\'' | '\\'\\u0161\\'' | '\\'\\u00A9\\'' | '\\'\\u00AA\\'' | '\\'\\u00AB\\'' | '\\'\\u00AC\\'' | '\\'\\'' | '\\'\\u00AE\\'' | '\\'\\u00AF\\'' | '\\'\\u00B0\\'' | '\\'\\u00B1\\'' | '\\'\\u00B2\\'' | '\\'\\u00B3\\'' | '\\'\\u017D\\'' | '\\'\\u00B5\\'' | '\\'\\u00B6\\'' | '\\'\\u00B7\\'' | '\\'\\u017E\\'' | '\\'\\u00B9\\'' | '\\'\\u00BA\\'' | '\\'\\u00BB\\'' | '\\'\\u0152\\'' | '\\'\\u0153\\'' | '\\'\\u0178\\'' | '\\'\\u00BF\\'' | '\\'\\u00C0\\'' | '\\'\\u00C1\\'' | '\\'\\u00C2\\'' | '\\'\\u00C3\\'' | '\\'\\u00C4\\'' | '\\'\\u00C5\\'' | '\\'\\u00C6\\'' | '\\'\\u00C7\\'' | '\\'\\u00C8\\'' | '\\'\\u00C9\\'' | '\\'\\u00CA\\'' | '\\'\\u00CB\\'' | '\\'\\u00CC\\'' | '\\'\\u00CD\\'' | '\\'\\u00CE\\'' | '\\'\\u00CF\\'' | '\\'\\u00D0\\'' | '\\'\\u00D1\\'' | '\\'\\u00D2\\'' | '\\'\\u00D3\\'' | '\\'\\u00D4\\'' | '\\'\\u00D5\\'' | '\\'\\u00D6\\'' | '\\'\\u00D7\\'' | '\\'\\u00D8\\'' | '\\'\\u00D9\\'' | '\\'\\u00DA\\'' | '\\'\\u00DB\\'' | '\\'\\u00DC\\'' | '\\'\\u00DD\\'' | '\\'\\u00DE\\'' | '\\'\\u00DF\\'' | '\\'\\u00E0\\'' | '\\'\\u00E1\\'' | '\\'\\u00E2\\'' | '\\'\\u00E3\\'' | '\\'\\u00E4\\'' | '\\'\\u00E5\\'' | '\\'\\u00E6\\'' | '\\'\\u00E7\\'' | '\\'\\u00E8\\'' | '\\'\\u00E9\\'' | '\\'\\u00EA\\'' | '\\'\\u00EB\\'' | '\\'\\u00EC\\'' | '\\'\\u00ED\\'' | '\\'\\u00EE\\'' | '\\'\\u00EF\\'' | '\\'\\u00F0\\'' | '\\'\\u00F1\\'' | '\\'\\u00F2\\'' | '\\'\\u00F3\\'' | '\\'\\u00F4\\'' | '\\'\\u00F5\\'' | '\\'\\u00F6\\'' | '\\'\\u00F7\\'' | '\\'\\u00F8\\'' | '\\'\\u00F9\\'' | '\\'\\u00FA\\'' | '\\'\\u00FB\\'' | '\\'\\u00FC\\'' | '\\'\\u00FD\\'' | '\\'\\u00FE\\'' | '\\'\\u00FF\\'' )
             {
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:13: ( '\\'a\\'' | '\\'b\\'' | '\\'c\\'' | '\\'d\\'' | '\\'e\\'' | '\\'f\\'' | '\\'g\\'' | '\\'h\\'' | '\\'i\\'' | '\\'j\\'' | '\\'k\\'' | '\\'l\\'' | '\\'m\\'' | '\\'n\\'' | '\\'o\\'' | '\\'p\\'' | '\\'q\\'' | '\\'r\\'' | '\\'s\\'' | '\\'t\\'' | '\\'u\\'' | '\\'v\\'' | '\\'w\\'' | '\\'x\\'' | '\\'y\\'' | '\\'z\\'' | '\\'A\\'' | '\\'B\\'' | '\\'C\\'' | '\\'D\\'' | '\\'E\\'' | '\\'F\\'' | '\\'G\\'' | '\\'H\\'' | '\\'I\\'' | '\\'J\\'' | '\\'K\\'' | '\\'L\\'' | '\\'M\\'' | '\\'N\\'' | '\\'O\\'' | '\\'P\\'' | '\\'Q\\'' | '\\'R\\'' | '\\'S\\'' | '\\'T\\'' | '\\'U\\'' | '\\'V\\'' | '\\'W\\'' | '\\'X\\'' | '\\'Y\\'' | '\\'Z\\'' | '\\'0\\'' | '\\'1\\'' | '\\'2\\'' | '\\'3\\'' | '\\'4\\'' | '\\'5\\'' | '\\'6\\'' | '\\'7\\'' | '\\'8\\'' | '\\'9\\'' | '\\'&\\'' | '\\'\\'\\'' | '\\'(\\'' | '\\')\\'' | '\\'+\\'' | '\\',\\'' | '\\'-\\'' | '\\'.\\'' | '\\'/\\'' | '\\':\\'' | '\\';\\'' | '\\'<\\'' | '\\'=\\'' | '\\'>\\'' | '\\'|\\'' | '\\' \\'' | '\\'#\\'' | '\\'[\\'' | '\\']\\'' | '\\'_\\'' | '\\'*\\'' | '\\'\"\\'' | '\\'!\\'' | '\\'$\\'' | '\\'%\\'' | '\\'@\\'' | '\\'?\\'' | '\\'^\\'' | '\\'`\\'' | '\\'{\\'' | '\\'}\\'' | '\\'~\\'' | '\\'\\u00A0\\'' | '\\'\\u00A1\\'' | '\\'\\u00A2\\'' | '\\'\\u00A3\\'' | '\\'\\u20AC\\'' | '\\'\\u00A5\\'' | '\\'\\u0160\\'' | '\\'\\u00A7\\'' | '\\'\\u0161\\'' | '\\'\\u00A9\\'' | '\\'\\u00AA\\'' | '\\'\\u00AB\\'' | '\\'\\u00AC\\'' | '\\'\\'' | '\\'\\u00AE\\'' | '\\'\\u00AF\\'' | '\\'\\u00B0\\'' | '\\'\\u00B1\\'' | '\\'\\u00B2\\'' | '\\'\\u00B3\\'' | '\\'\\u017D\\'' | '\\'\\u00B5\\'' | '\\'\\u00B6\\'' | '\\'\\u00B7\\'' | '\\'\\u017E\\'' | '\\'\\u00B9\\'' | '\\'\\u00BA\\'' | '\\'\\u00BB\\'' | '\\'\\u0152\\'' | '\\'\\u0153\\'' | '\\'\\u0178\\'' | '\\'\\u00BF\\'' | '\\'\\u00C0\\'' | '\\'\\u00C1\\'' | '\\'\\u00C2\\'' | '\\'\\u00C3\\'' | '\\'\\u00C4\\'' | '\\'\\u00C5\\'' | '\\'\\u00C6\\'' | '\\'\\u00C7\\'' | '\\'\\u00C8\\'' | '\\'\\u00C9\\'' | '\\'\\u00CA\\'' | '\\'\\u00CB\\'' | '\\'\\u00CC\\'' | '\\'\\u00CD\\'' | '\\'\\u00CE\\'' | '\\'\\u00CF\\'' | '\\'\\u00D0\\'' | '\\'\\u00D1\\'' | '\\'\\u00D2\\'' | '\\'\\u00D3\\'' | '\\'\\u00D4\\'' | '\\'\\u00D5\\'' | '\\'\\u00D6\\'' | '\\'\\u00D7\\'' | '\\'\\u00D8\\'' | '\\'\\u00D9\\'' | '\\'\\u00DA\\'' | '\\'\\u00DB\\'' | '\\'\\u00DC\\'' | '\\'\\u00DD\\'' | '\\'\\u00DE\\'' | '\\'\\u00DF\\'' | '\\'\\u00E0\\'' | '\\'\\u00E1\\'' | '\\'\\u00E2\\'' | '\\'\\u00E3\\'' | '\\'\\u00E4\\'' | '\\'\\u00E5\\'' | '\\'\\u00E6\\'' | '\\'\\u00E7\\'' | '\\'\\u00E8\\'' | '\\'\\u00E9\\'' | '\\'\\u00EA\\'' | '\\'\\u00EB\\'' | '\\'\\u00EC\\'' | '\\'\\u00ED\\'' | '\\'\\u00EE\\'' | '\\'\\u00EF\\'' | '\\'\\u00F0\\'' | '\\'\\u00F1\\'' | '\\'\\u00F2\\'' | '\\'\\u00F3\\'' | '\\'\\u00F4\\'' | '\\'\\u00F5\\'' | '\\'\\u00F6\\'' | '\\'\\u00F7\\'' | '\\'\\u00F8\\'' | '\\'\\u00F9\\'' | '\\'\\u00FA\\'' | '\\'\\u00FB\\'' | '\\'\\u00FC\\'' | '\\'\\u00FD\\'' | '\\'\\u00FE\\'' | '\\'\\u00FF\\'' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:13: ( '\\'a\\'' | '\\'b\\'' | '\\'c\\'' | '\\'d\\'' | '\\'e\\'' | '\\'f\\'' | '\\'g\\'' | '\\'h\\'' | '\\'i\\'' | '\\'j\\'' | '\\'k\\'' | '\\'l\\'' | '\\'m\\'' | '\\'n\\'' | '\\'o\\'' | '\\'p\\'' | '\\'q\\'' | '\\'r\\'' | '\\'s\\'' | '\\'t\\'' | '\\'u\\'' | '\\'v\\'' | '\\'w\\'' | '\\'x\\'' | '\\'y\\'' | '\\'z\\'' | '\\'A\\'' | '\\'B\\'' | '\\'C\\'' | '\\'D\\'' | '\\'E\\'' | '\\'F\\'' | '\\'G\\'' | '\\'H\\'' | '\\'I\\'' | '\\'J\\'' | '\\'K\\'' | '\\'L\\'' | '\\'M\\'' | '\\'N\\'' | '\\'O\\'' | '\\'P\\'' | '\\'Q\\'' | '\\'R\\'' | '\\'S\\'' | '\\'T\\'' | '\\'U\\'' | '\\'V\\'' | '\\'W\\'' | '\\'X\\'' | '\\'Y\\'' | '\\'Z\\'' | '\\'0\\'' | '\\'1\\'' | '\\'2\\'' | '\\'3\\'' | '\\'4\\'' | '\\'5\\'' | '\\'6\\'' | '\\'7\\'' | '\\'8\\'' | '\\'9\\'' | '\\'&\\'' | '\\'\\'\\'' | '\\'(\\'' | '\\')\\'' | '\\'+\\'' | '\\',\\'' | '\\'-\\'' | '\\'.\\'' | '\\'/\\'' | '\\':\\'' | '\\';\\'' | '\\'<\\'' | '\\'=\\'' | '\\'>\\'' | '\\'|\\'' | '\\' \\'' | '\\'#\\'' | '\\'[\\'' | '\\']\\'' | '\\'_\\'' | '\\'*\\'' | '\\'\"\\'' | '\\'!\\'' | '\\'$\\'' | '\\'%\\'' | '\\'@\\'' | '\\'?\\'' | '\\'^\\'' | '\\'`\\'' | '\\'{\\'' | '\\'}\\'' | '\\'~\\'' | '\\'\\u00A0\\'' | '\\'\\u00A1\\'' | '\\'\\u00A2\\'' | '\\'\\u00A3\\'' | '\\'\\u20AC\\'' | '\\'\\u00A5\\'' | '\\'\\u0160\\'' | '\\'\\u00A7\\'' | '\\'\\u0161\\'' | '\\'\\u00A9\\'' | '\\'\\u00AA\\'' | '\\'\\u00AB\\'' | '\\'\\u00AC\\'' | '\\'\\'' | '\\'\\u00AE\\'' | '\\'\\u00AF\\'' | '\\'\\u00B0\\'' | '\\'\\u00B1\\'' | '\\'\\u00B2\\'' | '\\'\\u00B3\\'' | '\\'\\u017D\\'' | '\\'\\u00B5\\'' | '\\'\\u00B6\\'' | '\\'\\u00B7\\'' | '\\'\\u017E\\'' | '\\'\\u00B9\\'' | '\\'\\u00BA\\'' | '\\'\\u00BB\\'' | '\\'\\u0152\\'' | '\\'\\u0153\\'' | '\\'\\u0178\\'' | '\\'\\u00BF\\'' | '\\'\\u00C0\\'' | '\\'\\u00C1\\'' | '\\'\\u00C2\\'' | '\\'\\u00C3\\'' | '\\'\\u00C4\\'' | '\\'\\u00C5\\'' | '\\'\\u00C6\\'' | '\\'\\u00C7\\'' | '\\'\\u00C8\\'' | '\\'\\u00C9\\'' | '\\'\\u00CA\\'' | '\\'\\u00CB\\'' | '\\'\\u00CC\\'' | '\\'\\u00CD\\'' | '\\'\\u00CE\\'' | '\\'\\u00CF\\'' | '\\'\\u00D0\\'' | '\\'\\u00D1\\'' | '\\'\\u00D2\\'' | '\\'\\u00D3\\'' | '\\'\\u00D4\\'' | '\\'\\u00D5\\'' | '\\'\\u00D6\\'' | '\\'\\u00D7\\'' | '\\'\\u00D8\\'' | '\\'\\u00D9\\'' | '\\'\\u00DA\\'' | '\\'\\u00DB\\'' | '\\'\\u00DC\\'' | '\\'\\u00DD\\'' | '\\'\\u00DE\\'' | '\\'\\u00DF\\'' | '\\'\\u00E0\\'' | '\\'\\u00E1\\'' | '\\'\\u00E2\\'' | '\\'\\u00E3\\'' | '\\'\\u00E4\\'' | '\\'\\u00E5\\'' | '\\'\\u00E6\\'' | '\\'\\u00E7\\'' | '\\'\\u00E8\\'' | '\\'\\u00E9\\'' | '\\'\\u00EA\\'' | '\\'\\u00EB\\'' | '\\'\\u00EC\\'' | '\\'\\u00ED\\'' | '\\'\\u00EE\\'' | '\\'\\u00EF\\'' | '\\'\\u00F0\\'' | '\\'\\u00F1\\'' | '\\'\\u00F2\\'' | '\\'\\u00F3\\'' | '\\'\\u00F4\\'' | '\\'\\u00F5\\'' | '\\'\\u00F6\\'' | '\\'\\u00F7\\'' | '\\'\\u00F8\\'' | '\\'\\u00F9\\'' | '\\'\\u00FA\\'' | '\\'\\u00FB\\'' | '\\'\\u00FC\\'' | '\\'\\u00FD\\'' | '\\'\\u00FE\\'' | '\\'\\u00FF\\'' )
             int alt10=190;
             alt10 = dfa10.predict(input);
             switch (alt10) {
                 case 1 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:14: '\\'a\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:14: '\\'a\\''
                     {
                     match("'a'"); 
 
@@ -8523,7 +8545,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:22: '\\'b\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:22: '\\'b\\''
                     {
                     match("'b'"); 
 
@@ -8531,7 +8553,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:30: '\\'c\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:30: '\\'c\\''
                     {
                     match("'c'"); 
 
@@ -8539,7 +8561,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 4 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:38: '\\'d\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:38: '\\'d\\''
                     {
                     match("'d'"); 
 
@@ -8547,7 +8569,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 5 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:46: '\\'e\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:46: '\\'e\\''
                     {
                     match("'e'"); 
 
@@ -8555,7 +8577,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 6 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:54: '\\'f\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:54: '\\'f\\''
                     {
                     match("'f'"); 
 
@@ -8563,7 +8585,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 7 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:62: '\\'g\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:62: '\\'g\\''
                     {
                     match("'g'"); 
 
@@ -8571,7 +8593,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 8 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:70: '\\'h\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:70: '\\'h\\''
                     {
                     match("'h'"); 
 
@@ -8579,7 +8601,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 9 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:78: '\\'i\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:78: '\\'i\\''
                     {
                     match("'i'"); 
 
@@ -8587,7 +8609,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 10 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:86: '\\'j\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:86: '\\'j\\''
                     {
                     match("'j'"); 
 
@@ -8595,7 +8617,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 11 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:94: '\\'k\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:94: '\\'k\\''
                     {
                     match("'k'"); 
 
@@ -8603,7 +8625,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 12 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:102: '\\'l\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:102: '\\'l\\''
                     {
                     match("'l'"); 
 
@@ -8611,7 +8633,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 13 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:110: '\\'m\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:110: '\\'m\\''
                     {
                     match("'m'"); 
 
@@ -8619,7 +8641,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 14 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:118: '\\'n\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:118: '\\'n\\''
                     {
                     match("'n'"); 
 
@@ -8627,7 +8649,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 15 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:126: '\\'o\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:126: '\\'o\\''
                     {
                     match("'o'"); 
 
@@ -8635,7 +8657,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 16 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:134: '\\'p\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:134: '\\'p\\''
                     {
                     match("'p'"); 
 
@@ -8643,7 +8665,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 17 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:142: '\\'q\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:142: '\\'q\\''
                     {
                     match("'q'"); 
 
@@ -8651,7 +8673,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 18 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:150: '\\'r\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:150: '\\'r\\''
                     {
                     match("'r'"); 
 
@@ -8659,7 +8681,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 19 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:158: '\\'s\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:158: '\\'s\\''
                     {
                     match("'s'"); 
 
@@ -8667,7 +8689,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 20 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:166: '\\'t\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:166: '\\'t\\''
                     {
                     match("'t'"); 
 
@@ -8675,7 +8697,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 21 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:174: '\\'u\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:174: '\\'u\\''
                     {
                     match("'u'"); 
 
@@ -8683,7 +8705,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 22 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:182: '\\'v\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:182: '\\'v\\''
                     {
                     match("'v'"); 
 
@@ -8691,7 +8713,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 23 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:190: '\\'w\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:190: '\\'w\\''
                     {
                     match("'w'"); 
 
@@ -8699,7 +8721,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 24 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:198: '\\'x\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:198: '\\'x\\''
                     {
                     match("'x'"); 
 
@@ -8707,7 +8729,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 25 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:206: '\\'y\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:206: '\\'y\\''
                     {
                     match("'y'"); 
 
@@ -8715,7 +8737,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 26 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:214: '\\'z\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:214: '\\'z\\''
                     {
                     match("'z'"); 
 
@@ -8723,7 +8745,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 27 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:222: '\\'A\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:222: '\\'A\\''
                     {
                     match("'A'"); 
 
@@ -8731,7 +8753,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 28 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:230: '\\'B\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:230: '\\'B\\''
                     {
                     match("'B'"); 
 
@@ -8739,7 +8761,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 29 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:238: '\\'C\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:238: '\\'C\\''
                     {
                     match("'C'"); 
 
@@ -8747,7 +8769,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 30 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:246: '\\'D\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:246: '\\'D\\''
                     {
                     match("'D'"); 
 
@@ -8755,7 +8777,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 31 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:254: '\\'E\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:254: '\\'E\\''
                     {
                     match("'E'"); 
 
@@ -8763,7 +8785,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 32 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:262: '\\'F\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:262: '\\'F\\''
                     {
                     match("'F'"); 
 
@@ -8771,7 +8793,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 33 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:270: '\\'G\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:270: '\\'G\\''
                     {
                     match("'G'"); 
 
@@ -8779,7 +8801,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 34 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:278: '\\'H\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:278: '\\'H\\''
                     {
                     match("'H'"); 
 
@@ -8787,7 +8809,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 35 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:286: '\\'I\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:286: '\\'I\\''
                     {
                     match("'I'"); 
 
@@ -8795,7 +8817,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 36 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:294: '\\'J\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:294: '\\'J\\''
                     {
                     match("'J'"); 
 
@@ -8803,7 +8825,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 37 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:302: '\\'K\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:302: '\\'K\\''
                     {
                     match("'K'"); 
 
@@ -8811,7 +8833,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 38 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:310: '\\'L\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:310: '\\'L\\''
                     {
                     match("'L'"); 
 
@@ -8819,7 +8841,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 39 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:318: '\\'M\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:318: '\\'M\\''
                     {
                     match("'M'"); 
 
@@ -8827,7 +8849,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 40 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:326: '\\'N\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:326: '\\'N\\''
                     {
                     match("'N'"); 
 
@@ -8835,7 +8857,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 41 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:334: '\\'O\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:334: '\\'O\\''
                     {
                     match("'O'"); 
 
@@ -8843,7 +8865,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 42 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:342: '\\'P\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:342: '\\'P\\''
                     {
                     match("'P'"); 
 
@@ -8851,7 +8873,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 43 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:350: '\\'Q\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:350: '\\'Q\\''
                     {
                     match("'Q'"); 
 
@@ -8859,7 +8881,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 44 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:358: '\\'R\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:358: '\\'R\\''
                     {
                     match("'R'"); 
 
@@ -8867,7 +8889,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 45 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:366: '\\'S\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:366: '\\'S\\''
                     {
                     match("'S'"); 
 
@@ -8875,7 +8897,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 46 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:374: '\\'T\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:374: '\\'T\\''
                     {
                     match("'T'"); 
 
@@ -8883,7 +8905,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 47 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:382: '\\'U\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:382: '\\'U\\''
                     {
                     match("'U'"); 
 
@@ -8891,7 +8913,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 48 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:390: '\\'V\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:390: '\\'V\\''
                     {
                     match("'V'"); 
 
@@ -8899,7 +8921,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 49 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:398: '\\'W\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:398: '\\'W\\''
                     {
                     match("'W'"); 
 
@@ -8907,7 +8929,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 50 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:406: '\\'X\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:406: '\\'X\\''
                     {
                     match("'X'"); 
 
@@ -8915,7 +8937,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 51 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:414: '\\'Y\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:414: '\\'Y\\''
                     {
                     match("'Y'"); 
 
@@ -8923,7 +8945,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 52 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:422: '\\'Z\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:422: '\\'Z\\''
                     {
                     match("'Z'"); 
 
@@ -8931,7 +8953,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 53 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:430: '\\'0\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:430: '\\'0\\''
                     {
                     match("'0'"); 
 
@@ -8939,7 +8961,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 54 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:438: '\\'1\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:438: '\\'1\\''
                     {
                     match("'1'"); 
 
@@ -8947,7 +8969,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 55 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:446: '\\'2\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:446: '\\'2\\''
                     {
                     match("'2'"); 
 
@@ -8955,7 +8977,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 56 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:454: '\\'3\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:454: '\\'3\\''
                     {
                     match("'3'"); 
 
@@ -8963,7 +8985,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 57 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:462: '\\'4\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:462: '\\'4\\''
                     {
                     match("'4'"); 
 
@@ -8971,7 +8993,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 58 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:470: '\\'5\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:470: '\\'5\\''
                     {
                     match("'5'"); 
 
@@ -8979,7 +9001,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 59 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:478: '\\'6\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:478: '\\'6\\''
                     {
                     match("'6'"); 
 
@@ -8987,7 +9009,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 60 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:486: '\\'7\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:486: '\\'7\\''
                     {
                     match("'7'"); 
 
@@ -8995,7 +9017,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 61 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:494: '\\'8\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:494: '\\'8\\''
                     {
                     match("'8'"); 
 
@@ -9003,7 +9025,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 62 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:502: '\\'9\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:502: '\\'9\\''
                     {
                     match("'9'"); 
 
@@ -9011,7 +9033,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 63 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:510: '\\'&\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:510: '\\'&\\''
                     {
                     match("'&'"); 
 
@@ -9019,7 +9041,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 64 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:518: '\\'\\'\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:518: '\\'\\'\\''
                     {
                     match("'''"); 
 
@@ -9027,7 +9049,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 65 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:527: '\\'(\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:527: '\\'(\\''
                     {
                     match("'('"); 
 
@@ -9035,7 +9057,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 66 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:535: '\\')\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:535: '\\')\\''
                     {
                     match("')'"); 
 
@@ -9043,7 +9065,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 67 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:543: '\\'+\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:543: '\\'+\\''
                     {
                     match("'+'"); 
 
@@ -9051,7 +9073,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 68 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:551: '\\',\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:551: '\\',\\''
                     {
                     match("','"); 
 
@@ -9059,7 +9081,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 69 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:559: '\\'-\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:559: '\\'-\\''
                     {
                     match("'-'"); 
 
@@ -9067,7 +9089,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 70 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:567: '\\'.\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:567: '\\'.\\''
                     {
                     match("'.'"); 
 
@@ -9075,7 +9097,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 71 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:575: '\\'/\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:575: '\\'/\\''
                     {
                     match("'/'"); 
 
@@ -9083,7 +9105,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 72 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:583: '\\':\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:583: '\\':\\''
                     {
                     match("':'"); 
 
@@ -9091,7 +9113,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 73 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:591: '\\';\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:591: '\\';\\''
                     {
                     match("';'"); 
 
@@ -9099,7 +9121,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 74 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:599: '\\'<\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:599: '\\'<\\''
                     {
                     match("'<'"); 
 
@@ -9107,7 +9129,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 75 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:607: '\\'=\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:607: '\\'=\\''
                     {
                     match("'='"); 
 
@@ -9115,7 +9137,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 76 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:615: '\\'>\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:615: '\\'>\\''
                     {
                     match("'>'"); 
 
@@ -9123,7 +9145,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 77 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:623: '\\'|\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:623: '\\'|\\''
                     {
                     match("'|'"); 
 
@@ -9131,7 +9153,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 78 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:631: '\\' \\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:631: '\\' \\''
                     {
                     match("' '"); 
 
@@ -9139,7 +9161,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 79 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:639: '\\'#\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:639: '\\'#\\''
                     {
                     match("'#'"); 
 
@@ -9147,7 +9169,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 80 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:647: '\\'[\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:647: '\\'[\\''
                     {
                     match("'['"); 
 
@@ -9155,7 +9177,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 81 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:655: '\\']\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:655: '\\']\\''
                     {
                     match("']'"); 
 
@@ -9163,7 +9185,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 82 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:663: '\\'_\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:663: '\\'_\\''
                     {
                     match("'_'"); 
 
@@ -9171,7 +9193,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 83 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:671: '\\'*\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:671: '\\'*\\''
                     {
                     match("'*'"); 
 
@@ -9179,7 +9201,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 84 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:679: '\\'\"\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:679: '\\'\"\\''
                     {
                     match("'\"'"); 
 
@@ -9187,7 +9209,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 85 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:687: '\\'!\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:687: '\\'!\\''
                     {
                     match("'!'"); 
 
@@ -9195,7 +9217,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 86 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:695: '\\'$\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:695: '\\'$\\''
                     {
                     match("'$'"); 
 
@@ -9203,7 +9225,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 87 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:703: '\\'%\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:703: '\\'%\\''
                     {
                     match("'%'"); 
 
@@ -9211,7 +9233,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 88 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:711: '\\'@\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:711: '\\'@\\''
                     {
                     match("'@'"); 
 
@@ -9219,7 +9241,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 89 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:719: '\\'?\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:719: '\\'?\\''
                     {
                     match("'?'"); 
 
@@ -9227,7 +9249,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 90 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:727: '\\'^\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:727: '\\'^\\''
                     {
                     match("'^'"); 
 
@@ -9235,7 +9257,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 91 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:735: '\\'`\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:735: '\\'`\\''
                     {
                     match("'`'"); 
 
@@ -9243,7 +9265,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 92 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:743: '\\'{\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:743: '\\'{\\''
                     {
                     match("'{'"); 
 
@@ -9251,7 +9273,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 93 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:751: '\\'}\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:751: '\\'}\\''
                     {
                     match("'}'"); 
 
@@ -9259,7 +9281,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 94 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:759: '\\'~\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:759: '\\'~\\''
                     {
                     match("'~'"); 
 
@@ -9267,7 +9289,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 95 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:767: '\\'\\u00A0\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:767: '\\'\\u00A0\\''
                     {
                     match("'\u00A0'"); 
 
@@ -9275,7 +9297,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 96 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:780: '\\'\\u00A1\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:780: '\\'\\u00A1\\''
                     {
                     match("'\u00A1'"); 
 
@@ -9283,7 +9305,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 97 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:793: '\\'\\u00A2\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:793: '\\'\\u00A2\\''
                     {
                     match("'\u00A2'"); 
 
@@ -9291,7 +9313,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 98 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:806: '\\'\\u00A3\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:806: '\\'\\u00A3\\''
                     {
                     match("'\u00A3'"); 
 
@@ -9299,7 +9321,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 99 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:819: '\\'\\u20AC\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:819: '\\'\\u20AC\\''
                     {
                     match("'\u20AC'"); 
 
@@ -9307,7 +9329,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 100 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:832: '\\'\\u00A5\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:832: '\\'\\u00A5\\''
                     {
                     match("'\u00A5'"); 
 
@@ -9315,7 +9337,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 101 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:845: '\\'\\u0160\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:845: '\\'\\u0160\\''
                     {
                     match("'\u0160'"); 
 
@@ -9323,7 +9345,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 102 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:858: '\\'\\u00A7\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:858: '\\'\\u00A7\\''
                     {
                     match("'\u00A7'"); 
 
@@ -9331,7 +9353,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 103 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:871: '\\'\\u0161\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:871: '\\'\\u0161\\''
                     {
                     match("'\u0161'"); 
 
@@ -9339,7 +9361,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 104 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:884: '\\'\\u00A9\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:884: '\\'\\u00A9\\''
                     {
                     match("'\u00A9'"); 
 
@@ -9347,7 +9369,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 105 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:897: '\\'\\u00AA\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:897: '\\'\\u00AA\\''
                     {
                     match("'\u00AA'"); 
 
@@ -9355,7 +9377,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 106 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:910: '\\'\\u00AB\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:910: '\\'\\u00AB\\''
                     {
                     match("'\u00AB'"); 
 
@@ -9363,7 +9385,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 107 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:923: '\\'\\u00AC\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:923: '\\'\\u00AC\\''
                     {
                     match("'\u00AC'"); 
 
@@ -9371,7 +9393,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 108 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:936: '\\'\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:936: '\\'\\''
                     {
                     match("''"); 
 
@@ -9379,7 +9401,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 109 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:943: '\\'\\u00AE\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:943: '\\'\\u00AE\\''
                     {
                     match("'\u00AE'"); 
 
@@ -9387,7 +9409,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 110 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:956: '\\'\\u00AF\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:956: '\\'\\u00AF\\''
                     {
                     match("'\u00AF'"); 
 
@@ -9395,7 +9417,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 111 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:969: '\\'\\u00B0\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:969: '\\'\\u00B0\\''
                     {
                     match("'\u00B0'"); 
 
@@ -9403,7 +9425,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 112 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:982: '\\'\\u00B1\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:982: '\\'\\u00B1\\''
                     {
                     match("'\u00B1'"); 
 
@@ -9411,7 +9433,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 113 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:995: '\\'\\u00B2\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:995: '\\'\\u00B2\\''
                     {
                     match("'\u00B2'"); 
 
@@ -9419,7 +9441,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 114 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1008: '\\'\\u00B3\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1008: '\\'\\u00B3\\''
                     {
                     match("'\u00B3'"); 
 
@@ -9427,7 +9449,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 115 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1021: '\\'\\u017D\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1021: '\\'\\u017D\\''
                     {
                     match("'\u017D'"); 
 
@@ -9435,7 +9457,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 116 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1034: '\\'\\u00B5\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1034: '\\'\\u00B5\\''
                     {
                     match("'\u00B5'"); 
 
@@ -9443,7 +9465,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 117 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1047: '\\'\\u00B6\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1047: '\\'\\u00B6\\''
                     {
                     match("'\u00B6'"); 
 
@@ -9451,7 +9473,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 118 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1060: '\\'\\u00B7\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1060: '\\'\\u00B7\\''
                     {
                     match("'\u00B7'"); 
 
@@ -9459,7 +9481,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 119 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1073: '\\'\\u017E\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1073: '\\'\\u017E\\''
                     {
                     match("'\u017E'"); 
 
@@ -9467,7 +9489,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 120 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1086: '\\'\\u00B9\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1086: '\\'\\u00B9\\''
                     {
                     match("'\u00B9'"); 
 
@@ -9475,7 +9497,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 121 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1099: '\\'\\u00BA\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1099: '\\'\\u00BA\\''
                     {
                     match("'\u00BA'"); 
 
@@ -9483,7 +9505,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 122 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1112: '\\'\\u00BB\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1112: '\\'\\u00BB\\''
                     {
                     match("'\u00BB'"); 
 
@@ -9491,7 +9513,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 123 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1125: '\\'\\u0152\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1125: '\\'\\u0152\\''
                     {
                     match("'\u0152'"); 
 
@@ -9499,7 +9521,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 124 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1138: '\\'\\u0153\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1138: '\\'\\u0153\\''
                     {
                     match("'\u0153'"); 
 
@@ -9507,7 +9529,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 125 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1151: '\\'\\u0178\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1151: '\\'\\u0178\\''
                     {
                     match("'\u0178'"); 
 
@@ -9515,7 +9537,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 126 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1164: '\\'\\u00BF\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1164: '\\'\\u00BF\\''
                     {
                     match("'\u00BF'"); 
 
@@ -9523,7 +9545,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 127 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1177: '\\'\\u00C0\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1177: '\\'\\u00C0\\''
                     {
                     match("'\u00C0'"); 
 
@@ -9531,7 +9553,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 128 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1190: '\\'\\u00C1\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1190: '\\'\\u00C1\\''
                     {
                     match("'\u00C1'"); 
 
@@ -9539,7 +9561,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 129 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1203: '\\'\\u00C2\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1203: '\\'\\u00C2\\''
                     {
                     match("'\u00C2'"); 
 
@@ -9547,7 +9569,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 130 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1216: '\\'\\u00C3\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1216: '\\'\\u00C3\\''
                     {
                     match("'\u00C3'"); 
 
@@ -9555,7 +9577,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 131 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1229: '\\'\\u00C4\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1229: '\\'\\u00C4\\''
                     {
                     match("'\u00C4'"); 
 
@@ -9563,7 +9585,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 132 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1242: '\\'\\u00C5\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1242: '\\'\\u00C5\\''
                     {
                     match("'\u00C5'"); 
 
@@ -9571,7 +9593,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 133 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1255: '\\'\\u00C6\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1255: '\\'\\u00C6\\''
                     {
                     match("'\u00C6'"); 
 
@@ -9579,7 +9601,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 134 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1268: '\\'\\u00C7\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1268: '\\'\\u00C7\\''
                     {
                     match("'\u00C7'"); 
 
@@ -9587,7 +9609,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 135 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1281: '\\'\\u00C8\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1281: '\\'\\u00C8\\''
                     {
                     match("'\u00C8'"); 
 
@@ -9595,7 +9617,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 136 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1294: '\\'\\u00C9\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1294: '\\'\\u00C9\\''
                     {
                     match("'\u00C9'"); 
 
@@ -9603,7 +9625,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 137 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1307: '\\'\\u00CA\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1307: '\\'\\u00CA\\''
                     {
                     match("'\u00CA'"); 
 
@@ -9611,7 +9633,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 138 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1320: '\\'\\u00CB\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1320: '\\'\\u00CB\\''
                     {
                     match("'\u00CB'"); 
 
@@ -9619,7 +9641,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 139 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1333: '\\'\\u00CC\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1333: '\\'\\u00CC\\''
                     {
                     match("'\u00CC'"); 
 
@@ -9627,7 +9649,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 140 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1346: '\\'\\u00CD\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1346: '\\'\\u00CD\\''
                     {
                     match("'\u00CD'"); 
 
@@ -9635,7 +9657,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 141 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1359: '\\'\\u00CE\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1359: '\\'\\u00CE\\''
                     {
                     match("'\u00CE'"); 
 
@@ -9643,7 +9665,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 142 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1372: '\\'\\u00CF\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1372: '\\'\\u00CF\\''
                     {
                     match("'\u00CF'"); 
 
@@ -9651,7 +9673,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 143 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1385: '\\'\\u00D0\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1385: '\\'\\u00D0\\''
                     {
                     match("'\u00D0'"); 
 
@@ -9659,7 +9681,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 144 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1398: '\\'\\u00D1\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1398: '\\'\\u00D1\\''
                     {
                     match("'\u00D1'"); 
 
@@ -9667,7 +9689,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 145 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1411: '\\'\\u00D2\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1411: '\\'\\u00D2\\''
                     {
                     match("'\u00D2'"); 
 
@@ -9675,7 +9697,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 146 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1424: '\\'\\u00D3\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1424: '\\'\\u00D3\\''
                     {
                     match("'\u00D3'"); 
 
@@ -9683,7 +9705,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 147 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1437: '\\'\\u00D4\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1437: '\\'\\u00D4\\''
                     {
                     match("'\u00D4'"); 
 
@@ -9691,7 +9713,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 148 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1450: '\\'\\u00D5\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1450: '\\'\\u00D5\\''
                     {
                     match("'\u00D5'"); 
 
@@ -9699,7 +9721,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 149 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1463: '\\'\\u00D6\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1463: '\\'\\u00D6\\''
                     {
                     match("'\u00D6'"); 
 
@@ -9707,7 +9729,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 150 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1476: '\\'\\u00D7\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1476: '\\'\\u00D7\\''
                     {
                     match("'\u00D7'"); 
 
@@ -9715,7 +9737,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 151 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1489: '\\'\\u00D8\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1489: '\\'\\u00D8\\''
                     {
                     match("'\u00D8'"); 
 
@@ -9723,7 +9745,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 152 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1502: '\\'\\u00D9\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1502: '\\'\\u00D9\\''
                     {
                     match("'\u00D9'"); 
 
@@ -9731,7 +9753,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 153 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1515: '\\'\\u00DA\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1515: '\\'\\u00DA\\''
                     {
                     match("'\u00DA'"); 
 
@@ -9739,7 +9761,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 154 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1528: '\\'\\u00DB\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1528: '\\'\\u00DB\\''
                     {
                     match("'\u00DB'"); 
 
@@ -9747,7 +9769,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 155 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1541: '\\'\\u00DC\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1541: '\\'\\u00DC\\''
                     {
                     match("'\u00DC'"); 
 
@@ -9755,7 +9777,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 156 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1554: '\\'\\u00DD\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1554: '\\'\\u00DD\\''
                     {
                     match("'\u00DD'"); 
 
@@ -9763,7 +9785,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 157 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1567: '\\'\\u00DE\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1567: '\\'\\u00DE\\''
                     {
                     match("'\u00DE'"); 
 
@@ -9771,7 +9793,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 158 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1580: '\\'\\u00DF\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1580: '\\'\\u00DF\\''
                     {
                     match("'\u00DF'"); 
 
@@ -9779,7 +9801,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 159 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1593: '\\'\\u00E0\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1593: '\\'\\u00E0\\''
                     {
                     match("'\u00E0'"); 
 
@@ -9787,7 +9809,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 160 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1606: '\\'\\u00E1\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1606: '\\'\\u00E1\\''
                     {
                     match("'\u00E1'"); 
 
@@ -9795,7 +9817,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 161 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1619: '\\'\\u00E2\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1619: '\\'\\u00E2\\''
                     {
                     match("'\u00E2'"); 
 
@@ -9803,7 +9825,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 162 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1632: '\\'\\u00E3\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1632: '\\'\\u00E3\\''
                     {
                     match("'\u00E3'"); 
 
@@ -9811,7 +9833,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 163 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1645: '\\'\\u00E4\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1645: '\\'\\u00E4\\''
                     {
                     match("'\u00E4'"); 
 
@@ -9819,7 +9841,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 164 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1658: '\\'\\u00E5\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1658: '\\'\\u00E5\\''
                     {
                     match("'\u00E5'"); 
 
@@ -9827,7 +9849,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 165 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1671: '\\'\\u00E6\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1671: '\\'\\u00E6\\''
                     {
                     match("'\u00E6'"); 
 
@@ -9835,7 +9857,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 166 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1684: '\\'\\u00E7\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1684: '\\'\\u00E7\\''
                     {
                     match("'\u00E7'"); 
 
@@ -9843,7 +9865,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 167 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1697: '\\'\\u00E8\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1697: '\\'\\u00E8\\''
                     {
                     match("'\u00E8'"); 
 
@@ -9851,7 +9873,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 168 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1710: '\\'\\u00E9\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1710: '\\'\\u00E9\\''
                     {
                     match("'\u00E9'"); 
 
@@ -9859,7 +9881,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 169 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1723: '\\'\\u00EA\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1723: '\\'\\u00EA\\''
                     {
                     match("'\u00EA'"); 
 
@@ -9867,7 +9889,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 170 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1736: '\\'\\u00EB\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1736: '\\'\\u00EB\\''
                     {
                     match("'\u00EB'"); 
 
@@ -9875,7 +9897,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 171 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1749: '\\'\\u00EC\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1749: '\\'\\u00EC\\''
                     {
                     match("'\u00EC'"); 
 
@@ -9883,7 +9905,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 172 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1762: '\\'\\u00ED\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1762: '\\'\\u00ED\\''
                     {
                     match("'\u00ED'"); 
 
@@ -9891,7 +9913,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 173 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1775: '\\'\\u00EE\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1775: '\\'\\u00EE\\''
                     {
                     match("'\u00EE'"); 
 
@@ -9899,7 +9921,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 174 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1788: '\\'\\u00EF\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1788: '\\'\\u00EF\\''
                     {
                     match("'\u00EF'"); 
 
@@ -9907,7 +9929,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 175 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1801: '\\'\\u00F0\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1801: '\\'\\u00F0\\''
                     {
                     match("'\u00F0'"); 
 
@@ -9915,7 +9937,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 176 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1814: '\\'\\u00F1\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1814: '\\'\\u00F1\\''
                     {
                     match("'\u00F1'"); 
 
@@ -9923,7 +9945,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 177 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1827: '\\'\\u00F2\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1827: '\\'\\u00F2\\''
                     {
                     match("'\u00F2'"); 
 
@@ -9931,7 +9953,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 178 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1840: '\\'\\u00F3\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1840: '\\'\\u00F3\\''
                     {
                     match("'\u00F3'"); 
 
@@ -9939,7 +9961,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 179 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1853: '\\'\\u00F4\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1853: '\\'\\u00F4\\''
                     {
                     match("'\u00F4'"); 
 
@@ -9947,7 +9969,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 180 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1866: '\\'\\u00F5\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1866: '\\'\\u00F5\\''
                     {
                     match("'\u00F5'"); 
 
@@ -9955,7 +9977,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 181 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1879: '\\'\\u00F6\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1879: '\\'\\u00F6\\''
                     {
                     match("'\u00F6'"); 
 
@@ -9963,7 +9985,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 182 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1892: '\\'\\u00F7\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1892: '\\'\\u00F7\\''
                     {
                     match("'\u00F7'"); 
 
@@ -9971,7 +9993,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 183 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1905: '\\'\\u00F8\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1905: '\\'\\u00F8\\''
                     {
                     match("'\u00F8'"); 
 
@@ -9979,7 +10001,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 184 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1918: '\\'\\u00F9\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1918: '\\'\\u00F9\\''
                     {
                     match("'\u00F9'"); 
 
@@ -9987,7 +10009,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 185 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1931: '\\'\\u00FA\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1931: '\\'\\u00FA\\''
                     {
                     match("'\u00FA'"); 
 
@@ -9995,7 +10017,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 186 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1944: '\\'\\u00FB\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1944: '\\'\\u00FB\\''
                     {
                     match("'\u00FB'"); 
 
@@ -10003,7 +10025,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 187 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1957: '\\'\\u00FC\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1957: '\\'\\u00FC\\''
                     {
                     match("'\u00FC'"); 
 
@@ -10011,7 +10033,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 188 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1970: '\\'\\u00FD\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1970: '\\'\\u00FD\\''
                     {
                     match("'\u00FD'"); 
 
@@ -10019,7 +10041,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 189 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1983: '\\'\\u00FE\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1983: '\\'\\u00FE\\''
                     {
                     match("'\u00FE'"); 
 
@@ -10027,7 +10049,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 190 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:301:1996: '\\'\\u00FF\\''
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:1996: '\\'\\u00FF\\''
                     {
                     match("'\u00FF'"); 
 
@@ -10053,12 +10075,12 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = RULE_ATTRIBUTE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:16: ( '\\'' RULE_LETTER_FRAGMENT ( '_' | RULE_LETTER_OR_DIGIT_FRAGMENT )* )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:18: '\\'' RULE_LETTER_FRAGMENT ( '_' | RULE_LETTER_OR_DIGIT_FRAGMENT )*
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:305:16: ( '\\'' RULE_LETTER_FRAGMENT ( '_' | RULE_LETTER_OR_DIGIT_FRAGMENT )* )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:305:18: '\\'' RULE_LETTER_FRAGMENT ( '_' | RULE_LETTER_OR_DIGIT_FRAGMENT )*
             {
             match('\''); 
             mRULE_LETTER_FRAGMENT(); 
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:303:44: ( '_' | RULE_LETTER_OR_DIGIT_FRAGMENT )*
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:305:44: ( '_' | RULE_LETTER_OR_DIGIT_FRAGMENT )*
             loop11:
             do {
                 int alt11=2;
@@ -10107,12 +10129,12 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:305:17: ( '--' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:305:19: '--' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:307:17: ( '--' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:307:19: '--' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("--"); 
 
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:305:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:307:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop12:
             do {
                 int alt12=2;
@@ -10125,7 +10147,7 @@ public class InternalVhdlLexer extends Lexer {
 
                 switch (alt12) {
             	case 1 :
-            	    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:305:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:307:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -10145,7 +10167,7 @@ public class InternalVhdlLexer extends Lexer {
                 }
             } while (true);
 
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:305:40: ( ( '\\r' )? '\\n' )?
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:307:40: ( ( '\\r' )? '\\n' )?
             int alt14=2;
             int LA14_0 = input.LA(1);
 
@@ -10154,9 +10176,9 @@ public class InternalVhdlLexer extends Lexer {
             }
             switch (alt14) {
                 case 1 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:305:41: ( '\\r' )? '\\n'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:307:41: ( '\\r' )? '\\n'
                     {
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:305:41: ( '\\r' )?
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:307:41: ( '\\r' )?
                     int alt13=2;
                     int LA13_0 = input.LA(1);
 
@@ -10165,7 +10187,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     switch (alt13) {
                         case 1 :
-                            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:305:41: '\\r'
+                            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:307:41: '\\r'
                             {
                             match('\r'); 
 
@@ -10197,10 +10219,10 @@ public class InternalVhdlLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:307:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:307:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:309:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:309:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:307:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:309:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt15=0;
             loop15:
             do {
@@ -10252,11 +10274,11 @@ public class InternalVhdlLexer extends Lexer {
     // $ANTLR start "RULE_BASED_INTEGER_FRAGMENT"
     public final void mRULE_BASED_INTEGER_FRAGMENT() throws RecognitionException {
         try {
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:309:38: ( RULE_LETTER_OR_DIGIT_FRAGMENT ( '_' | RULE_LETTER_OR_DIGIT_FRAGMENT )* )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:309:40: RULE_LETTER_OR_DIGIT_FRAGMENT ( '_' | RULE_LETTER_OR_DIGIT_FRAGMENT )*
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:311:38: ( RULE_LETTER_OR_DIGIT_FRAGMENT ( '_' | RULE_LETTER_OR_DIGIT_FRAGMENT )* )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:311:40: RULE_LETTER_OR_DIGIT_FRAGMENT ( '_' | RULE_LETTER_OR_DIGIT_FRAGMENT )*
             {
             mRULE_LETTER_OR_DIGIT_FRAGMENT(); 
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:309:70: ( '_' | RULE_LETTER_OR_DIGIT_FRAGMENT )*
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:311:70: ( '_' | RULE_LETTER_OR_DIGIT_FRAGMENT )*
             loop16:
             do {
                 int alt16=2;
@@ -10301,8 +10323,8 @@ public class InternalVhdlLexer extends Lexer {
     // $ANTLR start "RULE_LETTER_OR_DIGIT_FRAGMENT"
     public final void mRULE_LETTER_OR_DIGIT_FRAGMENT() throws RecognitionException {
         try {
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:311:40: ( ( RULE_LETTER_FRAGMENT | RULE_DIGIT_FRAGMENT ) )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:311:42: ( RULE_LETTER_FRAGMENT | RULE_DIGIT_FRAGMENT )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:313:40: ( ( RULE_LETTER_FRAGMENT | RULE_DIGIT_FRAGMENT ) )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:313:42: ( RULE_LETTER_FRAGMENT | RULE_DIGIT_FRAGMENT )
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z') ) {
                 input.consume();
@@ -10325,8 +10347,8 @@ public class InternalVhdlLexer extends Lexer {
     // $ANTLR start "RULE_LETTER_FRAGMENT"
     public final void mRULE_LETTER_FRAGMENT() throws RecognitionException {
         try {
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:313:31: ( ( 'a' .. 'z' | 'A' .. 'Z' ) )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:313:33: ( 'a' .. 'z' | 'A' .. 'Z' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:31: ( ( 'a' .. 'z' | 'A' .. 'Z' ) )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:33: ( 'a' .. 'z' | 'A' .. 'Z' )
             {
             if ( (input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z') ) {
                 input.consume();
@@ -10349,36 +10371,36 @@ public class InternalVhdlLexer extends Lexer {
     // $ANTLR start "RULE_BASE_SPECIFIER_FRAGMENT"
     public final void mRULE_BASE_SPECIFIER_FRAGMENT() throws RecognitionException {
         try {
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:39: ( ( 'B' | 'O' | 'X' | 'UB' | 'UO' | 'UX' | 'SB' | 'SO' | 'SX' | 'D' | 'b' | 'o' | 'x' | 'ub' | 'uo' | 'ux' | 'sb' | 'so' | 'sx' | 'd' ) )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:41: ( 'B' | 'O' | 'X' | 'UB' | 'UO' | 'UX' | 'SB' | 'SO' | 'SX' | 'D' | 'b' | 'o' | 'x' | 'ub' | 'uo' | 'ux' | 'sb' | 'so' | 'sx' | 'd' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:39: ( ( 'B' | 'O' | 'X' | 'UB' | 'UO' | 'UX' | 'SB' | 'SO' | 'SX' | 'D' | 'b' | 'o' | 'x' | 'ub' | 'uo' | 'ux' | 'sb' | 'so' | 'sx' | 'd' ) )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:41: ( 'B' | 'O' | 'X' | 'UB' | 'UO' | 'UX' | 'SB' | 'SO' | 'SX' | 'D' | 'b' | 'o' | 'x' | 'ub' | 'uo' | 'ux' | 'sb' | 'so' | 'sx' | 'd' )
             {
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:41: ( 'B' | 'O' | 'X' | 'UB' | 'UO' | 'UX' | 'SB' | 'SO' | 'SX' | 'D' | 'b' | 'o' | 'x' | 'ub' | 'uo' | 'ux' | 'sb' | 'so' | 'sx' | 'd' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:41: ( 'B' | 'O' | 'X' | 'UB' | 'UO' | 'UX' | 'SB' | 'SO' | 'SX' | 'D' | 'b' | 'o' | 'x' | 'ub' | 'uo' | 'ux' | 'sb' | 'so' | 'sx' | 'd' )
             int alt17=20;
             alt17 = dfa17.predict(input);
             switch (alt17) {
                 case 1 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:42: 'B'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:42: 'B'
                     {
                     match('B'); 
 
                     }
                     break;
                 case 2 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:46: 'O'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:46: 'O'
                     {
                     match('O'); 
 
                     }
                     break;
                 case 3 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:50: 'X'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:50: 'X'
                     {
                     match('X'); 
 
                     }
                     break;
                 case 4 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:54: 'UB'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:54: 'UB'
                     {
                     match("UB"); 
 
@@ -10386,7 +10408,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 5 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:59: 'UO'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:59: 'UO'
                     {
                     match("UO"); 
 
@@ -10394,7 +10416,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 6 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:64: 'UX'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:64: 'UX'
                     {
                     match("UX"); 
 
@@ -10402,7 +10424,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 7 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:69: 'SB'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:69: 'SB'
                     {
                     match("SB"); 
 
@@ -10410,7 +10432,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 8 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:74: 'SO'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:74: 'SO'
                     {
                     match("SO"); 
 
@@ -10418,7 +10440,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 9 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:79: 'SX'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:79: 'SX'
                     {
                     match("SX"); 
 
@@ -10426,35 +10448,35 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 10 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:84: 'D'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:84: 'D'
                     {
                     match('D'); 
 
                     }
                     break;
                 case 11 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:88: 'b'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:88: 'b'
                     {
                     match('b'); 
 
                     }
                     break;
                 case 12 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:92: 'o'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:92: 'o'
                     {
                     match('o'); 
 
                     }
                     break;
                 case 13 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:96: 'x'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:96: 'x'
                     {
                     match('x'); 
 
                     }
                     break;
                 case 14 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:100: 'ub'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:100: 'ub'
                     {
                     match("ub"); 
 
@@ -10462,7 +10484,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 15 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:105: 'uo'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:105: 'uo'
                     {
                     match("uo"); 
 
@@ -10470,7 +10492,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 16 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:110: 'ux'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:110: 'ux'
                     {
                     match("ux"); 
 
@@ -10478,7 +10500,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 17 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:115: 'sb'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:115: 'sb'
                     {
                     match("sb"); 
 
@@ -10486,7 +10508,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 18 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:120: 'so'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:120: 'so'
                     {
                     match("so"); 
 
@@ -10494,7 +10516,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 19 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:125: 'sx'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:125: 'sx'
                     {
                     match("sx"); 
 
@@ -10502,7 +10524,7 @@ public class InternalVhdlLexer extends Lexer {
                     }
                     break;
                 case 20 :
-                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:315:130: 'd'
+                    // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:130: 'd'
                     {
                     match('d'); 
 
@@ -10523,8 +10545,8 @@ public class InternalVhdlLexer extends Lexer {
     // $ANTLR start "RULE_EXPONENT_FRAGMENT"
     public final void mRULE_EXPONENT_FRAGMENT() throws RecognitionException {
         try {
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:33: ( ( 'E' | 'e' ) ( '+' | '-' )? RULE_INTEGER_FRAGMENT )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:35: ( 'E' | 'e' ) ( '+' | '-' )? RULE_INTEGER_FRAGMENT
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:319:33: ( ( 'E' | 'e' ) ( '+' | '-' )? RULE_INTEGER_FRAGMENT )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:319:35: ( 'E' | 'e' ) ( '+' | '-' )? RULE_INTEGER_FRAGMENT
             {
             if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
                 input.consume();
@@ -10535,7 +10557,7 @@ public class InternalVhdlLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:317:45: ( '+' | '-' )?
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:319:45: ( '+' | '-' )?
             int alt18=2;
             int LA18_0 = input.LA(1);
 
@@ -10574,11 +10596,11 @@ public class InternalVhdlLexer extends Lexer {
     // $ANTLR start "RULE_INTEGER_FRAGMENT"
     public final void mRULE_INTEGER_FRAGMENT() throws RecognitionException {
         try {
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:319:32: ( RULE_DIGIT_FRAGMENT ( '_' | RULE_DIGIT_FRAGMENT )* )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:319:34: RULE_DIGIT_FRAGMENT ( '_' | RULE_DIGIT_FRAGMENT )*
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:321:32: ( RULE_DIGIT_FRAGMENT ( '_' | RULE_DIGIT_FRAGMENT )* )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:321:34: RULE_DIGIT_FRAGMENT ( '_' | RULE_DIGIT_FRAGMENT )*
             {
             mRULE_DIGIT_FRAGMENT(); 
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:319:54: ( '_' | RULE_DIGIT_FRAGMENT )*
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:321:54: ( '_' | RULE_DIGIT_FRAGMENT )*
             loop19:
             do {
                 int alt19=2;
@@ -10623,8 +10645,8 @@ public class InternalVhdlLexer extends Lexer {
     // $ANTLR start "RULE_DIGIT_FRAGMENT"
     public final void mRULE_DIGIT_FRAGMENT() throws RecognitionException {
         try {
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:321:30: ( '0' .. '9' )
-            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:321:32: '0' .. '9'
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:323:30: ( '0' .. '9' )
+            // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:323:32: '0' .. '9'
             {
             matchRange('0','9'); 
 
@@ -10637,8 +10659,8 @@ public class InternalVhdlLexer extends Lexer {
     // $ANTLR end "RULE_DIGIT_FRAGMENT"
 
     public void mTokens() throws RecognitionException {
-        // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:8: ( Configuration | Architecture | Disconnect | Procedural | Unaffected | Attribute | Component | Postponed | Procedure | Reference | Subnature | Tolerance | Transport | Constant | Function | Generate | Inertial | Quantity | Register | Severity | Spectrum | Terminal | Variable | Generic | Guarded | Library | Linkage | Literal | Package | Process | Subtype | Through | Access | Across | Assert | Buffer | Downto | Entity | Impure | Nature | Others | Record | Reject | Report | Return | Select | Shared | Signal | After | Alias | Array | Begin | Block | Break | Elsif | Group | Inout | Label | Limit | Noise | Range | Units | Until | While | Body | Case | Else | Exit | File | Loop | Nand | Next | Null | Open | Port | Pure | Then | Type | Wait | When | With | Xnor | Abs | All | And | Bus | End | For | Map | Mod | New | Nor | Not | Out | Rem | Rol | Ror | Sla | Sll | Sra | Srl | Use | Xor | AsteriskAsterisk | SolidusEqualsSign | ColonEqualsSign | LessThanSignEqualsSign | LessThanSignGreaterThanSign | EqualsSignEqualsSign | EqualsSignGreaterThanSign | GreaterThanSignEqualsSign | If | In | Is | Of | On | Or | To | Ampersand | LeftParenthesis | RightParenthesis | Asterisk | PlusSign | Comma | HyphenMinus | FullStop | Solidus | Colon | Semicolon | LessThanSign | EqualsSign | GreaterThanSign | LeftSquareBracket | RightSquareBracket | VerticalLine | RULE_ABSTRACT_LITERAL | RULE_BIT_STRING_LITERAL | RULE_ID | RULE_EXTENDED_IDENTIFIER | RULE_STRING | RULE_CHAR | RULE_ATTRIBUTE | RULE_SL_COMMENT | RULE_WS )
-        int alt20=144;
+        // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:8: ( Configuration | Architecture | Disconnect | Procedural | Unaffected | Attribute | Component | Postponed | Procedure | Reference | Subnature | Tolerance | Transport | Constant | Function | Generate | Inertial | Quantity | Register | Severity | Spectrum | Terminal | Variable | Generic | Guarded | Library | Linkage | Literal | Package | Process | Subtype | Through | Access | Across | Assert | Buffer | Downto | Entity | Impure | Nature | Others | Record | Reject | Report | Return | Select | Shared | Signal | After | Alias | Array | Begin | Block | Break | Elsif | Group | Inout | Label | Limit | Noise | Range | Units | Until | While | Body | Case | Else | Exit | File | Loop | Nand | Next | Null | Open | Port | Pure | Then | Type | Wait | When | With | Xnor | Abs | All | And | Bus | End | For | Map | Mod | New | Nor | Not | Out | Rem | Rol | Ror | Sla | Sll | Sra | Srl | Use | Xor | ApostropheLeftParenthesis | AsteriskAsterisk | SolidusEqualsSign | ColonEqualsSign | LessThanSignEqualsSign | LessThanSignGreaterThanSign | EqualsSignEqualsSign | EqualsSignGreaterThanSign | GreaterThanSignEqualsSign | If | In | Is | Of | On | Or | To | Ampersand | LeftParenthesis | RightParenthesis | Asterisk | PlusSign | Comma | HyphenMinus | FullStop | Solidus | Colon | Semicolon | LessThanSign | EqualsSign | GreaterThanSign | LeftSquareBracket | RightSquareBracket | VerticalLine | RULE_ABSTRACT_LITERAL | RULE_BIT_STRING_LITERAL | RULE_ID | RULE_EXTENDED_IDENTIFIER | RULE_STRING | RULE_CHAR | RULE_ATTRIBUTE | RULE_SL_COMMENT | RULE_WS )
+        int alt20=145;
         alt20 = dfa20.predict(input);
         switch (alt20) {
             case 1 :
@@ -11363,287 +11385,294 @@ public class InternalVhdlLexer extends Lexer {
                 }
                 break;
             case 104 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:694: AsteriskAsterisk
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:694: ApostropheLeftParenthesis
+                {
+                mApostropheLeftParenthesis(); 
+
+                }
+                break;
+            case 105 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:720: AsteriskAsterisk
                 {
                 mAsteriskAsterisk(); 
 
                 }
                 break;
-            case 105 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:711: SolidusEqualsSign
+            case 106 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:737: SolidusEqualsSign
                 {
                 mSolidusEqualsSign(); 
 
                 }
                 break;
-            case 106 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:729: ColonEqualsSign
+            case 107 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:755: ColonEqualsSign
                 {
                 mColonEqualsSign(); 
 
                 }
                 break;
-            case 107 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:745: LessThanSignEqualsSign
+            case 108 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:771: LessThanSignEqualsSign
                 {
                 mLessThanSignEqualsSign(); 
 
                 }
                 break;
-            case 108 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:768: LessThanSignGreaterThanSign
+            case 109 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:794: LessThanSignGreaterThanSign
                 {
                 mLessThanSignGreaterThanSign(); 
 
                 }
                 break;
-            case 109 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:796: EqualsSignEqualsSign
+            case 110 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:822: EqualsSignEqualsSign
                 {
                 mEqualsSignEqualsSign(); 
 
                 }
                 break;
-            case 110 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:817: EqualsSignGreaterThanSign
+            case 111 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:843: EqualsSignGreaterThanSign
                 {
                 mEqualsSignGreaterThanSign(); 
 
                 }
                 break;
-            case 111 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:843: GreaterThanSignEqualsSign
+            case 112 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:869: GreaterThanSignEqualsSign
                 {
                 mGreaterThanSignEqualsSign(); 
 
                 }
                 break;
-            case 112 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:869: If
+            case 113 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:895: If
                 {
                 mIf(); 
 
                 }
                 break;
-            case 113 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:872: In
+            case 114 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:898: In
                 {
                 mIn(); 
 
                 }
                 break;
-            case 114 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:875: Is
+            case 115 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:901: Is
                 {
                 mIs(); 
 
                 }
                 break;
-            case 115 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:878: Of
+            case 116 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:904: Of
                 {
                 mOf(); 
 
                 }
                 break;
-            case 116 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:881: On
+            case 117 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:907: On
                 {
                 mOn(); 
 
                 }
                 break;
-            case 117 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:884: Or
+            case 118 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:910: Or
                 {
                 mOr(); 
 
                 }
                 break;
-            case 118 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:887: To
+            case 119 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:913: To
                 {
                 mTo(); 
 
                 }
                 break;
-            case 119 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:890: Ampersand
+            case 120 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:916: Ampersand
                 {
                 mAmpersand(); 
 
                 }
                 break;
-            case 120 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:900: LeftParenthesis
+            case 121 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:926: LeftParenthesis
                 {
                 mLeftParenthesis(); 
 
                 }
                 break;
-            case 121 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:916: RightParenthesis
+            case 122 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:942: RightParenthesis
                 {
                 mRightParenthesis(); 
 
                 }
                 break;
-            case 122 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:933: Asterisk
+            case 123 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:959: Asterisk
                 {
                 mAsterisk(); 
 
                 }
                 break;
-            case 123 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:942: PlusSign
+            case 124 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:968: PlusSign
                 {
                 mPlusSign(); 
 
                 }
                 break;
-            case 124 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:951: Comma
+            case 125 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:977: Comma
                 {
                 mComma(); 
 
                 }
                 break;
-            case 125 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:957: HyphenMinus
+            case 126 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:983: HyphenMinus
                 {
                 mHyphenMinus(); 
 
                 }
                 break;
-            case 126 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:969: FullStop
+            case 127 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:995: FullStop
                 {
                 mFullStop(); 
 
                 }
                 break;
-            case 127 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:978: Solidus
+            case 128 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1004: Solidus
                 {
                 mSolidus(); 
 
                 }
                 break;
-            case 128 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:986: Colon
+            case 129 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1012: Colon
                 {
                 mColon(); 
 
                 }
                 break;
-            case 129 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:992: Semicolon
+            case 130 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1018: Semicolon
                 {
                 mSemicolon(); 
 
                 }
                 break;
-            case 130 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1002: LessThanSign
+            case 131 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1028: LessThanSign
                 {
                 mLessThanSign(); 
 
                 }
                 break;
-            case 131 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1015: EqualsSign
+            case 132 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1041: EqualsSign
                 {
                 mEqualsSign(); 
 
                 }
                 break;
-            case 132 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1026: GreaterThanSign
+            case 133 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1052: GreaterThanSign
                 {
                 mGreaterThanSign(); 
 
                 }
                 break;
-            case 133 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1042: LeftSquareBracket
+            case 134 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1068: LeftSquareBracket
                 {
                 mLeftSquareBracket(); 
 
                 }
                 break;
-            case 134 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1060: RightSquareBracket
+            case 135 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1086: RightSquareBracket
                 {
                 mRightSquareBracket(); 
 
                 }
                 break;
-            case 135 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1079: VerticalLine
+            case 136 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1105: VerticalLine
                 {
                 mVerticalLine(); 
 
                 }
                 break;
-            case 136 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1092: RULE_ABSTRACT_LITERAL
+            case 137 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1118: RULE_ABSTRACT_LITERAL
                 {
                 mRULE_ABSTRACT_LITERAL(); 
 
                 }
                 break;
-            case 137 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1114: RULE_BIT_STRING_LITERAL
+            case 138 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1140: RULE_BIT_STRING_LITERAL
                 {
                 mRULE_BIT_STRING_LITERAL(); 
 
                 }
                 break;
-            case 138 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1138: RULE_ID
+            case 139 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1164: RULE_ID
                 {
                 mRULE_ID(); 
 
                 }
                 break;
-            case 139 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1146: RULE_EXTENDED_IDENTIFIER
+            case 140 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1172: RULE_EXTENDED_IDENTIFIER
                 {
                 mRULE_EXTENDED_IDENTIFIER(); 
 
                 }
                 break;
-            case 140 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1171: RULE_STRING
+            case 141 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1197: RULE_STRING
                 {
                 mRULE_STRING(); 
 
                 }
                 break;
-            case 141 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1183: RULE_CHAR
+            case 142 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1209: RULE_CHAR
                 {
                 mRULE_CHAR(); 
 
                 }
                 break;
-            case 142 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1193: RULE_ATTRIBUTE
+            case 143 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1219: RULE_ATTRIBUTE
                 {
                 mRULE_ATTRIBUTE(); 
 
                 }
                 break;
-            case 143 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1208: RULE_SL_COMMENT
+            case 144 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1234: RULE_SL_COMMENT
                 {
                 mRULE_SL_COMMENT(); 
 
                 }
                 break;
-            case 144 :
-                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1224: RULE_WS
+            case 145 :
+                // ../net.mlanoe.language.vhdl.xtext/src-gen/net/mlanoe/language/vhdl/xtext/parser/antlr/lexer/InternalVhdlLexer.g:1:1250: RULE_WS
                 {
                 mRULE_WS(); 
 
@@ -11896,7 +11925,7 @@ public class InternalVhdlLexer extends Lexer {
             this.transition = DFA10_transition;
         }
         public String getDescription() {
-            return "301:13: ( '\\'a\\'' | '\\'b\\'' | '\\'c\\'' | '\\'d\\'' | '\\'e\\'' | '\\'f\\'' | '\\'g\\'' | '\\'h\\'' | '\\'i\\'' | '\\'j\\'' | '\\'k\\'' | '\\'l\\'' | '\\'m\\'' | '\\'n\\'' | '\\'o\\'' | '\\'p\\'' | '\\'q\\'' | '\\'r\\'' | '\\'s\\'' | '\\'t\\'' | '\\'u\\'' | '\\'v\\'' | '\\'w\\'' | '\\'x\\'' | '\\'y\\'' | '\\'z\\'' | '\\'A\\'' | '\\'B\\'' | '\\'C\\'' | '\\'D\\'' | '\\'E\\'' | '\\'F\\'' | '\\'G\\'' | '\\'H\\'' | '\\'I\\'' | '\\'J\\'' | '\\'K\\'' | '\\'L\\'' | '\\'M\\'' | '\\'N\\'' | '\\'O\\'' | '\\'P\\'' | '\\'Q\\'' | '\\'R\\'' | '\\'S\\'' | '\\'T\\'' | '\\'U\\'' | '\\'V\\'' | '\\'W\\'' | '\\'X\\'' | '\\'Y\\'' | '\\'Z\\'' | '\\'0\\'' | '\\'1\\'' | '\\'2\\'' | '\\'3\\'' | '\\'4\\'' | '\\'5\\'' | '\\'6\\'' | '\\'7\\'' | '\\'8\\'' | '\\'9\\'' | '\\'&\\'' | '\\'\\'\\'' | '\\'(\\'' | '\\')\\'' | '\\'+\\'' | '\\',\\'' | '\\'-\\'' | '\\'.\\'' | '\\'/\\'' | '\\':\\'' | '\\';\\'' | '\\'<\\'' | '\\'=\\'' | '\\'>\\'' | '\\'|\\'' | '\\' \\'' | '\\'#\\'' | '\\'[\\'' | '\\']\\'' | '\\'_\\'' | '\\'*\\'' | '\\'\"\\'' | '\\'!\\'' | '\\'$\\'' | '\\'%\\'' | '\\'@\\'' | '\\'?\\'' | '\\'^\\'' | '\\'`\\'' | '\\'{\\'' | '\\'}\\'' | '\\'~\\'' | '\\'\\u00A0\\'' | '\\'\\u00A1\\'' | '\\'\\u00A2\\'' | '\\'\\u00A3\\'' | '\\'\\u20AC\\'' | '\\'\\u00A5\\'' | '\\'\\u0160\\'' | '\\'\\u00A7\\'' | '\\'\\u0161\\'' | '\\'\\u00A9\\'' | '\\'\\u00AA\\'' | '\\'\\u00AB\\'' | '\\'\\u00AC\\'' | '\\'\\'' | '\\'\\u00AE\\'' | '\\'\\u00AF\\'' | '\\'\\u00B0\\'' | '\\'\\u00B1\\'' | '\\'\\u00B2\\'' | '\\'\\u00B3\\'' | '\\'\\u017D\\'' | '\\'\\u00B5\\'' | '\\'\\u00B6\\'' | '\\'\\u00B7\\'' | '\\'\\u017E\\'' | '\\'\\u00B9\\'' | '\\'\\u00BA\\'' | '\\'\\u00BB\\'' | '\\'\\u0152\\'' | '\\'\\u0153\\'' | '\\'\\u0178\\'' | '\\'\\u00BF\\'' | '\\'\\u00C0\\'' | '\\'\\u00C1\\'' | '\\'\\u00C2\\'' | '\\'\\u00C3\\'' | '\\'\\u00C4\\'' | '\\'\\u00C5\\'' | '\\'\\u00C6\\'' | '\\'\\u00C7\\'' | '\\'\\u00C8\\'' | '\\'\\u00C9\\'' | '\\'\\u00CA\\'' | '\\'\\u00CB\\'' | '\\'\\u00CC\\'' | '\\'\\u00CD\\'' | '\\'\\u00CE\\'' | '\\'\\u00CF\\'' | '\\'\\u00D0\\'' | '\\'\\u00D1\\'' | '\\'\\u00D2\\'' | '\\'\\u00D3\\'' | '\\'\\u00D4\\'' | '\\'\\u00D5\\'' | '\\'\\u00D6\\'' | '\\'\\u00D7\\'' | '\\'\\u00D8\\'' | '\\'\\u00D9\\'' | '\\'\\u00DA\\'' | '\\'\\u00DB\\'' | '\\'\\u00DC\\'' | '\\'\\u00DD\\'' | '\\'\\u00DE\\'' | '\\'\\u00DF\\'' | '\\'\\u00E0\\'' | '\\'\\u00E1\\'' | '\\'\\u00E2\\'' | '\\'\\u00E3\\'' | '\\'\\u00E4\\'' | '\\'\\u00E5\\'' | '\\'\\u00E6\\'' | '\\'\\u00E7\\'' | '\\'\\u00E8\\'' | '\\'\\u00E9\\'' | '\\'\\u00EA\\'' | '\\'\\u00EB\\'' | '\\'\\u00EC\\'' | '\\'\\u00ED\\'' | '\\'\\u00EE\\'' | '\\'\\u00EF\\'' | '\\'\\u00F0\\'' | '\\'\\u00F1\\'' | '\\'\\u00F2\\'' | '\\'\\u00F3\\'' | '\\'\\u00F4\\'' | '\\'\\u00F5\\'' | '\\'\\u00F6\\'' | '\\'\\u00F7\\'' | '\\'\\u00F8\\'' | '\\'\\u00F9\\'' | '\\'\\u00FA\\'' | '\\'\\u00FB\\'' | '\\'\\u00FC\\'' | '\\'\\u00FD\\'' | '\\'\\u00FE\\'' | '\\'\\u00FF\\'' )";
+            return "303:13: ( '\\'a\\'' | '\\'b\\'' | '\\'c\\'' | '\\'d\\'' | '\\'e\\'' | '\\'f\\'' | '\\'g\\'' | '\\'h\\'' | '\\'i\\'' | '\\'j\\'' | '\\'k\\'' | '\\'l\\'' | '\\'m\\'' | '\\'n\\'' | '\\'o\\'' | '\\'p\\'' | '\\'q\\'' | '\\'r\\'' | '\\'s\\'' | '\\'t\\'' | '\\'u\\'' | '\\'v\\'' | '\\'w\\'' | '\\'x\\'' | '\\'y\\'' | '\\'z\\'' | '\\'A\\'' | '\\'B\\'' | '\\'C\\'' | '\\'D\\'' | '\\'E\\'' | '\\'F\\'' | '\\'G\\'' | '\\'H\\'' | '\\'I\\'' | '\\'J\\'' | '\\'K\\'' | '\\'L\\'' | '\\'M\\'' | '\\'N\\'' | '\\'O\\'' | '\\'P\\'' | '\\'Q\\'' | '\\'R\\'' | '\\'S\\'' | '\\'T\\'' | '\\'U\\'' | '\\'V\\'' | '\\'W\\'' | '\\'X\\'' | '\\'Y\\'' | '\\'Z\\'' | '\\'0\\'' | '\\'1\\'' | '\\'2\\'' | '\\'3\\'' | '\\'4\\'' | '\\'5\\'' | '\\'6\\'' | '\\'7\\'' | '\\'8\\'' | '\\'9\\'' | '\\'&\\'' | '\\'\\'\\'' | '\\'(\\'' | '\\')\\'' | '\\'+\\'' | '\\',\\'' | '\\'-\\'' | '\\'.\\'' | '\\'/\\'' | '\\':\\'' | '\\';\\'' | '\\'<\\'' | '\\'=\\'' | '\\'>\\'' | '\\'|\\'' | '\\' \\'' | '\\'#\\'' | '\\'[\\'' | '\\']\\'' | '\\'_\\'' | '\\'*\\'' | '\\'\"\\'' | '\\'!\\'' | '\\'$\\'' | '\\'%\\'' | '\\'@\\'' | '\\'?\\'' | '\\'^\\'' | '\\'`\\'' | '\\'{\\'' | '\\'}\\'' | '\\'~\\'' | '\\'\\u00A0\\'' | '\\'\\u00A1\\'' | '\\'\\u00A2\\'' | '\\'\\u00A3\\'' | '\\'\\u20AC\\'' | '\\'\\u00A5\\'' | '\\'\\u0160\\'' | '\\'\\u00A7\\'' | '\\'\\u0161\\'' | '\\'\\u00A9\\'' | '\\'\\u00AA\\'' | '\\'\\u00AB\\'' | '\\'\\u00AC\\'' | '\\'\\'' | '\\'\\u00AE\\'' | '\\'\\u00AF\\'' | '\\'\\u00B0\\'' | '\\'\\u00B1\\'' | '\\'\\u00B2\\'' | '\\'\\u00B3\\'' | '\\'\\u017D\\'' | '\\'\\u00B5\\'' | '\\'\\u00B6\\'' | '\\'\\u00B7\\'' | '\\'\\u017E\\'' | '\\'\\u00B9\\'' | '\\'\\u00BA\\'' | '\\'\\u00BB\\'' | '\\'\\u0152\\'' | '\\'\\u0153\\'' | '\\'\\u0178\\'' | '\\'\\u00BF\\'' | '\\'\\u00C0\\'' | '\\'\\u00C1\\'' | '\\'\\u00C2\\'' | '\\'\\u00C3\\'' | '\\'\\u00C4\\'' | '\\'\\u00C5\\'' | '\\'\\u00C6\\'' | '\\'\\u00C7\\'' | '\\'\\u00C8\\'' | '\\'\\u00C9\\'' | '\\'\\u00CA\\'' | '\\'\\u00CB\\'' | '\\'\\u00CC\\'' | '\\'\\u00CD\\'' | '\\'\\u00CE\\'' | '\\'\\u00CF\\'' | '\\'\\u00D0\\'' | '\\'\\u00D1\\'' | '\\'\\u00D2\\'' | '\\'\\u00D3\\'' | '\\'\\u00D4\\'' | '\\'\\u00D5\\'' | '\\'\\u00D6\\'' | '\\'\\u00D7\\'' | '\\'\\u00D8\\'' | '\\'\\u00D9\\'' | '\\'\\u00DA\\'' | '\\'\\u00DB\\'' | '\\'\\u00DC\\'' | '\\'\\u00DD\\'' | '\\'\\u00DE\\'' | '\\'\\u00DF\\'' | '\\'\\u00E0\\'' | '\\'\\u00E1\\'' | '\\'\\u00E2\\'' | '\\'\\u00E3\\'' | '\\'\\u00E4\\'' | '\\'\\u00E5\\'' | '\\'\\u00E6\\'' | '\\'\\u00E7\\'' | '\\'\\u00E8\\'' | '\\'\\u00E9\\'' | '\\'\\u00EA\\'' | '\\'\\u00EB\\'' | '\\'\\u00EC\\'' | '\\'\\u00ED\\'' | '\\'\\u00EE\\'' | '\\'\\u00EF\\'' | '\\'\\u00F0\\'' | '\\'\\u00F1\\'' | '\\'\\u00F2\\'' | '\\'\\u00F3\\'' | '\\'\\u00F4\\'' | '\\'\\u00F5\\'' | '\\'\\u00F6\\'' | '\\'\\u00F7\\'' | '\\'\\u00F8\\'' | '\\'\\u00F9\\'' | '\\'\\u00FA\\'' | '\\'\\u00FB\\'' | '\\'\\u00FC\\'' | '\\'\\u00FD\\'' | '\\'\\u00FE\\'' | '\\'\\u00FF\\'' )";
         }
     }
     static final String DFA17_eotS =
@@ -11969,23 +11998,23 @@ public class InternalVhdlLexer extends Lexer {
             this.transition = DFA17_transition;
         }
         public String getDescription() {
-            return "315:41: ( 'B' | 'O' | 'X' | 'UB' | 'UO' | 'UX' | 'SB' | 'SO' | 'SX' | 'D' | 'b' | 'o' | 'x' | 'ub' | 'uo' | 'ux' | 'sb' | 'so' | 'sx' | 'd' )";
+            return "317:41: ( 'B' | 'O' | 'X' | 'UB' | 'UO' | 'UX' | 'SB' | 'SO' | 'SX' | 'D' | 'b' | 'o' | 'x' | 'ub' | 'uo' | 'ux' | 'sb' | 'so' | 'sx' | 'd' )";
         }
     }
     static final String DFA20_eotS =
-        "\1\uffff\25\56\1\u0084\1\u0086\1\u0088\1\u008b\1\u008e\1\u0090\5\uffff\1\u0092\5\uffff\1\u0093\6\56\5\uffff\14\56\1\uffff\26\56\1\u00fe\12\56\1\u010c\1\56\1\u010e\1\u010f\24\56\1\u012d\1\u012e\1\u012f\7\56\21\uffff\1\u0093\6\56\64\u0138\1\uffff\13\56\1\u0145\1\u0146\1\u0147\12\56\1\u0152\6\56\1\u0159\1\56\1\u015b\1\u015c\6\56\1\u0164\1\u0165\1\u0166\1\u0167\1\56\1\uffff\7\56\1\u0170\5\56\1\uffff\1\56\2\uffff\11\56\1\u0180\5\56\1\u0186\5\56\1\u018d\1\u018e\1\56\1\u0190\3\56\1\u0194\3\uffff\5\56\1\u019a\1\u019b\1\u019c\1\uffff\3\56\1\u01a0\10\56\3\uffff\4\56\1\u01ad\1\56\1\u01af\3\56\1\uffff\6\56\1\uffff\1\56\2\uffff\7\56\4\uffff\4\56\1\u01c5\1\u01c6\1\56\1\u01c8\1\uffff\15\56\1\u01d6\1\56\1\uffff\3\56\1\u01db\1\56\1\uffff\1\56\1\u01de\1\u01df\1\56\1\u01e1\1\56\2\uffff\1\u01e3\1\uffff\1\u01e4\1\56\1\u01e6\1\uffff\1\56\1\u01e8\1\u01e9\1\u01ea\1\u01eb\3\uffff\3\56\1\uffff\1\56\1\u01f0\4\56\1\u01f5\1\u01f6\4\56\1\uffff\1\56\1\uffff\1\56\1\u01fe\1\u01ff\6\56\1\u0206\13\56\2\uffff\1\56\1\uffff\2\56\1\u0216\1\56\1\u0218\6\56\1\u021f\1\u0220\1\uffff\1\56\1\u0222\1\u0223\1\u0224\1\uffff\1\56\1\u0226\2\uffff\1\56\1\uffff\1\u0228\2\uffff\1\56\1\uffff\1\u022a\4\uffff\4\56\1\uffff\1\56\1\u0230\1\u0231\1\u0232\2\uffff\1\56\1\u0234\5\56\2\uffff\2\56\1\u023c\1\u023d\1\u023e\1\u023f\1\uffff\3\56\1\u0243\1\56\1\u0245\1\u0246\10\56\1\uffff\1\56\1\uffff\1\u0250\5\56\2\uffff\1\u0256\3\uffff\1\u0257\1\uffff\1\u0258\1\uffff\1\u0259\1\uffff\5\56\3\uffff\1\56\1\uffff\1\56\1\u0261\1\56\1\u0263\3\56\4\uffff\1\56\1\u0268\1\56\1\uffff\1\56\2\uffff\3\56\1\u026e\2\56\1\u0271\1\u0272\1\56\1\uffff\2\56\1\u0276\1\u0277\1\u0278\4\uffff\1\56\1\u027a\5\56\1\uffff\1\56\1\uffff\2\56\1\u0284\1\56\1\uffff\1\u0286\1\u0287\2\56\1\u028a\1\uffff\1\u028b\1\u028c\2\uffff\1\u028d\1\u028e\1\u028f\3\uffff\1\56\1\uffff\1\u0291\1\56\1\u0293\2\56\1\u0296\1\u0297\1\56\1\u0299\1\uffff\1\u029a\2\uffff\1\u029b\1\u029c\6\uffff\1\56\1\uffff\1\56\1\uffff\1\u029f\1\u02a0\2\uffff\1\u02a1\4\uffff\2\56\3\uffff\1\56\1\u02a5\1\u02a6\2\uffff";
+        "\1\uffff\25\57\1\uffff\1\u00ba\1\u00bc\1\u00be\1\u00c1\1\u00c4\1\u00c6\5\uffff\1\u00c8\5\uffff\1\u00c9\6\57\4\uffff\14\57\1\uffff\26\57\1\u00ff\12\57\1\u010d\1\57\1\u010f\1\u0110\24\57\1\u012e\1\u012f\1\u0130\7\57\1\u0139\64\u013a\22\uffff\1\u00c9\21\57\1\u0147\1\u0148\1\u0149\12\57\1\u0154\6\57\1\u015b\1\57\1\u015d\1\u015e\6\57\1\u0166\1\u0167\1\u0168\1\u0169\1\57\1\uffff\7\57\1\u0172\5\57\1\uffff\1\57\2\uffff\11\57\1\u0182\5\57\1\u0188\5\57\1\u018f\1\u0190\1\57\1\u0192\3\57\1\u0196\3\uffff\5\57\1\u019c\1\u019d\1\u019e\2\uffff\3\57\1\u01a2\10\57\3\uffff\4\57\1\u01af\1\57\1\u01b1\3\57\1\uffff\6\57\1\uffff\1\57\2\uffff\7\57\4\uffff\4\57\1\u01c7\1\u01c8\1\57\1\u01ca\1\uffff\15\57\1\u01d8\1\57\1\uffff\3\57\1\u01dd\1\57\1\uffff\1\57\1\u01e0\1\u01e1\1\57\1\u01e3\1\57\2\uffff\1\u01e5\1\uffff\1\u01e6\1\57\1\u01e8\1\uffff\1\57\1\u01ea\1\u01eb\1\u01ec\1\u01ed\3\uffff\3\57\1\uffff\1\57\1\u01f2\4\57\1\u01f7\1\u01f8\4\57\1\uffff\1\57\1\uffff\1\57\1\u0200\1\u0201\6\57\1\u0208\13\57\2\uffff\1\57\1\uffff\2\57\1\u0218\1\57\1\u021a\6\57\1\u0221\1\u0222\1\uffff\1\57\1\u0224\1\u0225\1\u0226\1\uffff\1\57\1\u0228\2\uffff\1\57\1\uffff\1\u022a\2\uffff\1\57\1\uffff\1\u022c\4\uffff\4\57\1\uffff\1\57\1\u0232\1\u0233\1\u0234\2\uffff\1\57\1\u0236\5\57\2\uffff\2\57\1\u023e\1\u023f\1\u0240\1\u0241\1\uffff\3\57\1\u0245\1\57\1\u0247\1\u0248\10\57\1\uffff\1\57\1\uffff\1\u0252\5\57\2\uffff\1\u0258\3\uffff\1\u0259\1\uffff\1\u025a\1\uffff\1\u025b\1\uffff\5\57\3\uffff\1\57\1\uffff\1\57\1\u0263\1\57\1\u0265\3\57\4\uffff\1\57\1\u026a\1\57\1\uffff\1\57\2\uffff\3\57\1\u0270\2\57\1\u0273\1\u0274\1\57\1\uffff\2\57\1\u0278\1\u0279\1\u027a\4\uffff\1\57\1\u027c\5\57\1\uffff\1\57\1\uffff\2\57\1\u0286\1\57\1\uffff\1\u0288\1\u0289\2\57\1\u028c\1\uffff\1\u028d\1\u028e\2\uffff\1\u028f\1\u0290\1\u0291\3\uffff\1\57\1\uffff\1\u0293\1\57\1\u0295\2\57\1\u0298\1\u0299\1\57\1\u029b\1\uffff\1\u029c\2\uffff\1\u029d\1\u029e\6\uffff\1\57\1\uffff\1\57\1\uffff\1\u02a1\1\u02a2\2\uffff\1\u02a3\4\uffff\2\57\3\uffff\1\57\1\u02a7\1\u02a8\2\uffff";
     static final String DFA20_eofS =
-        "\u02a7\uffff";
+        "\u02a9\uffff";
     static final String DFA20_minS =
-        "\1\11\1\101\1\102\1\42\1\101\1\102\1\101\1\102\1\105\1\111\1\105\1\106\1\125\2\101\1\42\1\114\1\101\1\42\1\101\1\42\1\101\1\52\5\75\5\uffff\1\55\5\uffff\1\60\3\42\1\116\1\105\1\42\3\uffff\1\40\1\uffff\1\115\1\123\1\103\1\124\1\103\1\123\1\124\1\111\1\123\1\104\1\123\1\127\1\uffff\1\117\1\122\1\103\1\122\1\101\1\105\3\42\1\103\1\116\1\114\1\102\1\114\1\105\1\101\1\107\2\101\3\42\1\60\1\101\1\122\1\105\1\120\1\116\1\114\1\122\1\116\1\101\1\117\1\60\1\120\2\60\1\101\1\122\2\102\1\117\1\106\1\107\1\117\1\105\2\104\1\123\1\111\1\116\1\111\1\127\1\114\1\110\1\105\1\124\3\60\1\105\1\111\1\124\1\117\1\122\1\120\1\104\21\uffff\1\60\6\42\64\47\1\uffff\1\106\1\120\1\105\1\110\1\101\1\122\1\105\1\117\2\105\1\101\3\60\1\103\1\116\1\103\2\124\1\113\1\105\1\106\1\124\1\111\1\60\1\105\1\111\1\117\1\105\1\117\1\125\1\60\1\107\2\60\1\116\2\105\1\103\1\122\1\116\4\60\1\105\1\uffff\1\116\1\115\1\117\1\116\1\105\1\103\1\105\1\60\1\105\1\122\1\125\1\122\1\125\1\uffff\1\125\2\uffff\1\116\1\111\1\122\1\113\1\105\1\111\1\105\1\120\1\106\1\60\1\111\1\103\1\101\1\131\1\111\1\60\1\105\1\124\1\125\1\104\1\123\2\60\1\124\1\60\1\114\1\105\1\116\1\60\3\uffff\1\114\1\116\1\124\1\110\1\122\3\60\1\uffff\1\111\1\124\1\117\1\60\1\111\1\131\1\111\2\123\2\122\1\123\3\uffff\1\117\1\124\1\105\1\120\1\60\1\101\1\60\1\106\1\123\1\114\1\uffff\1\122\1\123\1\122\1\103\2\122\1\uffff\1\105\2\uffff\1\101\1\131\1\122\1\103\1\124\1\105\1\101\4\uffff\1\122\1\123\1\111\1\125\2\60\1\124\1\60\1\uffff\1\122\1\104\1\120\2\124\1\122\1\124\3\101\1\122\1\124\1\114\1\60\1\105\1\uffff\1\116\2\113\1\60\1\124\1\uffff\1\106\2\60\1\122\1\60\1\105\2\uffff\1\60\1\uffff\1\60\1\122\1\60\1\uffff\1\105\4\60\3\uffff\1\107\1\101\1\116\1\uffff\1\124\1\60\1\102\2\123\1\124\2\60\1\116\1\117\1\104\1\117\1\uffff\1\107\1\uffff\1\105\2\60\1\105\1\124\1\104\2\124\1\116\1\60\1\124\1\120\1\111\1\124\1\122\1\104\1\114\1\101\1\120\1\116\1\107\2\uffff\1\111\1\uffff\1\101\1\105\1\60\1\111\1\60\1\105\1\111\1\102\1\122\1\107\1\101\2\60\1\uffff\1\122\3\60\1\uffff\1\131\1\60\2\uffff\1\105\1\uffff\1\60\2\uffff\1\123\1\uffff\1\60\4\uffff\1\125\1\116\2\105\1\uffff\1\125\3\60\2\uffff\1\116\1\60\1\125\1\123\1\116\1\105\1\103\2\uffff\1\116\1\105\4\60\1\uffff\1\125\1\105\1\124\1\60\1\125\2\60\1\116\1\117\1\101\1\110\1\117\1\124\1\103\1\104\1\uffff\1\101\1\uffff\1\60\1\124\1\114\1\131\1\105\1\114\2\uffff\1\60\3\uffff\1\60\1\uffff\1\60\1\uffff\1\60\1\uffff\1\122\1\124\1\116\1\103\1\124\3\uffff\1\105\1\uffff\1\122\1\60\1\105\1\60\1\124\1\103\1\122\4\uffff\1\122\1\60\1\131\1\uffff\1\115\2\uffff\1\103\1\122\1\114\1\60\1\116\1\105\2\60\1\114\1\uffff\1\131\1\105\3\60\4\uffff\1\101\1\60\2\124\1\105\1\103\1\101\1\uffff\1\104\1\uffff\2\105\1\60\1\105\1\uffff\2\60\1\105\1\124\1\60\1\uffff\2\60\2\uffff\3\60\3\uffff\1\124\1\uffff\1\60\1\125\1\60\1\124\1\114\2\60\1\104\1\60\1\uffff\1\60\2\uffff\2\60\6\uffff\1\111\1\uffff\1\122\1\uffff\2\60\2\uffff\1\60\4\uffff\1\117\1\105\3\uffff\1\116\2\60\2\uffff";
+        "\1\11\1\101\1\102\1\42\1\101\1\102\1\101\1\102\1\105\1\111\1\105\1\106\1\125\2\101\1\42\1\114\1\101\1\42\1\101\1\42\1\101\1\40\1\52\5\75\5\uffff\1\55\5\uffff\1\60\3\42\1\116\1\105\1\42\4\uffff\1\115\1\123\1\103\1\124\1\103\1\123\1\124\1\111\1\123\1\104\1\123\1\127\1\uffff\1\117\1\122\1\103\1\122\1\101\1\105\3\42\1\103\1\116\1\114\1\102\1\114\1\105\1\101\1\107\2\101\3\42\1\60\1\101\1\122\1\105\1\120\1\116\1\114\1\122\1\116\1\101\1\117\1\60\1\120\2\60\1\101\1\122\2\102\1\117\1\106\1\107\1\117\1\105\2\104\1\123\1\111\1\116\1\111\1\127\1\114\1\110\1\105\1\124\3\60\1\105\1\111\1\124\1\117\1\122\1\120\1\104\65\47\22\uffff\1\60\6\42\1\106\1\120\1\105\1\110\1\101\1\122\1\105\1\117\2\105\1\101\3\60\1\103\1\116\1\103\2\124\1\113\1\105\1\106\1\124\1\111\1\60\1\105\1\111\1\117\1\105\1\117\1\125\1\60\1\107\2\60\1\116\2\105\1\103\1\122\1\116\4\60\1\105\1\uffff\1\116\1\115\1\117\1\116\1\105\1\103\1\105\1\60\1\105\1\122\1\125\1\122\1\125\1\uffff\1\125\2\uffff\1\116\1\111\1\122\1\113\1\105\1\111\1\105\1\120\1\106\1\60\1\111\1\103\1\101\1\131\1\111\1\60\1\105\1\124\1\125\1\104\1\123\2\60\1\124\1\60\1\114\1\105\1\116\1\60\3\uffff\1\114\1\116\1\124\1\110\1\122\3\60\2\uffff\1\111\1\124\1\117\1\60\1\111\1\131\1\111\2\123\2\122\1\123\3\uffff\1\117\1\124\1\105\1\120\1\60\1\101\1\60\1\106\1\123\1\114\1\uffff\1\122\1\123\1\122\1\103\2\122\1\uffff\1\105\2\uffff\1\101\1\131\1\122\1\103\1\124\1\105\1\101\4\uffff\1\122\1\123\1\111\1\125\2\60\1\124\1\60\1\uffff\1\122\1\104\1\120\2\124\1\122\1\124\3\101\1\122\1\124\1\114\1\60\1\105\1\uffff\1\116\2\113\1\60\1\124\1\uffff\1\106\2\60\1\122\1\60\1\105\2\uffff\1\60\1\uffff\1\60\1\122\1\60\1\uffff\1\105\4\60\3\uffff\1\107\1\101\1\116\1\uffff\1\124\1\60\1\102\2\123\1\124\2\60\1\116\1\117\1\104\1\117\1\uffff\1\107\1\uffff\1\105\2\60\1\105\1\124\1\104\2\124\1\116\1\60\1\124\1\120\1\111\1\124\1\122\1\104\1\114\1\101\1\120\1\116\1\107\2\uffff\1\111\1\uffff\1\101\1\105\1\60\1\111\1\60\1\105\1\111\1\102\1\122\1\107\1\101\2\60\1\uffff\1\122\3\60\1\uffff\1\131\1\60\2\uffff\1\105\1\uffff\1\60\2\uffff\1\123\1\uffff\1\60\4\uffff\1\125\1\116\2\105\1\uffff\1\125\3\60\2\uffff\1\116\1\60\1\125\1\123\1\116\1\105\1\103\2\uffff\1\116\1\105\4\60\1\uffff\1\125\1\105\1\124\1\60\1\125\2\60\1\116\1\117\1\101\1\110\1\117\1\124\1\103\1\104\1\uffff\1\101\1\uffff\1\60\1\124\1\114\1\131\1\105\1\114\2\uffff\1\60\3\uffff\1\60\1\uffff\1\60\1\uffff\1\60\1\uffff\1\122\1\124\1\116\1\103\1\124\3\uffff\1\105\1\uffff\1\122\1\60\1\105\1\60\1\124\1\103\1\122\4\uffff\1\122\1\60\1\131\1\uffff\1\115\2\uffff\1\103\1\122\1\114\1\60\1\116\1\105\2\60\1\114\1\uffff\1\131\1\105\3\60\4\uffff\1\101\1\60\2\124\1\105\1\103\1\101\1\uffff\1\104\1\uffff\2\105\1\60\1\105\1\uffff\2\60\1\105\1\124\1\60\1\uffff\2\60\2\uffff\3\60\3\uffff\1\124\1\uffff\1\60\1\125\1\60\1\124\1\114\2\60\1\104\1\60\1\uffff\1\60\2\uffff\2\60\6\uffff\1\111\1\uffff\1\122\1\uffff\2\60\2\uffff\1\60\4\uffff\1\117\1\105\3\uffff\1\116\2\60\2\uffff";
     static final String DFA20_maxS =
-        "\1\174\1\157\1\164\1\157\1\165\1\163\1\157\1\165\1\171\2\165\1\163\1\165\1\141\1\157\1\165\1\170\2\165\1\151\2\157\1\52\2\75\2\76\1\75\5\uffff\1\55\5\uffff\1\170\2\165\1\157\2\170\1\157\3\uffff\1\u20ac\1\uffff\1\156\1\163\1\162\1\164\1\162\1\163\1\164\1\154\1\163\1\144\1\163\1\167\1\uffff\1\157\1\163\1\143\1\162\1\164\1\145\3\42\1\164\1\156\1\162\1\142\1\166\1\145\1\141\1\147\2\154\3\42\1\172\1\141\2\162\1\160\1\156\1\154\1\162\1\156\1\141\1\157\1\172\1\160\2\172\1\141\1\162\1\164\1\142\1\157\1\163\1\147\1\157\1\145\1\144\1\164\1\163\1\151\2\164\1\170\1\154\1\150\1\145\1\164\3\172\2\151\1\164\1\157\1\162\1\160\1\144\21\uffff\1\170\6\42\64\47\1\uffff\1\163\1\160\1\145\1\150\1\141\1\162\1\145\1\157\2\145\1\141\3\172\1\143\1\156\1\143\2\164\1\153\1\145\1\146\1\164\1\151\1\172\1\145\1\151\1\157\1\145\1\157\1\165\1\172\1\147\2\172\1\164\2\145\1\143\1\162\1\156\4\172\1\145\1\uffff\1\156\1\155\1\157\1\156\1\145\1\143\1\145\1\172\1\145\1\162\1\165\1\162\1\165\1\uffff\1\165\2\uffff\1\156\1\151\1\162\1\153\1\145\1\151\1\145\1\160\1\146\1\172\1\151\1\143\1\141\1\171\1\151\1\172\1\151\1\164\1\165\1\144\1\163\2\172\1\164\1\172\1\154\1\145\1\156\1\172\3\uffff\1\154\1\156\1\164\1\150\1\162\3\172\1\uffff\1\151\1\164\1\157\1\172\1\151\1\171\1\151\2\163\2\162\1\163\3\uffff\1\157\1\164\1\145\1\160\1\172\1\141\1\172\1\146\1\163\1\154\1\uffff\1\162\1\163\1\162\1\143\2\162\1\uffff\1\145\2\uffff\1\141\1\171\1\162\1\143\1\164\1\145\1\141\4\uffff\1\162\1\163\1\151\1\165\2\172\1\164\1\172\1\uffff\1\162\1\144\1\160\2\164\1\162\1\164\3\141\1\162\1\164\1\154\1\172\1\145\1\uffff\1\156\2\153\1\172\1\164\1\uffff\1\146\2\172\1\162\1\172\1\145\2\uffff\1\172\1\uffff\1\172\1\162\1\172\1\uffff\1\145\4\172\3\uffff\1\147\1\141\1\156\1\uffff\1\164\1\172\1\142\2\163\1\164\2\172\1\156\1\157\1\163\1\157\1\uffff\1\147\1\uffff\1\145\2\172\1\145\1\164\1\144\2\164\1\156\1\172\1\164\1\160\1\151\1\164\1\162\1\144\1\154\1\141\1\160\1\156\1\147\2\uffff\1\151\1\uffff\1\151\1\145\1\172\1\151\1\172\1\145\1\151\1\142\1\162\1\147\1\141\2\172\1\uffff\1\162\3\172\1\uffff\1\171\1\172\2\uffff\1\145\1\uffff\1\172\2\uffff\1\163\1\uffff\1\172\4\uffff\1\165\1\156\2\145\1\uffff\1\165\3\172\2\uffff\1\156\1\172\1\165\1\163\1\156\1\145\1\143\2\uffff\1\156\1\145\4\172\1\uffff\1\165\1\145\1\164\1\172\1\165\2\172\1\156\1\157\1\141\1\150\1\157\1\164\1\143\1\144\1\uffff\1\141\1\uffff\1\172\1\164\1\154\1\171\1\145\1\154\2\uffff\1\172\3\uffff\1\172\1\uffff\1\172\1\uffff\1\172\1\uffff\1\162\1\164\1\156\1\143\1\164\3\uffff\1\145\1\uffff\1\162\1\172\1\145\1\172\1\164\1\143\1\162\4\uffff\1\162\1\172\1\171\1\uffff\1\155\2\uffff\1\143\1\162\1\154\1\172\1\156\1\145\2\172\1\154\1\uffff\1\171\1\145\3\172\4\uffff\1\141\1\172\2\164\1\145\1\143\1\145\1\uffff\1\144\1\uffff\2\145\1\172\1\145\1\uffff\2\172\1\145\1\164\1\172\1\uffff\2\172\2\uffff\3\172\3\uffff\1\164\1\uffff\1\172\1\165\1\172\1\164\1\154\2\172\1\144\1\172\1\uffff\1\172\2\uffff\2\172\6\uffff\1\151\1\uffff\1\162\1\uffff\2\172\2\uffff\1\172\4\uffff\1\157\1\145\3\uffff\1\156\2\172\2\uffff";
+        "\1\174\1\157\1\164\1\157\1\165\1\163\1\157\1\165\1\171\2\165\1\163\1\165\1\141\1\157\1\165\1\170\2\165\1\151\2\157\1\u20ac\1\52\2\75\2\76\1\75\5\uffff\1\55\5\uffff\1\170\2\165\1\157\2\170\1\157\4\uffff\1\156\1\163\1\162\1\164\1\162\1\163\1\164\1\154\1\163\1\144\1\163\1\167\1\uffff\1\157\1\163\1\143\1\162\1\164\1\145\3\42\1\164\1\156\1\162\1\142\1\166\1\145\1\141\1\147\2\154\3\42\1\172\1\141\2\162\1\160\1\156\1\154\1\162\1\156\1\141\1\157\1\172\1\160\2\172\1\141\1\162\1\164\1\142\1\157\1\163\1\147\1\157\1\145\1\144\1\164\1\163\1\151\2\164\1\170\1\154\1\150\1\145\1\164\3\172\2\151\1\164\1\157\1\162\1\160\1\144\65\47\22\uffff\1\170\6\42\1\163\1\160\1\145\1\150\1\141\1\162\1\145\1\157\2\145\1\141\3\172\1\143\1\156\1\143\2\164\1\153\1\145\1\146\1\164\1\151\1\172\1\145\1\151\1\157\1\145\1\157\1\165\1\172\1\147\2\172\1\164\2\145\1\143\1\162\1\156\4\172\1\145\1\uffff\1\156\1\155\1\157\1\156\1\145\1\143\1\145\1\172\1\145\1\162\1\165\1\162\1\165\1\uffff\1\165\2\uffff\1\156\1\151\1\162\1\153\1\145\1\151\1\145\1\160\1\146\1\172\1\151\1\143\1\141\1\171\1\151\1\172\1\151\1\164\1\165\1\144\1\163\2\172\1\164\1\172\1\154\1\145\1\156\1\172\3\uffff\1\154\1\156\1\164\1\150\1\162\3\172\2\uffff\1\151\1\164\1\157\1\172\1\151\1\171\1\151\2\163\2\162\1\163\3\uffff\1\157\1\164\1\145\1\160\1\172\1\141\1\172\1\146\1\163\1\154\1\uffff\1\162\1\163\1\162\1\143\2\162\1\uffff\1\145\2\uffff\1\141\1\171\1\162\1\143\1\164\1\145\1\141\4\uffff\1\162\1\163\1\151\1\165\2\172\1\164\1\172\1\uffff\1\162\1\144\1\160\2\164\1\162\1\164\3\141\1\162\1\164\1\154\1\172\1\145\1\uffff\1\156\2\153\1\172\1\164\1\uffff\1\146\2\172\1\162\1\172\1\145\2\uffff\1\172\1\uffff\1\172\1\162\1\172\1\uffff\1\145\4\172\3\uffff\1\147\1\141\1\156\1\uffff\1\164\1\172\1\142\2\163\1\164\2\172\1\156\1\157\1\163\1\157\1\uffff\1\147\1\uffff\1\145\2\172\1\145\1\164\1\144\2\164\1\156\1\172\1\164\1\160\1\151\1\164\1\162\1\144\1\154\1\141\1\160\1\156\1\147\2\uffff\1\151\1\uffff\1\151\1\145\1\172\1\151\1\172\1\145\1\151\1\142\1\162\1\147\1\141\2\172\1\uffff\1\162\3\172\1\uffff\1\171\1\172\2\uffff\1\145\1\uffff\1\172\2\uffff\1\163\1\uffff\1\172\4\uffff\1\165\1\156\2\145\1\uffff\1\165\3\172\2\uffff\1\156\1\172\1\165\1\163\1\156\1\145\1\143\2\uffff\1\156\1\145\4\172\1\uffff\1\165\1\145\1\164\1\172\1\165\2\172\1\156\1\157\1\141\1\150\1\157\1\164\1\143\1\144\1\uffff\1\141\1\uffff\1\172\1\164\1\154\1\171\1\145\1\154\2\uffff\1\172\3\uffff\1\172\1\uffff\1\172\1\uffff\1\172\1\uffff\1\162\1\164\1\156\1\143\1\164\3\uffff\1\145\1\uffff\1\162\1\172\1\145\1\172\1\164\1\143\1\162\4\uffff\1\162\1\172\1\171\1\uffff\1\155\2\uffff\1\143\1\162\1\154\1\172\1\156\1\145\2\172\1\154\1\uffff\1\171\1\145\3\172\4\uffff\1\141\1\172\2\164\1\145\1\143\1\145\1\uffff\1\144\1\uffff\2\145\1\172\1\145\1\uffff\2\172\1\145\1\164\1\172\1\uffff\2\172\2\uffff\3\172\3\uffff\1\164\1\uffff\1\172\1\165\1\172\1\164\1\154\2\172\1\144\1\172\1\uffff\1\172\2\uffff\2\172\6\uffff\1\151\1\uffff\1\162\1\uffff\2\172\2\uffff\1\172\4\uffff\1\157\1\145\3\uffff\1\156\2\172\2\uffff";
     static final String DFA20_acceptS =
-        "\34\uffff\1\167\1\170\1\171\1\173\1\174\1\uffff\1\176\1\u0081\1\u0085\1\u0086\1\u0087\7\uffff\1\u008a\1\u008b\1\u008c\1\uffff\1\u0090\14\uffff\1\u0089\103\uffff\1\150\1\172\1\151\1\177\1\152\1\u0080\1\153\1\154\1\u0082\1\155\1\156\1\u0083\1\157\1\u0084\1\u008f\1\175\1\u0088\73\uffff\1\u008d\56\uffff\1\166\15\uffff\1\161\1\uffff\1\160\1\162\35\uffff\1\163\1\164\1\165\10\uffff\1\u008e\14\uffff\1\124\1\123\1\125\12\uffff\1\146\6\uffff\1\137\1\uffff\1\140\1\141\7\uffff\1\142\1\143\1\144\1\145\10\uffff\1\130\17\uffff\1\126\5\uffff\1\127\6\uffff\1\134\1\135\1\uffff\1\133\3\uffff\1\136\5\uffff\1\147\1\131\1\132\3\uffff\1\102\14\uffff\1\113\1\uffff\1\114\25\uffff\1\115\1\116\1\uffff\1\105\15\uffff\1\106\4\uffff\1\101\2\uffff\1\103\1\104\1\uffff\1\107\1\uffff\1\110\1\111\1\uffff\1\112\1\uffff\1\120\1\117\1\121\1\122\4\uffff\1\63\4\uffff\1\61\1\62\7\uffff\1\76\1\77\6\uffff\1\75\17\uffff\1\70\1\uffff\1\71\6\uffff\1\73\1\72\1\uffff\1\64\1\65\1\66\1\uffff\1\67\1\uffff\1\74\1\uffff\1\100\5\uffff\1\41\1\42\1\43\1\uffff\1\45\7\uffff\1\52\1\53\1\54\1\55\3\uffff\1\56\1\uffff\1\57\1\60\11\uffff\1\47\5\uffff\1\44\1\46\1\50\1\51\7\uffff\1\36\1\uffff\1\35\4\uffff\1\37\5\uffff\1\40\2\uffff\1\30\1\31\3\uffff\1\32\1\33\1\34\1\uffff\1\16\11\uffff\1\23\1\uffff\1\24\1\25\2\uffff\1\26\1\17\1\20\1\21\1\22\1\27\1\uffff\1\7\1\uffff\1\6\2\uffff\1\11\1\10\1\uffff\1\12\1\13\1\14\1\15\2\uffff\1\3\1\4\1\5\3\uffff\1\2\1\1";
+        "\35\uffff\1\170\1\171\1\172\1\174\1\175\1\uffff\1\177\1\u0082\1\u0086\1\u0087\1\u0088\7\uffff\1\u008b\1\u008c\1\u008d\1\u0091\14\uffff\1\u008a\170\uffff\1\u008e\1\151\1\173\1\152\1\u0080\1\153\1\u0081\1\154\1\155\1\u0083\1\156\1\157\1\u0084\1\160\1\u0085\1\u0090\1\176\1\u0089\65\uffff\1\167\15\uffff\1\162\1\uffff\1\161\1\163\35\uffff\1\164\1\165\1\166\10\uffff\1\150\1\u008f\14\uffff\1\124\1\123\1\125\12\uffff\1\146\6\uffff\1\137\1\uffff\1\140\1\141\7\uffff\1\142\1\143\1\144\1\145\10\uffff\1\130\17\uffff\1\126\5\uffff\1\127\6\uffff\1\134\1\135\1\uffff\1\133\3\uffff\1\136\5\uffff\1\147\1\131\1\132\3\uffff\1\102\14\uffff\1\113\1\uffff\1\114\25\uffff\1\115\1\116\1\uffff\1\105\15\uffff\1\106\4\uffff\1\101\2\uffff\1\103\1\104\1\uffff\1\107\1\uffff\1\110\1\111\1\uffff\1\112\1\uffff\1\120\1\117\1\121\1\122\4\uffff\1\63\4\uffff\1\61\1\62\7\uffff\1\76\1\77\6\uffff\1\75\17\uffff\1\70\1\uffff\1\71\6\uffff\1\73\1\72\1\uffff\1\64\1\65\1\66\1\uffff\1\67\1\uffff\1\74\1\uffff\1\100\5\uffff\1\41\1\42\1\43\1\uffff\1\45\7\uffff\1\52\1\53\1\54\1\55\3\uffff\1\56\1\uffff\1\57\1\60\11\uffff\1\47\5\uffff\1\44\1\46\1\50\1\51\7\uffff\1\36\1\uffff\1\35\4\uffff\1\37\5\uffff\1\40\2\uffff\1\30\1\31\3\uffff\1\32\1\33\1\34\1\uffff\1\16\11\uffff\1\23\1\uffff\1\24\1\25\2\uffff\1\26\1\17\1\20\1\21\1\22\1\27\1\uffff\1\7\1\uffff\1\6\2\uffff\1\11\1\10\1\uffff\1\12\1\13\1\14\1\15\2\uffff\1\3\1\4\1\5\3\uffff\1\2\1\1";
     static final String DFA20_specialS =
-        "\u02a7\uffff}>";
+        "\u02a9\uffff}>";
     static final String[] DFA20_transitionS = {
-            "\2\62\2\uffff\1\62\22\uffff\1\62\1\uffff\1\60\3\uffff\1\34\1\61\1\35\1\36\1\26\1\37\1\40\1\41\1\42\1\27\12\47\1\30\1\43\1\31\1\32\1\33\2\uffff\1\2\1\17\1\1\1\3\1\20\1\11\1\12\1\56\1\13\2\56\1\16\1\25\1\21\1\22\1\4\1\14\1\6\1\7\1\10\1\5\1\15\1\23\1\24\2\56\1\44\1\57\1\45\1\56\2\uffff\1\2\1\50\1\1\1\55\1\20\1\11\1\12\1\56\1\13\2\56\1\16\1\25\1\21\1\51\1\4\1\14\1\6\1\54\1\10\1\53\1\15\1\23\1\52\2\56\1\uffff\1\46",
+            "\2\62\2\uffff\1\62\22\uffff\1\62\1\uffff\1\61\3\uffff\1\35\1\26\1\36\1\37\1\27\1\40\1\41\1\42\1\43\1\30\12\50\1\31\1\44\1\32\1\33\1\34\2\uffff\1\2\1\17\1\1\1\3\1\20\1\11\1\12\1\57\1\13\2\57\1\16\1\25\1\21\1\22\1\4\1\14\1\6\1\7\1\10\1\5\1\15\1\23\1\24\2\57\1\45\1\60\1\46\1\57\2\uffff\1\2\1\51\1\1\1\56\1\20\1\11\1\12\1\57\1\13\2\57\1\16\1\25\1\21\1\52\1\4\1\14\1\6\1\55\1\10\1\54\1\15\1\23\1\53\2\57\1\uffff\1\47",
             "\1\64\15\uffff\1\63\21\uffff\1\64\15\uffff\1\63",
             "\1\73\1\67\2\uffff\1\71\5\uffff\1\72\1\uffff\1\74\3\uffff\1\65\1\70\1\66\15\uffff\1\73\1\67\2\uffff\1\71\5\uffff\1\72\1\uffff\1\74\3\uffff\1\65\1\70\1\66",
             "\1\77\46\uffff\1\75\5\uffff\1\76\31\uffff\1\75\5\uffff\1\76",
@@ -12007,115 +12036,168 @@ public class InternalVhdlLexer extends Lexer {
             "\1\175\6\uffff\1\174\1\176\27\uffff\1\175\6\uffff\1\174\1\176",
             "\1\77\53\uffff\1\177\1\u0080\36\uffff\1\177\1\u0080",
             "\1\u0081\15\uffff\1\u0082\21\uffff\1\u0081\15\uffff\1\u0082",
-            "\1\u0083",
-            "\1\u0085",
-            "\1\u0087",
-            "\1\u0089\1\u008a",
-            "\1\u008c\1\u008d",
-            "\1\u008f",
+            "\10\u00b8\1\u0083\30\u00b8\1\u009e\1\u009f\1\u00a0\1\u00a1\1\u00a2\1\u00a3\1\u00a4\1\u00a5\1\u00a6\1\u00a7\1\u00a8\1\u00a9\1\u00aa\1\u00ab\1\u00ac\1\u00ad\1\u00ae\1\u00af\1\u00b0\1\u00b1\1\u00b2\1\u00b3\1\u00b4\1\u00b5\1\u00b6\1\u00b7\1\u00b8\1\uffff\4\u00b8\1\u0084\1\u0085\1\u0086\1\u0087\1\u0088\1\u0089\1\u008a\1\u008b\1\u008c\1\u008d\1\u008e\1\u008f\1\u0090\1\u0091\1\u0092\1\u0093\1\u0094\1\u0095\1\u0096\1\u0097\1\u0098\1\u0099\1\u009a\1\u009b\1\u009c\1\u009d\4\u00b8\41\uffff\4\u00b8\1\uffff\1\u00b8\1\uffff\1\u00b8\1\uffff\4\u00b8\1\uffff\6\u00b8\1\uffff\3\u00b8\1\uffff\3\u00b8\3\uffff\101\u00b8\122\uffff\2\u00b8\14\uffff\2\u00b8\26\uffff\1\u00b8\4\uffff\2\u00b8\u1f2d\uffff\1\u00b8",
+            "\1\u00b9",
+            "\1\u00bb",
+            "\1\u00bd",
+            "\1\u00bf\1\u00c0",
+            "\1\u00c2\1\u00c3",
+            "\1\u00c5",
             "",
             "",
             "",
             "",
             "",
-            "\1\u0091",
+            "\1\u00c7",
             "",
             "",
             "",
             "",
             "",
-            "\12\u0094\10\uffff\1\77\1\uffff\1\77\12\uffff\1\77\3\uffff\1\77\1\uffff\1\77\2\uffff\1\77\6\uffff\1\u0094\2\uffff\1\77\1\uffff\1\77\12\uffff\1\77\3\uffff\1\77\1\uffff\1\77\2\uffff\1\77",
+            "\12\u00ca\10\uffff\1\77\1\uffff\1\77\12\uffff\1\77\3\uffff\1\77\1\uffff\1\77\2\uffff\1\77\6\uffff\1\u00ca\2\uffff\1\77\1\uffff\1\77\12\uffff\1\77\3\uffff\1\77\1\uffff\1\77\2\uffff\1\77",
             "\1\77\42\uffff\1\153\6\uffff\1\154\2\uffff\1\156\2\uffff\1\155\2\uffff\1\152\17\uffff\1\153\6\uffff\1\154\2\uffff\1\156\2\uffff\1\155\2\uffff\1\152",
             "\1\77\43\uffff\1\171\7\uffff\1\172\1\uffff\1\167\1\uffff\1\173\1\uffff\1\166\1\170\20\uffff\1\171\7\uffff\1\172\1\uffff\1\167\1\uffff\1\173\1\uffff\1\166\1\170",
             "\1\77\53\uffff\1\177\1\u0080\36\uffff\1\177\1\u0080",
-            "\1\104\4\uffff\1\105\16\uffff\1\u0095\13\uffff\1\104\1\u0096\3\uffff\1\105\4\uffff\1\u0097",
-            "\1\115\2\uffff\1\117\1\120\2\uffff\1\121\3\uffff\1\116\1\uffff\1\122\2\uffff\1\114\14\uffff\1\u0098\2\uffff\1\115\2\uffff\1\117\1\120\2\uffff\1\121\2\uffff\1\u0099\1\116\1\uffff\1\122\2\uffff\1\114\2\uffff\1\u009a",
+            "\1\104\4\uffff\1\105\16\uffff\1\u00cb\13\uffff\1\104\1\u00cc\3\uffff\1\105\4\uffff\1\u00cd",
+            "\1\115\2\uffff\1\117\1\120\2\uffff\1\121\3\uffff\1\116\1\uffff\1\122\2\uffff\1\114\14\uffff\1\u00ce\2\uffff\1\115\2\uffff\1\117\1\120\2\uffff\1\121\2\uffff\1\u00cf\1\116\1\uffff\1\122\2\uffff\1\114\2\uffff\1\u00d0",
             "\1\77\46\uffff\1\75\5\uffff\1\76\31\uffff\1\75\5\uffff\1\76",
             "",
             "",
             "",
-            "\41\u00cf\1\u00b5\1\u00b6\1\u00b7\1\u00b8\1\u00b9\1\u00ba\1\u00bb\1\u00bc\1\u00bd\1\u00be\1\u00bf\1\u00c0\1\u00c1\1\u00c2\1\u00c3\1\u00c4\1\u00c5\1\u00c6\1\u00c7\1\u00c8\1\u00c9\1\u00ca\1\u00cb\1\u00cc\1\u00cd\1\u00ce\1\u00cf\1\uffff\4\u00cf\1\u009b\1\u009c\1\u009d\1\u009e\1\u009f\1\u00a0\1\u00a1\1\u00a2\1\u00a3\1\u00a4\1\u00a5\1\u00a6\1\u00a7\1\u00a8\1\u00a9\1\u00aa\1\u00ab\1\u00ac\1\u00ad\1\u00ae\1\u00af\1\u00b0\1\u00b1\1\u00b2\1\u00b3\1\u00b4\4\u00cf\41\uffff\4\u00cf\1\uffff\1\u00cf\1\uffff\1\u00cf\1\uffff\4\u00cf\1\uffff\6\u00cf\1\uffff\3\u00cf\1\uffff\3\u00cf\3\uffff\101\u00cf\122\uffff\2\u00cf\14\uffff\2\u00cf\26\uffff\1\u00cf\4\uffff\2\u00cf\u1f2d\uffff\1\u00cf",
             "",
-            "\1\u00d1\1\u00d0\36\uffff\1\u00d1\1\u00d0",
-            "\1\u00d2\37\uffff\1\u00d2",
-            "\1\u00d3\16\uffff\1\u00d4\20\uffff\1\u00d3\16\uffff\1\u00d4",
-            "\1\u00d5\37\uffff\1\u00d5",
-            "\1\u00d6\16\uffff\1\u00d7\20\uffff\1\u00d6\16\uffff\1\u00d7",
-            "\1\u00d8\37\uffff\1\u00d8",
+            "\1\u00d2\1\u00d1\36\uffff\1\u00d2\1\u00d1",
+            "\1\u00d3\37\uffff\1\u00d3",
+            "\1\u00d4\16\uffff\1\u00d5\20\uffff\1\u00d4\16\uffff\1\u00d5",
+            "\1\u00d6\37\uffff\1\u00d6",
+            "\1\u00d7\16\uffff\1\u00d8\20\uffff\1\u00d7\16\uffff\1\u00d8",
             "\1\u00d9\37\uffff\1\u00d9",
-            "\1\u00da\2\uffff\1\u00db\34\uffff\1\u00da\2\uffff\1\u00db",
-            "\1\u00dc\37\uffff\1\u00dc",
+            "\1\u00da\37\uffff\1\u00da",
+            "\1\u00db\2\uffff\1\u00dc\34\uffff\1\u00db\2\uffff\1\u00dc",
             "\1\u00dd\37\uffff\1\u00dd",
             "\1\u00de\37\uffff\1\u00de",
             "\1\u00df\37\uffff\1\u00df",
-            "",
             "\1\u00e0\37\uffff\1\u00e0",
-            "\1\u00e2\1\u00e1\36\uffff\1\u00e2\1\u00e1",
-            "\1\u00e3\37\uffff\1\u00e3",
+            "",
+            "\1\u00e1\37\uffff\1\u00e1",
+            "\1\u00e3\1\u00e2\36\uffff\1\u00e3\1\u00e2",
             "\1\u00e4\37\uffff\1\u00e4",
-            "\1\u00e5\7\uffff\1\u00e6\12\uffff\1\u00e7\14\uffff\1\u00e5\7\uffff\1\u00e6\12\uffff\1\u00e7",
-            "\1\u00e8\37\uffff\1\u00e8",
+            "\1\u00e5\37\uffff\1\u00e5",
+            "\1\u00e6\7\uffff\1\u00e7\12\uffff\1\u00e8\14\uffff\1\u00e6\7\uffff\1\u00e7\12\uffff\1\u00e8",
+            "\1\u00e9\37\uffff\1\u00e9",
             "\1\77",
             "\1\77",
             "\1\77",
-            "\1\u00eb\2\uffff\1\u00e9\1\u00ea\2\uffff\1\u00ec\2\uffff\1\u00ef\2\uffff\1\u00ed\3\uffff\1\u00ee\16\uffff\1\u00eb\2\uffff\1\u00e9\1\u00ea\2\uffff\1\u00ec\2\uffff\1\u00ef\2\uffff\1\u00ed\3\uffff\1\u00ee",
-            "\1\u00f0\37\uffff\1\u00f0",
-            "\1\u00f1\5\uffff\1\u00f2\31\uffff\1\u00f1\5\uffff\1\u00f2",
-            "\1\u00f3\37\uffff\1\u00f3",
-            "\1\u00f5\11\uffff\1\u00f4\25\uffff\1\u00f5\11\uffff\1\u00f4",
-            "\1\u00f6\37\uffff\1\u00f6",
+            "\1\u00ec\2\uffff\1\u00ea\1\u00eb\2\uffff\1\u00ed\2\uffff\1\u00f0\2\uffff\1\u00ee\3\uffff\1\u00ef\16\uffff\1\u00ec\2\uffff\1\u00ea\1\u00eb\2\uffff\1\u00ed\2\uffff\1\u00f0\2\uffff\1\u00ee\3\uffff\1\u00ef",
+            "\1\u00f1\37\uffff\1\u00f1",
+            "\1\u00f2\5\uffff\1\u00f3\31\uffff\1\u00f2\5\uffff\1\u00f3",
+            "\1\u00f4\37\uffff\1\u00f4",
+            "\1\u00f6\11\uffff\1\u00f5\25\uffff\1\u00f6\11\uffff\1\u00f5",
             "\1\u00f7\37\uffff\1\u00f7",
             "\1\u00f8\37\uffff\1\u00f8",
-            "\1\u00f9\12\uffff\1\u00fa\24\uffff\1\u00f9\12\uffff\1\u00fa",
-            "\1\u00fb\12\uffff\1\u00fc\24\uffff\1\u00fb\12\uffff\1\u00fc",
+            "\1\u00f9\37\uffff\1\u00f9",
+            "\1\u00fa\12\uffff\1\u00fb\24\uffff\1\u00fa\12\uffff\1\u00fb",
+            "\1\u00fc\12\uffff\1\u00fd\24\uffff\1\u00fc\12\uffff\1\u00fd",
             "\1\77",
             "\1\77",
             "\1\77",
-            "\12\56\7\uffff\13\56\1\u00fd\16\56\4\uffff\1\56\1\uffff\13\56\1\u00fd\16\56",
-            "\1\u00ff\37\uffff\1\u00ff",
+            "\12\57\7\uffff\13\57\1\u00fe\16\57\4\uffff\1\57\1\uffff\13\57\1\u00fe\16\57",
             "\1\u0100\37\uffff\1\u0100",
-            "\1\u0102\14\uffff\1\u0101\22\uffff\1\u0102\14\uffff\1\u0101",
-            "\1\u0103\37\uffff\1\u0103",
+            "\1\u0101\37\uffff\1\u0101",
+            "\1\u0103\14\uffff\1\u0102\22\uffff\1\u0103\14\uffff\1\u0102",
             "\1\u0104\37\uffff\1\u0104",
             "\1\u0105\37\uffff\1\u0105",
             "\1\u0106\37\uffff\1\u0106",
             "\1\u0107\37\uffff\1\u0107",
             "\1\u0108\37\uffff\1\u0108",
             "\1\u0109\37\uffff\1\u0109",
-            "\12\56\7\uffff\4\56\1\u010a\11\56\1\u010b\13\56\4\uffff\1\56\1\uffff\4\56\1\u010a\11\56\1\u010b\13\56",
-            "\1\u010d\37\uffff\1\u010d",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\1\u0110\37\uffff\1\u0110",
+            "\1\u010a\37\uffff\1\u010a",
+            "\12\57\7\uffff\4\57\1\u010b\11\57\1\u010c\13\57\4\uffff\1\57\1\uffff\4\57\1\u010b\11\57\1\u010c\13\57",
+            "\1\u010e\37\uffff\1\u010e",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u0111\37\uffff\1\u0111",
-            "\1\u0112\12\uffff\1\u0115\1\u0113\5\uffff\1\u0114\15\uffff\1\u0112\12\uffff\1\u0115\1\u0113\5\uffff\1\u0114",
-            "\1\u0116\37\uffff\1\u0116",
+            "\1\u0112\37\uffff\1\u0112",
+            "\1\u0113\12\uffff\1\u0116\1\u0114\5\uffff\1\u0115\15\uffff\1\u0113\12\uffff\1\u0116\1\u0114\5\uffff\1\u0115",
             "\1\u0117\37\uffff\1\u0117",
-            "\1\u0118\14\uffff\1\u0119\22\uffff\1\u0118\14\uffff\1\u0119",
-            "\1\u011a\37\uffff\1\u011a",
+            "\1\u0118\37\uffff\1\u0118",
+            "\1\u0119\14\uffff\1\u011a\22\uffff\1\u0119\14\uffff\1\u011a",
             "\1\u011b\37\uffff\1\u011b",
             "\1\u011c\37\uffff\1\u011c",
             "\1\u011d\37\uffff\1\u011d",
-            "\1\u011f\17\uffff\1\u011e\17\uffff\1\u011f\17\uffff\1\u011e",
-            "\1\u0120\37\uffff\1\u0120",
+            "\1\u011e\37\uffff\1\u011e",
+            "\1\u0120\17\uffff\1\u011f\17\uffff\1\u0120\17\uffff\1\u011f",
             "\1\u0121\37\uffff\1\u0121",
-            "\1\u0123\5\uffff\1\u0122\31\uffff\1\u0123\5\uffff\1\u0122",
-            "\1\u0124\10\uffff\1\u0125\1\uffff\1\u0126\24\uffff\1\u0124\10\uffff\1\u0125\1\uffff\1\u0126",
-            "\1\u0128\1\u0127\36\uffff\1\u0128\1\u0127",
-            "\1\u0129\37\uffff\1\u0129",
+            "\1\u0122\37\uffff\1\u0122",
+            "\1\u0124\5\uffff\1\u0123\31\uffff\1\u0124\5\uffff\1\u0123",
+            "\1\u0125\10\uffff\1\u0126\1\uffff\1\u0127\24\uffff\1\u0125\10\uffff\1\u0126\1\uffff\1\u0127",
+            "\1\u0129\1\u0128\36\uffff\1\u0129\1\u0128",
             "\1\u012a\37\uffff\1\u012a",
             "\1\u012b\37\uffff\1\u012b",
             "\1\u012c\37\uffff\1\u012c",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\1\u0131\3\uffff\1\u0130\33\uffff\1\u0131\3\uffff\1\u0130",
-            "\1\u0132\37\uffff\1\u0132",
+            "\1\u012d\37\uffff\1\u012d",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\1\u0132\3\uffff\1\u0131\33\uffff\1\u0132\3\uffff\1\u0131",
             "\1\u0133\37\uffff\1\u0133",
             "\1\u0134\37\uffff\1\u0134",
             "\1\u0135\37\uffff\1\u0135",
             "\1\u0136\37\uffff\1\u0136",
             "\1\u0137\37\uffff\1\u0137",
+            "\1\u0138\37\uffff\1\u0138",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
+            "\1\u00b8",
             "",
             "",
             "",
@@ -12133,69 +12215,15 @@ public class InternalVhdlLexer extends Lexer {
             "",
             "",
             "",
-            "\12\u0094\10\uffff\1\77\1\uffff\1\77\12\uffff\1\77\3\uffff\1\77\1\uffff\1\77\2\uffff\1\77\6\uffff\1\u0094\2\uffff\1\77\1\uffff\1\77\12\uffff\1\77\3\uffff\1\77\1\uffff\1\77\2\uffff\1\77",
+            "",
+            "\12\u00ca\10\uffff\1\77\1\uffff\1\77\12\uffff\1\77\3\uffff\1\77\1\uffff\1\77\2\uffff\1\77\6\uffff\1\u00ca\2\uffff\1\77\1\uffff\1\77\12\uffff\1\77\3\uffff\1\77\1\uffff\1\77\2\uffff\1\77",
             "\1\77",
             "\1\77",
             "\1\77",
             "\1\77",
             "\1\77",
             "\1\77",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "\1\u00cf",
-            "",
-            "\1\u0139\14\uffff\1\u013a\22\uffff\1\u0139\14\uffff\1\u013a",
-            "\1\u013b\37\uffff\1\u013b",
-            "\1\u013c\37\uffff\1\u013c",
+            "\1\u013b\14\uffff\1\u013c\22\uffff\1\u013b\14\uffff\1\u013c",
             "\1\u013d\37\uffff\1\u013d",
             "\1\u013e\37\uffff\1\u013e",
             "\1\u013f\37\uffff\1\u013f",
@@ -12204,11 +12232,11 @@ public class InternalVhdlLexer extends Lexer {
             "\1\u0142\37\uffff\1\u0142",
             "\1\u0143\37\uffff\1\u0143",
             "\1\u0144\37\uffff\1\u0144",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\1\u0148\37\uffff\1\u0148",
-            "\1\u0149\37\uffff\1\u0149",
+            "\1\u0145\37\uffff\1\u0145",
+            "\1\u0146\37\uffff\1\u0146",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u014a\37\uffff\1\u014a",
             "\1\u014b\37\uffff\1\u014b",
             "\1\u014c\37\uffff\1\u014c",
@@ -12217,48 +12245,48 @@ public class InternalVhdlLexer extends Lexer {
             "\1\u014f\37\uffff\1\u014f",
             "\1\u0150\37\uffff\1\u0150",
             "\1\u0151\37\uffff\1\u0151",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\1\u0152\37\uffff\1\u0152",
             "\1\u0153\37\uffff\1\u0153",
-            "\1\u0154\37\uffff\1\u0154",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u0155\37\uffff\1\u0155",
             "\1\u0156\37\uffff\1\u0156",
             "\1\u0157\37\uffff\1\u0157",
             "\1\u0158\37\uffff\1\u0158",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\1\u0159\37\uffff\1\u0159",
             "\1\u015a\37\uffff\1\u015a",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\1\u015d\5\uffff\1\u015e\31\uffff\1\u015d\5\uffff\1\u015e",
-            "\1\u015f\37\uffff\1\u015f",
-            "\1\u0160\37\uffff\1\u0160",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\1\u015c\37\uffff\1\u015c",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\1\u015f\5\uffff\1\u0160\31\uffff\1\u015f\5\uffff\1\u0160",
             "\1\u0161\37\uffff\1\u0161",
             "\1\u0162\37\uffff\1\u0162",
             "\1\u0163\37\uffff\1\u0163",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\1\u0168\37\uffff\1\u0168",
-            "",
-            "\1\u0169\37\uffff\1\u0169",
+            "\1\u0164\37\uffff\1\u0164",
+            "\1\u0165\37\uffff\1\u0165",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u016a\37\uffff\1\u016a",
+            "",
             "\1\u016b\37\uffff\1\u016b",
             "\1\u016c\37\uffff\1\u016c",
             "\1\u016d\37\uffff\1\u016d",
             "\1\u016e\37\uffff\1\u016e",
             "\1\u016f\37\uffff\1\u016f",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\1\u0170\37\uffff\1\u0170",
             "\1\u0171\37\uffff\1\u0171",
-            "\1\u0172\37\uffff\1\u0172",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u0173\37\uffff\1\u0173",
             "\1\u0174\37\uffff\1\u0174",
             "\1\u0175\37\uffff\1\u0175",
-            "",
             "\1\u0176\37\uffff\1\u0176",
-            "",
-            "",
             "\1\u0177\37\uffff\1\u0177",
+            "",
             "\1\u0178\37\uffff\1\u0178",
+            "",
+            "",
             "\1\u0179\37\uffff\1\u0179",
             "\1\u017a\37\uffff\1\u017a",
             "\1\u017b\37\uffff\1\u017b",
@@ -12266,96 +12294,97 @@ public class InternalVhdlLexer extends Lexer {
             "\1\u017d\37\uffff\1\u017d",
             "\1\u017e\37\uffff\1\u017e",
             "\1\u017f\37\uffff\1\u017f",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\1\u0180\37\uffff\1\u0180",
             "\1\u0181\37\uffff\1\u0181",
-            "\1\u0182\37\uffff\1\u0182",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u0183\37\uffff\1\u0183",
             "\1\u0184\37\uffff\1\u0184",
             "\1\u0185\37\uffff\1\u0185",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\1\u0188\3\uffff\1\u0187\33\uffff\1\u0188\3\uffff\1\u0187",
-            "\1\u0189\37\uffff\1\u0189",
-            "\1\u018a\37\uffff\1\u018a",
+            "\1\u0186\37\uffff\1\u0186",
+            "\1\u0187\37\uffff\1\u0187",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\1\u018a\3\uffff\1\u0189\33\uffff\1\u018a\3\uffff\1\u0189",
             "\1\u018b\37\uffff\1\u018b",
             "\1\u018c\37\uffff\1\u018c",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\1\u018f\37\uffff\1\u018f",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\1\u018d\37\uffff\1\u018d",
+            "\1\u018e\37\uffff\1\u018e",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u0191\37\uffff\1\u0191",
-            "\1\u0192\37\uffff\1\u0192",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u0193\37\uffff\1\u0193",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "",
-            "",
-            "",
+            "\1\u0194\37\uffff\1\u0194",
             "\1\u0195\37\uffff\1\u0195",
-            "\1\u0196\37\uffff\1\u0196",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "",
+            "",
+            "",
             "\1\u0197\37\uffff\1\u0197",
             "\1\u0198\37\uffff\1\u0198",
             "\1\u0199\37\uffff\1\u0199",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\1\u019a\37\uffff\1\u019a",
+            "\1\u019b\37\uffff\1\u019b",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "",
-            "\1\u019d\37\uffff\1\u019d",
-            "\1\u019e\37\uffff\1\u019e",
+            "",
             "\1\u019f\37\uffff\1\u019f",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\1\u01a0\37\uffff\1\u01a0",
             "\1\u01a1\37\uffff\1\u01a1",
-            "\1\u01a2\37\uffff\1\u01a2",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u01a3\37\uffff\1\u01a3",
             "\1\u01a4\37\uffff\1\u01a4",
             "\1\u01a5\37\uffff\1\u01a5",
             "\1\u01a6\37\uffff\1\u01a6",
             "\1\u01a7\37\uffff\1\u01a7",
             "\1\u01a8\37\uffff\1\u01a8",
-            "",
-            "",
-            "",
             "\1\u01a9\37\uffff\1\u01a9",
             "\1\u01aa\37\uffff\1\u01aa",
+            "",
+            "",
+            "",
             "\1\u01ab\37\uffff\1\u01ab",
             "\1\u01ac\37\uffff\1\u01ac",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\1\u01ad\37\uffff\1\u01ad",
             "\1\u01ae\37\uffff\1\u01ae",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u01b0\37\uffff\1\u01b0",
-            "\1\u01b1\37\uffff\1\u01b1",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u01b2\37\uffff\1\u01b2",
-            "",
             "\1\u01b3\37\uffff\1\u01b3",
             "\1\u01b4\37\uffff\1\u01b4",
+            "",
             "\1\u01b5\37\uffff\1\u01b5",
             "\1\u01b6\37\uffff\1\u01b6",
             "\1\u01b7\37\uffff\1\u01b7",
             "\1\u01b8\37\uffff\1\u01b8",
-            "",
             "\1\u01b9\37\uffff\1\u01b9",
-            "",
-            "",
             "\1\u01ba\37\uffff\1\u01ba",
+            "",
             "\1\u01bb\37\uffff\1\u01bb",
+            "",
+            "",
             "\1\u01bc\37\uffff\1\u01bc",
             "\1\u01bd\37\uffff\1\u01bd",
             "\1\u01be\37\uffff\1\u01be",
             "\1\u01bf\37\uffff\1\u01bf",
             "\1\u01c0\37\uffff\1\u01c0",
-            "",
-            "",
-            "",
-            "",
             "\1\u01c1\37\uffff\1\u01c1",
             "\1\u01c2\37\uffff\1\u01c2",
+            "",
+            "",
+            "",
+            "",
             "\1\u01c3\37\uffff\1\u01c3",
             "\1\u01c4\37\uffff\1\u01c4",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\1\u01c7\37\uffff\1\u01c7",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "",
+            "\1\u01c5\37\uffff\1\u01c5",
+            "\1\u01c6\37\uffff\1\u01c6",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u01c9\37\uffff\1\u01c9",
-            "\1\u01ca\37\uffff\1\u01ca",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "",
             "\1\u01cb\37\uffff\1\u01cb",
             "\1\u01cc\37\uffff\1\u01cc",
             "\1\u01cd\37\uffff\1\u01cd",
@@ -12367,68 +12396,68 @@ public class InternalVhdlLexer extends Lexer {
             "\1\u01d3\37\uffff\1\u01d3",
             "\1\u01d4\37\uffff\1\u01d4",
             "\1\u01d5\37\uffff\1\u01d5",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\1\u01d6\37\uffff\1\u01d6",
             "\1\u01d7\37\uffff\1\u01d7",
-            "",
-            "\1\u01d8\37\uffff\1\u01d8",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u01d9\37\uffff\1\u01d9",
+            "",
             "\1\u01da\37\uffff\1\u01da",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\1\u01db\37\uffff\1\u01db",
             "\1\u01dc\37\uffff\1\u01dc",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\1\u01de\37\uffff\1\u01de",
             "",
-            "\1\u01dd\37\uffff\1\u01dd",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\1\u01e0\37\uffff\1\u01e0",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\1\u01df\37\uffff\1\u01df",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u01e2\37\uffff\1\u01e2",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\1\u01e4\37\uffff\1\u01e4",
             "",
             "",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\1\u01e5\37\uffff\1\u01e5",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u01e7\37\uffff\1\u01e7",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "",
+            "\1\u01e9\37\uffff\1\u01e9",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "",
             "",
             "",
-            "\1\u01ec\37\uffff\1\u01ec",
-            "\1\u01ed\37\uffff\1\u01ed",
             "\1\u01ee\37\uffff\1\u01ee",
-            "",
             "\1\u01ef\37\uffff\1\u01ef",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\1\u01f0\37\uffff\1\u01f0",
+            "",
             "\1\u01f1\37\uffff\1\u01f1",
-            "\1\u01f2\37\uffff\1\u01f2",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u01f3\37\uffff\1\u01f3",
             "\1\u01f4\37\uffff\1\u01f4",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\1\u01f7\37\uffff\1\u01f7",
-            "\1\u01f8\37\uffff\1\u01f8",
-            "\1\u01f9\16\uffff\1\u01fa\20\uffff\1\u01f9\16\uffff\1\u01fa",
-            "\1\u01fb\37\uffff\1\u01fb",
-            "",
-            "\1\u01fc\37\uffff\1\u01fc",
-            "",
+            "\1\u01f5\37\uffff\1\u01f5",
+            "\1\u01f6\37\uffff\1\u01f6",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\1\u01f9\37\uffff\1\u01f9",
+            "\1\u01fa\37\uffff\1\u01fa",
+            "\1\u01fb\16\uffff\1\u01fc\20\uffff\1\u01fb\16\uffff\1\u01fc",
             "\1\u01fd\37\uffff\1\u01fd",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\1\u0200\37\uffff\1\u0200",
-            "\1\u0201\37\uffff\1\u0201",
+            "",
+            "\1\u01fe\37\uffff\1\u01fe",
+            "",
+            "\1\u01ff\37\uffff\1\u01ff",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u0202\37\uffff\1\u0202",
             "\1\u0203\37\uffff\1\u0203",
             "\1\u0204\37\uffff\1\u0204",
             "\1\u0205\37\uffff\1\u0205",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\1\u0206\37\uffff\1\u0206",
             "\1\u0207\37\uffff\1\u0207",
-            "\1\u0208\37\uffff\1\u0208",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u0209\37\uffff\1\u0209",
             "\1\u020a\37\uffff\1\u020a",
             "\1\u020b\37\uffff\1\u020b",
@@ -12438,230 +12467,232 @@ public class InternalVhdlLexer extends Lexer {
             "\1\u020f\37\uffff\1\u020f",
             "\1\u0210\37\uffff\1\u0210",
             "\1\u0211\37\uffff\1\u0211",
-            "",
-            "",
             "\1\u0212\37\uffff\1\u0212",
+            "\1\u0213\37\uffff\1\u0213",
             "",
-            "\1\u0213\7\uffff\1\u0214\27\uffff\1\u0213\7\uffff\1\u0214",
-            "\1\u0215\37\uffff\1\u0215",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "",
+            "\1\u0214\37\uffff\1\u0214",
+            "",
+            "\1\u0215\7\uffff\1\u0216\27\uffff\1\u0215\7\uffff\1\u0216",
             "\1\u0217\37\uffff\1\u0217",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u0219\37\uffff\1\u0219",
-            "\1\u021a\37\uffff\1\u021a",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u021b\37\uffff\1\u021b",
             "\1\u021c\37\uffff\1\u021c",
             "\1\u021d\37\uffff\1\u021d",
             "\1\u021e\37\uffff\1\u021e",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\1\u021f\37\uffff\1\u021f",
+            "\1\u0220\37\uffff\1\u0220",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "",
-            "\1\u0221\37\uffff\1\u0221",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "",
-            "\1\u0225\37\uffff\1\u0225",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "",
+            "\1\u0223\37\uffff\1\u0223",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "",
             "\1\u0227\37\uffff\1\u0227",
-            "",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "",
             "",
             "\1\u0229\37\uffff\1\u0229",
             "",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "",
-            "",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "",
             "",
             "\1\u022b\37\uffff\1\u022b",
-            "\1\u022c\37\uffff\1\u022c",
+            "",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "",
+            "",
+            "",
+            "",
             "\1\u022d\37\uffff\1\u022d",
             "\1\u022e\37\uffff\1\u022e",
-            "",
             "\1\u022f\37\uffff\1\u022f",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\1\u0230\37\uffff\1\u0230",
+            "",
+            "\1\u0231\37\uffff\1\u0231",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "",
             "",
-            "\1\u0233\37\uffff\1\u0233",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
             "\1\u0235\37\uffff\1\u0235",
-            "\1\u0236\37\uffff\1\u0236",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u0237\37\uffff\1\u0237",
             "\1\u0238\37\uffff\1\u0238",
             "\1\u0239\37\uffff\1\u0239",
-            "",
-            "",
             "\1\u023a\37\uffff\1\u023a",
             "\1\u023b\37\uffff\1\u023b",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
             "",
-            "\1\u0240\37\uffff\1\u0240",
-            "\1\u0241\37\uffff\1\u0241",
+            "",
+            "\1\u023c\37\uffff\1\u023c",
+            "\1\u023d\37\uffff\1\u023d",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "",
             "\1\u0242\37\uffff\1\u0242",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\1\u0243\37\uffff\1\u0243",
             "\1\u0244\37\uffff\1\u0244",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\1\u0247\37\uffff\1\u0247",
-            "\1\u0248\37\uffff\1\u0248",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\1\u0246\37\uffff\1\u0246",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u0249\37\uffff\1\u0249",
             "\1\u024a\37\uffff\1\u024a",
             "\1\u024b\37\uffff\1\u024b",
             "\1\u024c\37\uffff\1\u024c",
             "\1\u024d\37\uffff\1\u024d",
             "\1\u024e\37\uffff\1\u024e",
-            "",
             "\1\u024f\37\uffff\1\u024f",
+            "\1\u0250\37\uffff\1\u0250",
             "",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
             "\1\u0251\37\uffff\1\u0251",
-            "\1\u0252\37\uffff\1\u0252",
+            "",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u0253\37\uffff\1\u0253",
             "\1\u0254\37\uffff\1\u0254",
             "\1\u0255\37\uffff\1\u0255",
+            "\1\u0256\37\uffff\1\u0256",
+            "\1\u0257\37\uffff\1\u0257",
             "",
             "",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "",
             "",
             "",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "",
-            "\1\u025a\37\uffff\1\u025a",
-            "\1\u025b\37\uffff\1\u025b",
             "\1\u025c\37\uffff\1\u025c",
             "\1\u025d\37\uffff\1\u025d",
             "\1\u025e\37\uffff\1\u025e",
-            "",
-            "",
-            "",
             "\1\u025f\37\uffff\1\u025f",
-            "",
             "\1\u0260\37\uffff\1\u0260",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "",
+            "",
+            "",
+            "\1\u0261\37\uffff\1\u0261",
+            "",
             "\1\u0262\37\uffff\1\u0262",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u0264\37\uffff\1\u0264",
-            "\1\u0265\37\uffff\1\u0265",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u0266\37\uffff\1\u0266",
-            "",
-            "",
-            "",
-            "",
             "\1\u0267\37\uffff\1\u0267",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\1\u0268\37\uffff\1\u0268",
+            "",
+            "",
+            "",
+            "",
             "\1\u0269\37\uffff\1\u0269",
-            "",
-            "\1\u026a\37\uffff\1\u026a",
-            "",
-            "",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u026b\37\uffff\1\u026b",
+            "",
             "\1\u026c\37\uffff\1\u026c",
+            "",
+            "",
             "\1\u026d\37\uffff\1\u026d",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\1\u026e\37\uffff\1\u026e",
             "\1\u026f\37\uffff\1\u026f",
-            "\1\u0270\37\uffff\1\u0270",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\1\u0273\37\uffff\1\u0273",
-            "",
-            "\1\u0274\37\uffff\1\u0274",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\1\u0271\37\uffff\1\u0271",
+            "\1\u0272\37\uffff\1\u0272",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u0275\37\uffff\1\u0275",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "",
+            "\1\u0276\37\uffff\1\u0276",
+            "\1\u0277\37\uffff\1\u0277",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "",
             "",
             "",
             "",
-            "\1\u0279\37\uffff\1\u0279",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
             "\1\u027b\37\uffff\1\u027b",
-            "\1\u027c\37\uffff\1\u027c",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u027d\37\uffff\1\u027d",
             "\1\u027e\37\uffff\1\u027e",
-            "\1\u027f\3\uffff\1\u0280\33\uffff\1\u027f\3\uffff\1\u0280",
+            "\1\u027f\37\uffff\1\u027f",
+            "\1\u0280\37\uffff\1\u0280",
+            "\1\u0281\3\uffff\1\u0282\33\uffff\1\u0281\3\uffff\1\u0282",
             "",
-            "\1\u0281\37\uffff\1\u0281",
-            "",
-            "\1\u0282\37\uffff\1\u0282",
             "\1\u0283\37\uffff\1\u0283",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "",
+            "\1\u0284\37\uffff\1\u0284",
             "\1\u0285\37\uffff\1\u0285",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\1\u0287\37\uffff\1\u0287",
             "",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\1\u0288\37\uffff\1\u0288",
-            "\1\u0289\37\uffff\1\u0289",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\1\u028a\37\uffff\1\u028a",
+            "\1\u028b\37\uffff\1\u028b",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "",
-            "",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "",
             "",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "",
-            "\1\u0290\37\uffff\1\u0290",
             "",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "",
             "\1\u0292\37\uffff\1\u0292",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "\1\u0294\37\uffff\1\u0294",
-            "\1\u0295\37\uffff\1\u0295",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\1\u0298\37\uffff\1\u0298",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\1\u0296\37\uffff\1\u0296",
+            "\1\u0297\37\uffff\1\u0297",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\1\u029a\37\uffff\1\u029a",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "",
-            "",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "",
             "",
-            "",
-            "",
-            "",
-            "",
-            "\1\u029d\37\uffff\1\u029d",
-            "",
-            "\1\u029e\37\uffff\1\u029e",
-            "",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "",
-            "",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "",
             "",
             "",
             "",
-            "\1\u02a2\37\uffff\1\u02a2",
-            "\1\u02a3\37\uffff\1\u02a3",
+            "",
+            "",
+            "\1\u029f\37\uffff\1\u029f",
+            "",
+            "\1\u02a0\37\uffff\1\u02a0",
+            "",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "",
+            "",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "",
             "",
             "",
             "",
             "\1\u02a4\37\uffff\1\u02a4",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
-            "\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
+            "\1\u02a5\37\uffff\1\u02a5",
+            "",
+            "",
+            "",
+            "\1\u02a6\37\uffff\1\u02a6",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
+            "\12\57\7\uffff\32\57\4\uffff\1\57\1\uffff\32\57",
             "",
             ""
     };
@@ -12696,7 +12727,7 @@ public class InternalVhdlLexer extends Lexer {
             this.transition = DFA20_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( Configuration | Architecture | Disconnect | Procedural | Unaffected | Attribute | Component | Postponed | Procedure | Reference | Subnature | Tolerance | Transport | Constant | Function | Generate | Inertial | Quantity | Register | Severity | Spectrum | Terminal | Variable | Generic | Guarded | Library | Linkage | Literal | Package | Process | Subtype | Through | Access | Across | Assert | Buffer | Downto | Entity | Impure | Nature | Others | Record | Reject | Report | Return | Select | Shared | Signal | After | Alias | Array | Begin | Block | Break | Elsif | Group | Inout | Label | Limit | Noise | Range | Units | Until | While | Body | Case | Else | Exit | File | Loop | Nand | Next | Null | Open | Port | Pure | Then | Type | Wait | When | With | Xnor | Abs | All | And | Bus | End | For | Map | Mod | New | Nor | Not | Out | Rem | Rol | Ror | Sla | Sll | Sra | Srl | Use | Xor | AsteriskAsterisk | SolidusEqualsSign | ColonEqualsSign | LessThanSignEqualsSign | LessThanSignGreaterThanSign | EqualsSignEqualsSign | EqualsSignGreaterThanSign | GreaterThanSignEqualsSign | If | In | Is | Of | On | Or | To | Ampersand | LeftParenthesis | RightParenthesis | Asterisk | PlusSign | Comma | HyphenMinus | FullStop | Solidus | Colon | Semicolon | LessThanSign | EqualsSign | GreaterThanSign | LeftSquareBracket | RightSquareBracket | VerticalLine | RULE_ABSTRACT_LITERAL | RULE_BIT_STRING_LITERAL | RULE_ID | RULE_EXTENDED_IDENTIFIER | RULE_STRING | RULE_CHAR | RULE_ATTRIBUTE | RULE_SL_COMMENT | RULE_WS );";
+            return "1:1: Tokens : ( Configuration | Architecture | Disconnect | Procedural | Unaffected | Attribute | Component | Postponed | Procedure | Reference | Subnature | Tolerance | Transport | Constant | Function | Generate | Inertial | Quantity | Register | Severity | Spectrum | Terminal | Variable | Generic | Guarded | Library | Linkage | Literal | Package | Process | Subtype | Through | Access | Across | Assert | Buffer | Downto | Entity | Impure | Nature | Others | Record | Reject | Report | Return | Select | Shared | Signal | After | Alias | Array | Begin | Block | Break | Elsif | Group | Inout | Label | Limit | Noise | Range | Units | Until | While | Body | Case | Else | Exit | File | Loop | Nand | Next | Null | Open | Port | Pure | Then | Type | Wait | When | With | Xnor | Abs | All | And | Bus | End | For | Map | Mod | New | Nor | Not | Out | Rem | Rol | Ror | Sla | Sll | Sra | Srl | Use | Xor | ApostropheLeftParenthesis | AsteriskAsterisk | SolidusEqualsSign | ColonEqualsSign | LessThanSignEqualsSign | LessThanSignGreaterThanSign | EqualsSignEqualsSign | EqualsSignGreaterThanSign | GreaterThanSignEqualsSign | If | In | Is | Of | On | Or | To | Ampersand | LeftParenthesis | RightParenthesis | Asterisk | PlusSign | Comma | HyphenMinus | FullStop | Solidus | Colon | Semicolon | LessThanSign | EqualsSign | GreaterThanSign | LeftSquareBracket | RightSquareBracket | VerticalLine | RULE_ABSTRACT_LITERAL | RULE_BIT_STRING_LITERAL | RULE_ID | RULE_EXTENDED_IDENTIFIER | RULE_STRING | RULE_CHAR | RULE_ATTRIBUTE | RULE_SL_COMMENT | RULE_WS );";
         }
     }
  

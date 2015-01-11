@@ -201,6 +201,11 @@ public class ArchitectureItemProvider extends ModuleItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(VhdlPackage.Literals.NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(VhdlPackage.Literals.ARCHITECTURE__OF,
 				 VhdlFactory.eINSTANCE.createEntityResolvedReference()));
 
@@ -253,6 +258,11 @@ public class ArchitectureItemProvider extends ModuleItemProvider {
 			(createChildParameter
 				(VhdlPackage.Literals.ARCHITECTURE__OF,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(VhdlPackage.Literals.ARCHITECTURE__OF,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

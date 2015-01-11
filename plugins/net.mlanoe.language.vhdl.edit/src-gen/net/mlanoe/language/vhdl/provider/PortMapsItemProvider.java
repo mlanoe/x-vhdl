@@ -296,6 +296,11 @@ public class PortMapsItemProvider extends VhdlObjectItemProvider {
 			(createChildParameter
 				(VhdlPackage.Literals.PORT_MAPS__PORT,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(VhdlPackage.Literals.PORT_MAPS__PORT,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 }

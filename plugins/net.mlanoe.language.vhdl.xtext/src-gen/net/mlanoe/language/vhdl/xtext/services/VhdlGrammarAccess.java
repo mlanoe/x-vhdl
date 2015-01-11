@@ -1125,26 +1125,24 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cSimultaneousIfStatementParserRuleCall_6 = (RuleCall)cAlternatives.eContents().get(6);
 		private final RuleCall cConcurrentBreakStatementParserRuleCall_7 = (RuleCall)cAlternatives.eContents().get(7);
 		private final RuleCall cEntityInstantiationStatementParserRuleCall_8 = (RuleCall)cAlternatives.eContents().get(8);
-		private final RuleCall cConcurrentProcedureCallStatementParserRuleCall_9 = (RuleCall)cAlternatives.eContents().get(9);
-		private final RuleCall cSelectedSignalAssignmentStatementParserRuleCall_10 = (RuleCall)cAlternatives.eContents().get(10);
-		private final RuleCall cComponentInstantiationStatementParserRuleCall_11 = (RuleCall)cAlternatives.eContents().get(11);
-		private final RuleCall cGenerateStatementParserRuleCall_12 = (RuleCall)cAlternatives.eContents().get(12);
-		private final RuleCall cConditionalSignalAssignmentStatementParserRuleCall_13 = (RuleCall)cAlternatives.eContents().get(13);
-		private final RuleCall cSimpleSimultaneousStatementParserRuleCall_14 = (RuleCall)cAlternatives.eContents().get(14);
+		private final RuleCall cSelectedSignalAssignmentStatementParserRuleCall_9 = (RuleCall)cAlternatives.eContents().get(9);
+		private final RuleCall cComponentInstantiationStatementParserRuleCall_10 = (RuleCall)cAlternatives.eContents().get(10);
+		private final RuleCall cGenerateStatementParserRuleCall_11 = (RuleCall)cAlternatives.eContents().get(11);
+		private final RuleCall cConditionalSignalAssignmentStatementParserRuleCall_12 = (RuleCall)cAlternatives.eContents().get(12);
+		private final RuleCall cSimpleSimultaneousStatementParserRuleCall_13 = (RuleCall)cAlternatives.eContents().get(13);
+		private final RuleCall cConcurrentProcedureCallStatementParserRuleCall_14 = (RuleCall)cAlternatives.eContents().get(14);
 		
 		//ArchitectureStatement returns statement::Statement:
 		//	ProcessStatement | ConfigurationInstantiationStatement | BlockStatement | ConcurrentAssertionStatement |
 		//	SimultaneousProceduralStatement | SimultaneousCaseStatement | SimultaneousIfStatement | ConcurrentBreakStatement |
-		//	EntityInstantiationStatement | ConcurrentProcedureCallStatement | SelectedSignalAssignmentStatement |
-		//	ComponentInstantiationStatement | GenerateStatement | ConditionalSignalAssignmentStatement |
-		//	SimpleSimultaneousStatement;
+		//	EntityInstantiationStatement | SelectedSignalAssignmentStatement | ComponentInstantiationStatement | GenerateStatement
+		//	| ConditionalSignalAssignmentStatement | SimpleSimultaneousStatement | ConcurrentProcedureCallStatement;
 		public ParserRule getRule() { return rule; }
 
 		//ProcessStatement | ConfigurationInstantiationStatement | BlockStatement | ConcurrentAssertionStatement |
 		//SimultaneousProceduralStatement | SimultaneousCaseStatement | SimultaneousIfStatement | ConcurrentBreakStatement |
-		//EntityInstantiationStatement | ConcurrentProcedureCallStatement | SelectedSignalAssignmentStatement |
-		//ComponentInstantiationStatement | GenerateStatement | ConditionalSignalAssignmentStatement |
-		//SimpleSimultaneousStatement
+		//EntityInstantiationStatement | SelectedSignalAssignmentStatement | ComponentInstantiationStatement | GenerateStatement
+		//| ConditionalSignalAssignmentStatement | SimpleSimultaneousStatement | ConcurrentProcedureCallStatement
 		public Alternatives getAlternatives() { return cAlternatives; }
 
 		//ProcessStatement
@@ -1174,23 +1172,23 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 		//EntityInstantiationStatement
 		public RuleCall getEntityInstantiationStatementParserRuleCall_8() { return cEntityInstantiationStatementParserRuleCall_8; }
 
-		//ConcurrentProcedureCallStatement
-		public RuleCall getConcurrentProcedureCallStatementParserRuleCall_9() { return cConcurrentProcedureCallStatementParserRuleCall_9; }
-
 		//SelectedSignalAssignmentStatement
-		public RuleCall getSelectedSignalAssignmentStatementParserRuleCall_10() { return cSelectedSignalAssignmentStatementParserRuleCall_10; }
+		public RuleCall getSelectedSignalAssignmentStatementParserRuleCall_9() { return cSelectedSignalAssignmentStatementParserRuleCall_9; }
 
 		//ComponentInstantiationStatement
-		public RuleCall getComponentInstantiationStatementParserRuleCall_11() { return cComponentInstantiationStatementParserRuleCall_11; }
+		public RuleCall getComponentInstantiationStatementParserRuleCall_10() { return cComponentInstantiationStatementParserRuleCall_10; }
 
 		//GenerateStatement
-		public RuleCall getGenerateStatementParserRuleCall_12() { return cGenerateStatementParserRuleCall_12; }
+		public RuleCall getGenerateStatementParserRuleCall_11() { return cGenerateStatementParserRuleCall_11; }
 
 		//ConditionalSignalAssignmentStatement
-		public RuleCall getConditionalSignalAssignmentStatementParserRuleCall_13() { return cConditionalSignalAssignmentStatementParserRuleCall_13; }
+		public RuleCall getConditionalSignalAssignmentStatementParserRuleCall_12() { return cConditionalSignalAssignmentStatementParserRuleCall_12; }
 
 		//SimpleSimultaneousStatement
-		public RuleCall getSimpleSimultaneousStatementParserRuleCall_14() { return cSimpleSimultaneousStatementParserRuleCall_14; }
+		public RuleCall getSimpleSimultaneousStatementParserRuleCall_13() { return cSimpleSimultaneousStatementParserRuleCall_13; }
+
+		//ConcurrentProcedureCallStatement
+		public RuleCall getConcurrentProcedureCallStatementParserRuleCall_14() { return cConcurrentProcedureCallStatementParserRuleCall_14; }
 	}
 
 	public class AccessTypeDefinitionElements extends AbstractParserRuleElementFinder {
@@ -1536,29 +1534,55 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 	public class ChoiceElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Choice");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final RuleCall cRangeSpecificationParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final RuleCall cSubtypeIndicationExpressionParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
-		private final RuleCall cSimpleExpressionParserRuleCall_2 = (RuleCall)cAlternatives.eContents().get(2);
-		private final RuleCall cOthersParserRuleCall_3 = (RuleCall)cAlternatives.eContents().get(3);
+		private final RuleCall cOthersParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final Group cGroup_1 = (Group)cAlternatives.eContents().get(1);
+		private final RuleCall cExpressionParserRuleCall_1_0 = (RuleCall)cGroup_1.eContents().get(0);
+		private final Group cGroup_1_1 = (Group)cGroup_1.eContents().get(1);
+		private final Action cRangeExpressionLeftAction_1_1_0 = (Action)cGroup_1_1.eContents().get(0);
+		private final Assignment cDirectionAssignment_1_1_1 = (Assignment)cGroup_1_1.eContents().get(1);
+		private final RuleCall cDirectionRangeDirectionEnumRuleCall_1_1_1_0 = (RuleCall)cDirectionAssignment_1_1_1.eContents().get(0);
+		private final Assignment cRightAssignment_1_1_2 = (Assignment)cGroup_1_1.eContents().get(2);
+		private final RuleCall cRightSimpleExpressionParserRuleCall_1_1_2_0 = (RuleCall)cRightAssignment_1_1_2.eContents().get(0);
+		private final RuleCall cSubtypeIndicationExpressionParserRuleCall_2 = (RuleCall)cAlternatives.eContents().get(2);
 		
 		//Choice returns expression::Expression:
-		//	RangeSpecification | SubtypeIndicationExpression | SimpleExpression | Others;
+		//	Others | Expression ({expression::RangeExpression.left=current} direction=RangeDirection right=SimpleExpression)? |
+		//	SubtypeIndicationExpression;
 		public ParserRule getRule() { return rule; }
 
-		//RangeSpecification | SubtypeIndicationExpression | SimpleExpression | Others
+		//Others | Expression ({expression::RangeExpression.left=current} direction=RangeDirection right=SimpleExpression)? |
+		//SubtypeIndicationExpression
 		public Alternatives getAlternatives() { return cAlternatives; }
 
-		//RangeSpecification
-		public RuleCall getRangeSpecificationParserRuleCall_0() { return cRangeSpecificationParserRuleCall_0; }
+		//Others
+		public RuleCall getOthersParserRuleCall_0() { return cOthersParserRuleCall_0; }
 
-		//SubtypeIndicationExpression
-		public RuleCall getSubtypeIndicationExpressionParserRuleCall_1() { return cSubtypeIndicationExpressionParserRuleCall_1; }
+		//Expression ({expression::RangeExpression.left=current} direction=RangeDirection right=SimpleExpression)?
+		public Group getGroup_1() { return cGroup_1; }
+
+		//Expression
+		public RuleCall getExpressionParserRuleCall_1_0() { return cExpressionParserRuleCall_1_0; }
+
+		//({expression::RangeExpression.left=current} direction=RangeDirection right=SimpleExpression)?
+		public Group getGroup_1_1() { return cGroup_1_1; }
+
+		//{expression::RangeExpression.left=current}
+		public Action getRangeExpressionLeftAction_1_1_0() { return cRangeExpressionLeftAction_1_1_0; }
+
+		//direction=RangeDirection
+		public Assignment getDirectionAssignment_1_1_1() { return cDirectionAssignment_1_1_1; }
+
+		//RangeDirection
+		public RuleCall getDirectionRangeDirectionEnumRuleCall_1_1_1_0() { return cDirectionRangeDirectionEnumRuleCall_1_1_1_0; }
+
+		//right=SimpleExpression
+		public Assignment getRightAssignment_1_1_2() { return cRightAssignment_1_1_2; }
 
 		//SimpleExpression
-		public RuleCall getSimpleExpressionParserRuleCall_2() { return cSimpleExpressionParserRuleCall_2; }
+		public RuleCall getRightSimpleExpressionParserRuleCall_1_1_2_0() { return cRightSimpleExpressionParserRuleCall_1_1_2_0; }
 
-		//Others
-		public RuleCall getOthersParserRuleCall_3() { return cOthersParserRuleCall_3; }
+		//SubtypeIndicationExpression
+		public RuleCall getSubtypeIndicationExpressionParserRuleCall_2() { return cSubtypeIndicationExpressionParserRuleCall_2; }
 	}
 
 	public class OpenElements extends AbstractParserRuleElementFinder {
@@ -4578,15 +4602,16 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cOpenAssignment_4_0_1 = (Assignment)cGroup_4_0.eContents().get(1);
 		private final RuleCall cOpenExpressionParserRuleCall_4_0_1_0 = (RuleCall)cOpenAssignment_4_0_1.eContents().get(0);
 		private final Keyword cIsKeyword_4_1 = (Keyword)cGroup_4.eContents().get(1);
-		private final Assignment cIsAssignment_4_2 = (Assignment)cGroup_4.eContents().get(2);
-		private final RuleCall cIsExpressionParserRuleCall_4_2_0 = (RuleCall)cIsAssignment_4_2.eContents().get(0);
+		private final Keyword cInKeyword_4_2 = (Keyword)cGroup_4.eContents().get(2);
+		private final Assignment cIsAssignment_4_3 = (Assignment)cGroup_4.eContents().get(3);
+		private final RuleCall cIsExpressionParserRuleCall_4_3_0 = (RuleCall)cIsAssignment_4_3.eContents().get(0);
 		private final Keyword cSemicolonKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		
 		//FileDeclaration returns declaration::FileDeclaration:
-		//	"file" name=MultiIdentifierName ":" type=SubtypeIndication (("open" open=Expression)? "is" is=Expression)? ";";
+		//	"file" name=MultiIdentifierName ":" type=SubtypeIndication (("open" open=Expression)? "is" "in"? is=Expression)? ";";
 		public ParserRule getRule() { return rule; }
 
-		//"file" name=MultiIdentifierName ":" type=SubtypeIndication (("open" open=Expression)? "is" is=Expression)? ";"
+		//"file" name=MultiIdentifierName ":" type=SubtypeIndication (("open" open=Expression)? "is" "in"? is=Expression)? ";"
 		public Group getGroup() { return cGroup; }
 
 		//"file"
@@ -4607,7 +4632,7 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 		//SubtypeIndication
 		public RuleCall getTypeSubtypeIndicationParserRuleCall_3_0() { return cTypeSubtypeIndicationParserRuleCall_3_0; }
 
-		//(("open" open=Expression)? "is" is=Expression)?
+		//(("open" open=Expression)? "is" "in"? is=Expression)?
 		public Group getGroup_4() { return cGroup_4; }
 
 		//("open" open=Expression)?
@@ -4625,11 +4650,14 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 		//"is"
 		public Keyword getIsKeyword_4_1() { return cIsKeyword_4_1; }
 
+		//"in"?
+		public Keyword getInKeyword_4_2() { return cInKeyword_4_2; }
+
 		//is=Expression
-		public Assignment getIsAssignment_4_2() { return cIsAssignment_4_2; }
+		public Assignment getIsAssignment_4_3() { return cIsAssignment_4_3; }
 
 		//Expression
-		public RuleCall getIsExpressionParserRuleCall_4_2_0() { return cIsExpressionParserRuleCall_4_2_0; }
+		public RuleCall getIsExpressionParserRuleCall_4_3_0() { return cIsExpressionParserRuleCall_4_3_0; }
 
 		//";"
 		public Keyword getSemicolonKeyword_5() { return cSemicolonKeyword_5; }
@@ -5762,6 +5790,7 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cAttributeNameParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
 		private final RuleCall cAggregateParserRuleCall_2 = (RuleCall)cAlternatives.eContents().get(2);
 		private final RuleCall cSliceNameParserRuleCall_3 = (RuleCall)cAlternatives.eContents().get(3);
+		private final RuleCall cTypeQualificationParserRuleCall_4 = (RuleCall)cAlternatives.eContents().get(4);
 		
 		/// * 
 		// * prefixed operator:
@@ -5769,11 +5798,12 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 		// *   AttributeName: prefix = Prefix (signature = Signature )? '\'' AttributeDesignator ( '(' expression = Expression ')' )?	
 		// *   IndexedName: prefix = Prefix '(' index += Expression ( ',' index += Expression )* ')'
 		// *   SliceName: prefix = Prefix '(' range = DiscreteRange ')'
+		// *   TypeQualificationName: prefix = Prefix ''' '(' expression = Expression ') 
 		// * / NameSuffix returns Name:
-		//	SelectedName | AttributeName | Aggregate | SliceName;
+		//	SelectedName | AttributeName | Aggregate | SliceName | TypeQualification;
 		public ParserRule getRule() { return rule; }
 
-		//SelectedName | AttributeName | Aggregate | SliceName
+		//SelectedName | AttributeName | Aggregate | SliceName | TypeQualification
 		public Alternatives getAlternatives() { return cAlternatives; }
 
 		//SelectedName
@@ -5787,6 +5817,9 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 
 		//SliceName
 		public RuleCall getSliceNameParserRuleCall_3() { return cSliceNameParserRuleCall_3; }
+
+		//TypeQualification
+		public RuleCall getTypeQualificationParserRuleCall_4() { return cTypeQualificationParserRuleCall_4; }
 	}
 
 	public class StringNameElements extends AbstractParserRuleElementFinder {
@@ -8526,6 +8559,38 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 		public Keyword getRightParenthesisKeyword_2() { return cRightParenthesisKeyword_2; }
 	}
 
+	public class TypeQualificationElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TypeQualification");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Action cTypeQualificationExpressionAction_0 = (Action)cGroup.eContents().get(0);
+		private final Keyword cApostropheLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Assignment cExpressionAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cExpressionSimpleExpressionParserRuleCall_2_0 = (RuleCall)cExpressionAssignment_2.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		
+		//TypeQualification returns expression::TypeQualificationExpression:
+		//	{expression::TypeQualificationExpression} "\'(" expression=SimpleExpression ")";
+		public ParserRule getRule() { return rule; }
+
+		//{expression::TypeQualificationExpression} "\'(" expression=SimpleExpression ")"
+		public Group getGroup() { return cGroup; }
+
+		//{expression::TypeQualificationExpression}
+		public Action getTypeQualificationExpressionAction_0() { return cTypeQualificationExpressionAction_0; }
+
+		//"\'("
+		public Keyword getApostropheLeftParenthesisKeyword_1() { return cApostropheLeftParenthesisKeyword_1; }
+
+		//expression=SimpleExpression
+		public Assignment getExpressionAssignment_2() { return cExpressionAssignment_2; }
+
+		//SimpleExpression
+		public RuleCall getExpressionSimpleExpressionParserRuleCall_2_0() { return cExpressionSimpleExpressionParserRuleCall_2_0; }
+
+		//")"
+		public Keyword getRightParenthesisKeyword_3() { return cRightParenthesisKeyword_3; }
+	}
+
 	public class RangeSpecificationElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "RangeSpecification");
 		private final Group cGroup = (Group)rule.eContents().get(1);
@@ -10804,6 +10869,7 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 	private final DiscreteRangeElements pDiscreteRange;
 	private final AggregateElements pAggregate;
 	private final SliceNameElements pSliceName;
+	private final TypeQualificationElements pTypeQualification;
 	private final RangeSpecificationElements pRangeSpecification;
 	private final SubtypeIndicationElements pSubtypeIndication;
 	private final SubtypeIndicationExpressionElements pSubtypeIndicationExpression;
@@ -11031,6 +11097,7 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 		this.pDiscreteRange = new DiscreteRangeElements();
 		this.pAggregate = new AggregateElements();
 		this.pSliceName = new SliceNameElements();
+		this.pTypeQualification = new TypeQualificationElements();
 		this.pRangeSpecification = new RangeSpecificationElements();
 		this.pSubtypeIndication = new SubtypeIndicationElements();
 		this.pSubtypeIndicationExpression = new SubtypeIndicationExpressionElements();
@@ -11315,9 +11382,8 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 	//ArchitectureStatement returns statement::Statement:
 	//	ProcessStatement | ConfigurationInstantiationStatement | BlockStatement | ConcurrentAssertionStatement |
 	//	SimultaneousProceduralStatement | SimultaneousCaseStatement | SimultaneousIfStatement | ConcurrentBreakStatement |
-	//	EntityInstantiationStatement | ConcurrentProcedureCallStatement | SelectedSignalAssignmentStatement |
-	//	ComponentInstantiationStatement | GenerateStatement | ConditionalSignalAssignmentStatement |
-	//	SimpleSimultaneousStatement;
+	//	EntityInstantiationStatement | SelectedSignalAssignmentStatement | ComponentInstantiationStatement | GenerateStatement
+	//	| ConditionalSignalAssignmentStatement | SimpleSimultaneousStatement | ConcurrentProcedureCallStatement;
 	public ArchitectureStatementElements getArchitectureStatementAccess() {
 		return pArchitectureStatement;
 	}
@@ -11414,7 +11480,8 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Choice returns expression::Expression:
-	//	RangeSpecification | SubtypeIndicationExpression | SimpleExpression | Others;
+	//	Others | Expression ({expression::RangeExpression.left=current} direction=RangeDirection right=SimpleExpression)? |
+	//	SubtypeIndicationExpression;
 	public ChoiceElements getChoiceAccess() {
 		return pChoice;
 	}
@@ -12063,7 +12130,7 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//FileDeclaration returns declaration::FileDeclaration:
-	//	"file" name=MultiIdentifierName ":" type=SubtypeIndication (("open" open=Expression)? "is" is=Expression)? ";";
+	//	"file" name=MultiIdentifierName ":" type=SubtypeIndication (("open" open=Expression)? "is" "in"? is=Expression)? ";";
 	public FileDeclarationElements getFileDeclarationAccess() {
 		return pFileDeclaration;
 	}
@@ -12409,8 +12476,9 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 	// *   AttributeName: prefix = Prefix (signature = Signature )? '\'' AttributeDesignator ( '(' expression = Expression ')' )?	
 	// *   IndexedName: prefix = Prefix '(' index += Expression ( ',' index += Expression )* ')'
 	// *   SliceName: prefix = Prefix '(' range = DiscreteRange ')'
+	// *   TypeQualificationName: prefix = Prefix ''' '(' expression = Expression ') 
 	// * / NameSuffix returns Name:
-	//	SelectedName | AttributeName | Aggregate | SliceName;
+	//	SelectedName | AttributeName | Aggregate | SliceName | TypeQualification;
 	public NameSuffixElements getNameSuffixAccess() {
 		return pNameSuffix;
 	}
@@ -13019,6 +13087,16 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 	
 	public ParserRule getSliceNameRule() {
 		return getSliceNameAccess().getRule();
+	}
+
+	//TypeQualification returns expression::TypeQualificationExpression:
+	//	{expression::TypeQualificationExpression} "\'(" expression=SimpleExpression ")";
+	public TypeQualificationElements getTypeQualificationAccess() {
+		return pTypeQualification;
+	}
+	
+	public ParserRule getTypeQualificationRule() {
+		return getTypeQualificationAccess().getRule();
 	}
 
 	//RangeSpecification returns expression::RangeExpression:

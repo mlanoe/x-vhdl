@@ -201,6 +201,11 @@ public class SignatureItemProvider extends VhdlObjectItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(VhdlPackage.Literals.SIGNATURE__PARAMETER,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(VhdlPackage.Literals.SIGNATURE__RETURN,
 				 ExpressionFactory.eINSTANCE.createAggregateExpression()));
 
@@ -253,6 +258,11 @@ public class SignatureItemProvider extends VhdlObjectItemProvider {
 			(createChildParameter
 				(VhdlPackage.Literals.SIGNATURE__RETURN,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(VhdlPackage.Literals.SIGNATURE__RETURN,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

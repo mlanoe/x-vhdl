@@ -35,6 +35,7 @@ public abstract class AbstractVhdlSyntacticSequencer extends AbstractSyntacticSe
 	protected AbstractElementAlias match_Entity_BeginKeyword_6_0_q;
 	protected AbstractElementAlias match_Entity_EntityKeyword_8_q;
 	protected AbstractElementAlias match_Entity_IdentifierParserRuleCall_9_q;
+	protected AbstractElementAlias match_FileDeclaration_InKeyword_4_2_q;
 	protected AbstractElementAlias match_GenerateStatement_BeginKeyword_4_1_q;
 	protected AbstractElementAlias match_GenerateStatement_IdentifierParserRuleCall_8_q;
 	protected AbstractElementAlias match_GroupTemplateDeclaration_LessThanSignGreaterThanSignKeyword_5_q;
@@ -84,6 +85,7 @@ public abstract class AbstractVhdlSyntacticSequencer extends AbstractSyntacticSe
 		match_Entity_BeginKeyword_6_0_q = new TokenAlias(false, true, grammarAccess.getEntityAccess().getBeginKeyword_6_0());
 		match_Entity_EntityKeyword_8_q = new TokenAlias(false, true, grammarAccess.getEntityAccess().getEntityKeyword_8());
 		match_Entity_IdentifierParserRuleCall_9_q = new TokenAlias(false, true, grammarAccess.getEntityAccess().getIdentifierParserRuleCall_9());
+		match_FileDeclaration_InKeyword_4_2_q = new TokenAlias(false, true, grammarAccess.getFileDeclarationAccess().getInKeyword_4_2());
 		match_GenerateStatement_BeginKeyword_4_1_q = new TokenAlias(false, true, grammarAccess.getGenerateStatementAccess().getBeginKeyword_4_1());
 		match_GenerateStatement_IdentifierParserRuleCall_8_q = new TokenAlias(false, true, grammarAccess.getGenerateStatementAccess().getIdentifierParserRuleCall_8());
 		match_GroupTemplateDeclaration_LessThanSignGreaterThanSignKeyword_5_q = new TokenAlias(false, true, grammarAccess.getGroupTemplateDeclarationAccess().getLessThanSignGreaterThanSignKeyword_5());
@@ -186,6 +188,8 @@ public abstract class AbstractVhdlSyntacticSequencer extends AbstractSyntacticSe
 				emit_Entity_EntityKeyword_8_q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_Entity_IdentifierParserRuleCall_9_q.equals(syntax))
 				emit_Entity_IdentifierParserRuleCall_9_q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_FileDeclaration_InKeyword_4_2_q.equals(syntax))
+				emit_FileDeclaration_InKeyword_4_2_q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_GenerateStatement_BeginKeyword_4_1_q.equals(syntax))
 				emit_GenerateStatement_BeginKeyword_4_1_q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_GenerateStatement_IdentifierParserRuleCall_8_q.equals(syntax))
@@ -373,6 +377,14 @@ public abstract class AbstractVhdlSyntacticSequencer extends AbstractSyntacticSe
 	 *     Identifier?
 	 */
 	protected void emit_Entity_IdentifierParserRuleCall_9_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Syntax:
+	 *     'in'?
+	 */
+	protected void emit_FileDeclaration_InKeyword_4_2_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	

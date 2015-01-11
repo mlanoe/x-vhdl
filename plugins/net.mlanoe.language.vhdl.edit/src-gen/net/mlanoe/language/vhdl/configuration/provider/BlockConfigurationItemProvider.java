@@ -201,6 +201,11 @@ public class BlockConfigurationItemProvider extends ConfigurationItemItemProvide
 
 		newChildDescriptors.add
 			(createChildParameter
+				(VhdlPackage.Literals.NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(ConfigurationPackage.Literals.BLOCK_CONFIGURATION__USE,
 				 ExpressionFactory.eINSTANCE.createAggregateExpression()));
 
@@ -248,6 +253,11 @@ public class BlockConfigurationItemProvider extends ConfigurationItemItemProvide
 			(createChildParameter
 				(ConfigurationPackage.Literals.BLOCK_CONFIGURATION__USE,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ConfigurationPackage.Literals.BLOCK_CONFIGURATION__USE,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter

@@ -202,6 +202,11 @@ public class SubprogramDeclarationItemProvider extends DeclarationItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(VhdlPackage.Literals.NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(DeclarationPackage.Literals.SUBPROGRAM_DECLARATION__PARAMETER,
 				 DeclarationFactory.eINSTANCE.createAliasDeclaration()));
 

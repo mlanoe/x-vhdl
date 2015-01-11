@@ -196,6 +196,11 @@ public class UnconstrainedArrayNatureDefinitionItemProvider extends ArrayNatureD
 			(createChildParameter
 				(NaturePackage.Literals.UNCONSTRAINED_ARRAY_NATURE_DEFINITION__INDEX,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(NaturePackage.Literals.UNCONSTRAINED_ARRAY_NATURE_DEFINITION__INDEX,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

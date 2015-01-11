@@ -331,6 +331,11 @@ public class AssertionStatementItemProvider extends StatementItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(StatementPackage.Literals.ASSERTION_STATEMENT__CONDITION,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(StatementPackage.Literals.ASSERTION_STATEMENT__REPORT,
 				 ExpressionFactory.eINSTANCE.createAddingExpression()));
 
@@ -486,6 +491,11 @@ public class AssertionStatementItemProvider extends StatementItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(StatementPackage.Literals.ASSERTION_STATEMENT__REPORT,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(StatementPackage.Literals.ASSERTION_STATEMENT__SEVERITY,
 				 ExpressionFactory.eINSTANCE.createAddingExpression()));
 
@@ -638,6 +648,11 @@ public class AssertionStatementItemProvider extends StatementItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.ASSERTION_STATEMENT__SEVERITY,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.ASSERTION_STATEMENT__SEVERITY,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

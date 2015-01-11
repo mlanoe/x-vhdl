@@ -203,6 +203,11 @@ public class BreakStatementItemItemProvider extends VhdlObjectItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(StatementPackage.Literals.BREAK_STATEMENT_ITEM__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(StatementPackage.Literals.BREAK_STATEMENT_ITEM__USE,
 				 ExpressionFactory.eINSTANCE.createAggregateExpression()));
 
@@ -250,6 +255,11 @@ public class BreakStatementItemItemProvider extends VhdlObjectItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.BREAK_STATEMENT_ITEM__USE,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.BREAK_STATEMENT_ITEM__USE,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -405,6 +415,11 @@ public class BreakStatementItemItemProvider extends VhdlObjectItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.BREAK_STATEMENT_ITEM__ARROW,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.BREAK_STATEMENT_ITEM__ARROW,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

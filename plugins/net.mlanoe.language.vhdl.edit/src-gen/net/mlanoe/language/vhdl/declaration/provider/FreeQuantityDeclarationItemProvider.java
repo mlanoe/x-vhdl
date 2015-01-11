@@ -208,6 +208,11 @@ public class FreeQuantityDeclarationItemProvider extends QuantityDeclarationItem
 
 		newChildDescriptors.add
 			(createChildParameter
+				(VhdlPackage.Literals.MULTI_NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(TypePackage.Literals.TYPED__TYPE,
 				 ExpressionFactory.eINSTANCE.createAggregateExpression()));
 
@@ -260,6 +265,11 @@ public class FreeQuantityDeclarationItemProvider extends QuantityDeclarationItem
 			(createChildParameter
 				(TypePackage.Literals.TYPED__TYPE,
 				 ExpressionFactory.eINSTANCE.createIdentifierExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(TypePackage.Literals.TYPED__TYPE,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -415,6 +425,11 @@ public class FreeQuantityDeclarationItemProvider extends QuantityDeclarationItem
 			(createChildParameter
 				(DeclarationPackage.Literals.FREE_QUANTITY_DECLARATION__QUANTITY,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(DeclarationPackage.Literals.FREE_QUANTITY_DECLARATION__QUANTITY,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 	/**

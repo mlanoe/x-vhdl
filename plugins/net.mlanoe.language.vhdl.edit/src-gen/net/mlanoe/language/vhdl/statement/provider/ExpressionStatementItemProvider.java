@@ -296,6 +296,11 @@ public class ExpressionStatementItemProvider extends StatementItemProvider {
 			(createChildParameter
 				(StatementPackage.Literals.EXPRESSION_STATEMENT__EXPRESSION,
 				 ExpressionFactory.eINSTANCE.createConditionalWaveformExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(StatementPackage.Literals.EXPRESSION_STATEMENT__EXPRESSION,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
 	}
 
 }

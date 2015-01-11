@@ -136,6 +136,8 @@ public class VhdlParser extends AbstractContentAssistParser {
 					put(grammarAccess.getChoicesAccess().getGroup(), "rule__Choices__Group__0");
 					put(grammarAccess.getChoicesAccess().getGroup_1(), "rule__Choices__Group_1__0");
 					put(grammarAccess.getChoicesAccess().getGroup_1_1(), "rule__Choices__Group_1_1__0");
+					put(grammarAccess.getChoiceAccess().getGroup_1(), "rule__Choice__Group_1__0");
+					put(grammarAccess.getChoiceAccess().getGroup_1_1(), "rule__Choice__Group_1_1__0");
 					put(grammarAccess.getOpenAccess().getGroup(), "rule__Open__Group__0");
 					put(grammarAccess.getAttributeDeclarationAccess().getGroup(), "rule__AttributeDeclaration__Group__0");
 					put(grammarAccess.getAttributeSpecificationAccess().getGroup(), "rule__AttributeSpecification__Group__0");
@@ -378,6 +380,7 @@ public class VhdlParser extends AbstractContentAssistParser {
 					put(grammarAccess.getAggregateAccess().getGroup_2(), "rule__Aggregate__Group_2__0");
 					put(grammarAccess.getAggregateAccess().getGroup_2_1(), "rule__Aggregate__Group_2_1__0");
 					put(grammarAccess.getSliceNameAccess().getGroup(), "rule__SliceName__Group__0");
+					put(grammarAccess.getTypeQualificationAccess().getGroup(), "rule__TypeQualification__Group__0");
 					put(grammarAccess.getRangeSpecificationAccess().getGroup(), "rule__RangeSpecification__Group__0");
 					put(grammarAccess.getRangeSpecificationAccess().getGroup_1(), "rule__RangeSpecification__Group_1__0");
 					put(grammarAccess.getRangeSpecificationAccess().getGroup_1_0(), "rule__RangeSpecification__Group_1_0__0");
@@ -475,6 +478,8 @@ public class VhdlParser extends AbstractContentAssistParser {
 					put(grammarAccess.getParameterAccess().getChoiceAssignment_0_1(), "rule__Parameter__ChoiceAssignment_0_1");
 					put(grammarAccess.getParameterAccess().getExpressionAssignment_0_3_0(), "rule__Parameter__ExpressionAssignment_0_3_0");
 					put(grammarAccess.getChoicesAccess().getExpressionAssignment_1_1_1(), "rule__Choices__ExpressionAssignment_1_1_1");
+					put(grammarAccess.getChoiceAccess().getDirectionAssignment_1_1_1(), "rule__Choice__DirectionAssignment_1_1_1");
+					put(grammarAccess.getChoiceAccess().getRightAssignment_1_1_2(), "rule__Choice__RightAssignment_1_1_2");
 					put(grammarAccess.getAttributeDeclarationAccess().getNameAssignment_1(), "rule__AttributeDeclaration__NameAssignment_1");
 					put(grammarAccess.getAttributeDeclarationAccess().getTypeAssignment_3(), "rule__AttributeDeclaration__TypeAssignment_3");
 					put(grammarAccess.getAttributeSpecificationAccess().getNameAssignment_1(), "rule__AttributeSpecification__NameAssignment_1");
@@ -614,7 +619,7 @@ public class VhdlParser extends AbstractContentAssistParser {
 					put(grammarAccess.getFileDeclarationAccess().getNameAssignment_1(), "rule__FileDeclaration__NameAssignment_1");
 					put(grammarAccess.getFileDeclarationAccess().getTypeAssignment_3(), "rule__FileDeclaration__TypeAssignment_3");
 					put(grammarAccess.getFileDeclarationAccess().getOpenAssignment_4_0_1(), "rule__FileDeclaration__OpenAssignment_4_0_1");
-					put(grammarAccess.getFileDeclarationAccess().getIsAssignment_4_2(), "rule__FileDeclaration__IsAssignment_4_2");
+					put(grammarAccess.getFileDeclarationAccess().getIsAssignment_4_3(), "rule__FileDeclaration__IsAssignment_4_3");
 					put(grammarAccess.getInterfaceFileDeclarationAccess().getNameAssignment_1(), "rule__InterfaceFileDeclaration__NameAssignment_1");
 					put(grammarAccess.getInterfaceFileDeclarationAccess().getTypeAssignment_3(), "rule__InterfaceFileDeclaration__TypeAssignment_3");
 					put(grammarAccess.getFileTypeDefinitionAccess().getTypeAssignment_2(), "rule__FileTypeDefinition__TypeAssignment_2");
@@ -775,6 +780,7 @@ public class VhdlParser extends AbstractContentAssistParser {
 					put(grammarAccess.getRangeAccess().getRightAssignment_1_2(), "rule__Range__RightAssignment_1_2");
 					put(grammarAccess.getAggregateAccess().getExpressionAssignment_2_0(), "rule__Aggregate__ExpressionAssignment_2_0");
 					put(grammarAccess.getAggregateAccess().getExpressionAssignment_2_1_1(), "rule__Aggregate__ExpressionAssignment_2_1_1");
+					put(grammarAccess.getTypeQualificationAccess().getExpressionAssignment_2(), "rule__TypeQualification__ExpressionAssignment_2");
 					put(grammarAccess.getRangeSpecificationAccess().getLeftAssignment_1_0_0(), "rule__RangeSpecification__LeftAssignment_1_0_0");
 					put(grammarAccess.getRangeSpecificationAccess().getDirectionAssignment_1_0_1(), "rule__RangeSpecification__DirectionAssignment_1_0_1");
 					put(grammarAccess.getRangeSpecificationAccess().getRightAssignment_2(), "rule__RangeSpecification__RightAssignment_2");

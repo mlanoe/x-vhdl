@@ -330,6 +330,11 @@ public class PhysicalTypeDefinitionItemProvider extends TypeDefinitionItemProvid
 
 		newChildDescriptors.add
 			(createChildParameter
+				(TypePackage.Literals.PHYSICAL_TYPE_DEFINITION__RANGE,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(TypePackage.Literals.PHYSICAL_TYPE_DEFINITION__SECONDARY,
 				 TypeFactory.eINSTANCE.createPhysicalTypeDefinitionSecondary()));
 	}

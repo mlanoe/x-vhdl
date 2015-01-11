@@ -59,6 +59,7 @@ import net.mlanoe.language.vhdl.expression.SignatureExpression;
 import net.mlanoe.language.vhdl.expression.StringExpression;
 import net.mlanoe.language.vhdl.expression.SubnatureIndicationExpression;
 import net.mlanoe.language.vhdl.expression.SubtypeIndicationExpression;
+import net.mlanoe.language.vhdl.expression.TypeQualificationExpression;
 import net.mlanoe.language.vhdl.expression.UnaffectedExpression;
 import net.mlanoe.language.vhdl.expression.UnaryExpression;
 import net.mlanoe.language.vhdl.expression.UnaryOperator;
@@ -332,6 +333,13 @@ public class ExpressionPackageImpl extends EPackageImpl implements ExpressionPac
 	 * @generated
 	 */
 	private EClass conditionalWaveformExpressionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass typeQualificationExpressionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1036,6 +1044,24 @@ public class ExpressionPackageImpl extends EPackageImpl implements ExpressionPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getTypeQualificationExpression() {
+		return typeQualificationExpressionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getTypeQualificationExpression_Expression() {
+		return (EReference)typeQualificationExpressionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EEnum getUnaryOperator() {
 		return unaryOperatorEEnum;
 	}
@@ -1227,6 +1253,9 @@ public class ExpressionPackageImpl extends EPackageImpl implements ExpressionPac
 
 		conditionalWaveformExpressionEClass = createEClass(CONDITIONAL_WAVEFORM_EXPRESSION);
 
+		typeQualificationExpressionEClass = createEClass(TYPE_QUALIFICATION_EXPRESSION);
+		createEReference(typeQualificationExpressionEClass, TYPE_QUALIFICATION_EXPRESSION__EXPRESSION);
+
 		// Create enums
 		unaryOperatorEEnum = createEEnum(UNARY_OPERATOR);
 		multiplyingOperatorEEnum = createEEnum(MULTIPLYING_OPERATOR);
@@ -1321,6 +1350,8 @@ public class ExpressionPackageImpl extends EPackageImpl implements ExpressionPac
 		waveformExpressionEClass.getESuperTypes().add(this.getExpression());
 		multiExpressionEClass.getESuperTypes().add(this.getExpression());
 		conditionalWaveformExpressionEClass.getESuperTypes().add(this.getAssociationExpression());
+		typeQualificationExpressionEClass.getESuperTypes().add(this.getExpression());
+		typeQualificationExpressionEClass.getESuperTypes().add(theVhdlPackage.getName_());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(addingExpressionEClass, AddingExpression.class, "AddingExpression", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1418,6 +1449,9 @@ public class ExpressionPackageImpl extends EPackageImpl implements ExpressionPac
 		initEReference(getMultiExpression_Expression(), this.getExpression(), null, "expression", null, 0, -1, MultiExpression.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(conditionalWaveformExpressionEClass, ConditionalWaveformExpression.class, "ConditionalWaveformExpression", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(typeQualificationExpressionEClass, TypeQualificationExpression.class, "TypeQualificationExpression", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getTypeQualificationExpression_Expression(), this.getExpression(), null, "expression", null, 0, 1, TypeQualificationExpression.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(unaryOperatorEEnum, UnaryOperator.class, "UnaryOperator");

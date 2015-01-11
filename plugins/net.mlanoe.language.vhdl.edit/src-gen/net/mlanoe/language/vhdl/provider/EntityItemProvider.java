@@ -203,6 +203,11 @@ public class EntityItemProvider extends ModuleItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(VhdlPackage.Literals.NAMED__NAME,
+				 ExpressionFactory.eINSTANCE.createTypeQualificationExpression()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(VhdlPackage.Literals.ENTITY__GENERIC,
 				 VhdlFactory.eINSTANCE.createGenerics()));
 

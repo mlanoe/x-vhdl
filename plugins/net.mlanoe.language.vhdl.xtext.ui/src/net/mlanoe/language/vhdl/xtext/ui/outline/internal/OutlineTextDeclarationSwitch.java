@@ -140,8 +140,13 @@ public class OutlineTextDeclarationSwitch extends DeclarationSwitch<String> {
 
 	@Override
 	public String caseAliasDeclaration(AliasDeclaration object) {
-		return OutlineTextGenerator.getOutline(object.getName()) + " : "
-				+ OutlineTextGenerator.getOutline(object.getAlias());
+		StringBuilder builder = new StringBuilder();
+		builder.append(OutlineTextGenerator.getOutline(object.getName()));
+		if (object.getAlias() != null) {
+			builder.append(" : ");
+			builder.append(OutlineTextGenerator.getOutline(object.getAlias()));
+		}
+		return builder.toString();
 	}
 
 	@Override
