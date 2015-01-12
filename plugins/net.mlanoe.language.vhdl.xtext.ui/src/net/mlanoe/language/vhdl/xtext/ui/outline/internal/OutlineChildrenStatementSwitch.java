@@ -7,7 +7,9 @@
  */
 package net.mlanoe.language.vhdl.xtext.ui.outline.internal;
 
+import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 import net.mlanoe.language.vhdl.statement.AssertionStatement;
 import net.mlanoe.language.vhdl.statement.BlockStatement;
@@ -176,19 +178,46 @@ public class OutlineChildrenStatementSwitch extends
 	@Override
 	public Iterable<? extends EObject> caseComponentInstantiationStatement(
 			ComponentInstantiationStatement object) {
-		return Collections.emptyList();
+		List<EObject> res = new ArrayList<EObject>();
+		if (object.getGenericMap() != null) {
+			res.add(object.getGenericMap());
+		}
+
+		if (object.getPortMap() != null) {
+			res.add(object.getPortMap());
+		}
+
+		return res;
 	}
 
 	@Override
 	public Iterable<? extends EObject> caseEntityInstantiationStatement(
 			EntityInstantiationStatement object) {
-		return Collections.emptyList();
+		List<EObject> res = new ArrayList<EObject>();
+		if (object.getGenericMap() != null) {
+			res.add(object.getGenericMap());
+		}
+
+		if (object.getPortMap() != null) {
+			res.add(object.getPortMap());
+		}
+
+		return res;
 	}
 
 	@Override
 	public Iterable<? extends EObject> caseConfigurationInstantiationStatement(
 			ConfigurationInstantiationStatement object) {
-		return Collections.emptyList();
+		List<EObject> res = new ArrayList<EObject>();
+		if (object.getGenericMap() != null) {
+			res.add(object.getGenericMap());
+		}
+
+		if (object.getPortMap() != null) {
+			res.add(object.getPortMap());
+		}
+
+		return res;
 	}
 
 	@Override

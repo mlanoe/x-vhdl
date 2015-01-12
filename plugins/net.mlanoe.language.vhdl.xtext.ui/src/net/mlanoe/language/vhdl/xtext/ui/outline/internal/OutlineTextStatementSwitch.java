@@ -7,6 +7,7 @@
  */
 package net.mlanoe.language.vhdl.xtext.ui.outline.internal;
 
+import net.mlanoe.language.vhdl.expression.ConditionalWaveformExpression;
 import net.mlanoe.language.vhdl.expression.Expression;
 import net.mlanoe.language.vhdl.statement.AssertionStatement;
 import net.mlanoe.language.vhdl.statement.BlockStatement;
@@ -119,7 +120,11 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 		boolean first = true;
 		for (Expression waveform : object.getWaveform()) {
 			if (!first) {
-				builder.append(", ");
+				if (waveform instanceof ConditionalWaveformExpression) {
+					builder.append(", ");
+				} else {
+					builder.append(" else ");
+				}
 			}
 			first = false;
 			builder.append(OutlineTextGenerator.getOutline(waveform));

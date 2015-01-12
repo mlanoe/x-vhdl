@@ -30,4 +30,7 @@ class VhdlOutlineTreeProvider extends org.eclipse.xtext.ui.editor.outline.impl.D
 		}
 	}
   
+	override boolean _isLeaf(EObject modelElement) {
+		return OutlineIsLeafGenerator.isLeaf(modelElement);
+	}
 }
