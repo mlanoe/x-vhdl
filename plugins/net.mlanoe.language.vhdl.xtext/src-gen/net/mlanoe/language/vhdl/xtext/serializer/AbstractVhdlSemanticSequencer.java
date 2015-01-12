@@ -2190,7 +2190,7 @@ public abstract class AbstractVhdlSemanticSequencer extends AbstractDelegatingSe
 	
 	/**
 	 * Constraint:
-	 *     (label=Label? postponed?='postponed' procedure=Name)
+	 *     (label=Label? postponed?='postponed'? procedure=Name)
 	 */
 	protected void sequence_ConcurrentProcedureCallStatement(EObject context, ProcedureCallStatement semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

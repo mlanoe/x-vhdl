@@ -3105,12 +3105,14 @@ ruleConcurrentAssertionStatement returns [EObject current=null]
 	    }
 
 )
-)?
+)?((
+Assert
+)=>
 	otherlv_3=Assert
     {
     	newLeafNode(otherlv_3, grammarAccess.getConcurrentAssertionStatementAccess().getAssertKeyword_2());
     }
-(
+)(
 (
 		{ 
 	        newCompositeNode(grammarAccess.getConcurrentAssertionStatementAccess().getConditionExpressionParserRuleCall_3_0()); 
@@ -5930,12 +5932,14 @@ ruleSelectedSignalAssignmentStatement returns [EObject current=null]
 	    }
 
 )
-)?
+)?((
+With
+)=>
 	otherlv_3=With
     {
     	newLeafNode(otherlv_3, grammarAccess.getSelectedSignalAssignmentStatementAccess().getWithKeyword_2());
     }
-(
+)(
 (
 		{ 
 	        newCompositeNode(grammarAccess.getSelectedSignalAssignmentStatementAccess().getSelectedExpressionParserRuleCall_3_0()); 
@@ -6679,7 +6683,7 @@ ruleWaveforms returns [EObject current=null]
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-(
+(((ruleUnaffected)=>
 	{ 
 	  /* */ 
 	}
@@ -6691,7 +6695,7 @@ ruleWaveforms returns [EObject current=null]
         $current = $this_Unaffected_0.current;
         afterParserOrEnumRuleCall();
     }
-
+)
     |(
 	{ 
 	  /* */ 
@@ -11768,7 +11772,7 @@ ruleConcurrentProcedureCallStatement returns [EObject current=null]
 	    }
 
 )
-)(
+)?(
 (
 		{ 
 	        newCompositeNode(grammarAccess.getConcurrentProcedureCallStatementAccess().getProcedureNameParserRuleCall_2_0()); 

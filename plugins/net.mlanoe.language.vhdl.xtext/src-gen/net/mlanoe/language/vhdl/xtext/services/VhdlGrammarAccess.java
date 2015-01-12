@@ -1372,11 +1372,11 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 		/// *
 		// * [ label: ] [postponed] assert boolean_condition [ report string ] [ severity name ] ;
 		// * / ConcurrentAssertionStatement returns statement::AssertionStatement:
-		//	(label=Label ":")? postponed?="postponed"? "assert" condition=Expression ("report" report=Expression)? ("severity"
+		//	(label=Label ":")? postponed?="postponed"? => "assert" condition=Expression ("report" report=Expression)? ("severity"
 		//	severity=Expression)? ";";
 		public ParserRule getRule() { return rule; }
 
-		//(label=Label ":")? postponed?="postponed"? "assert" condition=Expression ("report" report=Expression)? ("severity"
+		//(label=Label ":")? postponed?="postponed"? => "assert" condition=Expression ("report" report=Expression)? ("severity"
 		//severity=Expression)? ";"
 		public Group getGroup() { return cGroup; }
 
@@ -1398,7 +1398,7 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 		//"postponed"
 		public Keyword getPostponedPostponedKeyword_1_0() { return cPostponedPostponedKeyword_1_0; }
 
-		//"assert"
+		//=> "assert"
 		public Keyword getAssertKeyword_2() { return cAssertKeyword_2; }
 
 		//condition=Expression
@@ -3082,11 +3082,11 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 		// * with expression select target <=
 		// *            waveform when choice [, waveform when choice ] ;
 		// * / SelectedSignalAssignmentStatement returns statement::SelectedSignalAssignmentStatement:
-		//	(label=Label ":")? postponed?="postponed"? "with" selected=Expression "select" target=Target "<=" guarded?="guarded"?
-		//	delay=DelayMechanism? waveform+=ConditionalWaveform ("," waveform+=ConditionalWaveform)* ";";
+		//	(label=Label ":")? postponed?="postponed"? => "with" selected=Expression "select" target=Target "<="
+		//	guarded?="guarded"? delay=DelayMechanism? waveform+=ConditionalWaveform ("," waveform+=ConditionalWaveform)* ";";
 		public ParserRule getRule() { return rule; }
 
-		//(label=Label ":")? postponed?="postponed"? "with" selected=Expression "select" target=Target "<=" guarded?="guarded"?
+		//(label=Label ":")? postponed?="postponed"? => "with" selected=Expression "select" target=Target "<=" guarded?="guarded"?
 		//delay=DelayMechanism? waveform+=ConditionalWaveform ("," waveform+=ConditionalWaveform)* ";"
 		public Group getGroup() { return cGroup; }
 
@@ -3108,7 +3108,7 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 		//"postponed"
 		public Keyword getPostponedPostponedKeyword_1_0() { return cPostponedPostponedKeyword_1_0; }
 
-		//"with"
+		//=> "with"
 		public Keyword getWithKeyword_2() { return cWithKeyword_2; }
 
 		//selected=Expression
@@ -3535,10 +3535,10 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 		//	Unaffected | Waveform ({expression::MultiExpression.expression+=current} ("," expression+=Waveform)+)?;
 		public ParserRule getRule() { return rule; }
 
-		//Unaffected | Waveform ({expression::MultiExpression.expression+=current} ("," expression+=Waveform)+)?
+		//=> Unaffected | Waveform ({expression::MultiExpression.expression+=current} ("," expression+=Waveform)+)?
 		public Alternatives getAlternatives() { return cAlternatives; }
 
-		//Unaffected
+		//=> Unaffected
 		public RuleCall getUnaffectedParserRuleCall_0() { return cUnaffectedParserRuleCall_0; }
 
 		//Waveform ({expression::MultiExpression.expression+=current} ("," expression+=Waveform)+)?
@@ -6294,10 +6294,10 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cSemicolonKeyword_3 = (Keyword)cGroup.eContents().get(3);
 		
 		//ConcurrentProcedureCallStatement returns statement::ProcedureCallStatement:
-		//	(label=Label ":")? postponed?="postponed" procedure=Name ";";
+		//	(label=Label ":")? postponed?="postponed"? procedure=Name ";";
 		public ParserRule getRule() { return rule; }
 
-		//(label=Label ":")? postponed?="postponed" procedure=Name ";"
+		//(label=Label ":")? postponed?="postponed"? procedure=Name ";"
 		public Group getGroup() { return cGroup; }
 
 		//(label=Label ":")?
@@ -6312,7 +6312,7 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 		//":"
 		public Keyword getColonKeyword_0_1() { return cColonKeyword_0_1; }
 
-		//postponed?="postponed"
+		//postponed?="postponed"?
 		public Assignment getPostponedAssignment_1() { return cPostponedAssignment_1; }
 
 		//"postponed"
@@ -11449,7 +11449,7 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 	/// *
 	// * [ label: ] [postponed] assert boolean_condition [ report string ] [ severity name ] ;
 	// * / ConcurrentAssertionStatement returns statement::AssertionStatement:
-	//	(label=Label ":")? postponed?="postponed"? "assert" condition=Expression ("report" report=Expression)? ("severity"
+	//	(label=Label ":")? postponed?="postponed"? => "assert" condition=Expression ("report" report=Expression)? ("severity"
 	//	severity=Expression)? ";";
 	public ConcurrentAssertionStatementElements getConcurrentAssertionStatementAccess() {
 		return pConcurrentAssertionStatement;
@@ -11785,8 +11785,8 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 	// * with expression select target <=
 	// *            waveform when choice [, waveform when choice ] ;
 	// * / SelectedSignalAssignmentStatement returns statement::SelectedSignalAssignmentStatement:
-	//	(label=Label ":")? postponed?="postponed"? "with" selected=Expression "select" target=Target "<=" guarded?="guarded"?
-	//	delay=DelayMechanism? waveform+=ConditionalWaveform ("," waveform+=ConditionalWaveform)* ";";
+	//	(label=Label ":")? postponed?="postponed"? => "with" selected=Expression "select" target=Target "<="
+	//	guarded?="guarded"? delay=DelayMechanism? waveform+=ConditionalWaveform ("," waveform+=ConditionalWaveform)* ";";
 	public SelectedSignalAssignmentStatementElements getSelectedSignalAssignmentStatementAccess() {
 		return pSelectedSignalAssignmentStatement;
 	}
@@ -12610,7 +12610,7 @@ public class VhdlGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//ConcurrentProcedureCallStatement returns statement::ProcedureCallStatement:
-	//	(label=Label ":")? postponed?="postponed" procedure=Name ";";
+	//	(label=Label ":")? postponed?="postponed"? procedure=Name ";";
 	public ConcurrentProcedureCallStatementElements getConcurrentProcedureCallStatementAccess() {
 		return pConcurrentProcedureCallStatement;
 	}

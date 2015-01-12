@@ -7026,7 +7026,7 @@ rule__Waveforms__Alternatives
 :
 (
 { before(grammarAccess.getWaveformsAccess().getUnaffectedParserRuleCall_0()); }
-	ruleUnaffected
+(	ruleUnaffected)
 { after(grammarAccess.getWaveformsAccess().getUnaffectedParserRuleCall_0()); }
 )
 
@@ -11545,9 +11545,9 @@ rule__ConcurrentAssertionStatement__Group__2__Impl
 :
 (
 { before(grammarAccess.getConcurrentAssertionStatementAccess().getAssertKeyword_2()); }
-
+(
 	Assert 
-
+)
 { after(grammarAccess.getConcurrentAssertionStatementAccess().getAssertKeyword_2()); }
 )
 
@@ -18586,9 +18586,9 @@ rule__SelectedSignalAssignmentStatement__Group__2__Impl
 :
 (
 { before(grammarAccess.getSelectedSignalAssignmentStatementAccess().getWithKeyword_2()); }
-
+(
 	With 
-
+)
 { after(grammarAccess.getSelectedSignalAssignmentStatementAccess().getWithKeyword_2()); }
 )
 
@@ -30130,7 +30130,7 @@ rule__ConcurrentProcedureCallStatement__Group__1__Impl
 :
 (
 { before(grammarAccess.getConcurrentProcedureCallStatementAccess().getPostponedAssignment_1()); }
-(rule__ConcurrentProcedureCallStatement__PostponedAssignment_1)
+(rule__ConcurrentProcedureCallStatement__PostponedAssignment_1)?
 { after(grammarAccess.getConcurrentProcedureCallStatementAccess().getPostponedAssignment_1()); }
 )
 
