@@ -39,13 +39,19 @@ public class OutlineTextSwitch extends VhdlSwitch<String> {
 
 	@Override
 	public String caseArchitecture(Architecture object) {
-		return OutlineTextGenerator.getOutline(object.getName()) + " of "
-				+ OutlineTextGenerator.getOutline(object.getOf());
+		StringBuilder builder = new StringBuilder();
+		builder.append(OutlineTextGenerator.getOutline(object.getName()));
+		builder.append(": architecture of ");
+		builder.append(OutlineTextGenerator.getOutline(object.getOf()));
+		return builder.toString();
 	}
 
 	@Override
 	public String caseComponent(Component object) {
-		return OutlineTextGenerator.getOutline(object.getName());
+		StringBuilder builder = new StringBuilder();
+		builder.append(OutlineTextGenerator.getOutline(object.getName()));
+		builder.append(": component");
+		return builder.toString();
 	}
 
 	@Override
@@ -55,12 +61,15 @@ public class OutlineTextSwitch extends VhdlSwitch<String> {
 
 	@Override
 	public String caseModel(Model object) {
-		return "vhdl";
+		return object.eResource().getURI().lastSegment();
 	}
 
 	@Override
 	public String caseEntity(Entity object) {
-		return OutlineTextGenerator.getOutline(object.getName());
+		StringBuilder builder = new StringBuilder();
+		builder.append(OutlineTextGenerator.getOutline(object.getName()));
+		builder.append(": entity");
+		return builder.toString();
 	}
 
 	@Override
@@ -91,12 +100,12 @@ public class OutlineTextSwitch extends VhdlSwitch<String> {
 
 	@Override
 	public String caseGenerics(Generics object) {
-		return "generic";
+		return "Generics";
 	}
 
 	@Override
 	public String caseGenericMaps(GenericMaps object) {
-		return "generic map";
+		return "Generic Map";
 	}
 
 	@Override
@@ -106,12 +115,12 @@ public class OutlineTextSwitch extends VhdlSwitch<String> {
 
 	@Override
 	public String casePorts(Ports object) {
-		return "port";
+		return "Ports";
 	}
 
 	@Override
 	public String casePortMaps(PortMaps object) {
-		return "port map";
+		return "Port Map";
 	}
 
 	@Override

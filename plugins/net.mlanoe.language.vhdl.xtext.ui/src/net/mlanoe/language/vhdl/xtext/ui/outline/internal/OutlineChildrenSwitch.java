@@ -28,8 +28,6 @@ import net.mlanoe.language.vhdl.PackageResolvedReference;
 import net.mlanoe.language.vhdl.PortMaps;
 import net.mlanoe.language.vhdl.Ports;
 import net.mlanoe.language.vhdl.Signature;
-import net.mlanoe.language.vhdl.statement.ProcessStatement;
-import net.mlanoe.language.vhdl.statement.Statement;
 import net.mlanoe.language.vhdl.util.VhdlSwitch;
 
 import org.eclipse.emf.ecore.EObject;
@@ -45,21 +43,16 @@ public class OutlineChildrenSwitch extends
 
 	@Override
 	public Iterable<? extends EObject> caseArchitecture(Architecture object) {
-		if (!object.getDeclaration().isEmpty()
-				&& !object.getStatement().isEmpty()) {
+		if (!object.getStatement().isEmpty()) {
 			List<EObject> res = new ArrayList<EObject>();
+
 			res.addAll(object.getDeclaration());
-			for (Statement statement : object.getStatement()) {
-				if (statement instanceof ProcessStatement) {
-					res.add(statement);
-				}
-			}
+			res.addAll(object.getStatement());
 
 			return res;
 		}
 
-		return !object.getDeclaration().isEmpty() ? object.getDeclaration()
-				: object.getStatement();
+		return object.getDeclaration();
 	}
 
 	@Override
@@ -69,41 +62,32 @@ public class OutlineChildrenSwitch extends
 		}
 
 		if (object.getGeneric() == null) {
-			return object.getPort().getDeclaration();
+			return Collections.singletonList(object.getPort());
 		}
 
 		if (object.getPort() == null) {
-			return object.getGeneric().getDeclaration();
+			return Collections.singletonList(object.getGeneric());
 		}
 
 		List<EObject> res = new ArrayList<EObject>();
-		res.addAll(object.getGeneric().getDeclaration());
-		res.addAll(object.getPort().getDeclaration());
+		res.add(object.getGeneric());
+		res.add(object.getPort());
 		return res;
 	}
 
 	@Override
 	public Iterable<? extends EObject> caseDesignUnit(DesignUnit object) {
 		if (object.getModule() == null) {
-			return object.getUse();
+			return Collections.emptyList();
 		}
 
-		if (object.getUse().isEmpty()) {
-			return Collections.singletonList(object.getModule());
-		}
-
-		List<EObject> res = new ArrayList<EObject>();
-		res.addAll(object.getUse());
-		res.add(object.getModule());
-		return res;
+		return Collections.singletonList(object.getModule());
 	}
 
 	@Override
 	public Iterable<? extends EObject> caseModel(Model object) {
 		List<EObject> res = new ArrayList<EObject>();
 		for (DesignUnit design : object.getDesign()) {
-			res.addAll(design.getUse());
-
 			if (design.getModule() != null) {
 				res.add(design.getModule());
 			}
@@ -116,11 +100,11 @@ public class OutlineChildrenSwitch extends
 	public Iterable<? extends EObject> caseEntity(Entity object) {
 		List<EObject> res = new ArrayList<EObject>();
 		if (object.getGeneric() != null) {
-			res.addAll(object.getGeneric().getDeclaration());
+			res.add(object.getGeneric());
 		}
 
 		if (object.getPort() != null) {
-			res.addAll(object.getPort().getDeclaration());
+			res.add(object.getPort());
 		}
 
 		res.addAll(object.getDeclaration());
