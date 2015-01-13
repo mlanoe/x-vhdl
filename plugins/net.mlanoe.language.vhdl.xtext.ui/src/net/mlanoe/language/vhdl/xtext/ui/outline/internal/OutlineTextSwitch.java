@@ -35,28 +35,21 @@ import net.mlanoe.language.vhdl.xtext.ui.outline.OutlineTextGenerator;
  * @author <a href="mailto:mickael.lanoe@laposte.net">Mickael LANOE</a>
  *
  */
-public class OutlineTextSwitch extends VhdlSwitch<String> {
+public class OutlineTextSwitch extends VhdlSwitch<Object> {
 
 	@Override
-	public String caseArchitecture(Architecture object) {
-		StringBuilder builder = new StringBuilder();
-		builder.append(OutlineTextGenerator.getOutline(object.getName()));
-		builder.append(": architecture of ");
-		builder.append(OutlineTextGenerator.getOutline(object.getOf()));
-		return builder.toString();
+	public Object caseArchitecture(Architecture object) {
+		return OutlineTextGenerator.getText(object.getName(), object.getOf());
 	}
 
 	@Override
-	public String caseComponent(Component object) {
-		StringBuilder builder = new StringBuilder();
-		builder.append(OutlineTextGenerator.getOutline(object.getName()));
-		builder.append(": component");
-		return builder.toString();
+	public Object caseComponent(Component object) {
+		return OutlineTextGenerator.getText(object.getName(), "component");
 	}
 
 	@Override
-	public String caseDesignUnit(DesignUnit object) {
-		return OutlineTextGenerator.getOutline(object.getModule());
+	public Object caseDesignUnit(DesignUnit object) {
+		return OutlineTextGenerator.getText(object.getModule());
 	}
 
 	@Override
@@ -65,37 +58,34 @@ public class OutlineTextSwitch extends VhdlSwitch<String> {
 	}
 
 	@Override
-	public String caseEntity(Entity object) {
-		StringBuilder builder = new StringBuilder();
-		builder.append(OutlineTextGenerator.getOutline(object.getName()));
-		builder.append(": entity");
-		return builder.toString();
+	public Object caseEntity(Entity object) {
+		return OutlineTextGenerator.getText(object.getName(), "entity");
 	}
 
 	@Override
-	public String casePackage(Package object) {
-		return OutlineTextGenerator.getOutline(object.getName());
+	public Object casePackage(Package object) {
+		return OutlineTextGenerator.getText(object.getName());
 	}
 
 	@Override
-	public String caseEntityResolvedReference(EntityResolvedReference object) {
-		return OutlineTextGenerator.getOutline(object.getEntity().getName());
+	public Object caseEntityResolvedReference(EntityResolvedReference object) {
+		return OutlineTextGenerator.getText(object.getEntity().getName());
 	}
 
 	@Override
-	public String casePackageResolvedReference(PackageResolvedReference object) {
-		return OutlineTextGenerator.getOutline(object.getPackage().getName());
+	public Object casePackageResolvedReference(PackageResolvedReference object) {
+		return OutlineTextGenerator.getText(object.getPackage().getName());
 	}
 
 	@Override
-	public String caseComponentResolvedReference(
+	public Object caseComponentResolvedReference(
 			ComponentResolvedReference object) {
-		return OutlineTextGenerator.getOutline(object.getComponent().getName());
+		return OutlineTextGenerator.getText(object.getComponent().getName());
 	}
 
 	@Override
-	public String caseCallResolvedReference(CallResolvedReference object) {
-		return OutlineTextGenerator.getOutline(object.getCall().getName());
+	public Object caseCallResolvedReference(CallResolvedReference object) {
+		return OutlineTextGenerator.getText(object.getCall().getName());
 	}
 
 	@Override
@@ -109,8 +99,8 @@ public class OutlineTextSwitch extends VhdlSwitch<String> {
 	}
 
 	@Override
-	public String casePackageBody(PackageBody object) {
-		return OutlineTextGenerator.getOutline(object.getName());
+	public Object casePackageBody(PackageBody object) {
+		return OutlineTextGenerator.getText(object.getName());
 	}
 
 	@Override
@@ -130,11 +120,11 @@ public class OutlineTextSwitch extends VhdlSwitch<String> {
 			if (builder.length() == 0) {
 				builder.append(", ");
 			}
-			builder.append(OutlineTextGenerator.getOutline(type));
+			builder.append(OutlineTextGenerator.getText(type));
 		}
 		if (object.getReturn() != null) {
 			builder.append(" return ");
-			builder.append(OutlineTextGenerator.getOutline(object.getReturn()));
+			builder.append(OutlineTextGenerator.getText(object.getReturn()));
 		}
 		builder.append(']');
 		return builder.toString();
@@ -147,7 +137,7 @@ public class OutlineTextSwitch extends VhdlSwitch<String> {
 			if (builder.length() != 0) {
 				builder.append(", ");
 			}
-			builder.append(OutlineTextGenerator.getOutline(name));
+			builder.append(OutlineTextGenerator.getText(name));
 		}
 		return builder.toString();
 	}

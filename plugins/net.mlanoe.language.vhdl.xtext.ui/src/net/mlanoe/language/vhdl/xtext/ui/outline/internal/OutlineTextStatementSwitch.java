@@ -54,7 +54,7 @@ import net.mlanoe.language.vhdl.xtext.ui.outline.OutlineTextGenerator;
  * @author <a href="mailto:mickael.lanoe@laposte.net">Mickael LANOE</a>
  *
  */
-public class OutlineTextStatementSwitch extends StatementSwitch<String> {
+public class OutlineTextStatementSwitch extends StatementSwitch<Object> {
 
 	@Override
 	public String caseWaitStatement(WaitStatement object) {
@@ -75,7 +75,7 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 			builder.append(" : ");
 		}
 		builder.append("report ");
-		builder.append(OutlineTextGenerator.getOutline(object.getReport()));
+		builder.append(OutlineTextGenerator.getText(object.getReport()));
 		return builder.toString();
 	}
 
@@ -87,7 +87,7 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 			builder.append(" : ");
 		}
 		builder.append("return ");
-		builder.append(OutlineTextGenerator.getOutline(object.getExpression()));
+		builder.append(OutlineTextGenerator.getText(object.getExpression()));
 		return builder.toString();
 	}
 
@@ -99,9 +99,9 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 			builder.append(object.getLabel());
 			builder.append(" : ");
 		}
-		builder.append(OutlineTextGenerator.getOutline(object.getTarget()));
+		builder.append(OutlineTextGenerator.getText(object.getTarget()));
 		builder.append(" <= ");
-		builder.append(OutlineTextGenerator.getOutline(object.getWaveform()));
+		builder.append(OutlineTextGenerator.getText(object.getWaveform()));
 
 		return builder.toString();
 	}
@@ -114,7 +114,7 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 			builder.append(object.getLabel());
 			builder.append(" : ");
 		}
-		builder.append(OutlineTextGenerator.getOutline(object.getTarget()));
+		builder.append(OutlineTextGenerator.getText(object.getTarget()));
 		builder.append(" <= ");
 
 		boolean first = true;
@@ -127,7 +127,7 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 				}
 			}
 			first = false;
-			builder.append(OutlineTextGenerator.getOutline(waveform));
+			builder.append(OutlineTextGenerator.getText(waveform));
 		}
 		return builder.toString();
 	}
@@ -140,7 +140,7 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 			builder.append(object.getLabel());
 			builder.append(" : ");
 		}
-		builder.append(OutlineTextGenerator.getOutline(object.getTarget()));
+		builder.append(OutlineTextGenerator.getText(object.getTarget()));
 		builder.append(" <= ");
 
 		boolean first = true;
@@ -149,7 +149,7 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 				builder.append(", ");
 			}
 			first = false;
-			builder.append(OutlineTextGenerator.getOutline(waveform));
+			builder.append(OutlineTextGenerator.getText(waveform));
 		}
 
 		return builder.toString();
@@ -163,9 +163,9 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 			builder.append(object.getLabel());
 			builder.append(" : ");
 		}
-		builder.append(OutlineTextGenerator.getOutline(object.getTarget()));
+		builder.append(OutlineTextGenerator.getText(object.getTarget()));
 		builder.append(" := ");
-		builder.append(OutlineTextGenerator.getOutline(object.getInitial()));
+		builder.append(OutlineTextGenerator.getText(object.getInitial()));
 		return builder.toString();
 	}
 
@@ -189,7 +189,7 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 
 	@Override
 	public String caseCaseAlternative(CaseAlternative object) {
-		return "when " + OutlineTextGenerator.getOutline(object.getChoice());
+		return "when " + OutlineTextGenerator.getText(object.getChoice());
 	}
 
 	@Override
@@ -211,8 +211,8 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 	}
 
 	@Override
-	public String caseIfStatementTest(IfStatementTest object) {
-		return OutlineTextGenerator.getOutline(object.getCondition());
+	public Object caseIfStatementTest(IfStatementTest object) {
+		return OutlineTextGenerator.getText(object.getCondition());
 	}
 
 	@Override
@@ -224,7 +224,7 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 			builder.append(" : ");
 		}
 
-		builder.append(OutlineTextGenerator.getOutline(object.getProcedure()));
+		builder.append(OutlineTextGenerator.getText(object.getProcedure()));
 		return builder.toString();
 	}
 
@@ -239,23 +239,32 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 	}
 
 	@Override
-	public String caseProcessStatement(ProcessStatement object) {
-		StringBuilder builder = new StringBuilder();
+	public Object caseProcessStatement(ProcessStatement object) {
 		if (object.getLabel() != null) {
+			StringBuilder builder = new StringBuilder();
 			builder.append(object.getLabel());
-			builder.append(" : ");
+
+			if (object.getSensitivity() != null) {
+				builder.append("(");
+				builder.append(OutlineTextGenerator.getText(object
+						.getSensitivity()));
+				builder.append(")");
+			}
+
+			return OutlineTextGenerator.getText(builder, "process");
+		} else {
+			StringBuilder builder = new StringBuilder();
+			builder.append("process");
+
+			if (object.getSensitivity() != null) {
+				builder.append("(");
+				builder.append(OutlineTextGenerator.getText(object
+						.getSensitivity()));
+				builder.append(")");
+			}
+
+			return builder.toString();
 		}
-
-		builder.append("process");
-
-		if (object.getSensitivity() != null) {
-			builder.append("(");
-			builder.append(OutlineTextGenerator.getOutline(object
-					.getSensitivity()));
-			builder.append(")");
-		}
-
-		return builder.toString();
 	}
 
 	@Override
@@ -286,47 +295,41 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 	}
 
 	@Override
-	public String caseBreakStatementItem(BreakStatementItem object) {
-		return OutlineTextGenerator.getOutline(object.getName());
+	public Object caseBreakStatementItem(BreakStatementItem object) {
+		return OutlineTextGenerator.getText(object.getName());
 	}
 
 	@Override
-	public String caseComponentInstantiationStatement(
+	public Object caseComponentInstantiationStatement(
 			ComponentInstantiationStatement object) {
-		StringBuilder builder = new StringBuilder();
 		if (object.getLabel() != null) {
-			builder.append(object.getLabel());
-			builder.append(" : ");
+			return OutlineTextGenerator.getText(object.getLabel(),
+					object.getName());
+		} else {
+			return OutlineTextGenerator.getText(object.getName());
 		}
-
-		builder.append(OutlineTextGenerator.getOutline(object.getName()));
-		return builder.toString();
 	}
 
 	@Override
-	public String caseEntityInstantiationStatement(
+	public Object caseEntityInstantiationStatement(
 			EntityInstantiationStatement object) {
-		StringBuilder builder = new StringBuilder();
 		if (object.getLabel() != null) {
-			builder.append(object.getLabel());
-			builder.append(" : ");
+			return OutlineTextGenerator.getText(object.getLabel(),
+					object.getName());
+		} else {
+			return OutlineTextGenerator.getText(object.getName());
 		}
-
-		builder.append(OutlineTextGenerator.getOutline(object.getName()));
-		return builder.toString();
 	}
 
 	@Override
-	public String caseConfigurationInstantiationStatement(
+	public Object caseConfigurationInstantiationStatement(
 			ConfigurationInstantiationStatement object) {
-		StringBuilder builder = new StringBuilder();
 		if (object.getLabel() != null) {
-			builder.append(object.getLabel());
-			builder.append(" : ");
+			return OutlineTextGenerator.getText(object.getLabel(),
+					object.getName());
+		} else {
+			return OutlineTextGenerator.getText(object.getName());
 		}
-
-		builder.append(OutlineTextGenerator.getOutline(object.getName()));
-		return builder.toString();
 	}
 
 	@Override
@@ -350,7 +353,7 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 			builder.append(" : ");
 		}
 
-		builder.append(OutlineTextGenerator.getOutline(object.getExit()));
+		builder.append(OutlineTextGenerator.getText(object.getExit()));
 		return builder.toString();
 	}
 
@@ -362,7 +365,7 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 			builder.append(" : ");
 		}
 
-		builder.append(OutlineTextGenerator.getOutline(object.getScheme()));
+		builder.append(OutlineTextGenerator.getText(object.getScheme()));
 		return builder.toString();
 	}
 
@@ -374,7 +377,7 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 			builder.append(" : ");
 		}
 
-		builder.append(OutlineTextGenerator.getOutline(object.getIteration()));
+		builder.append(OutlineTextGenerator.getText(object.getIteration()));
 		return builder.toString();
 	}
 
@@ -386,7 +389,7 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 			builder.append(" : ");
 		}
 
-		builder.append(OutlineTextGenerator.getOutline(object.getNext()));
+		builder.append(OutlineTextGenerator.getText(object.getNext()));
 		return builder.toString();
 	}
 
@@ -394,7 +397,7 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 	public String caseWhileIterationScheme(WhileIterationScheme object) {
 		StringBuilder builder = new StringBuilder();
 		builder.append("while ");
-		builder.append(OutlineTextGenerator.getOutline(object.getCondition()));
+		builder.append(OutlineTextGenerator.getText(object.getCondition()));
 		return builder.toString();
 	}
 
@@ -404,7 +407,7 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 		builder.append("for ");
 		builder.append(object.getVariable());
 		builder.append(" in ");
-		builder.append(OutlineTextGenerator.getOutline(object.getIn()));
+		builder.append(OutlineTextGenerator.getText(object.getIn()));
 		return builder.toString();
 	}
 
@@ -414,13 +417,13 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 		builder.append("for ");
 		builder.append(object.getVariable());
 		builder.append(" in ");
-		builder.append(OutlineTextGenerator.getOutline(object.getIn()));
+		builder.append(OutlineTextGenerator.getText(object.getIn()));
 		return builder.toString();
 	}
 
 	@Override
 	public String caseIfGenerationScheme(IfGenerationScheme object) {
-		return "if " + OutlineTextGenerator.getOutline(object.getCondition());
+		return "if " + OutlineTextGenerator.getText(object.getCondition());
 	}
 
 	@Override
@@ -430,7 +433,7 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 
 	@Override
 	public String caseRejectMechanism(RejectMechanism object) {
-		return "reject " + OutlineTextGenerator.getOutline(object.getReject());
+		return "reject " + OutlineTextGenerator.getText(object.getReject());
 	}
 
 	@Override
@@ -446,7 +449,7 @@ public class OutlineTextStatementSwitch extends StatementSwitch<String> {
 			builder.append(" : ");
 		}
 
-		builder.append(OutlineTextGenerator.getOutline(object.getExpression()));
+		builder.append(OutlineTextGenerator.getText(object.getExpression()));
 		return builder.toString();
 	}
 

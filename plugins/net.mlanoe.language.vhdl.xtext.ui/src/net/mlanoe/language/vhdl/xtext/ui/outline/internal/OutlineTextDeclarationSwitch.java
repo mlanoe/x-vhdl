@@ -40,38 +40,35 @@ import net.mlanoe.language.vhdl.xtext.ui.outline.OutlineTextGenerator;
  * @author <a href="mailto:mickael.lanoe@laposte.net">Mickael LANOE</a>
  *
  */
-public class OutlineTextDeclarationSwitch extends DeclarationSwitch<String> {
+public class OutlineTextDeclarationSwitch extends DeclarationSwitch<Object> {
 
 	@Override
-	public String caseTypeDeclaration(TypeDeclaration object) {
-		return OutlineTextGenerator.getOutline(object.getName()) + " : "
-				+ OutlineTextGenerator.getOutline(object.getIs());
+	public Object caseTypeDeclaration(TypeDeclaration object) {
+		return OutlineTextGenerator.getText(object.getName(), object.getIs());
 	}
 
 	@Override
-	public String caseSubtypeDeclaration(SubtypeDeclaration object) {
-		return OutlineTextGenerator.getOutline(object.getName()) + " : "
-				+ OutlineTextGenerator.getOutline(object.getType());
+	public Object caseSubtypeDeclaration(SubtypeDeclaration object) {
+		return OutlineTextGenerator.getText(object.getName(), object.getType());
 	}
 
 	@Override
-	public String caseFunctionDeclaration(FunctionDeclaration object) {
+	public Object caseFunctionDeclaration(FunctionDeclaration object) {
 		StringBuilder builder = new StringBuilder();
-		builder.append(OutlineTextGenerator.getOutline(object.getName()));
+		builder.append(OutlineTextGenerator.getText(object.getName()));
 		builder.append('(');
 
 		StringBuilder parameterBuilder = new StringBuilder();
 		for (Declaration parameter : object.getParameter()) {
 			if (parameterBuilder.length() != 0)
 				parameterBuilder.append(", ");
-			parameterBuilder.append(OutlineTextGenerator.getOutline(parameter));
+			parameterBuilder.append(OutlineTextGenerator.getText(parameter));
 		}
 
 		builder.append(parameterBuilder);
 		builder.append(')');
 		if (object.getType() != null) {
-			builder.append(" : ");
-			builder.append(OutlineTextGenerator.getOutline(object.getType()));
+			return OutlineTextGenerator.getText(builder, object.getType());
 		}
 		return builder.toString();
 	}
@@ -79,14 +76,14 @@ public class OutlineTextDeclarationSwitch extends DeclarationSwitch<String> {
 	@Override
 	public String caseProcedureDeclaration(ProcedureDeclaration object) {
 		StringBuilder builder = new StringBuilder();
-		builder.append(OutlineTextGenerator.getOutline(object.getName()));
+		builder.append(OutlineTextGenerator.getText(object.getName()));
 		builder.append('(');
 
 		StringBuilder parameterBuilder = new StringBuilder();
 		for (Declaration parameter : object.getParameter()) {
 			if (parameterBuilder.length() != 0)
 				parameterBuilder.append(", ");
-			parameterBuilder.append(OutlineTextGenerator.getOutline(parameter));
+			parameterBuilder.append(OutlineTextGenerator.getText(parameter));
 		}
 
 		builder.append(parameterBuilder);
@@ -95,12 +92,8 @@ public class OutlineTextDeclarationSwitch extends DeclarationSwitch<String> {
 	}
 
 	@Override
-	public String caseValueDeclaration(ValueDeclaration object) {
-		StringBuilder builder = new StringBuilder();
-		builder.append(OutlineTextGenerator.getOutline(object.getName()));
-		builder.append(" : ");
-		builder.append(OutlineTextGenerator.getOutline(object.getType()));
-		return builder.toString();
+	public Object caseValueDeclaration(ValueDeclaration object) {
+		return OutlineTextGenerator.getText(object.getName(), object.getType());
 	}
 
 	@Override
@@ -109,96 +102,92 @@ public class OutlineTextDeclarationSwitch extends DeclarationSwitch<String> {
 	}
 
 	@Override
-	public String caseFreeQuantityDeclaration(FreeQuantityDeclaration object) {
-		return OutlineTextGenerator.getOutline(object.getName()) + " : "
-				+ OutlineTextGenerator.getOutline(object.getType());
+	public Object caseFreeQuantityDeclaration(FreeQuantityDeclaration object) {
+		return OutlineTextGenerator.getText(object.getName(), object.getType());
 	}
 
 	@Override
 	public String caseBranchQuantityDeclaration(BranchQuantityDeclaration object) {
-		return OutlineTextGenerator.getOutline(object.getLeft()) + " to "
-				+ OutlineTextGenerator.getOutline(object.getRight());
+		return OutlineTextGenerator.getText(object.getLeft()) + " to "
+				+ OutlineTextGenerator.getText(object.getRight());
 	}
 
 	@Override
-	public String caseSourceQuantityDeclaration(SourceQuantityDeclaration object) {
-		return OutlineTextGenerator.getOutline(object.getName()) + " : "
-				+ OutlineTextGenerator.getOutline(object.getType());
+	public Object caseSourceQuantityDeclaration(SourceQuantityDeclaration object) {
+		return OutlineTextGenerator.getText(object.getName(), object.getType());
 	}
 
 	@Override
-	public String caseLimitDeclaration(LimitDeclaration object) {
-		return OutlineTextGenerator.getOutline(object.getName()) + " : "
-				+ OutlineTextGenerator.getOutline(object.getType());
+	public Object caseLimitDeclaration(LimitDeclaration object) {
+		return OutlineTextGenerator.getText(object.getName(), object.getType());
 	}
 
 	@Override
-	public String caseSubnatureDeclaration(SubnatureDeclaration object) {
-		return OutlineTextGenerator.getOutline(object.getName()) + " : "
-				+ OutlineTextGenerator.getOutline(object.getNature());
+	public Object caseSubnatureDeclaration(SubnatureDeclaration object) {
+		return OutlineTextGenerator.getText(object.getName(),
+				object.getNature());
 	}
 
 	@Override
-	public String caseAliasDeclaration(AliasDeclaration object) {
+	public Object caseAliasDeclaration(AliasDeclaration object) {
 		StringBuilder builder = new StringBuilder();
-		builder.append(OutlineTextGenerator.getOutline(object.getName()));
+		builder.append(OutlineTextGenerator.getText(object.getName()));
 		if (object.getAlias() != null) {
-			builder.append(" : ");
-			builder.append(OutlineTextGenerator.getOutline(object.getAlias()));
+			return OutlineTextGenerator.getText(builder, object.getAlias());
 		}
 		return builder.toString();
 	}
 
 	@Override
-	public String caseAttributeDeclaration(AttributeDeclaration object) {
-		return OutlineTextGenerator.getOutline(object.getName()) + " : "
-				+ OutlineTextGenerator.getOutline(object.getType());
+	public Object caseAttributeDeclaration(AttributeDeclaration object) {
+		return OutlineTextGenerator.getText(object.getName(), object.getType());
 	}
 
 	@Override
-	public String caseAttributeSpecification(AttributeSpecification object) {
-		return OutlineTextGenerator.getOutline(object.getName()) + " of "
-				+ OutlineTextGenerator.getOutline(object.getEntity()) + " : "
-				+ OutlineTextGenerator.getOutline(object.getClass_());
+	public Object caseAttributeSpecification(AttributeSpecification object) {
+		return OutlineTextGenerator.getText(
+				OutlineTextGenerator.getText(object.getName()) + " of "
+						+ OutlineTextGenerator.getText(object.getEntity()),
+				object.getClass_());
 	}
 
 	@Override
-	public String caseConfigurationSpecification(
+	public Object caseConfigurationSpecification(
 			ConfigurationSpecification object) {
-		return OutlineTextGenerator.getOutline(object.getList()) + " : "
-				+ OutlineTextGenerator.getOutline(object.getComponent());
+		return OutlineTextGenerator.getText(object.getList(),
+				object.getComponent());
 	}
 
 	@Override
-	public String caseDisconnectionSpecification(
+	public Object caseDisconnectionSpecification(
 			DisconnectionSpecification object) {
-		return OutlineTextGenerator.getOutline(object.getDisconnect()) + " : "
-				+ OutlineTextGenerator.getOutline(object.getType());
+		return OutlineTextGenerator.getText(object.getDisconnect(),
+				object.getType());
 	}
 
 	@Override
-	public String caseFileDeclaration(FileDeclaration object) {
-		return OutlineTextGenerator.getOutline(object.getName()) + " : "
-				+ OutlineTextGenerator.getOutline(object.getType());
+	public Object caseFileDeclaration(FileDeclaration object) {
+		return OutlineTextGenerator.getText(object.getName(), object.getType());
 	}
 
 	@Override
-	public String caseTerminalDeclaration(TerminalDeclaration object) {
-		return OutlineTextGenerator.getOutline(object.getName()) + " : "
-				+ OutlineTextGenerator.getOutline(object.getNature());
+	public Object caseTerminalDeclaration(TerminalDeclaration object) {
+		return OutlineTextGenerator.getText(object.getName(),
+				object.getNature());
 	}
 
 	@Override
-	public String caseGroupDeclaration(GroupDeclaration object) {
-		return OutlineTextGenerator.getOutline(object.getName()) + " : "
-				+ OutlineTextGenerator.getOutline(object.getIs()) + " ("
-				+ OutlineTextGenerator.getOutline(object.getMember()) + ")";
+	public Object caseGroupDeclaration(GroupDeclaration object) {
+		return OutlineTextGenerator.getText(object.getName(),
+				OutlineTextGenerator.getText(object.getIs()) + " ("
+						+ OutlineTextGenerator.getText(object.getMember())
+						+ ")");
 	}
 
 	@Override
 	public String caseGroupTemplateDeclaration(GroupTemplateDeclaration object) {
 		StringBuilder builder = new StringBuilder();
-		builder.append(OutlineTextGenerator.getOutline(object.getName()));
+		builder.append(OutlineTextGenerator.getText(object.getName()));
 
 		boolean first = true;
 		for (EntityClass entityClass : object.getEntry()) {
@@ -206,21 +195,20 @@ public class OutlineTextDeclarationSwitch extends DeclarationSwitch<String> {
 				builder.append(", ");
 			}
 			first = false;
-			builder.append(OutlineTextGenerator.getOutline(entityClass));
+			builder.append(OutlineTextGenerator.getText(entityClass));
 		}
 
 		return builder.toString();
 	}
 
 	@Override
-	public String caseNatureDeclaration(NatureDeclaration object) {
-		return OutlineTextGenerator.getOutline(object.getName()) + " : "
-				+ OutlineTextGenerator.getOutline(object.getIs());
+	public Object caseNatureDeclaration(NatureDeclaration object) {
+		return OutlineTextGenerator.getText(object.getName(), object.getIs());
 	}
 
 	@Override
-	public String caseUseClauseDeclaration(UseClauseDeclaration object) {
-		return OutlineTextGenerator.getOutline(object.getUse());
+	public Object caseUseClauseDeclaration(UseClauseDeclaration object) {
+		return OutlineTextGenerator.getText(object.getUse());
 	}
 
 }

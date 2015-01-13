@@ -27,7 +27,7 @@ import net.mlanoe.language.vhdl.xtext.ui.outline.OutlineTextGenerator;
  * @author <a href="mailto:mickael.lanoe@laposte.net">Mickael LANOE</a>
  *
  */
-public class OutlineTextTypeSwitch extends TypeSwitch<String> {
+public class OutlineTextTypeSwitch extends TypeSwitch<Object> {
 
 	@Override
 	public String caseEnumerationTypeDefinition(EnumerationTypeDefinition object) {
@@ -37,18 +37,18 @@ public class OutlineTextTypeSwitch extends TypeSwitch<String> {
 	@Override
 	public String caseConstrainedArrayTypeDefinition(
 			ConstrainedArrayTypeDefinition object) {
-		return "array of " + OutlineTextGenerator.getOutline(object.getType());
+		return OutlineTextGenerator.getText(object.getType()) + "[]";
 	}
 
 	@Override
 	public String caseUnconstrainedArrayTypeDefinition(
 			UnconstrainedArrayTypeDefinition object) {
-		return "array of " + OutlineTextGenerator.getOutline(object.getType());
+		return OutlineTextGenerator.getText(object.getType()) + "[]";
 	}
 
 	@Override
 	public String caseAccessTypeDefinition(AccessTypeDefinition object) {
-		return "access of " + OutlineTextGenerator.getOutline(object.getType());
+		return "access of " + OutlineTextGenerator.getText(object.getType());
 	}
 
 	@Override
@@ -58,12 +58,12 @@ public class OutlineTextTypeSwitch extends TypeSwitch<String> {
 
 	@Override
 	public String caseArrayTypeDefinition(ArrayTypeDefinition object) {
-		return "array of " + OutlineTextGenerator.getOutline(object.getType());
+		return OutlineTextGenerator.getText(object.getType()) + "[]";
 	}
 
 	@Override
 	public String caseFileTypeDefinition(FileTypeDefinition object) {
-		return "file of " + OutlineTextGenerator.getOutline(object.getType());
+		return "file of " + OutlineTextGenerator.getText(object.getType());
 	}
 
 	@Override
@@ -89,9 +89,8 @@ public class OutlineTextTypeSwitch extends TypeSwitch<String> {
 	}
 
 	@Override
-	public String caseRecordTypeElement(RecordTypeElement object) {
-		return OutlineTextGenerator.getOutline(object.getName()) + " : "
-				+ OutlineTextGenerator.getOutline(object.getType());
+	public Object caseRecordTypeElement(RecordTypeElement object) {
+		return OutlineTextGenerator.getText(object.getName(), object.getType());
 
 	}
 

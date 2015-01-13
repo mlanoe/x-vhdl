@@ -22,17 +22,17 @@ import net.mlanoe.language.vhdl.xtext.ui.outline.OutlineTextGenerator;
  * @author <a href="mailto:mickael.lanoe@laposte.net">Mickael LANOE</a>
  *
  */
-public class OutlineTextNatureSwitch extends NatureSwitch<String> {
+public class OutlineTextNatureSwitch extends NatureSwitch<Object> {
 
 	@Override
-	public String caseArrayNatureDefinition(ArrayNatureDefinition object) {
-		return OutlineTextGenerator.getOutline(object.getNature());
+	public Object caseArrayNatureDefinition(ArrayNatureDefinition object) {
+		return OutlineTextGenerator.getText(object.getNature());
 	}
 
 	@Override
-	public String caseConstrainedArrayNatureDefinition(
+	public Object caseConstrainedArrayNatureDefinition(
 			ConstrainedArrayNatureDefinition object) {
-		return OutlineTextGenerator.getOutline(object.getNature());
+		return OutlineTextGenerator.getText(object.getNature());
 	}
 
 	@Override
@@ -41,20 +41,20 @@ public class OutlineTextNatureSwitch extends NatureSwitch<String> {
 	}
 
 	@Override
-	public String caseRecordNatureElement(RecordNatureElement object) {
-		return OutlineTextGenerator.getOutline(object.getName()) + " : "
-				+ OutlineTextGenerator.getOutline(object.getNature());
+	public Object caseRecordNatureElement(RecordNatureElement object) {
+		return OutlineTextGenerator.getText(object.getName(),
+				object.getNature());
 	}
 
 	@Override
-	public String caseScalarNatureDefinition(ScalarNatureDefinition object) {
-		return OutlineTextGenerator.getOutline(object.getName());
+	public Object caseScalarNatureDefinition(ScalarNatureDefinition object) {
+		return OutlineTextGenerator.getText(object.getName());
 	}
 
 	@Override
-	public String caseUnconstrainedArrayNatureDefinition(
+	public Object caseUnconstrainedArrayNatureDefinition(
 			UnconstrainedArrayNatureDefinition object) {
-		return OutlineTextGenerator.getOutline(object.getNature());
+		return OutlineTextGenerator.getText(object.getNature());
 	}
 
 }

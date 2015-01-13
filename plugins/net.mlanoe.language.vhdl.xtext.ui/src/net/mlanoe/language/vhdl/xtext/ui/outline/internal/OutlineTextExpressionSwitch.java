@@ -46,7 +46,7 @@ import net.mlanoe.language.vhdl.xtext.ui.outline.OutlineTextGenerator;
  * @author <a href="mailto:mickael.lanoe@laposte.net">Mickael LANOE</a>
  *
  */
-public class OutlineTextExpressionSwitch extends ExpressionSwitch<String> {
+public class OutlineTextExpressionSwitch extends ExpressionSwitch<Object> {
 
 	@Override
 	public String caseUnaffectedExpression(UnaffectedExpression object) {
@@ -56,7 +56,7 @@ public class OutlineTextExpressionSwitch extends ExpressionSwitch<String> {
 	@Override
 	public String caseAddingExpression(AddingExpression object) {
 		StringBuilder builder = new StringBuilder();
-		builder.append(OutlineTextGenerator.getOutline(object.getLeft()));
+		builder.append(OutlineTextGenerator.getText(object.getLeft()));
 		switch (object.getOperator()) {
 		case AMPERSAND:
 			builder.append(" & ");
@@ -68,7 +68,7 @@ public class OutlineTextExpressionSwitch extends ExpressionSwitch<String> {
 			builder.append(" + ");
 			break;
 		}
-		builder.append(OutlineTextGenerator.getOutline(object.getRight()));
+		builder.append(OutlineTextGenerator.getText(object.getRight()));
 		return builder.toString();
 	}
 
@@ -79,7 +79,7 @@ public class OutlineTextExpressionSwitch extends ExpressionSwitch<String> {
 			if (builder.length() != 0) {
 				builder.append(", ");
 			}
-			builder.append(OutlineTextGenerator.getOutline(expression));
+			builder.append(OutlineTextGenerator.getText(expression));
 		}
 		return "(" + builder.toString() + ")";
 	}
@@ -91,15 +91,15 @@ public class OutlineTextExpressionSwitch extends ExpressionSwitch<String> {
 
 	@Override
 	public String caseAllocatorExpression(AllocatorExpression object) {
-		return "new " + OutlineTextGenerator.getOutline(object.getType());
+		return "new " + OutlineTextGenerator.getText(object.getType());
 	}
 
 	@Override
 	public String caseAssociationExpression(AssociationExpression object) {
 		StringBuilder builder = new StringBuilder();
-		builder.append(OutlineTextGenerator.getOutline(object.getChoice()));
+		builder.append(OutlineTextGenerator.getText(object.getChoice()));
 		builder.append(" => ");
-		builder.append(OutlineTextGenerator.getOutline(object.getExpression()));
+		builder.append(OutlineTextGenerator.getText(object.getExpression()));
 		return builder.toString();
 	}
 
@@ -107,9 +107,9 @@ public class OutlineTextExpressionSwitch extends ExpressionSwitch<String> {
 	public String caseConditionalWaveformExpression(
 			ConditionalWaveformExpression object) {
 		StringBuilder builder = new StringBuilder();
-		builder.append(OutlineTextGenerator.getOutline(object.getExpression()));
+		builder.append(OutlineTextGenerator.getText(object.getExpression()));
 		builder.append(" when ");
-		builder.append(OutlineTextGenerator.getOutline(object.getChoice()));
+		builder.append(OutlineTextGenerator.getText(object.getChoice()));
 		return builder.toString();
 	}
 
@@ -124,24 +124,24 @@ public class OutlineTextExpressionSwitch extends ExpressionSwitch<String> {
 		StringBuilder builder = new StringBuilder();
 
 		if (object.getName() != null) {
-			builder.append(OutlineTextGenerator.getOutline(object.getName()));
+			builder.append(OutlineTextGenerator.getText(object.getName()));
 			builder.append(" ");
 		}
 
-		builder.append(OutlineTextGenerator.getOutline(object.getMark()));
+		builder.append(OutlineTextGenerator.getText(object.getMark()));
 		return builder.toString();
 	}
 
 	@Override
-	public String caseSubnatureIndicationExpression(
+	public Object caseSubnatureIndicationExpression(
 			SubnatureIndicationExpression object) {
-		return OutlineTextGenerator.getOutline(object.getMark());
+		return OutlineTextGenerator.getText(object.getMark());
 	}
 
 	@Override
 	public String caseLogicalExpression(LogicalExpression object) {
 		StringBuilder builder = new StringBuilder();
-		builder.append(OutlineTextGenerator.getOutline(object.getLeft()));
+		builder.append(OutlineTextGenerator.getText(object.getLeft()));
 		switch (object.getOperator()) {
 		case AND:
 			builder.append(" and ");
@@ -163,14 +163,14 @@ public class OutlineTextExpressionSwitch extends ExpressionSwitch<String> {
 			break;
 		}
 
-		builder.append(OutlineTextGenerator.getOutline(object.getRight()));
+		builder.append(OutlineTextGenerator.getText(object.getRight()));
 		return builder.toString();
 	}
 
 	@Override
 	public String caseMultiplyingExpression(MultiplyingExpression object) {
 		StringBuilder builder = new StringBuilder();
-		builder.append(OutlineTextGenerator.getOutline(object.getLeft()));
+		builder.append(OutlineTextGenerator.getText(object.getLeft()));
 		switch (object.getOperator()) {
 		case DIV:
 			builder.append(" / ");
@@ -186,23 +186,23 @@ public class OutlineTextExpressionSwitch extends ExpressionSwitch<String> {
 			break;
 		}
 
-		builder.append(OutlineTextGenerator.getOutline(object.getRight()));
+		builder.append(OutlineTextGenerator.getText(object.getRight()));
 		return builder.toString();
 	}
 
 	@Override
 	public String casePowerExpression(PowerExpression object) {
 		StringBuilder builder = new StringBuilder();
-		builder.append(OutlineTextGenerator.getOutline(object.getLeft()));
+		builder.append(OutlineTextGenerator.getText(object.getLeft()));
 		builder.append(" ** ");
-		builder.append(OutlineTextGenerator.getOutline(object.getRight()));
+		builder.append(OutlineTextGenerator.getText(object.getRight()));
 		return builder.toString();
 	}
 
 	@Override
 	public String caseRelationalExpression(RelationalExpression object) {
 		StringBuilder builder = new StringBuilder();
-		builder.append(OutlineTextGenerator.getOutline(object.getLeft()));
+		builder.append(OutlineTextGenerator.getText(object.getLeft()));
 		switch (object.getOperator()) {
 		case EQ:
 			builder.append(" = ");
@@ -224,14 +224,14 @@ public class OutlineTextExpressionSwitch extends ExpressionSwitch<String> {
 			break;
 		}
 
-		builder.append(OutlineTextGenerator.getOutline(object.getRight()));
+		builder.append(OutlineTextGenerator.getText(object.getRight()));
 		return builder.toString();
 	}
 
 	@Override
 	public String caseShiftExpression(ShiftExpression object) {
 		StringBuilder builder = new StringBuilder();
-		builder.append(OutlineTextGenerator.getOutline(object.getLeft()));
+		builder.append(OutlineTextGenerator.getText(object.getLeft()));
 		switch (object.getOperator()) {
 		case ROL:
 			builder.append(" rol ");
@@ -253,13 +253,13 @@ public class OutlineTextExpressionSwitch extends ExpressionSwitch<String> {
 			break;
 		}
 
-		builder.append(OutlineTextGenerator.getOutline(object.getRight()));
+		builder.append(OutlineTextGenerator.getText(object.getRight()));
 		return builder.toString();
 	}
 
 	@Override
-	public String caseSignatureExpression(SignatureExpression object) {
-		return OutlineTextGenerator.getOutline(object.getName());
+	public Object caseSignatureExpression(SignatureExpression object) {
+		return OutlineTextGenerator.getText(object.getName());
 	}
 
 	@Override
@@ -273,7 +273,7 @@ public class OutlineTextExpressionSwitch extends ExpressionSwitch<String> {
 			builder.append("+");
 			break;
 		}
-		builder.append(OutlineTextGenerator.getOutline(object.getExpression()));
+		builder.append(OutlineTextGenerator.getText(object.getExpression()));
 		return builder.toString();
 	}
 
@@ -288,14 +288,14 @@ public class OutlineTextExpressionSwitch extends ExpressionSwitch<String> {
 			builder.append("not ");
 			break;
 		}
-		builder.append(OutlineTextGenerator.getOutline(object.getExpression()));
+		builder.append(OutlineTextGenerator.getText(object.getExpression()));
 		return builder.toString();
 	}
 
 	@Override
 	public String caseRangeExpression(RangeExpression object) {
 		StringBuilder builder = new StringBuilder();
-		builder.append(OutlineTextGenerator.getOutline(object.getLeft()));
+		builder.append(OutlineTextGenerator.getText(object.getLeft()));
 		switch (object.getDirection()) {
 		case DOWNTO:
 			builder.append(" downto ");
@@ -304,7 +304,7 @@ public class OutlineTextExpressionSwitch extends ExpressionSwitch<String> {
 			builder.append(" to ");
 			break;
 		}
-		builder.append(OutlineTextGenerator.getOutline(object.getRight()));
+		builder.append(OutlineTextGenerator.getText(object.getRight()));
 
 		return builder.toString();
 	}
@@ -331,7 +331,7 @@ public class OutlineTextExpressionSwitch extends ExpressionSwitch<String> {
 				builder.append("(");
 			}
 
-			builder.append(OutlineTextGenerator.getOutline(name));
+			builder.append(OutlineTextGenerator.getText(name));
 
 			if (name instanceof RangeExpression) {
 				builder.append(")");
@@ -353,7 +353,7 @@ public class OutlineTextExpressionSwitch extends ExpressionSwitch<String> {
 	@Override
 	public String caseUnitValueExpression(UnitValueExpression object) {
 		return object.getValue()
-				+ OutlineTextGenerator.getOutline(object.getUnit());
+				+ OutlineTextGenerator.getText(object.getUnit());
 	}
 
 	@Override
