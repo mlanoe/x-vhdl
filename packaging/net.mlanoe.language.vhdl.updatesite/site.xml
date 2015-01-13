@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="VHDL editor" url="https://github.com/mlanoe/x-vhdl">
+      Ecore Model (Meta-Model) + Xtext Grammar for VHDL
+   </description>
+   <feature url="features/net.mlanoe.language.vhdl.feature_0.2.0.qualifier.jar" id="net.mlanoe.language.vhdl.feature" version="0.2.0.qualifier"/>
+</site>
