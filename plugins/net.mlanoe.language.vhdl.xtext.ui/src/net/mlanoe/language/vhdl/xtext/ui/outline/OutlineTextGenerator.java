@@ -17,6 +17,7 @@ import net.mlanoe.language.vhdl.xtext.ui.outline.internal.OutlineTextSwitch;
 import net.mlanoe.language.vhdl.xtext.ui.outline.internal.OutlineTextTypeSwitch;
 
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.jface.viewers.StyledString;
 
 /**
  * Outline text generator
@@ -41,8 +42,8 @@ public class OutlineTextGenerator {
 	 *            object to get the outline
 	 * @return outline text
 	 */
-	public static String getOutline(Object object) {
-		String res = null;
+	public static Object getText(Object object) {
+		Object res = null;
 
 		if (object instanceof EObject) {
 			EObject eObject = (EObject) object;
@@ -63,8 +64,38 @@ public class OutlineTextGenerator {
 			if (res == null)
 				res = AMS_SWITCH.doSwitch(eObject);
 		} else {
-			res = object.toString();
+			res = object;
 		}
+		return res;
+	}
+
+	/**
+	 * Get outline text.
+	 * 
+	 * @param left
+	 *            left part of the outline
+	 * @param right
+	 *            right part of the outline
+	 * @return outline text
+	 */
+	public static Object getText(Object left, Object right) {
+		Object l = getText(left);
+		Object r = getText(right);
+
+		StyledString res = new StyledString();
+		if (l instanceof StyledString) {
+			res.append((StyledString) l);
+		} else {
+			res.append(l.toString());
+		}
+
+		res.append(" : ", StyledString.DECORATIONS_STYLER);
+		if (r instanceof StyledString) {
+			res.append((StyledString) r);
+		} else {
+			res.append(r.toString(), StyledString.DECORATIONS_STYLER);
+		}
+
 		return res;
 	}
 }

@@ -13,7 +13,7 @@ import org.eclipse.emf.ecore.EObject
  */
 class VhdlOutlineTreeProvider extends org.eclipse.xtext.ui.editor.outline.impl.DefaultOutlineTreeProvider {
 	override Object _text(Object modelElement) {
-    	var res = OutlineTextGenerator.getOutline(modelElement);
+    	var res = OutlineTextGenerator.getText(modelElement);
     	if(res == null) res = "";
 
 //	    var klass = modelElement.getClass();
